@@ -25,27 +25,51 @@ public class LearningPlayer extends StateMachineGamer {
         return "LearningPlayer";
     }
 
-    private Move pickBestMove(MachineState state, int depth) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
+    private int evaluateMove(MachineState state, Move move, int depth, int maxDepth) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
+        StateMachine stateMachine = getStateMachine();
+        // FIXME, this is always picking random moves for our opponents.
+        MachineState nextState = stateMachine.getNextState(getCurrentState(), stateMachine.getRandomJointMove(getCurrentState(), getRole(), move));
+
+        int evaluation = 0;
+        if (stateMachine.isTerminal(nextState)) {
+            System.out.println("terminal state at depth " + depth);
+            evaluation = stateMachine.getGoal(nextState, getRole());
+        } else if (depth < maxDepth) {
+            System.out.println("Looking deeper at depth " + depth);
+            List<Move> moves = stateMachine.getLegalMoves(nextState, getRole());
+            for (Move nextMove : moves) {
+                evaluation += evaluateMove(nextState, nextMove, depth + 1, maxDepth);
+            }
+            evaluation /= moves.size();
+        } else {
+            System.out.println("deep enough at depth " + depth);
+            evaluation = evaluator.evaluateState(nextState, stateMachine);
+        }
+        System.out.println("returning " + evaluation + " at depth " + depth);
+        return evaluation;
+    }
+
+    private Move pickBestMove(MachineState state) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         StateMachine stateMachine = getStateMachine();
 
         List<Move> moves = stateMachine.getLegalMoves(state, getRole());
-        Move bestMove = moves.get(0);
-        int bestEvaluation = -1;
+        System.out.println("Picking a move from list: " + moves);
 
+        Move bestMove = moves.get(0);
+        if (moves.size() == 1) {
+            System.out.println("Only one valid move.  Returing that: " + bestMove);
+            return bestMove;
+        }
+
+        int bestEvaluation = -1;
         for (Move move : moves) {
-            // FIXME, this is always picking random moves for our opponents.
-            MachineState nextState = stateMachine.getNextState(getCurrentState(), stateMachine.getRandomJointMove(getCurrentState(), getRole(), move));
-            if (depth > 0) {
-                return pickBestMove(nextState, depth - 1);
-            } else {
-                int evaluation = evaluator.evaluateState(nextState, stateMachine);
-                if (evaluation > bestEvaluation) {
-                    bestMove = move;
-                    bestEvaluation = evaluation;
-                }
+            int evaluation = evaluateMove(state, move, 0, 2);
+            if (evaluation > bestEvaluation) {
+                bestMove = move;
+                bestEvaluation = evaluation;
             }
         }
-        System.out.println("Picking a move (depth " + depth + " with a resulting score: " + bestEvaluation);
+        System.out.println("Picking a move with a resulting score: " + bestEvaluation + ". Move: " + bestMove);
         return bestMove;
     }
 
@@ -54,7 +78,7 @@ public class LearningPlayer extends StateMachineGamer {
         long start = System.currentTimeMillis();
         List<Move> moves = getStateMachine().getLegalMoves(getCurrentState(), getRole());
 
-        Move selection = pickBestMove(getCurrentState(), 1);
+        Move selection = pickBestMove(getCurrentState());
         long stop = System.currentTimeMillis();
 
         notifyObservers(new GamerSelectedMoveEvent(moves, selection, stop - start));
