@@ -25,30 +25,6 @@ public class LearningPlayer extends StateMachineGamer {
         return "LearningPlayer";
     }
 
-    private int evaluateMove(MachineState state, Move move, int depth, int maxDepth) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        StateMachine stateMachine = getStateMachine();
-        // FIXME, this is always picking random moves for our opponents.
-        MachineState nextState = stateMachine.getNextState(getCurrentState(), stateMachine.getRandomJointMove(getCurrentState(), getRole(), move));
-
-        int evaluation = 0;
-        if (stateMachine.isTerminal(nextState)) {
-            System.out.println("terminal state at depth " + depth);
-            evaluation = stateMachine.getGoal(nextState, getRole());
-        } else if (depth < maxDepth) {
-            System.out.println("Looking deeper at depth " + depth);
-            List<Move> moves = stateMachine.getLegalMoves(nextState, getRole());
-            for (Move nextMove : moves) {
-                evaluation += evaluateMove(nextState, nextMove, depth + 1, maxDepth);
-            }
-            evaluation /= moves.size();
-        } else {
-            System.out.println("deep enough at depth " + depth);
-            evaluation = evaluator.evaluateState(nextState, stateMachine);
-        }
-        System.out.println("returning " + evaluation + " at depth " + depth);
-        return evaluation;
-    }
-
     private Move pickBestMove(MachineState state) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         StateMachine stateMachine = getStateMachine();
 
@@ -61,9 +37,13 @@ public class LearningPlayer extends StateMachineGamer {
             return bestMove;
         }
 
-        int bestEvaluation = -1;
+        int bestEvaluation = Integer.MIN_VALUE;
         for (Move move : moves) {
-            int evaluation = evaluateMove(state, move, 0, 2);
+//            // Get everybody else's moves
+//            List<List<Move>> opponentMoves = stateMachine.getLegalJointMoves(state, getRole(), move);
+            MachineState potentialState = stateMachine.getRandomNextState(state, getRole(), move);
+
+            int evaluation = evaluator.evaluateState(potentialState, getRole(), stateMachine);
             if (evaluation > bestEvaluation) {
                 bestMove = move;
                 bestEvaluation = evaluation;
@@ -97,7 +77,7 @@ public class LearningPlayer extends StateMachineGamer {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        evaluator = new StateEvaluator(getRole());
+        evaluator = new WinLoseDrawStateEvaluator();
     }
 
     @Override
