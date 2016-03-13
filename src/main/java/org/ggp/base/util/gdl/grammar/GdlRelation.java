@@ -88,4 +88,23 @@ public final class GdlRelation extends GdlSentence
         return body;
     }
 
+	@Override
+	public int hashCode() {
+		return toString().hashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj == null){
+			return false;
+		}
+		if(obj instanceof GdlRelation){
+			GdlRelation objRel = (GdlRelation)obj;
+			return toString().equals(objRel.toString());
+		}else{
+			return false;
+		}
+	}
+
+
 }
