@@ -8,7 +8,6 @@ import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
 import org.ggp.base.player.gamer.exception.GamePreviewException;
 import org.ggp.base.player.gamer.statemachine.StateMachineGamer;
 import org.ggp.base.util.game.Game;
-import org.ggp.base.util.statemachine.MachineState;
 import org.ggp.base.util.statemachine.Move;
 import org.ggp.base.util.statemachine.StateMachine;
 import org.ggp.base.util.statemachine.cache.CachedStateMachine;
@@ -18,39 +17,11 @@ import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
 public class LearningPlayer extends StateMachineGamer {
-    private StateEvaluator evaluator;
+    private MovePicker picker;
 
     @Override
     public String getName() {
         return "LearningPlayer";
-    }
-
-    private Move pickBestMove(MachineState state) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        StateMachine stateMachine = getStateMachine();
-
-        List<Move> moves = stateMachine.getLegalMoves(state, getRole());
-        System.out.println("Picking a move from list: " + moves);
-
-        Move bestMove = moves.get(0);
-        if (moves.size() == 1) {
-            System.out.println("Only one valid move.  Returing that: " + bestMove);
-            return bestMove;
-        }
-
-        int bestEvaluation = Integer.MIN_VALUE;
-        for (Move move : moves) {
-//            // Get everybody else's moves
-//            List<List<Move>> opponentMoves = stateMachine.getLegalJointMoves(state, getRole(), move);
-            MachineState potentialState = stateMachine.getRandomNextState(state, getRole(), move);
-
-            int evaluation = evaluator.evaluateState(potentialState, getRole(), stateMachine);
-            if (evaluation > bestEvaluation) {
-                bestMove = move;
-                bestEvaluation = evaluation;
-            }
-        }
-        System.out.println("Picking a move with a resulting score: " + bestEvaluation + ". Move: " + bestMove);
-        return bestMove;
     }
 
     @Override
@@ -58,7 +29,7 @@ public class LearningPlayer extends StateMachineGamer {
         long start = System.currentTimeMillis();
         List<Move> moves = getStateMachine().getLegalMoves(getCurrentState(), getRole());
 
-        Move selection = pickBestMove(getCurrentState());
+        Move selection = picker.pickBestMove(getCurrentState(), getRole(), getStateMachine());
         long stop = System.currentTimeMillis();
 
         notifyObservers(new GamerSelectedMoveEvent(moves, selection, stop - start));
@@ -77,7 +48,7 @@ public class LearningPlayer extends StateMachineGamer {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        evaluator = new WinLoseDrawStateEvaluator();
+        picker = new WinLoseDrawStateEvaluator();
     }
 
     @Override

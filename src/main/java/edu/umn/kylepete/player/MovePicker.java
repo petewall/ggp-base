@@ -6,12 +6,8 @@ import org.ggp.base.util.statemachine.Role;
 import org.ggp.base.util.statemachine.StateMachine;
 import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
+import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 
-public class NeuralNetworkStateEvaluator implements MovePicker {
-
-    @Override
-    public Move pickBestMove(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException {
-        // TODO Auto-generated method stub
-        return stateMachine.getRandomMove(state, role);
-    }
+public interface MovePicker {
+    public Move pickBestMove(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException;
 }
