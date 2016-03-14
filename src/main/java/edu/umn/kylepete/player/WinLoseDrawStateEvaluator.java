@@ -25,8 +25,6 @@ public class WinLoseDrawStateEvaluator implements MovePicker {
 
         int bestEvaluation = Integer.MIN_VALUE;
         for (Move move : moves) {
-//            // Get everybody else's moves
-//            List<List<Move>> opponentMoves = stateMachine.getLegalJointMoves(state, getRole(), move);
             MachineState potentialState = stateMachine.getRandomNextState(state, role, move);
 
             int evaluation = evaluateState(potentialState, role, stateMachine);

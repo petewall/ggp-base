@@ -48,7 +48,7 @@ public class LearningPlayer extends StateMachineGamer {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        picker = new WinLoseDrawStateEvaluator();
+        picker = new MiniMaxMovePicker();
     }
 
     @Override
