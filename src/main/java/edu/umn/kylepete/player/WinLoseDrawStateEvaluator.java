@@ -36,7 +36,6 @@ public class WinLoseDrawStateEvaluator implements MovePicker {
         }
         System.out.println("Picking a move with a resulting score: " + bestEvaluation + ". Move: " + bestMove);
         return bestMove;
-
     }
 
     public int evaluateState(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException {
