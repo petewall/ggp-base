@@ -19,7 +19,6 @@ import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.optimize.listeners.ScoreIterationListener;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
-import org.nd4j.linalg.dataset.SplitTestAndTrain;
 import org.nd4j.linalg.dataset.api.iterator.DataSetIterator;
 import org.nd4j.linalg.factory.Nd4j;
 import org.nd4j.linalg.lossfunctions.LossFunctions.LossFunction;
@@ -41,7 +40,7 @@ public class TicTacToeNeuralNetwork {
 	// Batch size: i.e., each epoch has nSamples/batchSize parameter updates
 	private static final int batchSize = 5000;
 	// Network learning rate
-	private static final double learningRate = 0.001;
+	private static final double learningRate = 0.1;
 	private static final Random rng = new Random(seed);
 	private static int listenerFreq = 10;// iterations / 5;
 
@@ -77,17 +76,17 @@ public class TicTacToeNeuralNetwork {
 		int numClasses = 1;
 		DataSetIterator iterator = new RecordReaderDataSetIterator(recordReader, null, batchSize, labelIndex, numClasses, true);
 		DataSet next = iterator.next();
-		boolean normalize = false;
+		boolean normalize = true;
 		if (normalize) {
-		// Normalize the full data set. Our DataSet 'next' contains the full 150 examples
-			next.normalizeZeroMeanZeroUnitVariance();
+			// Normalize the full data set. Our DataSet 'next' contains the full 150 examples
+			// next.normalizeZeroMeanZeroUnitVariance();
 
 			INDArray columnMeans = next.getLabels().mean(0);
 			INDArray columnStds = next.getLabels().std(0);
 			next.setLabels(next.getLabels().subiRowVector(columnMeans));
 			columnStds.addi(Nd4j.scalar(Nd4j.EPS_THRESHOLD));
 			next.setLabels(next.getLabels().diviRowVector(columnStds));
-			next.shuffle();
+			// next.shuffle();
 		}
 		return next;
 	}
@@ -97,9 +96,10 @@ public class TicTacToeNeuralNetwork {
 		DataSet fullDataSet = getTicTacToeDataSet();
 
 		// split test and train
-		SplitTestAndTrain testAndTrain = fullDataSet.splitTestAndTrain(0.999999);// 0.65); // Use 65% of data for training
-		DataSet trainingData = testAndTrain.getTrain();
-		DataSet testData = testAndTrain.getTest();
+		// SplitTestAndTrain testAndTrain = fullDataSet.splitTestAndTrain(0.999999);// 0.65); // Use 65% of data for training
+		// DataSet trainingData = testAndTrain.getTrain();
+		// DataSet testData = testAndTrain.getTest();
+		DataSet trainingData = fullDataSet;
 
 		MultiLayerNetwork net = trainNetwork(trainingData);
 
@@ -118,7 +118,7 @@ public class TicTacToeNeuralNetwork {
 		int numInputs = 9;
 		int numOutputs = 1;
 
-		int numHiddenNodes = 9;
+		int numHiddenNodes = 200;
 		return new NeuralNetConfiguration.Builder()
 				.seed(seed)
 				.iterations(iterations)
@@ -147,6 +147,18 @@ public class TicTacToeNeuralNetwork {
 						.activation("relu")
 						.weightInit(WeightInit.XAVIER)
 						.build())
+//				.layer(3, new DenseLayer.Builder()
+//						.nIn(numHiddenNodes)
+//						.nOut(numHiddenNodes)
+//						.activation("relu")
+//						.weightInit(WeightInit.XAVIER)
+//						.build())
+//				.layer(4, new DenseLayer.Builder()
+//						.nIn(numHiddenNodes)
+//						.nOut(numHiddenNodes)
+//						.activation("relu")
+//						.weightInit(WeightInit.XAVIER)
+//						.build())
 				.layer(3, new OutputLayer.Builder(LossFunction.MSE)
 						.nIn(numHiddenNodes)
 						.nOut(numOutputs)
