@@ -1,7 +1,8 @@
 package edu.umn.kylepete.player;
 
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
@@ -28,16 +29,28 @@ public class UCTPlayer extends StateMachineGamer {
         public StateNode(StateNode parent, MachineState state) {
             this.parent = parent;
             this.state = state;
-            this.children = new HashMap<Move, StateNode>();
+            this.children = new HashSet<StateNode>();
             this.totalReward = 0;
             this.visits = 0;
         }
 
         public StateNode parent;
         public MachineState state;
-        public HashMap<Move, StateNode> children;
+        public Set<StateNode> children;
         public double totalReward;
         public double visits;
+        public Move entryMove;
+
+        @Override
+        public String toString() {
+            int depth = 0;
+            StateNode temp = this.parent;
+            while (temp != null) {
+                depth++;
+                temp = temp.parent;
+            }
+            return "Depth(" + depth + "), Reward(" + totalReward + "), Visits(" + visits + ") Children(" + children.size() + ")";
+        }
     }
     private StateNode root = null;
 
@@ -46,19 +59,22 @@ public class UCTPlayer extends StateMachineGamer {
         long start = System.currentTimeMillis();
         StateMachine theMachine = getStateMachine();
 
-        List<Move> moves = theMachine.getLegalMoves(getCurrentState(), getRole());
-        Move selection = moves.get(0);
-        if (moves.size() > 1) {
-            long finishBy = start + timeout - 1000;
-            while (System.currentTimeMillis() < finishBy) {
-                StateNode current = treePolicy(root);
-                double value = defaultPolicy(current);
-                backup(current, value);
-
-            }
+        long finishBy = timeout - 1000;
+        int iterations = 0;
+        while (System.currentTimeMillis() < finishBy) {
+            StateNode current = treePolicy(root);
+            double value = defaultPolicy(current);
+            backup(current, value);
+            iterations++;
         }
+        System.out.println("ran " + iterations + " iterations");
         long stop = System.currentTimeMillis();
+        System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
 
+        StateNode bestChild = bestChild(root, 0);
+        root = bestChild;
+        Move selection = root.entryMove;
+        List<Move> moves = theMachine.getLegalMoves(getCurrentState(), getRole());
         notifyObservers(new GamerSelectedMoveEvent(moves, selection, stop - start));
         return selection;
     }
@@ -80,13 +96,14 @@ public class UCTPlayer extends StateMachineGamer {
         StateMachine stateMachine = getStateMachine();
         List<Move> validMoves = stateMachine.getLegalMoves(source.state, getRole());
         for (Move move : validMoves) {
-            if (source.children.containsKey(move)) {
+            MachineState resultingState = stateMachine.getRandomNextState(source.state, getRole(), move);
+            if (source.children.contains(resultingState)) {
                 continue;
             }
 
-            MachineState resultingState = stateMachine.getRandomNextState(source.state, getRole(), move);
             StateNode node = new StateNode(source, resultingState);
-            source.children.put(move, node);
+            source.children.add(node);
+            node.entryMove = move;
             return node;
         }
 
@@ -97,7 +114,7 @@ public class UCTPlayer extends StateMachineGamer {
         StateNode bestChild = null;
         double best = Double.NEGATIVE_INFINITY;
 
-        for (StateNode child : current.children.values()) {
+        for (StateNode child : current.children) {
             double UCB1 = (child.totalReward / child.visits);
             if (explorationConstant != 0) {
                 UCB1 += explorationConstant * Math.sqrt((2.0 * Math.log(current.visits)) / child.visits);
@@ -119,22 +136,23 @@ public class UCTPlayer extends StateMachineGamer {
 //        s ← f(s, a)
 //        return reward for state s
 
-        StateNode next = current;
-        do {
-            MachineState nextState = stateMachine.getRandomNextState(next.state);
-            next = new StateNode(next, nextState);
-        } while (!stateMachine.isTerminal(next.state));
+        System.out.println("Starting deep dive on " + current.state);
+        MachineState nextState = current.state;
+        while (!stateMachine.isTerminal(nextState)) {
+            nextState = stateMachine.getRandomNextState(nextState);
+            System.out.println("new state: " + nextState);
+        }
 
-        return stateMachine.getGoal(next.state, getRole()) / 100.0;
+        return stateMachine.getGoal(nextState, getRole()) / 100.0;
     }
 
     private void backup(StateNode node, double value) {
-        StateNode parent;
+        StateNode current = node;
         do {
-            node.visits++;
-            node.totalReward += value;
-            parent = node.parent;
-        } while (parent != null);
+            current.visits++;
+            current.totalReward += value;
+            current = current.parent;
+        } while (current != null);
     }
 
     @Override
