@@ -67,7 +67,7 @@ public class UCTPlayer extends StateMachineGamer {
             backup(current, value);
             iterations++;
         }
-        System.out.println("ran " + iterations + " iterations");
+        System.out.println("ran " + iterations + " iterations.");
         long stop = System.currentTimeMillis();
         System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
 
@@ -136,11 +136,11 @@ public class UCTPlayer extends StateMachineGamer {
 //        s ← f(s, a)
 //        return reward for state s
 
-        System.out.println("Starting deep dive on " + current.state);
+//        System.out.println("Starting deep dive on " + current.state);
         MachineState nextState = current.state;
         while (!stateMachine.isTerminal(nextState)) {
             nextState = stateMachine.getRandomNextState(nextState);
-            System.out.println("new state: " + nextState);
+//            System.out.println("new state: " + nextState);
         }
 
         return stateMachine.getGoal(nextState, getRole()) / 100.0;
