@@ -1,8 +1,9 @@
 package edu.umn.kylepete.player;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
+import java.util.Map;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
@@ -29,26 +30,21 @@ public class UCTPlayer extends StateMachineGamer {
         public StateNode(StateNode parent, MachineState state) {
             this.parent = parent;
             this.state = state;
-            this.children = new HashSet<StateNode>();
+            this.children = new HashMap<Move, StateNode>();
             this.totalReward = 0;
             this.visits = 0;
+            this.depth = (parent != null ? parent.depth + 1 : 0);
         }
 
+        public int depth;
         public StateNode parent;
         public MachineState state;
-        public Set<StateNode> children;
+        public Map<Move, StateNode> children;
         public double totalReward;
         public double visits;
-        public Move entryMove;
 
         @Override
         public String toString() {
-            int depth = 0;
-            StateNode temp = this.parent;
-            while (temp != null) {
-                depth++;
-                temp = temp.parent;
-            }
             return "Depth(" + depth + "), Reward(" + totalReward + "), Visits(" + visits + ") Children(" + children.size() + ")";
         }
     }
@@ -57,9 +53,7 @@ public class UCTPlayer extends StateMachineGamer {
     @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         long start = System.currentTimeMillis();
-        StateMachine theMachine = getStateMachine();
-
-        long finishBy = timeout - 1000;
+        long finishBy = timeout - 5000;
         int iterations = 0;
         while (System.currentTimeMillis() < finishBy) {
             StateNode current = treePolicy(root);
@@ -71,10 +65,20 @@ public class UCTPlayer extends StateMachineGamer {
         long stop = System.currentTimeMillis();
         System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
 
-        StateNode bestChild = bestChild(root, 0);
+        List<Move> official = getStateMachine().getLegalMoves(root.state, getRole());
+        List<Move> moves = new ArrayList<Move>(root.children.keySet());
+        System.out.println("Current root state: " + root.state);
+        System.out.println("Valid official moves: (" + official.size() + ")" + official);
+        System.out.println("Valid moves: (" + moves.size() + ")" + moves);
+
+        Move selection = bestMove(root, 0);
+        StateNode bestChild = root.children.get(selection);
+        System.out.println("Picking from the best of: ");
+        for (Move move : root.children.keySet()) {
+            System.out.println("    " + root.children.get(move) + " --> " + move);
+        }
         root = bestChild;
-        Move selection = root.entryMove;
-        List<Move> moves = theMachine.getLegalMoves(getCurrentState(), getRole());
+        System.out.println("New state: " + root.state);
         notifyObservers(new GamerSelectedMoveEvent(moves, selection, stop - start));
         return selection;
     }
@@ -86,7 +90,7 @@ public class UCTPlayer extends StateMachineGamer {
             if (current.children.size() < validMoves.size()) {
                 return expandNodes(current);
             } else {
-                current = bestChild(current, 1.44);
+                current = current.children.get(bestMove(current, 1.44));
             }
         }
         return current;
@@ -95,37 +99,49 @@ public class UCTPlayer extends StateMachineGamer {
     private StateNode expandNodes(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
         StateMachine stateMachine = getStateMachine();
         List<Move> validMoves = stateMachine.getLegalMoves(source.state, getRole());
+//        if (source.depth == 1) {
+//            System.out.println("the valid moves: " + validMoves);
+//        }
         for (Move move : validMoves) {
             MachineState resultingState = stateMachine.getRandomNextState(source.state, getRole(), move);
-            if (source.children.contains(resultingState)) {
+//            if (source.depth == 1) {
+//                System.out.println("Potential move: " + move);
+//                System.out.println("    Resulting state: " + resultingState);
+//            }
+            if (source.children.containsKey(move)) {
+//                System.out.println("Already contained!");
                 continue;
             }
-
             StateNode node = new StateNode(source, resultingState);
-            source.children.add(node);
-            node.entryMove = move;
+
+//            if (node.depth == 2) {
+//                System.out.println("Putting new child for move: " + move);
+//                System.out.println("   " + node);
+//            }
+            source.children.put(move, node);
             return node;
         }
 
         return null;
     }
 
-    private StateNode bestChild(StateNode current, double explorationConstant) {
-        StateNode bestChild = null;
+    private Move bestMove(StateNode current, double explorationConstant) {
+        Move bestMove = null;
         double best = Double.NEGATIVE_INFINITY;
 
-        for (StateNode child : current.children) {
+        for (Move move : current.children.keySet()) {
+            StateNode child = current.children.get(move);
             double UCB1 = (child.totalReward / child.visits);
             if (explorationConstant != 0) {
                 UCB1 += explorationConstant * Math.sqrt((2.0 * Math.log(current.visits)) / child.visits);
             }
             if (UCB1 > best) {
-                bestChild = child;
+                bestMove = move;
                 best = UCB1;
             }
         }
 
-        return bestChild;
+        return bestMove;
     }
 
     private double defaultPolicy(StateNode current) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
@@ -136,14 +152,15 @@ public class UCTPlayer extends StateMachineGamer {
 //        s ← f(s, a)
 //        return reward for state s
 
-//        System.out.println("Starting deep dive on " + current.state);
-        MachineState nextState = current.state;
-        while (!stateMachine.isTerminal(nextState)) {
-            nextState = stateMachine.getRandomNextState(nextState);
-//            System.out.println("new state: " + nextState);
-        }
+        int[] depth = new int[1];
+        MachineState terminalState = stateMachine.performDepthCharge(current.state, depth);
+//        MachineState nextState = current.state;
+//        while (!stateMachine.isTerminal(nextState)) {
+//            nextState = stateMachine.getRandomNextState(nextState);
+////            System.out.println("new state: " + nextState);
+//        }
 
-        return stateMachine.getGoal(nextState, getRole()) / 100.0;
+        return stateMachine.getGoal(terminalState, getRole()) / 100.0;
     }
 
     private void backup(StateNode node, double value) {
