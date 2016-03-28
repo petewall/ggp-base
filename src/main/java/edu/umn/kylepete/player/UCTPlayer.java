@@ -30,7 +30,7 @@ public class UCTPlayer extends StateMachineGamer {
         public StateNode(StateNode parent, MachineState state) {
             this.parent = parent;
             this.state = state;
-            this.children = new HashMap<Move, StateNode>();
+            this.children = new HashMap<List<Move>, StateNode>();
             this.totalReward = 0;
             this.visits = 0;
             this.depth = (parent != null ? parent.depth + 1 : 0);
@@ -39,7 +39,7 @@ public class UCTPlayer extends StateMachineGamer {
         public int depth;
         public StateNode parent;
         public MachineState state;
-        public Map<Move, StateNode> children;
+        public Map<List<Move>, StateNode> children;
         public double totalReward;
         public double visits;
 
@@ -49,11 +49,18 @@ public class UCTPlayer extends StateMachineGamer {
         }
     }
     private StateNode root = null;
+    private int roleIndex;
 
     @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         long start = System.currentTimeMillis();
-        long finishBy = timeout - 5000;
+        long finishBy = timeout - 1000;
+
+        if (getLastMove() != null) {
+            List<Move> theLastMove = getLastMove();
+            root = root.children.get(theLastMove);
+        }
+
         int iterations = 0;
         while (System.currentTimeMillis() < finishBy) {
             StateNode current = treePolicy(root);
@@ -66,31 +73,28 @@ public class UCTPlayer extends StateMachineGamer {
         System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
 
         List<Move> official = getStateMachine().getLegalMoves(root.state, getRole());
-        List<Move> moves = new ArrayList<Move>(root.children.keySet());
+        List<List<Move>> moves = new ArrayList<List<Move>>(root.children.keySet());
         System.out.println("Current root state: " + root.state);
-        System.out.println("Valid official moves: (" + official.size() + ")" + official);
-        System.out.println("Valid moves: (" + moves.size() + ")" + moves);
+        System.out.println("Valid official moves: " + official + " (" + official.size() + ")");
+        System.out.println("Valid moves: " + moves + " (" + moves.size() + ")");
 
-        Move selection = bestMove(root, 0);
-        StateNode bestChild = root.children.get(selection);
+        List<Move> selection = bestMoveSet(root, 0);
         System.out.println("Picking from the best of: ");
-        for (Move move : root.children.keySet()) {
-            System.out.println("    " + root.children.get(move) + " --> " + move);
+        for (List<Move> moveset : root.children.keySet()) {
+            System.out.println("    " + root.children.get(moveset) + " --> " + moveset);
         }
-        root = bestChild;
-        System.out.println("New state: " + root.state);
-        notifyObservers(new GamerSelectedMoveEvent(moves, selection, stop - start));
-        return selection;
+        notifyObservers(new GamerSelectedMoveEvent(official, selection.get(roleIndex), stop - start));
+        return selection.get(roleIndex);
     }
 
     private StateNode treePolicy(StateNode current) throws MoveDefinitionException, TransitionDefinitionException {
         StateMachine stateMachine = getStateMachine();
         while (!stateMachine.isTerminal(current.state)) {
-            List<Move> validMoves = stateMachine.getLegalMoves(current.state, getRole());
-            if (current.children.size() < validMoves.size()) {
+            int validMoveCount = stateMachine.getLegalJointMoves(current.state).size();
+            if (current.children.size() < validMoveCount) {
                 return expandNodes(current);
             } else {
-                current = current.children.get(bestMove(current, 1.44));
+                current = current.children.get(bestMoveSet(current, 1.44));
             }
         }
         return current;
@@ -98,69 +102,43 @@ public class UCTPlayer extends StateMachineGamer {
 
     private StateNode expandNodes(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
         StateMachine stateMachine = getStateMachine();
-        List<Move> validMoves = stateMachine.getLegalMoves(source.state, getRole());
-//        if (source.depth == 1) {
-//            System.out.println("the valid moves: " + validMoves);
-//        }
-        for (Move move : validMoves) {
-            MachineState resultingState = stateMachine.getRandomNextState(source.state, getRole(), move);
-//            if (source.depth == 1) {
-//                System.out.println("Potential move: " + move);
-//                System.out.println("    Resulting state: " + resultingState);
-//            }
-            if (source.children.containsKey(move)) {
-//                System.out.println("Already contained!");
+        List<List<Move>> allValidMoves = stateMachine.getLegalJointMoves(source.state);
+        for (List<Move> moveset : allValidMoves) {
+            MachineState resultingState = stateMachine.getNextState(source.state, moveset);
+            if (source.children.containsKey(moveset)) {
                 continue;
             }
             StateNode node = new StateNode(source, resultingState);
-
-//            if (node.depth == 2) {
-//                System.out.println("Putting new child for move: " + move);
-//                System.out.println("   " + node);
-//            }
-            source.children.put(move, node);
+            source.children.put(moveset, node);
             return node;
         }
 
         return null;
     }
 
-    private Move bestMove(StateNode current, double explorationConstant) {
-        Move bestMove = null;
+    private List<Move> bestMoveSet(StateNode current, double explorationConstant) {
+        List<Move> bestMoveSet = null;
         double best = Double.NEGATIVE_INFINITY;
 
-        for (Move move : current.children.keySet()) {
-            StateNode child = current.children.get(move);
+        for (List<Move> moveset : current.children.keySet()) {
+            StateNode child = current.children.get(moveset);
             double UCB1 = (child.totalReward / child.visits);
             if (explorationConstant != 0) {
                 UCB1 += explorationConstant * Math.sqrt((2.0 * Math.log(current.visits)) / child.visits);
             }
             if (UCB1 > best) {
-                bestMove = move;
+                bestMoveSet = moveset;
                 best = UCB1;
             }
         }
 
-        return bestMove;
+        return bestMoveSet;
     }
 
     private double defaultPolicy(StateNode current) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
-        StateMachine stateMachine = getStateMachine();
-//        function DEFAULTPOLICY(s)
-//        while s is non-terminal do
-//        choose a ∈ A(s) uniformly at random
-//        s ← f(s, a)
-//        return reward for state s
-
         int[] depth = new int[1];
-        MachineState terminalState = stateMachine.performDepthCharge(current.state, depth);
-//        MachineState nextState = current.state;
-//        while (!stateMachine.isTerminal(nextState)) {
-//            nextState = stateMachine.getRandomNextState(nextState);
-////            System.out.println("new state: " + nextState);
-//        }
-
-        return stateMachine.getGoal(terminalState, getRole()) / 100.0;
+        MachineState terminalState = getStateMachine().performDepthCharge(current.state, depth);
+        return getStateMachine().getGoal(terminalState, getRole()) / 100.0;
     }
 
     private void backup(StateNode node, double value) {
@@ -184,8 +162,10 @@ public class UCTPlayer extends StateMachineGamer {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        MachineState initialState = getStateMachine().getInitialState();
+        StateMachine stateMachine = getStateMachine();
+        MachineState initialState = stateMachine.getInitialState();
         root = new StateNode(null, initialState);
+        roleIndex = stateMachine.getRoles().indexOf(getRole());
     }
 
     @Override

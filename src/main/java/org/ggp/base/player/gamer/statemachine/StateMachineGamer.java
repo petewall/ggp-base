@@ -84,6 +84,10 @@ public abstract class StateMachineGamer extends Gamer
         return currentState;
     }
 
+    public final List<Move> getLastMove() {
+        return lastMove;
+    }
+
     /**
      * Returns the role that this gamer is playing as in the game.
      */
@@ -209,13 +213,13 @@ public abstract class StateMachineGamer extends Gamer
             List<GdlTerm> lastMoves = getMatch().getMostRecentMoves();
             if (lastMoves != null)
             {
-                List<Move> moves = new ArrayList<Move>();
+                lastMove = new ArrayList<Move>();
                 for (GdlTerm sentence : lastMoves)
                 {
-                    moves.add(stateMachine.getMoveFromTerm(sentence));
+                    lastMove.add(stateMachine.getMoveFromTerm(sentence));
                 }
 
-                currentState = stateMachine.getNextState(currentState, moves);
+                currentState = stateMachine.getNextState(currentState, lastMove);
                 getMatch().appendState(currentState.getContents());
             }
 
@@ -271,5 +275,6 @@ public abstract class StateMachineGamer extends Gamer
     // Internal state about the current state of the state machine.
     private Role role;
     private MachineState currentState;
+    private List<Move> lastMove;
     private StateMachine stateMachine;
 }
