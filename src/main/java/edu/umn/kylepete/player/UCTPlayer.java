@@ -29,7 +29,7 @@ public class UCTPlayer extends StateMachineGamer {
         return "UCTPlayer";
     }
 
-    private class StateNode {
+    protected class StateNode {
         public StateNode(StateNode parent, MachineState state) {
             this.parent = parent;
             this.state = state;
@@ -51,10 +51,10 @@ public class UCTPlayer extends StateMachineGamer {
             return "Depth(" + depth + "), Reward(" + totalReward + "), Visits(" + visits + ") Children(" + children.size() + ")";
         }
     }
-    private StateNode root = null;
-    private int roleIndex;
+    protected StateNode root = null;
+    protected int roleIndex;
     private ArrayList<WorkerThread> threadPool;
-    long finishBy;
+    protected long finishBy;
 
     private class WorkerThread extends Thread {
         public int iterations;
@@ -79,6 +79,17 @@ public class UCTPlayer extends StateMachineGamer {
         }
     }
 
+    protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+        int iterations = 0;
+        while (System.currentTimeMillis() < finishBy) {
+            StateNode current = treePolicy(root);
+            double value = defaultPolicy(current);
+            backup(current, value);
+            iterations++;
+        }
+        return iterations;
+    }
+
     @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         long start = System.currentTimeMillis();
@@ -89,7 +100,7 @@ public class UCTPlayer extends StateMachineGamer {
             root = root.children.get(theLastMove);
         }
 
-        int totalIterations = 0;
+        int totalIterations = runTheWork();
         for (WorkerThread thread : threadPool) {
             thread.start();
         }
@@ -123,7 +134,7 @@ public class UCTPlayer extends StateMachineGamer {
         return selection.get(roleIndex);
     }
 
-    private StateNode treePolicy(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
+    protected StateNode treePolicy(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
         StateNode current = source;
         StateMachine stateMachine = getStateMachine();
         while (!stateMachine.isTerminal(current.state)) {
@@ -144,7 +155,7 @@ public class UCTPlayer extends StateMachineGamer {
         return current;
     }
 
-    private synchronized StateNode expandNodes(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
+    protected synchronized StateNode expandNodes(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
         StateMachine stateMachine = getStateMachine();
         List<List<Move>> allValidMoves = stateMachine.getLegalJointMoves(source.state);
         for (List<Move> moveset : allValidMoves) {
@@ -161,7 +172,7 @@ public class UCTPlayer extends StateMachineGamer {
         return null;
     }
 
-    private synchronized List<Move> bestMoveSet(StateNode current, double explorationConstant) {
+    protected synchronized List<Move> bestMoveSet(StateNode current, double explorationConstant) {
         // FIXME: Should this be picking the opposite for the opponent's turn?
         //        If that encourages deeper search on moves that the opponent is likely to make, it might be better.
 
@@ -189,21 +200,17 @@ public class UCTPlayer extends StateMachineGamer {
                 best = UCB1;
             }
         }
-
-        if (bestMoveSet == null) {
-            System.out.println("did i miss it?");
-        }
         return bestMoveSet;
     }
 
-    private double defaultPolicy(StateNode current) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
-        System.out.println(Thread.currentThread().getName() + "DefaultPolicy: " + current);
+    protected double defaultPolicy(StateNode current) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
+//        System.out.println(Thread.currentThread().getName() + "DefaultPolicy: " + current);
         MachineState startState = current.state;
         MachineState terminalState = getStateMachine().performDepthCharge(startState, null);
         return getStateMachine().getGoal(terminalState, getRole()) / 100.0;
     }
 
-    private void backup(StateNode node, double value) {
+    protected void backup(StateNode node, double value) {
         StateNode current = node;
         do {
             current.visits.incrementAndGet();
