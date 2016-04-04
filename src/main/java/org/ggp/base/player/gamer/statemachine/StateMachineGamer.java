@@ -182,6 +182,7 @@ public abstract class StateMachineGamer extends Gamer
     {
         try
         {
+            lastMove = null;
             stateMachine = getInitialStateMachine();
             stateMachine.initialize(getMatch().getGame().getRules());
             currentState = stateMachine.getInitialState();
