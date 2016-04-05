@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.ggp.base.apps.research.TicTacToeStateLookupTable;
 import org.ggp.base.util.gdl.factory.exceptions.GdlFormatException;
 import org.ggp.base.util.gdl.grammar.GdlSentence;
 import org.ggp.base.util.gdl.grammar.GdlTerm;
@@ -21,22 +20,22 @@ public class TicTacToeStateToCSV {
 
 
 	public static void main(String[] args) throws JSONException, IOException, SymbolFormatException, GdlFormatException {
-		Map<Set<GdlSentence>, Integer> stateTable = TicTacToeStateLookupTable.getStateLookupTable();
+		Map<Set<GdlSentence>, Double> stateTable = TicTacToeStateLookupTableTD.getStateLookupTable();
 
 		FileWriter writer = new FileWriter(TicTacToeNeuralNetwork.TTT_DATA_SET);
 		String newLine = System.getProperty("line.separator");
 
 		System.out.println("Writing TicTacToe CSV data to " + TicTacToeNeuralNetwork.TTT_DATA_SET);
-		for(Entry<Set<GdlSentence>, Integer> entry : stateTable.entrySet()){
+		for(Entry<Set<GdlSentence>, Double> entry : stateTable.entrySet()){
 			INDArray stateArray = getStateAsArray(entry.getKey());
-			Integer value = entry.getValue();
+			Double value = entry.getValue();
 
 			for(int i = 0; i < stateArray.length(); i++){
 				writer.write(Integer.toString(stateArray.getInt(i)));
 				writer.write(',');
 			}
 
-			writer.write(Integer.toString(value));
+			writer.write(Double.toString(value));
 			writer.write(newLine);
 
 //			System.out.println();
