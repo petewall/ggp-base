@@ -1,4 +1,4 @@
-package org.ggp.base.apps.research;
+package edu.umn.kylepete.neuralnetworks;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -11,10 +11,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import org.ggp.base.apps.research.ArchiveDownloader;
 import org.ggp.base.util.gdl.factory.GdlFactory;
 import org.ggp.base.util.gdl.factory.exceptions.GdlFormatException;
 import org.ggp.base.util.gdl.grammar.GdlSentence;
-import org.ggp.base.util.match.Match;
 import org.ggp.base.util.symbol.factory.SymbolFactory;
 import org.ggp.base.util.symbol.factory.exceptions.SymbolFormatException;
 import org.ggp.base.util.symbol.grammar.SymbolList;
@@ -80,33 +80,6 @@ public final class TicTacToeStateLookupTable {
 		public Map<Set<GdlSentence>, Integer> states = new HashMap<Set<GdlSentence>, Integer>();
 		public int gameCount = 0;
 		public int totalStateCount = 0;
-	}
-
-	private static void processMatch2(Match match, AggregateData data) {
-		if (match.isCompleted() && match.getGoalValues().size() == 2) {
-			if (match.getGameRepositoryURL().startsWith("http://games.ggp.org/base/games/ticTacToe/v0")) {
-				data.gameCount++;
-				int player1Score = match.getGoalValues().get(0);
-				int player2Score = match.getGoalValues().get(1);
-				int value;
-				if (player1Score == player2Score) {
-					value = 0;
-				} else if (player1Score < player2Score) {
-					value = 1;
-				} else {
-					value = -1;
-				}
-				for (Set<GdlSentence> state : match.getStateHistory()) {
-					data.totalStateCount++;
-					Integer stateValue = data.states.get(state);
-					if (stateValue == null) {
-						stateValue = 0;
-					}
-					stateValue += value;
-					data.states.put(state, stateValue);
-				}
-			}
-		}
 	}
 
 	private static void processMatch(String theURL, JSONObject matchJSON, AggregateData data) throws SymbolFormatException, GdlFormatException {
