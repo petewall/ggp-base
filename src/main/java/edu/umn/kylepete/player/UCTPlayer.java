@@ -45,6 +45,29 @@ public class UCTPlayer extends StateMachineGamer {
         public Map<List<Move>, StateNode> children;
         public AtomicDouble totalReward;
         public AtomicInteger visits;
+        private List<List<Move>> moves;
+
+        public synchronized StateNode addChild(List<Move> moveSet, MachineState state) {
+            if (!this.children.containsKey(moveSet)) {
+                this.children.put(moveSet, new StateNode(this, state));
+            }
+            return this.children.get(moveSet);
+        }
+
+        public synchronized StateNode getOrAddChild(List<Move> moveSet) throws TransitionDefinitionException {
+            if (!this.children.containsKey(moveSet)) {
+                MachineState state = getStateMachine().getNextState(this.state, moveSet);
+                this.children.put(moveSet, new StateNode(this, state));
+            }
+            return this.children.get(moveSet);
+        }
+
+        public synchronized List<List<Move>> getMoves() throws MoveDefinitionException {
+            if (moves == null) {
+                moves = getStateMachine().getLegalJointMoves(this.state);
+            }
+            return moves;
+        }
 
         @Override
         public String toString() {
@@ -53,31 +76,8 @@ public class UCTPlayer extends StateMachineGamer {
     }
     protected StateNode root = null;
     protected int roleIndex;
-    private ArrayList<WorkerThread> threadPool;
     protected long finishBy;
-
-    private class WorkerThread extends Thread {
-        public int iterations;
-
-        public WorkerThread(int id) {
-            super("Worker Thread " + id);
-        }
-
-        @Override
-        public void run() {
-            try {
-                while (System.currentTimeMillis() < finishBy) {
-                    StateNode current = treePolicy(root);
-                    double value = defaultPolicy(current);
-                    backup(current, value);
-                    iterations++;
-                }
-            } catch (Exception e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }
-    }
+    private static boolean checkForDecisiveMoves = false;
 
     protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         int iterations = 0;
@@ -92,6 +92,7 @@ public class UCTPlayer extends StateMachineGamer {
 
     @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
+        int totalIterations;
         long start = System.currentTimeMillis();
         finishBy = timeout - 1000;
 
@@ -100,47 +101,41 @@ public class UCTPlayer extends StateMachineGamer {
             root = root.children.get(theLastMove);
         }
 
-        int totalIterations = runTheWork();
-        for (WorkerThread thread : threadPool) {
-            thread.start();
-        }
-        for (int i = 0; i < threadPool.size(); ++i) {
-            try {
-                WorkerThread thread = threadPool.get(i);
-                thread.join();
-                totalIterations += thread.iterations;
-            } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-            threadPool.set(i, new WorkerThread(i));
-        }
-        System.out.println("ran " + totalIterations + " iterations.");
-        long stop = System.currentTimeMillis();
-        System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
+        List<Move> validMoves = getStateMachine().getLegalMoves(root.state, getRole());
+        Move chosenMove = null;
 
-        List<Move> official = getStateMachine().getLegalMoves(root.state, getRole());
-        List<List<Move>> moves = new ArrayList<List<Move>>(root.children.keySet());
-        System.out.println("Current root state: " + root.state);
-        System.out.println("Valid official moves: " + official + " (" + official.size() + ")");
-        System.out.println("Valid moves: " + moves + " (" + moves.size() + ")");
-
-        List<Move> selection = bestMoveSet(root, 0);
+        totalIterations = runTheWork();
         System.out.println("Picking from the best of: ");
         for (List<Move> moveset : root.children.keySet()) {
             System.out.println("    " + root.children.get(moveset) + " --> " + moveset);
         }
-        notifyObservers(new GamerSelectedMoveEvent(official, selection.get(roleIndex), stop - start));
-        return selection.get(roleIndex);
+        List<Move> selection = bestMoveSet(root, 0);
+        chosenMove = selection.get(roleIndex);
+
+        System.out.println("ran " + totalIterations + " iterations.");
+        long stop = System.currentTimeMillis();
+        System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
+
+        notifyObservers(new GamerSelectedMoveEvent(validMoves, chosenMove, stop - start));
+        return chosenMove;
     }
 
-    protected StateNode treePolicy(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
+    protected StateNode treePolicy(StateNode source) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         StateNode current = source;
         StateMachine stateMachine = getStateMachine();
+
         while (!stateMachine.isTerminal(current.state)) {
-            int validMoveCount = stateMachine.getLegalJointMoves(current.state).size();
-            if (current.children.size() < validMoveCount) {
-                StateNode newNode = expandNodes(current);
+            if (checkForDecisiveMoves) {
+                Move decisiveMove = findDecisiveMoves(current);
+                if (decisiveMove != null) {
+                    List<Move> moveSet = stateMachine.getRandomJointMove(current.state, getRole(), decisiveMove);
+                    return current.getOrAddChild(moveSet);
+                }
+            }
+
+            List<List<Move>> allValidMoves = current.getMoves();
+            if (current.children.size() < allValidMoves.size()) {
+                StateNode newNode = expandNodes(current, allValidMoves);
                 if (newNode != null) {
                     return newNode;
                 }
@@ -155,14 +150,53 @@ public class UCTPlayer extends StateMachineGamer {
         return current;
     }
 
-    protected synchronized StateNode expandNodes(StateNode source) throws MoveDefinitionException, TransitionDefinitionException {
+    protected Move findDecisiveMoves(StateNode source) throws TransitionDefinitionException, GoalDefinitionException, MoveDefinitionException {
         StateMachine stateMachine = getStateMachine();
-        List<List<Move>> allValidMoves = stateMachine.getLegalJointMoves(source.state);
+        if (stateMachine.isTerminal(source.state)) {
+            return null;
+        }
+
+        List<Move> validMoves = stateMachine.getLegalMoves(source.state, getRole());
+        for (Move move : validMoves) {
+            List<List<Move>> moveSets = stateMachine.getLegalJointMoves(source.state, getRole(), move);
+            boolean winning = true;
+            boolean losing = true;
+            for (List<Move> moveSet : moveSets) {
+                MachineState resultingState = stateMachine.getNextState(source.state, moveSet);
+//                source.addChild(moveSet, resultingState);
+                if (!stateMachine.isTerminal(resultingState)) {
+                    winning = false;
+                    losing = false;
+                    break;
+                }
+                if (stateMachine.getGoal(resultingState, getRole()) != 100) {
+                    winning = false;
+                    break;
+                }
+                if (stateMachine.getGoal(resultingState, getRole()) == 100) {
+                    losing = false;
+                    break;
+                }
+            }
+            if (winning) {
+                System.out.println("Found a decisive winning move!");
+                return move;
+            }
+            if (losing) {
+                System.out.println("Found a decisive losing move!");
+                return move;
+            }
+        }
+        return null;
+    }
+
+    protected synchronized StateNode expandNodes(StateNode source, List<List<Move>> allValidMoves) throws MoveDefinitionException, TransitionDefinitionException {
+        StateMachine stateMachine = getStateMachine();
         for (List<Move> moveset : allValidMoves) {
-            MachineState resultingState = stateMachine.getNextState(source.state, moveset);
             if (source.children.containsKey(moveset)) {
                 continue;
             }
+            MachineState resultingState = stateMachine.getNextState(source.state, moveset);
             StateNode node = new StateNode(source, resultingState);
             source.children.put(moveset, node);
             return node;
@@ -235,13 +269,6 @@ public class UCTPlayer extends StateMachineGamer {
         MachineState initialState = stateMachine.getInitialState();
         root = new StateNode(null, initialState);
         roleIndex = stateMachine.getRoles().indexOf(getRole());
-
-        int cores = Runtime.getRuntime().availableProcessors();
-//        cores = 2;
-        threadPool = new ArrayList<WorkerThread>(cores);
-        for (int i = 0; i < cores; ++i) {
-            threadPool.add(new WorkerThread(i));
-        }
     }
 
     @Override
