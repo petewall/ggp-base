@@ -2,8 +2,10 @@ package edu.umn.kylepete.player;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
@@ -69,6 +71,26 @@ public class UCTPlayer extends StateMachineGamer {
             return moves;
         }
 
+        public List<List<Move>> getMoves(Move move) throws MoveDefinitionException {
+            List<List<Move>> allMoves = getMoves();
+            List<List<Move>> moveSets = new ArrayList<List<Move>>();
+            for (List<Move> moveset : allMoves) {
+                if (moveset.get(roleIndex).equals(move)) {
+                    moveSets.add(moveset);
+                }
+            }
+            return moveSets;
+        }
+
+        public List<Move> getMyMoves() throws MoveDefinitionException {
+            Set<Move> myMoves = new HashSet<Move>();
+            List<List<Move>> allMoves = getMoves();
+            for (List<Move> moveset : allMoves) {
+                myMoves.add(moveset.get(roleIndex));
+            }
+            return new ArrayList<Move>(myMoves);
+        }
+
         @Override
         public String toString() {
             return "Depth(" + depth + "), Reward(" + totalReward + "), Visits(" + visits + ") Children(" + children.size() + ")";
@@ -77,7 +99,7 @@ public class UCTPlayer extends StateMachineGamer {
     protected StateNode root = null;
     protected int roleIndex;
     protected long finishBy;
-    private static boolean checkForDecisiveMoves = false;
+    private static boolean checkForDecisiveMoves = true;
 
     protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         int iterations = 0;
@@ -139,7 +161,7 @@ public class UCTPlayer extends StateMachineGamer {
                 if (newNode != null) {
                     return newNode;
                 }
-                System.out.println("The new node was null!");
+//                System.out.println("The new node was null!");
             }
             List<Move> moveset = bestMoveSet(current, 1.44);
             current = current.children.get(moveset);
@@ -156,9 +178,10 @@ public class UCTPlayer extends StateMachineGamer {
             return null;
         }
 
-        List<Move> validMoves = stateMachine.getLegalMoves(source.state, getRole());
+        List<Move> validMoves = source.getMyMoves();
         for (Move move : validMoves) {
-            List<List<Move>> moveSets = stateMachine.getLegalJointMoves(source.state, getRole(), move);
+            List<List<Move>> moveSets = source.getMoves(move);
+            //List<List<Move>> moveSets = stateMachine.getLegalJointMoves(source.state, getRole(), move);
             boolean winning = true;
             boolean losing = true;
             for (List<Move> moveSet : moveSets) {
@@ -179,11 +202,11 @@ public class UCTPlayer extends StateMachineGamer {
                 }
             }
             if (winning) {
-                System.out.println("Found a decisive winning move!");
+//                System.out.println("Found a decisive winning move!");
                 return move;
             }
             if (losing) {
-                System.out.println("Found a decisive losing move!");
+//                System.out.println("Found a decisive losing move!");
                 return move;
             }
         }
@@ -202,7 +225,7 @@ public class UCTPlayer extends StateMachineGamer {
             return node;
         }
 
-        System.out.println("Someone expanded them all!");
+//        System.out.println("Someone expanded them all!");
         return null;
     }
 
