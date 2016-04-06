@@ -7,7 +7,6 @@ import java.util.Set;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
-import org.ggp.base.apps.research.TicTacToeStateLookupTable;
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
 import org.ggp.base.player.gamer.exception.GamePreviewException;
 import org.ggp.base.player.gamer.statemachine.StateMachineGamer;
@@ -22,9 +21,11 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
+import edu.umn.kylepete.neuralnetworks.TicTacToeStateLookupTableTD;
+
 public class TicTacToeLookupTablePlayer extends StateMachineGamer {
 
-	private Map<Set<GdlSentence>, Integer> stateLookupTable;
+	private Map<Set<GdlSentence>, Double> stateLookupTable;
 
     @Override
     public String getName() {
@@ -34,9 +35,10 @@ public class TicTacToeLookupTablePlayer extends StateMachineGamer {
     @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException
     {
+
         long start = System.currentTimeMillis();
         Move selection = null;
-        int max = Integer.MIN_VALUE;
+        Double max = Double.NEGATIVE_INFINITY;
         //List<Move> moves = getStateMachine().getLegalMoves(getCurrentState(), getRole());
         Map<Move, List<MachineState>> moves = getStateMachine().getNextStates(getCurrentState(), getRole());
         for(Move move : moves.keySet()){
@@ -44,12 +46,12 @@ public class TicTacToeLookupTablePlayer extends StateMachineGamer {
         	String stateString = renderStateAsSymbolList(nextState.getContents());
         	System.out.println(stateString);
         	System.out.println("Searching for state: " + nextState.getContents());
-        	Integer value = stateLookupTable.get(nextState.getContents());
+        	Double value = stateLookupTable.get(nextState.getContents());
         	if(value != null){
         		System.out.println("FOUND matching move with value " + value);
         	}else{
         		System.out.println("State not found");
-        		value = 0;
+        		value = 0.5;
         	}
         	if(value > max){
         		max = value;
@@ -78,7 +80,7 @@ public class TicTacToeLookupTablePlayer extends StateMachineGamer {
     public StateMachine getInitialStateMachine() {
 		if (stateLookupTable == null) {
 			try {
-				stateLookupTable = TicTacToeStateLookupTable.getStateLookupTable();
+				stateLookupTable = TicTacToeStateLookupTableTD.getStateLookupTable();
 			} catch (Exception e) {
 				throw new RuntimeException(e.getMessage(), e);
 			}
