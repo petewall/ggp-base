@@ -56,10 +56,10 @@ public class UCTPlayer extends StateMachineGamer {
             return this.children.get(moveSet);
         }
 
-        public synchronized StateNode getOrAddChild(List<Move> moveSet) throws TransitionDefinitionException {
+        public StateNode getOrAddChild(List<Move> moveSet) throws TransitionDefinitionException {
             if (!this.children.containsKey(moveSet)) {
                 MachineState state = getStateMachine().getNextState(this.state, moveSet);
-                this.children.put(moveSet, new StateNode(this, state));
+                addChild(moveSet, state);
             }
             return this.children.get(moveSet);
         }
@@ -213,15 +213,16 @@ public class UCTPlayer extends StateMachineGamer {
         return null;
     }
 
-    protected synchronized StateNode expandNodes(StateNode source, List<List<Move>> allValidMoves) throws MoveDefinitionException, TransitionDefinitionException {
+    protected StateNode expandNodes(StateNode source, List<List<Move>> allValidMoves) throws MoveDefinitionException, TransitionDefinitionException {
         StateMachine stateMachine = getStateMachine();
         for (List<Move> moveset : allValidMoves) {
             if (source.children.containsKey(moveset)) {
                 continue;
             }
             MachineState resultingState = stateMachine.getNextState(source.state, moveset);
-            StateNode node = new StateNode(source, resultingState);
-            source.children.put(moveset, node);
+            StateNode node = source.addChild(moveset, resultingState);
+//            StateNode node = new StateNode(source, resultingState);
+//            source.children.put(moveset, node);
             return node;
         }
 
