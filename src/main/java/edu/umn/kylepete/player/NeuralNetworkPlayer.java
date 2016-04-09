@@ -19,11 +19,13 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
-import edu.umn.kylepete.neuralnetworks.NeuralNetworkStateEvaluator;
+import edu.umn.kylepete.neuralnetworks.GameNeuralNetwork;
+import edu.umn.kylepete.neuralnetworks.GameNeuralNetworkDatabase;
 
 public class NeuralNetworkPlayer extends StateMachineGamer {
 
-	private NeuralNetworkStateEvaluator neuralNetworkStateEvaluator;
+	private GameNeuralNetworkDatabase gameNeuralNetworkDatabase;
+	private GameNeuralNetwork gameNeuralNetwork;
 
 	@Override
 	public String getName() {
@@ -42,7 +44,7 @@ public class NeuralNetworkPlayer extends StateMachineGamer {
 			MachineState nextState = moves.get(move).get(0);
 			System.out.println("Evaluating move: " + move);
 //			System.out.println("Evaluating State: " + nextState.getContents());
-			Double value = neuralNetworkStateEvaluator.evaluateState(getRole(), nextState);
+			Double value = gameNeuralNetwork.evaluateState(getRole(), nextState);
 			if (value != null) {
 				System.out.println("  " + value);
 			}
@@ -62,8 +64,10 @@ public class NeuralNetworkPlayer extends StateMachineGamer {
 	@Override
 	public StateMachine getInitialStateMachine() {
 		try {
-			this.neuralNetworkStateEvaluator = new NeuralNetworkStateEvaluator(this.getMatch().getGame().getRules());
-		} catch (InterruptedException e) {
+			this.gameNeuralNetworkDatabase = GameNeuralNetworkDatabase.readFromDefaultFile();
+			this.gameNeuralNetwork = this.gameNeuralNetworkDatabase.getGameNeuralNetwork(this.getMatch().getGame());
+			System.out.println("Found game knowledge trained from " + this.gameNeuralNetwork.getTrainCount() + " games.");
+		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 		return new CachedStateMachine(new ProverStateMachine());
@@ -82,6 +86,12 @@ public class NeuralNetworkPlayer extends StateMachineGamer {
 	@Override
 	public void stateMachineStop() {
 		// Random gamer does no special cleanup when the match ends normally.
+		this.gameNeuralNetworkDatabase.train(getMatch());
+		try {
+			this.gameNeuralNetworkDatabase.writeToDefaultFile();
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	@Override

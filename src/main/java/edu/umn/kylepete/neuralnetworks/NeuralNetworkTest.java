@@ -1,8 +1,11 @@
 package edu.umn.kylepete.neuralnetworks;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -20,6 +23,7 @@ import org.ggp.base.util.gdl.grammar.GdlPool;
 import org.ggp.base.util.gdl.grammar.GdlRule;
 import org.ggp.base.util.gdl.grammar.GdlSentence;
 import org.ggp.base.util.gdl.grammar.GdlTerm;
+import org.ggp.base.util.match.Match;
 import org.ggp.base.util.propnet.architecture.Component;
 import org.ggp.base.util.propnet.architecture.PropNet;
 import org.ggp.base.util.propnet.architecture.components.And;
@@ -42,6 +46,8 @@ import org.junit.Test;
 
 import com.google.common.collect.ImmutableSet;
 
+import external.JSON.JSONException;
+
 public class NeuralNetworkTest extends Assert {
 
 	protected final ProverStateMachine sm = new ProverStateMachine();
@@ -52,7 +58,7 @@ public class NeuralNetworkTest extends Assert {
 	protected final GdlConstant C100 = GdlPool.getConstant("100");
 
 
-	public static void main(String[] args) throws InterruptedException, MoveDefinitionException, TransitionDefinitionException {
+	public static void main(String[] args) throws InterruptedException, MoveDefinitionException, TransitionDefinitionException, JSONException {
 		GameRepository gameRepo = GameRepository.getDefaultRepository();
 		// for(String gameKey : gameRepo.getGameKeys()){
 		// System.out.println(gameKey);
@@ -145,13 +151,69 @@ public class NeuralNetworkTest extends Assert {
 	}
 
 	@Test
-	public void testProverOnTicTacToe() throws Exception {
-		List<Gdl> ticTacToeDesc = new TestGameRepository().getGame("ticTacToe").getRules();
+	public void testGameDatabase() throws JSONException, InterruptedException, IOException{
+		GameRepository gameRepo = GameRepository.getDefaultRepository();
+		Game game = gameRepo.getGame("ticTacToe");
+		System.out.println(game.getRepositoryURL());
+//		JSONObject json = new JSONObject(game.serializeToJSON());
+//		System.out.println(json.toString(4));
+		GameNeuralNetworkDatabase gameDatabase = new GameNeuralNetworkDatabase();
+		String emptyDatabaseJSON = gameDatabase.toJSON();
+		Assert.assertEquals("[]", emptyDatabaseJSON);
+//		System.out.println(emptyDatabaseJSON);
+		gameDatabase.getGameNeuralNetwork(game);
+		String tttDatabaseJSON = gameDatabase.toJSON();
+		System.out.println(tttDatabaseJSON);
+		String testFilePath = "testGameDatabase.json";
+		File testFile = new File(testFilePath);
+		if(testFile.exists()){
+			testFile.delete();
+		}
+		gameDatabase.writeToFile(testFilePath);
+		Assert.assertTrue(testFile.exists());
+		GameNeuralNetworkDatabase fileDatabase = GameNeuralNetworkDatabase.readFromFile(testFilePath);
+		String fileDatabaseJson = fileDatabase.toJSON();
+//		System.out.println(fileDatabaseJson);
+		Assert.assertEquals(fileDatabaseJson, tttDatabaseJSON);
+	}
 
-		NeuralNetworkStateEvaluator neuralNetworkStateEvaluator = new NeuralNetworkStateEvaluator(ticTacToeDesc);
+	@Test
+	public void testJSON() throws Exception {
+		Game ticTacToe = new TestGameRepository().getGame("ticTacToe");
+		GameNeuralNetwork gameNetwork1 = new GameNeuralNetwork(ticTacToe);
+		String json1 = gameNetwork1.toJSON();
+		System.out.println("\n\n" + json1);
+
+		GameNeuralNetwork gameNetwork2 = GameNeuralNetwork.fromJSON(json1);
+		String json2 = gameNetwork2.toJSON();
+		System.out.println("\n\n" + json2);
+
+		Assert.assertEquals(json1, json2);
+
+		for(String role : gameNetwork1.networks.keySet()){
+			Iterator<NeuralNetwork> nnIterator1 = gameNetwork1.networks.get(role).iterator();
+			Iterator<NeuralNetwork> nnIterator2 = gameNetwork2.networks.get(role).iterator();
+			while(nnIterator1.hasNext()){
+				NeuralNetwork nn1 = nnIterator1.next();
+				NeuralNetwork nn2 = nnIterator2.next();
+				Assert.assertEquals(nn1.toString(), nn2.toString());
+			}
+		}
+	}
+
+	@Test
+	public void testProverOnTicTacToe() throws Exception {
+		Game ticTacToe = new TestGameRepository().getGame("ticTacToe");
+		List<Gdl> ticTacToeDesc = ticTacToe.getRules();
+
+		GameNeuralNetworkDatabase gameDatabase = new GameNeuralNetworkDatabase();
+		GameNeuralNetwork gameNetwork = gameDatabase.getGameNeuralNetwork(ticTacToe);
 
 		sm.initialize(ticTacToeDesc);
 		MachineState state = sm.getInitialState();
+		MachineState prevState = null;
+		List<Double> netEvals;
+		List<Double> prevNetEvals;
 		assertFalse(sm.isTerminal(state));
 		GdlConstant X_PLAYER = GdlPool.getConstant("xplayer");
 		GdlConstant O_PLAYER = GdlPool.getConstant("oplayer");
@@ -165,58 +227,125 @@ public class NeuralNetworkTest extends Assert {
 		Move noop = new Move(GdlPool.getConstant("noop"));
 		assertEquals(noop, sm.getLegalMoves(state, oRole).get(0));
 		System.out.println("Testing Tic-tac-toe\nInit:");
-		System.out.print(neuralNetworkStateEvaluator.printEvaluations(state));
+		System.out.println(gameNetwork.printEvaluations(state));
+		netEvals = Arrays.asList(gameNetwork.evaluateState(xRole, state), gameNetwork.evaluateState(oRole, state));
+		System.out.println(netEvals);
 
 		Move m11 = move("mark 1 1");
 		assertTrue(sm.getLegalMoves(state, xRole).contains(m11));
+		prevState = state;
 		state = sm.getNextState(state, Arrays.asList(new Move[] { m11, noop }));
 		assertFalse(sm.isTerminal(state));
 		System.out.println("X " + m11);
-		System.out.print(neuralNetworkStateEvaluator.printEvaluations(state));
+		prevNetEvals = netEvals;
+		netEvals = Arrays.asList(gameNetwork.evaluateState(xRole, state), gameNetwork.evaluateState(oRole, state));
+		System.out.println(netEvals);
+		Assert.assertNotEquals(netEvals, prevNetEvals);
 
 		Move m13 = move("mark 1 3");
 		assertTrue(sm.getLegalMoves(state, oRole).contains(m13));
+		prevState = state;
 		state = sm.getNextState(state, Arrays.asList(new Move[] { noop, m13 }));
 		assertFalse(sm.isTerminal(state));
 		System.out.println("O " + m13);
-		System.out.print(neuralNetworkStateEvaluator.printEvaluations(state));
+		prevNetEvals = netEvals;
+		netEvals = Arrays.asList(gameNetwork.evaluateState(xRole, state), gameNetwork.evaluateState(oRole, state));
+		System.out.println(netEvals);
+		Assert.assertNotEquals(netEvals, prevNetEvals);
 
 		Move m31 = move("mark 3 1");
 		assertTrue(sm.getLegalMoves(state, xRole).contains(m31));
+		prevState = state;
 		state = sm.getNextState(state, Arrays.asList(new Move[] { m31, noop }));
 		assertFalse(sm.isTerminal(state));
 		System.out.println("X " + m31);
-		System.out.print(neuralNetworkStateEvaluator.printEvaluations(state));
+		prevNetEvals = netEvals;
+		netEvals = Arrays.asList(gameNetwork.evaluateState(xRole, state), gameNetwork.evaluateState(oRole, state));
+		System.out.println(netEvals);
+		Assert.assertNotEquals(netEvals, prevNetEvals);
 
 		Move m22 = move("mark 2 2");
 		assertTrue(sm.getLegalMoves(state, oRole).contains(m22));
+		prevState = state;
 		state = sm.getNextState(state, Arrays.asList(new Move[] { noop, m22 }));
 		assertFalse(sm.isTerminal(state));
 		System.out.println("O " + m22);
-		System.out.print(neuralNetworkStateEvaluator.printEvaluations(state));
+		prevNetEvals = netEvals;
+		netEvals = Arrays.asList(gameNetwork.evaluateState(xRole, state), gameNetwork.evaluateState(oRole, state));
+		System.out.println(netEvals);
+		Assert.assertNotEquals(netEvals, prevNetEvals);
 
 		Move m21 = move("mark 2 1");
 		assertTrue(sm.getLegalMoves(state, xRole).contains(m21));
+		prevState = state;
 		state = sm.getNextState(state, Arrays.asList(new Move[] { m21, noop }));
 		assertTrue(sm.isTerminal(state));
 		assertEquals(100, sm.getGoal(state, xRole));
 		assertEquals(0, sm.getGoal(state, oRole));
 		assertEquals(Arrays.asList(new Integer[] { 100, 0 }), sm.getGoals(state));
 		System.out.println("X wins " + m21);
-		System.out.print(neuralNetworkStateEvaluator.printEvaluations(state));
+		prevNetEvals = netEvals;
+		netEvals = Arrays.asList(gameNetwork.evaluateState(xRole, state), gameNetwork.evaluateState(oRole, state));
+		System.out.println(netEvals);
+		Assert.assertNotEquals(netEvals, prevNetEvals);
 
-		// My expectations for the behavior, but there's no consensus...
-		/*
-		 * Move m23 = new Move(GdlPool.getRelation(PLAY, new GdlTerm[] {C2, C3, O})); try { sm.getNextState(state, Arrays.asList(new Move[] {noop, m23})); fail("Should throw an exception when trying to transition from a terminal state"); } catch(TransitionDefinitionException e) { //Expected }
-		 */
+		Match match = new Match(null, 10, 10, 10, ticTacToe, null);
+		match.appendState(state.getContents());
+		match.markCompleted(Arrays.asList(100, 0));
+		gameNetwork.train(match);
+		List<Double> trainingEvals = Arrays.asList(gameNetwork.evaluateState(xRole, prevState), gameNetwork.evaluateState(oRole, prevState));
+		System.out.println("Prev state after training");
+		System.out.println(trainingEvals);
+		Assert.assertNotEquals(prevNetEvals, trainingEvals);
+		// after training, X eval should have gone up and O eval gone down
+		Assert.assertTrue(trainingEvals.get(0) > prevNetEvals.get(0));
+		Assert.assertTrue(trainingEvals.get(1) < prevNetEvals.get(1));
+		trainingEvals = Arrays.asList(gameNetwork.evaluateState(xRole, state), gameNetwork.evaluateState(oRole, state));
+		System.out.println("Terminal state after training");
+		System.out.println(trainingEvals);
+		Assert.assertNotEquals(netEvals, trainingEvals);
+		// after training, X eval should have gone up and O eval gone down
+		Assert.assertTrue(trainingEvals.get(0) > netEvals.get(0));
+		Assert.assertTrue(trainingEvals.get(1) < netEvals.get(1));
+
+
+		String testFilePath = "testGameDatabase.json";
+		File testFile = new File(testFilePath);
+		if(testFile.exists()){
+			testFile.delete();
+		}
+		gameDatabase.writeToFile(testFilePath);
+		GameNeuralNetworkDatabase gameDatabase2 = GameNeuralNetworkDatabase.readFromFile(testFilePath);
+		GameNeuralNetwork gameNetwork2 = gameDatabase2.getGameNeuralNetwork(ticTacToe);
+		List<Double> evalsFromFile = Arrays.asList(gameNetwork2.evaluateState(xRole, state), gameNetwork2.evaluateState(oRole, state));
+		System.out.println("After reading from file");
+		System.out.println(evalsFromFile);
+		Assert.assertEquals(trainingEvals, evalsFromFile);
+
+
+		for(NeuralNetwork network : gameNetwork.networks.get(xRole.toString())){
+			if(network.getGdlGoalValue() == 100){
+				double evaluation = 0;
+				int i = 0;
+				while(evaluation < 0.98){
+					i++;
+					evaluation = network.evaluateState(state.getContents());
+					System.out.println(evaluation);
+					network.train(state.getContents(), 1);
+				}
+				System.out.println("Converged in " + i + " iterations");
+			}
+		}
+
 	}
 
 
 	@Test
 	public void testCase1A() throws Exception {
-		List<Gdl> desc = new TestGameRepository().getGame("test_case_1a").getRules();
+		Game game = new TestGameRepository().getGame("test_case_1a");
+		List<Gdl> desc = game.getRules();
 		sm.initialize(desc);
-		NeuralNetworkStateEvaluator neuralNetworkStateEvaluator = new NeuralNetworkStateEvaluator(desc);
+		GameNeuralNetwork neuralNetworkStateEvaluator = new GameNeuralNetwork(game);
 		MachineState state = sm.getInitialState();
 		System.out.println("\n\nTest case 1a\nInit:");
 		System.out.print(neuralNetworkStateEvaluator.printEvaluations(state));
