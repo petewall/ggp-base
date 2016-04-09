@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
+import org.ggp.base.util.gdl.factory.GdlFactory;
 import org.ggp.base.util.gdl.grammar.GdlSentence;
 import org.ggp.base.util.propnet.architecture.Component;
 import org.ggp.base.util.propnet.architecture.components.And;
@@ -14,16 +15,19 @@ import org.ggp.base.util.propnet.architecture.components.Or;
 import org.ggp.base.util.propnet.architecture.components.Proposition;
 import org.ggp.base.util.propnet.architecture.components.Transition;
 import org.ggp.base.util.prover.Prover;
-import org.ggp.base.util.statemachine.Role;
 
 import edu.umn.kylepete.neuralnetworks.Neuron.NeuronType;
+import external.JSON.JSONException;
+import external.JSON.JSONObject;
 
 public class NeuralNetwork {
 
-	static final long SEED = 12345;
-	static final Random random = new Random(SEED);
-	static final double ALPHA = 0.2;
-	static final double BETA = 1.0;
+	private static final long SEED = 12345;
+	private static final Random random = new Random(SEED);
+	private static final double R = 0.001; // the small float to initialize weights in the range (-R, R)
+	private static final double ALPHA = 0.2;
+	static final double BETA = 1.0; // don't change this or the derivative of sigmoid would change
+	private static final double LEARNING_RATE = 0.1;
 	private static final double W = 1.0;
 	private double a_min;
 	private double a_max;
@@ -34,7 +38,7 @@ public class NeuralNetwork {
 	private Neuron outputNeuron;
 	private int neurons;
 	private int layers;
-	private GdlSentence gdlGoal;
+	private String gdlGoal;
 	private Prover prover;
 
 	private NeuralNetwork() {
@@ -51,16 +55,28 @@ public class NeuralNetwork {
 		return this.layers;
 	}
 
-	public GdlSentence getGdlGoal(){
+	public String getGdlGoal() {
 		return this.gdlGoal;
 	}
 
-	public Role getGdlRoleForGoal(){
-		return Role.create(gdlGoal.get(0).toString());
+	public String getGdlRoleForGoal() {
+		GdlSentence gdl;
+		try {
+			gdl = (GdlSentence) GdlFactory.create(this.gdlGoal);
+		} catch (Exception e) {
+			throw new RuntimeException("Error parsing GDL goal", e);
+		}
+		return gdl.get(0).toString();
 	}
 
-	public int getGdlGoalValue(){
-        return Integer.parseInt(gdlGoal.get(1).toString());
+	public int getGdlGoalValue() {
+		GdlSentence gdl;
+		try {
+			gdl = (GdlSentence) GdlFactory.create(this.gdlGoal);
+		} catch (Exception e) {
+			throw new RuntimeException("Error parsing GDL goal", e);
+		}
+		return Integer.parseInt(gdl.get(1).toString());
 	}
 
 	public List<Neuron> getInputNeurons() {
@@ -76,13 +92,36 @@ public class NeuralNetwork {
 		return this.outputNeuron.getValue();
 	}
 
-	private void setInputValues(Set<GdlSentence> state){
-		for(Neuron input : this.inputNeurons){
-			if(prover.prove(input.getGdlSentence(), state)){
+	private void setInputValues(Set<GdlSentence> state) {
+		for (Neuron input : this.inputNeurons) {
+			GdlSentence gdl;
+			try {
+				gdl = (GdlSentence) GdlFactory.create(input.getGdlSentence());
+			} catch (Exception e) {
+				throw new RuntimeException("Error parsing GDL from Neuron", e);
+			}
+			if (prover.prove(gdl, state)) {
 				input.setValue(1.0);
-			}else{
+			} else {
 				input.setValue(-1.0);
 			}
+		}
+	}
+
+	public void train(Set<GdlSentence> state, double expectedValue) {
+		// run the network forward to set all the values
+		double evaluation = evaluateState(state);
+
+		// backpropagate the error
+		double error = evaluation - expectedValue;
+		backpropagateRecursive(outputNeuron, error);
+	}
+
+	private void backpropagateRecursive(Neuron output, double outputError) {
+		for (Neuron input : output.getInputs()) {
+			double inputError = input.getWeight() * outputError * input.getValue() * (1 - input.getValue());
+			input.setWeight(input.getWeight() - LEARNING_RATE * outputError * input.getValue());
+			backpropagateRecursive(input, inputError);
 		}
 	}
 
@@ -107,49 +146,48 @@ public class NeuralNetwork {
 		return sb.toString();
 	}
 
-	public void populateNetworkStats(){
+	public void populateNetworkStats() {
 		populateNetworkStatsRecursive(outputNeuron, 1);
 		int maxChildren = Math.max(disj, conj);
 
-		double l_a = (double)(maxChildren - 1) / (double)(maxChildren + 1);
-		a_min = (l_a -1) * ALPHA + 1;
+		double l_a = (double) (maxChildren - 1) / (double) (maxChildren + 1);
+		a_min = (l_a - 1) * ALPHA + 1;
 		a_max = -a_min;
 	}
 
-	private void populateNetworkStatsRecursive(Neuron node, int depth){
-		if(node != null){
-			this.neurons++;
-			if(depth > this.layers){
-				this.layers = depth;
-			}
+	private void populateNetworkStatsRecursive(Neuron node, int depth) {
+		if(node == null){
+			return;
+		}
+		this.neurons++;
+		if (depth > this.layers) {
+			this.layers = depth;
+		}
+		if(node.getNeuronType() == NeuronType.INPUT){
+			this.inputNeurons.add(node);
 		}
 		int children = node.getInputs().size();
-		if(children > 0){
-			if(node.getNeuronType() == NeuronType.AND){
-				if(children > this.conj){
-					this.conj = children;
-				}
-			} else if(node.getNeuronType() == NeuronType.OR){
-				if(children > this.disj){
-					this.disj = children;
-				}
-			} else{
-				throw new IllegalStateException("Found a neuron with " + children + " input nodes but it is type " + node.getNeuronType().toString());
-			}
-			for(Neuron child : node.getInputs()){
-				populateNetworkStatsRecursive(child, depth + 1);
+		for (Neuron child : node.getInputs()) {
+			if (child.getNeuronType() == NeuronType.BIAS) {
+				// don't count BIAS nodes in the conj and disj
+				children--;
 			}
 		}
-	}
+		if (node.getNeuronType() == NeuronType.AND && children > this.conj) {
+			this.conj = children;
+		} else if (node.getNeuronType() == NeuronType.OR && children > this.disj) {
+			this.disj = children;
+		}
 
-	// public static NeuralNetwork createFromGdl(List<Gdl> gdlDescription) throws InterruptedException{
-	// return createFromPropNet(OptimizingPropNetFactory.create(gdlDescription));
-	// }
+		for (Neuron child : node.getInputs()) {
+			populateNetworkStatsRecursive(child, depth + 1);
+		}
+	}
 
 	public static NeuralNetwork createFromPropNet(Proposition goalProposition, Prover prover) {
 		NeuralNetwork network = new NeuralNetwork();
 		network.prover = prover;
-		network.gdlGoal = goalProposition.getName();
+		network.gdlGoal = goalProposition.getName().toString();
 		network.outputNeuron = network.createNeuronForCompRecursive(goalProposition);
 		network.outputNeuron.setWeight(null);
 		network.populateNetworkStats();
@@ -187,20 +225,20 @@ public class NeuralNetwork {
 			type = NeuronType.OR;
 		} else if (comp instanceof Constant) {
 			type = NeuronType.CONSTANT;
-			if(comp.getValue()){
+			if (comp.getValue()) {
 				newNode.setValue(1.0);
-			}else{
+			} else {
 				newNode.setValue(-1.0);
 			}
 		} else if (comp instanceof Transition) {
 			type = NeuronType.INPUT;
-			this.inputNeurons.add(newNode);
+			//this.inputNeurons.add(newNode); this is now done in populate stats
 		}
 		newNode.setNeuronType(type);
 		if (type != NeuronType.INPUT && type != NeuronType.CONSTANT) {
 			for (Component input : comp.getInputs()) {
 				Neuron inputNeuron = createNeuronForCompRecursive(input);
-				if(inputNeuron != null){
+				if (inputNeuron != null) {
 					newNode.addInput(inputNeuron);
 				}
 			}
@@ -209,13 +247,13 @@ public class NeuralNetwork {
 		return newNode;
 	}
 
-	private void addBiasRecursive(Neuron neuron){
+	private void addBiasRecursive(Neuron neuron) {
 		int numInputs = neuron.getInputs().size();
 		if (numInputs > 0) {
 			double w = (1.0 + a_min) * W / 2.0;
-			if(neuron.getNeuronType() == NeuronType.AND){
+			if (neuron.getNeuronType() == NeuronType.AND) {
 				w = w * (1.0 - numInputs);
-			}else if(neuron.getNeuronType() == NeuronType.OR){
+			} else if (neuron.getNeuronType() == NeuronType.OR) {
 				w = w * (numInputs - 1.0);
 			}
 			w = randomize(w);
@@ -223,15 +261,40 @@ public class NeuralNetwork {
 			Neuron bias = new Neuron(NeuronType.BIAS, w);
 			bias.setValue(1.0);
 			neuron.addInput(bias);
-			for(Neuron input : neuron.getInputs()){
+			for (Neuron input : neuron.getInputs()) {
 				addBiasRecursive(input);
 			}
 		}
 	}
 
-	private double randomize(double x){
-		double r = 0.0000001; // the small float will be in the range (-r, r)
-		return x + random.nextDouble() * (r * 2) - r;
+	private double randomize(double x) {
+		return x + random.nextDouble() * (R * 2) - R;
 	}
 
+	public String toJSON() throws JSONException {
+		return toJSONObject().toString(4);
+	}
+
+	private static final String GOAL = "goal";
+	private static final String OUTPUT_NEURON = "outputNeuron";
+
+	public JSONObject toJSONObject() throws JSONException {
+		JSONObject theJSON = new JSONObject();
+		theJSON.put(GOAL, this.gdlGoal);
+		theJSON.put(OUTPUT_NEURON, this.outputNeuron.toJSONObject());
+		return theJSON;
+	}
+
+	public static NeuralNetwork fromJSON(String theJSON, Prover prover) throws JSONException {
+		return fromJSON(new JSONObject(theJSON), prover);
+	}
+
+	public static NeuralNetwork fromJSON(JSONObject theJSON, Prover prover) throws JSONException {
+		NeuralNetwork network = new NeuralNetwork();
+		network.gdlGoal = theJSON.getString(GOAL);
+		network.outputNeuron = Neuron.fromJSON(theJSON.getJSONObject(OUTPUT_NEURON));
+		network.prover = prover;
+		network.populateNetworkStats();
+		return network;
+	}
 }
