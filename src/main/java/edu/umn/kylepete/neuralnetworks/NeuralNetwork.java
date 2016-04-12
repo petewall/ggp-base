@@ -27,12 +27,15 @@ public class NeuralNetwork {
 	private static final double R = 0.001; // the small float to initialize weights in the range (-R, R)
 	private static final double ALPHA = 0.2;
 	static final double BETA = 1.0; // don't change this or the derivative of sigmoid would change
-	private static final double LEARNING_RATE = 0.1;
+	private static final double STARTING_LEARNING_RATE = 0.1;
+	private static final double MOMENTUM = 0.5; // generally between 0.5 and 1.0
 	private static final double W = 1.0;
 	private double a_min;
 	private double a_max;
 	private int disj = 0; // largest number of children an OR node has
 	private int conj = 0; // largest number of children an AND node has
+	private double learningRate = STARTING_LEARNING_RATE;
+	private double previousError = 0.0;
 
 	private List<Neuron> inputNeurons;
 	private Neuron outputNeuron;
@@ -108,20 +111,29 @@ public class NeuralNetwork {
 		}
 	}
 
-	public void train(Set<GdlSentence> state, double expectedValue) {
+	public void train(Set<GdlSentence> state, double expectedValue, int trainCount) {
 		// run the network forward to set all the values
 		double evaluation = evaluateState(state);
 
 		// backpropagate the error
 		double error = evaluation - expectedValue;
-		backpropagateRecursive(outputNeuron, error);
+		double mse = 0.5 * Math.pow(expectedValue - evaluation, 2);
+		if(mse < previousError){
+			learningRate += 0.01;
+		}else{
+			learningRate -= 0.3 * learningRate;
+		}
+		previousError = mse;
+		backpropagateRecursive(outputNeuron, error, trainCount);
 	}
 
-	private void backpropagateRecursive(Neuron output, double outputError) {
+	private void backpropagateRecursive(Neuron output, double outputError, int trainCount) {
 		for (Neuron input : output.getInputs()) {
 			double inputError = input.getWeight() * outputError * input.getValue() * (1 - input.getValue());
-			input.setWeight(input.getWeight() - LEARNING_RATE * outputError * input.getValue());
-			backpropagateRecursive(input, inputError);
+			double deltaW = -learningRate * outputError * input.getValue() + MOMENTUM * input.getDeltaWeight();
+			input.setDeltaWeight(deltaW);
+			input.setWeight(input.getWeight() + deltaW);
+			backpropagateRecursive(input, inputError, trainCount);
 		}
 	}
 
@@ -277,10 +289,14 @@ public class NeuralNetwork {
 
 	private static final String GOAL = "goal";
 	private static final String OUTPUT_NEURON = "outputNeuron";
+	private static final String LEARNING_RATE = "learningRate";
+	private static final String PREV_ERROR = "previousError";
 
 	public JSONObject toJSONObject() throws JSONException {
 		JSONObject theJSON = new JSONObject();
 		theJSON.put(GOAL, this.gdlGoal);
+		theJSON.put(LEARNING_RATE, learningRate);
+		theJSON.put(PREV_ERROR, previousError);
 		theJSON.put(OUTPUT_NEURON, this.outputNeuron.toJSONObject());
 		return theJSON;
 	}
@@ -292,6 +308,8 @@ public class NeuralNetwork {
 	public static NeuralNetwork fromJSON(JSONObject theJSON, Prover prover) throws JSONException {
 		NeuralNetwork network = new NeuralNetwork();
 		network.gdlGoal = theJSON.getString(GOAL);
+		network.learningRate = theJSON.getDouble(LEARNING_RATE);
+		network.previousError = theJSON.getDouble(PREV_ERROR);
 		network.outputNeuron = Neuron.fromJSON(theJSON.getJSONObject(OUTPUT_NEURON));
 		network.prover = prover;
 		network.populateNetworkStats();

@@ -13,8 +13,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.ggp.base.apps.research.ArchiveDownloader;
+import org.ggp.base.util.game.Game;
+import org.ggp.base.util.game.RemoteGameRepository;
 import org.ggp.base.util.gdl.factory.exceptions.GdlFormatException;
 import org.ggp.base.util.match.Match;
 import org.ggp.base.util.symbol.factory.exceptions.SymbolFormatException;
@@ -30,11 +38,19 @@ public final class NeuralNetworkTrainer {
 		public int skippedGames = 0;
 	}
 
+	private static Set<Match> matchArchive = Collections.newSetFromMap(new ConcurrentHashMap<Match, Boolean>(100000));
+	private static ConcurrentMap<String, Game> cachedGames = new ConcurrentHashMap<String, Game>(100);
+	private static AtomicInteger skippedMatches = new AtomicInteger(0);
+
 	public static void main(String[] args) throws IOException, JSONException, SymbolFormatException, GdlFormatException, InterruptedException {
 
-		AggregateData data = new AggregateData();
-		data.gameNeuralNetworkDatabase = GameNeuralNetworkDatabase.readFromDefaultFile();
+		long startTime = System.currentTimeMillis();
 
+		AggregateData data = new AggregateData();
+//		data.gameNeuralNetworkDatabase = GameNeuralNetworkDatabase.readFromDefaultFile();
+		data.gameNeuralNetworkDatabase = new GameNeuralNetworkDatabase();
+
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(8);
 		String line;
 		int nCount = 0;
 		File archiveFile = ArchiveDownloader.getArchiveFile();
@@ -42,32 +58,52 @@ public final class NeuralNetworkTrainer {
 		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(archiveFile), Charset.forName("UTF-8")));
 		while ((line = br.readLine()) != null) {
 
-			JSONObject entryJSON = new JSONObject(line);
-			String url = entryJSON.getString("url");
-			JSONObject matchJSON = entryJSON.getJSONObject("data");
-			processMatch(url, matchJSON, data);
-			nCount++;
-			if (nCount % 1000 == 0) {
-				System.out.println("Processed " + nCount + " matches.");
-			}
+			MatchProcessor processor = new MatchProcessor(line);
+			executor.execute(processor);
+
 		}
 		br.close();
 
-		System.out.println("\n\nDone training.");
+		executor.shutdown();
+		while (!executor.isTerminated()) {
+			Thread.sleep(1000);
+			System.out.println("Loaded " + executor.getCompletedTaskCount() + " matches from archive to memory");
+		}
+
+		for (Match match : matchArchive) {
+			try {
+				data.gameNeuralNetworkDatabase.train(match);
+				addGameCount(match.getGameRepositoryURL(), data);
+			} catch (Exception e) {
+				data.skippedGames++;
+				skippedMatches.incrementAndGet();
+				System.err.println("Skipping game due to error: " + e.getMessage());
+//				e.printStackTrace();
+			}
+			nCount++;
+			if (nCount % 1000 == 0) {
+				long curTime = System.currentTimeMillis();
+				System.out.println("Trained " + nCount + " matches in " + ((curTime - startTime) / 1000.0) + " seconds");
+			}
+		}
+
+		long endTime = System.currentTimeMillis();
+		System.out.println("\n\nFinished training in " + ((endTime - startTime) / 1000.0) + " seconds");
+		System.out.println("Found " + matchArchive.size() + " matches");
 		data.gameNeuralNetworkDatabase.writeToDefaultFile();
 		System.out.println("Wrote game database to " + GameNeuralNetworkDatabase.DEFAULT_FILE);
-		System.out.println("\nSkipped " + data.skippedGames + " games due to incomplete data or errors.");
+		System.out.println("\nSkipped " + skippedMatches.get() + " games due to incomplete data or errors.");
 
-		List<Entry<String,Integer>> gameEntries = new ArrayList<Entry<String,Integer>>(data.gameCounts.entrySet());
-		Collections.sort(gameEntries, new Comparator<Entry<String,Integer>>() {
+		List<Entry<String, Integer>> gameEntries = new ArrayList<Entry<String, Integer>>(data.gameCounts.entrySet());
+		Collections.sort(gameEntries, new Comparator<Entry<String, Integer>>() {
 			@Override
-			public int compare(Entry<String,Integer> o1, Entry<String,Integer> o2) {
+			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
 				return -o1.getValue().compareTo(o2.getValue());
 			}
 		});
 		int totalCount = 0;
 		StringBuilder sb = new StringBuilder();
-		for(Entry<String,Integer> gameEntry : gameEntries){
+		for (Entry<String, Integer> gameEntry : gameEntries) {
 			int gameCount = gameEntry.getValue();
 			totalCount += gameCount;
 			sb.append(String.format("%-80s%d\n", gameEntry.getKey(), gameCount));
@@ -86,33 +122,56 @@ public final class NeuralNetworkTrainer {
 		data.gameCounts.put(gameURL, count + 1);
 	}
 
-	private static void processMatch(String theURL, JSONObject matchJSON, AggregateData data) throws SymbolFormatException, GdlFormatException, JSONException {
+	static class MatchProcessor implements Runnable {
+		private String jsonString;
 
-		if(!matchJSON.has("isCompleted") || !matchJSON.getBoolean("isCompleted")){
-			data.skippedGames++;
-			System.err.println("Skipped match because it is not completed");
-		} else if(!matchJSON.has("matchHostPK")){
-			data.skippedGames++;
-			System.err.println("Skipped match because it does not have a host key");
-		}else if(!matchJSON.has("goalValues")){
-			data.skippedGames++;
-			System.err.println("Skipped match because it does not have goal values");
-		}else if(!matchJSON.has("gameMetaURL")){
-			data.skippedGames++;
-			System.err.println("Skipped match because it does not have a game URL");
-		}else{
+		public MatchProcessor(String jsonString) {
+			this.jsonString = jsonString;
+		}
 
-			Match match = new Match(matchJSON.toString(), null, null);
+		@Override
+		public void run() {
 			try {
-				String gameURL = match.getGame().getRepositoryURL();
-				data.gameNeuralNetworkDatabase.train(match);
-				//String gameURL = matchJSON.getString("gameMetaURL");
-				addGameCount(gameURL, data);
+				JSONObject entryJSON = new JSONObject(this.jsonString);
+				JSONObject matchJSON = entryJSON.getJSONObject("data");
+				processMatch(matchJSON);
 			} catch (Exception e) {
-				data.skippedGames++;
-				System.err.println("Skipping game due to error.");
-				e.printStackTrace();
+				// throw new RuntimeException(e);
+				// skip
+				skippedMatches.incrementAndGet();
+			}
+		}
+
+		private void processMatch(JSONObject matchJSON) throws SymbolFormatException, GdlFormatException, JSONException {
+
+			if (!matchJSON.has("isCompleted") || !matchJSON.getBoolean("isCompleted")) {
+				// data.skippedGames++;
+				skippedMatches.incrementAndGet();
+				// System.err.println("Skipped match because it is not completed");
+			} else if (!matchJSON.has("matchHostPK")) {
+				// data.skippedGames++;
+				skippedMatches.incrementAndGet();
+				// System.err.println("Skipped match because it does not have a host key");
+			} else if (!matchJSON.has("goalValues")) {
+				// data.skippedGames++;
+				skippedMatches.incrementAndGet();
+				// System.err.println("Skipped match because it does not have goal values");
+			} else if (!matchJSON.has("gameMetaURL")) {
+				// data.skippedGames++;
+				skippedMatches.incrementAndGet();
+				// System.err.println("Skipped match because it does not have a game URL");
+			} else {
+				String gameURL = matchJSON.getString("gameMetaURL");
+				Game cachedGame = cachedGames.get(gameURL);
+				if (cachedGame == null) {
+					cachedGame = RemoteGameRepository.loadSingleGame(gameURL);
+					cachedGames.putIfAbsent(gameURL, cachedGame);
+				}
+
+				Match match = new Match(matchJSON.toString(), cachedGame, null);
+				matchArchive.add(match);
 			}
 		}
 	}
+
 }

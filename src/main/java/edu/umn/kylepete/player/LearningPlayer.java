@@ -16,6 +16,8 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
+import edu.umn.kylepete.neuralnetworks.GameNeuralNetwork;
+
 public class LearningPlayer extends StateMachineGamer {
     private MovePicker picker;
 
@@ -48,7 +50,11 @@ public class LearningPlayer extends StateMachineGamer {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        picker = new MiniMaxMovePicker();
+		try {
+			picker = new MiniMaxMovePicker(new GameNeuralNetwork(this.getMatch().getGame()), 1);
+		} catch (InterruptedException e) {
+			throw new RuntimeException(e);
+		}
     }
 
     @Override
