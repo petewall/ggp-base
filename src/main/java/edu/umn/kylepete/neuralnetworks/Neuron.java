@@ -18,18 +18,21 @@ public class Neuron {
 	private NeuronType type;
 	private Double value;
 	private Double weight;
+	private Double deltaWeight;
 	private List<Neuron> inputs;
 	private String gdlSentence = null;
 
 	public Neuron(NeuronType type, Double weight) {
 		this.type = type;
 		this.weight = weight;
+		this.deltaWeight = 0.0;
 		this.inputs = new ArrayList<Neuron>();
 	}
 
 	public Neuron(NeuronType type, Double weight, String gdlSentence) {
 		this.type = type;
 		this.weight = weight;
+		this.deltaWeight = 0.0;
 		this.inputs = new ArrayList<Neuron>();
 		this.gdlSentence = gdlSentence;
 	}
@@ -74,6 +77,14 @@ public class Neuron {
 
 	void setWeight(Double weight) {
 		this.weight = weight;
+	}
+
+	public Double getDeltaWeight() {
+		return deltaWeight;
+	}
+
+	void setDeltaWeight(Double weight) {
+		this.deltaWeight = weight;
 	}
 
 	public List<Neuron> getInputs() {
@@ -128,6 +139,7 @@ public class Neuron {
 	private static final String GDL = "gdl";
 	private static final String NEURON_TYPE = "neuronType";
 	private static final String WEIGHT = "weight";
+	private static final String DELTA_WEIGHT = "deltaWeight";
 	private static final String VALUE = "value";
 	private static final String INPUT_NEURONS = "inputNeurons";
 
@@ -138,6 +150,7 @@ public class Neuron {
 		}
 		theJSON.put(NEURON_TYPE, this.type.toString());
 		theJSON.put(WEIGHT, this.weight);
+		theJSON.put(DELTA_WEIGHT, this.deltaWeight);
 		if (type == NeuronType.CONSTANT || type == NeuronType.BIAS) {
 			theJSON.put(VALUE, this.value);
 		}
@@ -168,6 +181,9 @@ public class Neuron {
 		Neuron neuron = new Neuron(type, weight, gdl);
 		if(theJSON.has(VALUE)){
 			neuron.setValue(theJSON.getDouble(VALUE));
+		}
+		if(theJSON.has(DELTA_WEIGHT)){
+			neuron.deltaWeight = theJSON.getDouble(DELTA_WEIGHT);
 		}
 		if(theJSON.has(INPUT_NEURONS)){
 			JSONArray inputJSONArray = theJSON.getJSONArray(INPUT_NEURONS);

@@ -105,6 +105,10 @@ public class GameNeuralNetwork {
 	}
 
 	public String printEvaluations(MachineState state) {
+		return printEvaluations(state.getContents());
+	}
+
+	public String printEvaluations(Set<GdlSentence> state) {
 		StringBuilder sb = new StringBuilder();
 		for (String role : getRoles()) {
 			sb.append(role);
@@ -113,6 +117,42 @@ public class GameNeuralNetwork {
 			sb.append(System.lineSeparator());
 		}
 		return sb.toString();
+	}
+
+	public double evaluationError(Match match){
+		if (!match.isCompleted()) {
+			return 0.0;
+		}
+
+		List<Role> roles = Role.computeRoles(match.getGame().getRules());
+		List<Integer> goals = match.getGoalValues();
+		if (roles.size() != goals.size()) {
+			return 0.0;
+		}
+
+		double totalError = 0.0;
+		List<Set<GdlSentence>> stateHistory = match.getStateHistory();
+		int totalStates = stateHistory.size();
+		for (int s = 0; s < totalStates; s++) {
+			Set<GdlSentence> state = stateHistory.get(s);
+			for (int r = 0; r < roles.size(); r++) {
+				int goal = goals.get(r);
+				Set<NeuralNetwork> roleNets = networks.get(roles.get(r).toString());
+				for (NeuralNetwork roleNet : roleNets) {
+					double expectedGoal = -1.0;
+					if (goal == roleNet.getGdlGoalValue()) {
+						expectedGoal = 1.0;
+					}
+					expectedGoal = expectedGoal * Math.pow(LAMBDA, totalStates - 1 - s);
+					double evaluation = roleNet.evaluateState(state);
+					// mean squared error
+					double error = 0.5 * Math.pow(expectedGoal - evaluation, 2);
+					totalError += error;
+				}
+			}
+		}
+
+		return totalError;
 	}
 
 	public void train(Match match) {
@@ -127,7 +167,6 @@ public class GameNeuralNetwork {
 		if (roles.size() != goals.size()) {
 			return;
 		}
-		trainCount++;
 		int totalStates = stateHistory.size();
 		for (int s = 0; s < totalStates; s++) {
 			Set<GdlSentence> state = stateHistory.get(s);
@@ -142,10 +181,14 @@ public class GameNeuralNetwork {
 					// TODO could perform mini-max search to see if this state is provable
 					// temporal difference decay
 					expectedGoal = expectedGoal * Math.pow(LAMBDA, totalStates - 1 - s);
-					roleNet.train(state, expectedGoal);
+					//Double evalBefore = roleNet.evaluateState(state);
+					roleNet.train(state, expectedGoal, trainCount);
+					//Double evalAfter = roleNet.evaluateState(state);
+					//System.out.println("Training net " + roleNet.getGdlGoal() + " with expectedGoal " + expectedGoal + "   Before: " + evalBefore + "   After: " + evalAfter);
 				}
 			}
 		}
+		trainCount++;
 	}
 
 
