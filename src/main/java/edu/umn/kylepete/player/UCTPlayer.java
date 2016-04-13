@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
@@ -23,33 +22,78 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
-import com.google.common.util.concurrent.AtomicDouble;
-
 public class UCTPlayer extends StateMachineGamer {
     @Override
     public String getName() {
         return "UCTPlayer";
     }
 
+    public boolean trackThreads = false;
+
     protected class StateNode {
-        public StateNode(StateNode parent, MachineState state) {
+        public StateNode(StateNode parent, MachineState state, double currentReward, int visits) {
             this.parent = parent;
             this.state = state;
             this.children = new HashMap<List<Move>, StateNode>();
-            this.totalReward = new AtomicDouble(0);
-            this.visits = new AtomicInteger(0);
+            this.totalReward = currentReward;
+            this.visits = visits;
             this.depth = (parent != null ? parent.depth + 1 : 0);
         }
 
+        public StateNode(StateNode parent, MachineState state) {
+            this(parent, state, 0, 0);
+        }
+
+        /**
+         * Perform a deep copy of this StateNode's tree using a new parent object
+         * @param newParent
+         * @return
+         */
+        public StateNode makeCopy(StateNode newParent) {
+            StateNode copy = new StateNode(newParent, this.state, this.totalReward, this.visits);
+            for (List<Move> moveSet : this.children.keySet()) {
+                copy.children.put(moveSet, this.children.get(moveSet).makeCopy(copy));
+            }
+            return copy;
+        }
+
+        /**
+         * Merge the values of two trees together
+         * @param copy
+         */
+        public void merge(StateNode copy) {
+            this.totalReward += copy.totalReward;
+            this.visits += copy.visits;
+            for (List<Move> moveSet : copy.children.keySet()) {
+                if (this.children.containsKey(moveSet)) {
+                    this.children.get(moveSet).merge(copy.children.get(moveSet));
+                } else {
+                    this.children.put(moveSet, copy.children.get(moveSet));
+                }
+            }
+        }
+
+        private void trackThread() {
+            if (trackThreads) {
+                if (threadName != null)
+                    threadName = Thread.currentThread().getName();
+                if (!Thread.currentThread().getName().equals(threadName)) {
+                    System.out.println("Thread confusion!");
+                }
+            }
+        }
+
+        private String threadName = null;
         public int depth;
         public StateNode parent;
         public MachineState state;
         public Map<List<Move>, StateNode> children;
-        public AtomicDouble totalReward;
-        public AtomicInteger visits;
+        public double totalReward;
+        public int visits;
         private List<List<Move>> moves;
 
-        public synchronized StateNode addChild(List<Move> moveSet, MachineState state) {
+        public StateNode addChild(List<Move> moveSet, MachineState state) {
+            trackThread();
             if (!this.children.containsKey(moveSet)) {
                 this.children.put(moveSet, new StateNode(this, state));
             }
@@ -57,6 +101,7 @@ public class UCTPlayer extends StateMachineGamer {
         }
 
         public StateNode getOrAddChild(List<Move> moveSet) throws TransitionDefinitionException {
+            trackThread();
             if (!this.children.containsKey(moveSet)) {
                 MachineState state = getStateMachine().getNextState(this.state, moveSet);
                 addChild(moveSet, state);
@@ -64,7 +109,8 @@ public class UCTPlayer extends StateMachineGamer {
             return this.children.get(moveSet);
         }
 
-        public synchronized List<List<Move>> getMoves() throws MoveDefinitionException {
+        public List<List<Move>> getMoves() throws MoveDefinitionException {
+            trackThread();
             if (moves == null) {
                 moves = getStateMachine().getLegalJointMoves(this.state);
             }
@@ -72,6 +118,7 @@ public class UCTPlayer extends StateMachineGamer {
         }
 
         public List<List<Move>> getMoves(Move move) throws MoveDefinitionException {
+            trackThread();
             List<List<Move>> allMoves = getMoves();
             List<List<Move>> moveSets = new ArrayList<List<Move>>();
             for (List<Move> moveset : allMoves) {
@@ -83,6 +130,7 @@ public class UCTPlayer extends StateMachineGamer {
         }
 
         public List<Move> getMyMoves() throws MoveDefinitionException {
+            trackThread();
             Set<Move> myMoves = new HashSet<Move>();
             List<List<Move>> allMoves = getMoves();
             for (List<Move> moveset : allMoves) {
@@ -96,6 +144,7 @@ public class UCTPlayer extends StateMachineGamer {
             return "Depth(" + depth + "), Reward(" + totalReward + "), Visits(" + visits + ") Children(" + children.size() + ")";
         }
     }
+
     protected StateNode root = null;
     protected int roleIndex;
     protected long finishBy;
@@ -128,8 +177,15 @@ public class UCTPlayer extends StateMachineGamer {
 
         totalIterations = runTheWork();
         System.out.println("Picking from the best of: ");
+        Integer depth = null;
         for (List<Move> moveset : root.children.keySet()) {
-            System.out.println("    " + root.children.get(moveset) + " --> " + moveset);
+            StateNode node = root.children.get(moveset);
+            if (depth == null) {
+                depth = new Integer(node.depth);
+            } else if (depth.intValue() != node.depth) {
+                System.out.println("The depths don't agree!");
+            }
+            System.out.println("    " + node + " --> " + moveset);
         }
         List<Move> selection = bestMoveSet(root, 0);
         chosenMove = selection.get(roleIndex);
@@ -230,7 +286,7 @@ public class UCTPlayer extends StateMachineGamer {
         return null;
     }
 
-    protected synchronized List<Move> bestMoveSet(StateNode current, double explorationConstant) {
+    protected List<Move> bestMoveSet(StateNode current, double explorationConstant) {
         // FIXME: Should this be picking the opposite for the opponent's turn?
         //        If that encourages deeper search on moves that the opponent is likely to make, it might be better.
 
@@ -243,10 +299,10 @@ public class UCTPlayer extends StateMachineGamer {
             double UCB1 = 0;
             // if visits is 0, that means another thread has expanded the child nodes, but hasn't yet visited them
             // FIXME: What's the appropriate response here?  For now, I'm skipping...
-            if (child.visits.intValue() > 0) {
-                UCB1 = (child.totalReward.doubleValue() / child.visits.intValue());
+            if (child.visits > 0) {
+                UCB1 = (child.totalReward / child.visits);
                 if (explorationConstant != 0) {
-                    UCB1 += explorationConstant * Math.sqrt((2.0 * Math.log(current.visits.doubleValue())) / child.visits.intValue());
+                    UCB1 += explorationConstant * Math.sqrt((2.0 * Math.log(current.visits)) / child.visits);
                 }
                 values.add(new Double(UCB1));
             }
@@ -271,8 +327,8 @@ public class UCTPlayer extends StateMachineGamer {
     protected void backup(StateNode node, double value) {
         StateNode current = node;
         do {
-            current.visits.incrementAndGet();
-            current.totalReward.addAndGet(value);
+            current.visits++;
+            current.totalReward += value;
             current = current.parent;
         } while (current != null);
     }
@@ -297,12 +353,12 @@ public class UCTPlayer extends StateMachineGamer {
 
     @Override
     public void stateMachineStop() {
-        // Random gamer does no special cleanup when the match ends normally.
+        root = null;
     }
 
     @Override
     public void stateMachineAbort() {
-        // Random gamer does no special cleanup when the match ends abruptly.
+        root = null;
     }
 
     @Override

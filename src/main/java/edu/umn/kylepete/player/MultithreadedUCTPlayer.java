@@ -15,6 +15,7 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
     private ArrayList<WorkerThread> threadPool;
     private class WorkerThread extends Thread {
         public int iterations;
+        public StateNode rootCopy;
 
         public WorkerThread(int id) {
             super("Worker Thread " + id);
@@ -24,8 +25,11 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         @Override
         public void run() {
             try {
+                System.out.println(getName() + ": Making copies!");
+                rootCopy = root.makeCopy(null);
+                System.out.println(getName() + ": Done!");
                 while (System.currentTimeMillis() < finishBy) {
-                    StateNode current = treePolicy(root);
+                    StateNode current = treePolicy(rootCopy);
                     double value = defaultPolicy(current);
                     backup(current, value);
                     iterations++;
@@ -40,14 +44,19 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
     @Override
     protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         int totalIterations = 0;
+        trackThreads = true;
         for (WorkerThread thread : threadPool) {
             thread.start();
         }
+        trackThreads = false;
         for (int i = 0; i < threadPool.size(); ++i) {
             try {
                 WorkerThread thread = threadPool.get(i);
                 thread.join();
                 totalIterations += thread.iterations;
+                System.out.println(thread.getName() + ": Merging to root");
+                root.merge(thread.rootCopy);
+                System.out.println(thread.getName() + ": Done");
             } catch (InterruptedException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
