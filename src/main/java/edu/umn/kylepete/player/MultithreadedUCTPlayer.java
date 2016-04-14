@@ -2,9 +2,11 @@ package edu.umn.kylepete.player;
 
 import java.util.ArrayList;
 
+import org.ggp.base.util.statemachine.StateMachine;
 import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
+import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
 public class MultithreadedUCTPlayer extends UCTPlayer {
     @Override
@@ -76,5 +78,10 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         for (int i = 0; i < cores; ++i) {
             threadPool.add(new WorkerThread(i));
         }
+    }
+
+    @Override
+    public StateMachine getInitialStateMachine() {
+        return new ProverStateMachine();
     }
 }
