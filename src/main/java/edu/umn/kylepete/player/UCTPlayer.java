@@ -79,7 +79,7 @@ public class UCTPlayer extends StateMachineGamer {
                 if (this.children.containsKey(moveSet)) {
                     this.children.get(moveSet).merge(child);
                 } else {
-                    System.out.println("Moveset wasn't found: " + moveSet);
+                    //System.out.println("Moveset wasn't found: " + moveSet);
                     this.children.put(moveSet, child);
                 }
             }
