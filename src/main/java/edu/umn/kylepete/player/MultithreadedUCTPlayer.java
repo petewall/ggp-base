@@ -3,6 +3,7 @@ package edu.umn.kylepete.player;
 import java.util.ArrayList;
 
 import org.ggp.base.util.statemachine.StateMachine;
+import org.ggp.base.util.statemachine.cache.CachedStateMachine;
 import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
@@ -16,23 +17,26 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
 
     private ArrayList<WorkerThread> threadPool;
     private class WorkerThread extends Thread {
+        private StateMachine stateMachine;
         public int iterations;
         public StateNode rootCopy;
 
         public WorkerThread(int id) {
             super("Worker Thread " + id);
             iterations = 0;
+            stateMachine = new CachedStateMachine(new ProverStateMachine());
+            stateMachine.initialize(getMatch().getGame().getRules());
         }
 
         @Override
         public void run() {
             try {
                 System.out.println(getName() + ": Making copies!");
-                rootCopy = root.makeCopy(null);
-                System.out.println(getName() + ": Done!");
+                rootCopy = root.makeCopy();
+                System.out.println(getName() + ": Done. New root: " + rootCopy);
                 while (System.currentTimeMillis() < finishBy) {
-                    StateNode current = treePolicy(rootCopy);
-                    double value = defaultPolicy(current);
+                    StateNode current = treePolicy(stateMachine, rootCopy);
+                    double value = defaultPolicy(stateMachine, current);
                     backup(current, value);
                     iterations++;
                 }
@@ -60,7 +64,6 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
                 root.merge(thread.rootCopy);
                 System.out.println(thread.getName() + ": Done");
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             threadPool.set(i, new WorkerThread(i));
@@ -72,16 +75,10 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         super.stateMachineMetaGame(timeout);
         int cores = Runtime.getRuntime().availableProcessors();
-//        cores = 2;
         System.out.println("Starting " + cores + " threads");
         threadPool = new ArrayList<WorkerThread>(cores);
         for (int i = 0; i < cores; ++i) {
             threadPool.add(new WorkerThread(i));
         }
-    }
-
-    @Override
-    public StateMachine getInitialStateMachine() {
-        return new ProverStateMachine();
     }
 }
