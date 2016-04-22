@@ -5,8 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.Collection;
+import java.util.concurrent.ConcurrentHashMap;
 
 import javax.xml.bind.DatatypeConverter;
 
@@ -20,7 +20,11 @@ public class GameNeuralNetworkDatabase {
 
 	public static final String DEFAULT_FILE = "archives/defaultGameDatabase.json";
 
-	private Map<String, GameNeuralNetwork> gameDatabase = new LinkedHashMap<String, GameNeuralNetwork>();
+	private ConcurrentHashMap<String, GameNeuralNetwork> gameDatabase = new ConcurrentHashMap<String, GameNeuralNetwork>();
+
+	public boolean containsGame(Game game){
+		return gameDatabase.containsKey(getGameHash(game));
+	}
 
 	public GameNeuralNetwork getGameNeuralNetwork(Game game) {
 		GameNeuralNetwork gameNetwork = gameDatabase.get(getGameHash(game));
@@ -30,7 +34,18 @@ public class GameNeuralNetworkDatabase {
 		return gameNetwork;
 	}
 
-	public GameNeuralNetwork addNewGame(Game game) {
+	public synchronized GameNeuralNetwork addExistingGame(GameNeuralNetwork gameNetwork) {
+		Game game = gameNetwork.getGame();
+		String key = getGameHash(game);
+		if(gameDatabase.containsKey(key)){
+			throw new IllegalStateException("The game database already contains the game " + game.getRepositoryURL());
+		}else{
+			gameDatabase.put(key, gameNetwork);
+			return gameNetwork;
+		}
+	}
+
+	public synchronized GameNeuralNetwork addNewGame(Game game) {
 		String key = getGameHash(game);
 		if(gameDatabase.containsKey(key)){
 			throw new IllegalStateException("The game database already contains the game " + game.getRepositoryURL());
@@ -103,11 +118,11 @@ public class GameNeuralNetworkDatabase {
 		return new String(Files.readAllBytes(Paths.get(filePath)));
 	}
 
-	private static void writeFile(String filePath, String contents) throws IOException{
+	private static synchronized void writeFile(String filePath, String contents) throws IOException{
 		Files.write(Paths.get(filePath), contents.getBytes());
 	}
 
-	private static String getGameHash(Game game){
+	static String getGameHash(Game game){
 		String compressedRulesheet = game.getRulesheet().replaceAll("\\s+", "");
 		try {
 			MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -116,5 +131,9 @@ public class GameNeuralNetworkDatabase {
 		} catch (NoSuchAlgorithmException e) {
 			throw new RuntimeException(e);
 		}
+	}
+
+	public Collection<GameNeuralNetwork> getAllGameNetworks() {
+		return this.gameDatabase.values();
 	}
 }

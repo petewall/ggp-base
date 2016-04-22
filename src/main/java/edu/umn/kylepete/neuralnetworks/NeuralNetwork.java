@@ -28,7 +28,7 @@ public class NeuralNetwork {
 	private static final double ALPHA = 0.2;
 	static final double BETA = 1.0; // don't change this or the derivative of sigmoid would change
 	private static final double STARTING_LEARNING_RATE = 0.1;
-	private static final double MOMENTUM = 0.5; // generally between 0.5 and 1.0
+	private static final double MOMENTUM = 0.3; // generally between 0.5 and 1.0
 	private static final double W = 1.0;
 	private double a_min;
 	private double a_max;
@@ -145,16 +145,16 @@ public class NeuralNetwork {
 		sb.append("    Total layers: " + layers);
 		sb.append(System.lineSeparator());
 		sb.append("    Total neurons: " + neurons);
-		sb.append(System.lineSeparator());
-		sb.append("    Max conj: " + conj);
-		sb.append(System.lineSeparator());
-		sb.append("    Max disj: " + disj);
-		sb.append(System.lineSeparator());
-		sb.append("    A_min: " + a_min);
-		sb.append(System.lineSeparator());
-		sb.append("    A_max: " + a_max);
-		sb.append(System.lineSeparator());
-		this.outputNeuron.toString(sb, "    ");
+//		sb.append(System.lineSeparator());
+//		sb.append("    Max conj: " + conj);
+//		sb.append(System.lineSeparator());
+//		sb.append("    Max disj: " + disj);
+//		sb.append(System.lineSeparator());
+//		sb.append("    A_min: " + a_min);
+//		sb.append(System.lineSeparator());
+//		sb.append("    A_max: " + a_max);
+		//sb.append(System.lineSeparator());
+		//this.outputNeuron.toString(sb, "    ");
 		return sb.toString();
 	}
 
@@ -200,14 +200,19 @@ public class NeuralNetwork {
 		NeuralNetwork network = new NeuralNetwork();
 		network.prover = prover;
 		network.gdlGoal = goalProposition.getName().toString();
-		network.outputNeuron = network.createNeuronForCompRecursive(goalProposition);
+		network.outputNeuron = network.createNeuronForCompRecursive(goalProposition, 0);
 		network.outputNeuron.setWeight(null);
 		network.populateNetworkStats();
 		network.addBiasRecursive(network.outputNeuron);
 		return network;
 	}
 
-	private Neuron createNeuronForCompRecursive(Component comp) {
+	private static final int MAX_DEPTH = 50;
+
+	private Neuron createNeuronForCompRecursive(Component comp, int depth) {
+		if(depth > MAX_DEPTH){
+			throw new IllegalStateException("Failed to create neural network from propnet. Max depth of layers reached");
+		}
 		if (comp instanceof Transition || comp instanceof Constant) {
 			return null;
 		}
@@ -249,7 +254,7 @@ public class NeuralNetwork {
 		newNode.setNeuronType(type);
 		if (type != NeuronType.INPUT && type != NeuronType.CONSTANT) {
 			for (Component input : comp.getInputs()) {
-				Neuron inputNeuron = createNeuronForCompRecursive(input);
+				Neuron inputNeuron = createNeuronForCompRecursive(input, depth + 1);
 				if (inputNeuron != null) {
 					newNode.addInput(inputNeuron);
 				}

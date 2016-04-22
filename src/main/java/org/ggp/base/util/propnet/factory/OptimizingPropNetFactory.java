@@ -114,7 +114,7 @@ public class OptimizingPropNetFactory {
     }
 
     public static PropNet create(List<Gdl> description, boolean verbose) throws InterruptedException {
-        System.out.println("Building propnet...");
+//        System.out.println("Building propnet...");
 
         long startTime = System.currentTimeMillis();
 

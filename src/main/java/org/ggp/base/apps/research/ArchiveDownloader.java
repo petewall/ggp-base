@@ -15,8 +15,7 @@ import java.util.zip.GZIPInputStream;
 public class ArchiveDownloader {
 
 	public static final String ARCHIVE_DIR = "archives";
-	public static final String ARCHIVE_FILE_NAME = "match-archive-TTT.txt";
-//	public static final String ARCHIVE_FILE_NAME = "match-archive-ALL.txt";
+	public static final String ARCHIVE_FILE_NAME = "match-archive-ALL.txt";
 	public static final File ARCHIVE_FILE = new File(ARCHIVE_DIR, ARCHIVE_FILE_NAME);
 
 	private static final String[] ARCHIVE_URLS = {

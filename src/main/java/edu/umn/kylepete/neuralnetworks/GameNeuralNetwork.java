@@ -39,12 +39,49 @@ public class GameNeuralNetwork {
 	private int trainCount = 0; // TODO adjust learning rate based on train count
 	Map<String, Set<NeuralNetwork>> networks;
 
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("GameNeuralNetwork for game ");
+		if(game.getName() != null){
+			sb.append(game.getName());
+		}else{
+			sb.append(GameNeuralNetworkDatabase.getGameHash(game));
+		}
+		sb.append(" ");
+		if(game.getRepositoryURL() != null){
+			sb.append(" (");
+			sb.append(game.getRepositoryURL());
+			sb.append(")");
+		}
+		int totalNetworks = 0;
+		int totalNeurons = 0;
+		StringBuilder netSb = new StringBuilder();
+		for(Set<NeuralNetwork> netSet : networks.values()){
+			for(NeuralNetwork net : netSet){
+				totalNetworks++;
+				totalNeurons += net.getTotalNeuronCount();
+				netSb.append("\n  ");
+				netSb.append(net.toString());
+			}
+		}
+		sb.append("\n  Neural Network count: " + totalNetworks + "  Total neurons: " + totalNeurons);
+		sb.append(netSb.toString());
+		return sb.toString();
+	}
+
 	private GameNeuralNetwork(){
 		this.networks = new LinkedHashMap<String, Set<NeuralNetwork>>();
 	}
 
 	public GameNeuralNetwork(Game game) throws InterruptedException {
 		this();
+		if(game == null){
+			throw new IllegalArgumentException("game cannot be null");
+		}
+		if(game.getRules() == null || game.getRules().size() == 0){
+			throw new IllegalArgumentException("game rules cannot be null or empty");
+		}
 		this.game = game;
 		this.prover = new AimaProver(game.getRules());
 		PropNet propNet = OptimizingPropNetFactory.create(game.getRules());

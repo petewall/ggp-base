@@ -1,5 +1,6 @@
 package edu.umn.kylepete.player;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
@@ -17,6 +18,8 @@ import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
 import edu.umn.kylepete.neuralnetworks.GameNeuralNetwork;
+import edu.umn.kylepete.neuralnetworks.GameNeuralNetworkDatabase;
+import external.JSON.JSONException;
 
 public class LearningPlayer extends StateMachineGamer {
     private MovePicker picker;
@@ -51,8 +54,10 @@ public class LearningPlayer extends StateMachineGamer {
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
 		try {
-			picker = new MiniMaxMovePicker(new GameNeuralNetwork(this.getMatch().getGame()), 1);
-		} catch (InterruptedException e) {
+			GameNeuralNetwork gameNeuralNetwork = GameNeuralNetworkDatabase.readFromDefaultFile().getGameNeuralNetwork(getMatch().getGame());
+			System.out.println("Found game knowledge trained from " + gameNeuralNetwork.getTrainCount() + " games.");
+			picker = new MiniMaxMovePicker(gameNeuralNetwork, 1);
+		} catch (InterruptedException | JSONException | IOException e) {
 			throw new RuntimeException(e);
 		}
     }
