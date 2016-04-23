@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src/main/java">
+	<classpathentry excluding="edu/umn/kylepete/neuralnetworks/TicTacToeNeuralNetwork2.java|edu/umn/kylepete/neuralnetworks/TicTacToeNeuralNetwork.java|edu/umn/kylepete/neuralnetworks/TicTacToeBoard.java|edu/umn/kylepete/neuralnetworks/TicTacToeDataSetIterator.java|edu/umn/kylepete/neuralnetworks/TicTacToeStateLookupTable.java|edu/umn/kylepete/neuralnetworks/TicTacToeStateLookupTable2.java|edu/umn/kylepete/neuralnetworks/TicTacToeStateLookupTableTD.java|edu/umn/kylepete/neuralnetworks/TicTacToeStateToCSV.java|edu/umn/kylepete/neuralnetworks/TicTacToeStateToCSV2.java|edu/umn/kylepete/player/TicTacToeLookupTablePlayer.java|edu/umn/kylepete/player/TicTacToeLookupTablePlayer2.java|edu/umn/kylepete/player/TicTacToeNeuralNetworkPlayer.java|edu/umn/kylepete/player/TicTacToeNeuralNetworkPlayer2.java" including="**/*.java" kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
