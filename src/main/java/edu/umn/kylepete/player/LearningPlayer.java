@@ -54,7 +54,7 @@ public class LearningPlayer extends StateMachineGamer {
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
 		try {
-			GameNeuralNetwork gameNeuralNetwork = GameNeuralNetworkDatabase.readFromDefaultFile().getGameNeuralNetwork(getMatch().getGame());
+			GameNeuralNetwork gameNeuralNetwork = GameNeuralNetworkDatabase.readFromFile("gameDatabase_8games.json").getGameNeuralNetwork(getMatch().getGame());
 			System.out.println("Found game knowledge trained from " + gameNeuralNetwork.getTrainCount() + " games.");
 			picker = new MiniMaxMovePicker(gameNeuralNetwork, 1);
 		} catch (InterruptedException | JSONException | IOException e) {
