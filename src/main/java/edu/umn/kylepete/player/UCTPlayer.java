@@ -1,6 +1,7 @@
 package edu.umn.kylepete.player;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -22,7 +23,7 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
-public class UCTPlayer extends StateMachineGamer {
+public class UCTPlayer extends StateMachineGamer implements SubAgent {
     @Override
     public String getName() {
         return "UCTPlayer";
@@ -161,7 +162,7 @@ public class UCTPlayer extends StateMachineGamer {
     protected StateNode root = null;
     protected int roleIndex;
     protected long finishBy;
-    private static boolean checkForDecisiveMoves = false;
+    private static boolean checkForDecisiveMoves = true;
 
     protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         int iterations = 0;
@@ -175,8 +176,21 @@ public class UCTPlayer extends StateMachineGamer {
     }
 
     @Override
+    public List<ScoredMove> scoreValidMoves() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+        List<ScoredMove> moveList = new ArrayList<ScoredMove>();
+
+        int totalIterations = runTheWork();
+        System.out.println("ran " + totalIterations + " iterations.");
+        gameIterations += totalIterations;
+
+        for (List<Move> moveset : root.children.keySet()) {
+            moveList.add(new ScoredMove(moveset.get(roleIndex), getUCB1(root, moveset, 0)));
+        }
+        return moveList;
+    }
+
+    @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        int totalIterations;
         long start = System.currentTimeMillis();
         finishBy = timeout - 1000;
 
@@ -185,21 +199,16 @@ public class UCTPlayer extends StateMachineGamer {
             root = root.children.get(theLastMove);
         }
 
-        List<Move> validMoves = getStateMachine().getLegalMoves(root.state, getRole());
-        Move chosenMove = null;
-
-        totalIterations = runTheWork();
-        gameIterations += totalIterations;
+        List<ScoredMove> moveList = scoreValidMoves();
+        Collections.sort(moveList);
+        Move chosenMove = moveList.get(0).move;
         System.out.println("Picking from the best of: ");
         checkDepths(root, true);
-        List<Move> selection = bestMoveSet(root, 0);
-        chosenMove = selection.get(roleIndex);
 
-        System.out.println("ran " + totalIterations + " iterations.");
         long stop = System.currentTimeMillis();
-        System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
-
+        List<Move> validMoves = getStateMachine().getLegalMoves(root.state, getRole());
         notifyObservers(new GamerSelectedMoveEvent(validMoves, chosenMove, stop - start));
+        System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
         return chosenMove;
     }
 
