@@ -276,6 +276,6 @@ public abstract class StateMachineGamer extends Gamer
     // Internal state about the current state of the state machine.
     private Role role;
     private MachineState currentState;
-    private List<Move> lastMove;
+    protected List<Move> lastMove;
     private StateMachine stateMachine;
 }

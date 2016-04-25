@@ -12,7 +12,6 @@ import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
 import org.ggp.base.player.gamer.exception.GamePreviewException;
-import org.ggp.base.player.gamer.statemachine.StateMachineGamer;
 import org.ggp.base.util.game.Game;
 import org.ggp.base.util.statemachine.MachineState;
 import org.ggp.base.util.statemachine.Move;
@@ -23,7 +22,7 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
-public class UCTPlayer extends StateMachineGamer implements SubAgent {
+public class UCTPlayer extends SubAgent {
     @Override
     public String getName() {
         return "UCTPlayer";
@@ -167,7 +166,7 @@ public class UCTPlayer extends StateMachineGamer implements SubAgent {
     protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         int iterations = 0;
         while (System.currentTimeMillis() < finishBy) {
-            StateNode current = treePolicy(root);
+            StateNode current = treePolicy(this.root);
             double value = defaultPolicy(current);
             backup(current, value);
             iterations++;
@@ -176,15 +175,21 @@ public class UCTPlayer extends StateMachineGamer implements SubAgent {
     }
 
     @Override
-    public List<ScoredMove> scoreValidMoves() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+    public List<ScoredMove> scoreValidMoves(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         List<ScoredMove> moveList = new ArrayList<ScoredMove>();
+        finishBy = timeout - 1000;
+
+        if (getLastMove() != null) {
+            List<Move> theLastMove = getLastMove();
+            this.root = this.root.children.get(theLastMove);
+        }
 
         int totalIterations = runTheWork();
         System.out.println("ran " + totalIterations + " iterations.");
         gameIterations += totalIterations;
 
-        for (List<Move> moveset : root.children.keySet()) {
-            moveList.add(new ScoredMove(moveset.get(roleIndex), getUCB1(root, moveset, 0)));
+        for (List<Move> moveset : this.root.children.keySet()) {
+            moveList.add(new ScoredMove(moveset.get(roleIndex), getUCB1(this.root, moveset, 0)));
         }
         return moveList;
     }
@@ -192,21 +197,15 @@ public class UCTPlayer extends StateMachineGamer implements SubAgent {
     @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         long start = System.currentTimeMillis();
-        finishBy = timeout - 1000;
 
-        if (getLastMove() != null) {
-            List<Move> theLastMove = getLastMove();
-            root = root.children.get(theLastMove);
-        }
-
-        List<ScoredMove> moveList = scoreValidMoves();
+        List<ScoredMove> moveList = scoreValidMoves(timeout);
         Collections.sort(moveList);
         Move chosenMove = moveList.get(0).move;
         System.out.println("Picking from the best of: ");
-        checkDepths(root, true);
+        checkDepths(this.root, true);
 
         long stop = System.currentTimeMillis();
-        List<Move> validMoves = getStateMachine().getLegalMoves(root.state, getRole());
+        List<Move> validMoves = getStateMachine().getLegalMoves(this.root.state, getRole());
         notifyObservers(new GamerSelectedMoveEvent(validMoves, chosenMove, stop - start));
         System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
         return chosenMove;
@@ -385,22 +384,26 @@ public class UCTPlayer extends StateMachineGamer implements SubAgent {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        StateMachine stateMachine = getStateMachine();
-        MachineState initialState = stateMachine.getInitialState();
-        root = new StateNode(0, initialState);
-        gameIterations = 0;
-        roleIndex = stateMachine.getRoles().indexOf(getRole());
+        MachineState initialState = getStateMachine().getInitialState();
+        this.root = new StateNode(0, initialState);
+        this.gameIterations = 0;
+        this.roleIndex = getStateMachine().getRoles().indexOf(getRole());
+    }
+
+    @Override
+    public void setStateMachine(StateMachine newStateMachine) {
+        switchStateMachine(newStateMachine);
     }
 
     @Override
     public void stateMachineStop() {
-        root = null;
+        this.root = null;
         System.out.println("Total iterations: " + gameIterations);
     }
 
     @Override
     public void stateMachineAbort() {
-        root = null;
+        this.root = null;
     }
 
     @Override

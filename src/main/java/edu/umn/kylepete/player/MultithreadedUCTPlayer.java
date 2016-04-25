@@ -60,9 +60,9 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
                 WorkerThread thread = threadPool.get(i);
                 thread.join();
                 totalIterations += thread.iterations;
-                System.out.println(thread.getName() + ": Merging to root");
-                root.merge(thread.rootCopy);
-                System.out.println(thread.getName() + ": Done");
+//                System.out.println(thread.getName() + ": Merging to root");
+                this.root.merge(thread.rootCopy);
+//                System.out.println(thread.getName() + ": Done");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
