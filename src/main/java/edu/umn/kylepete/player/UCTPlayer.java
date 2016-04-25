@@ -153,7 +153,7 @@ public class UCTPlayer extends StateMachineGamer {
 
         @Override
         public String toString() {
-            return "Depth(" + depth + "), Reward(" + totalReward + "), Visits(" + visits + ") Children(" + children.size() + ")";
+            return "Depth(" + depth + "), Reward(" + totalReward + "), Visits(" + visits + "), ratio(" + Math.floor((totalReward / visits) * 100) / 100 + "), Children(" + children.size() + ")";
         }
     }
 
@@ -161,7 +161,7 @@ public class UCTPlayer extends StateMachineGamer {
     protected StateNode root = null;
     protected int roleIndex;
     protected long finishBy;
-    private static boolean checkForDecisiveMoves = true;
+    private static boolean checkForDecisiveMoves = false;
 
     protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
         int iterations = 0;
@@ -308,26 +308,31 @@ public class UCTPlayer extends StateMachineGamer {
         return null;
     }
 
+    protected double getUCB1(StateNode node, List<Move> moveset, double explorationConstant) {
+        double UCB1 = 0;
+        // if visits is 0, that means another thread has expanded the child nodes, but hasn't yet visited them
+        // FIXME: What's the appropriate response here?  For now, I'm skipping...
+        StateNode child = node.children.get(moveset);
+        if (child.visits > 0) {
+            UCB1 = (child.totalReward / child.visits);
+            if (explorationConstant != 0) {
+                UCB1 += explorationConstant * Math.sqrt((2.0 * Math.log(node.visits)) / child.visits);
+            }
+//            values.add(new Double(UCB1));
+        }
+        return UCB1;
+    }
+
     protected List<Move> bestMoveSet(StateNode current, double explorationConstant) {
         // FIXME: Should this be picking the opposite for the opponent's turn?
         //        If that encourages deeper search on moves that the opponent is likely to make, it might be better.
 
         List<Move> bestMoveSet = null;
         double best = Double.NEGATIVE_INFINITY;
-        List<Double> values = new ArrayList<Double>();
+//        List<Double> values = new ArrayList<Double>();
 
         for (List<Move> moveset : current.children.keySet()) {
-            StateNode child = current.children.get(moveset);
-            double UCB1 = 0;
-            // if visits is 0, that means another thread has expanded the child nodes, but hasn't yet visited them
-            // FIXME: What's the appropriate response here?  For now, I'm skipping...
-            if (child.visits > 0) {
-                UCB1 = (child.totalReward / child.visits);
-                if (explorationConstant != 0) {
-                    UCB1 += explorationConstant * Math.sqrt((2.0 * Math.log(current.visits)) / child.visits);
-                }
-                values.add(new Double(UCB1));
-            }
+            double UCB1 = getUCB1(current, moveset, explorationConstant);
             if (Double.isNaN(UCB1)) {
                 System.out.println("Whuh oh!");
             }

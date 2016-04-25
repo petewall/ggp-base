@@ -31,9 +31,9 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         @Override
         public void run() {
             try {
-                System.out.println(getName() + ": Making copies!");
+//                System.out.println(getName() + ": Making copies!");
                 rootCopy = root.makeCopy();
-                System.out.println(getName() + ": Done.");
+//                System.out.println(getName() + ": Done.");
                 while (System.currentTimeMillis() < finishBy) {
                     StateNode current = treePolicy(stateMachine, rootCopy);
                     double value = defaultPolicy(stateMachine, current);
