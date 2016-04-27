@@ -1,7 +1,6 @@
 package edu.umn.kylepete.player;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -175,8 +174,8 @@ public class UCTPlayer extends SubAgent {
     }
 
     @Override
-    public List<ScoredMove> scoreValidMoves(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
-        List<ScoredMove> moveList = new ArrayList<ScoredMove>();
+    public ScoredMoveSet scoreValidMoves(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+        ScoredMoveSet moveSet = new ScoredMoveSet();
         finishBy = timeout - 1000;
 
         if (getLastMove() != null) {
@@ -189,18 +188,19 @@ public class UCTPlayer extends SubAgent {
         gameIterations += totalIterations;
 
         for (List<Move> moveset : this.root.children.keySet()) {
-            moveList.add(new ScoredMove(moveset.get(roleIndex), getUCB1(this.root, moveset, 0)));
+            moveSet.put(moveset.get(roleIndex), getUCB1(this.root, moveset, 0));
+//            moveList.add(new ScoredMove(moveset.get(roleIndex), getUCB1(this.root, moveset, 0)));
         }
-        return moveList;
+        moveSet.normalize();
+        return moveSet;
     }
 
     @Override
     public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         long start = System.currentTimeMillis();
 
-        List<ScoredMove> moveList = scoreValidMoves(timeout);
-        Collections.sort(moveList);
-        Move chosenMove = moveList.get(0).move;
+        ScoredMoveSet moveSet = scoreValidMoves(timeout);
+        Move chosenMove = moveSet.getBestMove();
         System.out.println("Picking from the best of: ");
         checkDepths(this.root, true);
 
@@ -388,11 +388,6 @@ public class UCTPlayer extends SubAgent {
         this.root = new StateNode(0, initialState);
         this.gameIterations = 0;
         this.roleIndex = getStateMachine().getRoles().indexOf(getRole());
-    }
-
-    @Override
-    public void setStateMachine(StateMachine newStateMachine) {
-        switchStateMachine(newStateMachine);
     }
 
     @Override

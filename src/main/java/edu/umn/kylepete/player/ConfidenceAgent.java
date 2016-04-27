@@ -1,7 +1,6 @@
 package edu.umn.kylepete.player;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
@@ -42,18 +41,16 @@ public class ConfidenceAgent extends StateMachineGamer {
 
         Move chosenMove;
         try {
-            List<ScoredMove> moveList = null;
+            ScoredMoveSet moveSet = new ScoredMoveSet();
             for (SubAgent subAgent : subAgents) {
-                moveList = ScoredMove.combine(moveList, subAgent.scoreValidMoves(timeout));
+                moveSet.combine(subAgent.scoreValidMoves(timeout));
             }
-            ScoredMove.normalize(moveList);
-            Collections.sort(moveList);
-            chosenMove = moveList.get(0).move;
+            chosenMove = moveSet.getBestMove();
             System.out.println("Picking from the best of: ");
-            for (ScoredMove move : moveList) {
-                System.out.println(move.move + " --> " + move.score);
+            for (Move move : moveSet.keySet()) {
+                Double score = moveSet.get(move);
+                System.out.println(move + " --> " + score);
             }
-//            checkDepths(root, true);
         } catch (WinningMoveException e) {
             System.out.println("Found a winning move: " + e.move);
             chosenMove = e.move;

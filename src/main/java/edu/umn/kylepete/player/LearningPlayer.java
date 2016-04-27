@@ -7,7 +7,6 @@ import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
 import org.ggp.base.player.gamer.exception.GamePreviewException;
-import org.ggp.base.player.gamer.statemachine.StateMachineGamer;
 import org.ggp.base.util.game.Game;
 import org.ggp.base.util.statemachine.Move;
 import org.ggp.base.util.statemachine.StateMachine;
@@ -21,12 +20,18 @@ import edu.umn.kylepete.neuralnetworks.GameNeuralNetwork;
 import edu.umn.kylepete.neuralnetworks.GameNeuralNetworkDatabase;
 import external.JSON.JSONException;
 
-public class LearningPlayer extends StateMachineGamer {
+public class LearningPlayer extends SubAgent {
     private MovePicker picker;
 
     @Override
     public String getName() {
         return "LearningPlayer";
+    }
+
+    @Override
+    public ScoredMoveSet scoreValidMoves(long timeout) throws WinningMoveException, MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+        ScoredMoveSet moveList = new ScoredMoveSet();
+        return moveList;
     }
 
     @Override
