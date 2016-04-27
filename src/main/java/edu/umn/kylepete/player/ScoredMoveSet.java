@@ -20,6 +20,12 @@ public class ScoredMoveSet extends HashMap<Move, Double> {
         this.put(move, new Double (current * factor));
     }
 
+    public void multiplyAllValues(double factor) {
+        for (Move move : this.keySet()) {
+            multiplyValue(move, factor);
+        }
+    }
+
     public void divideValue(Move move, double denominator) {
         double current = this.get(move).doubleValue();
         this.put(move, new Double (current / denominator));
