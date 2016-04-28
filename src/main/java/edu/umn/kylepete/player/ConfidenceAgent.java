@@ -26,7 +26,7 @@ public class ConfidenceAgent extends StateMachineGamer {
     public ConfidenceAgent() {
         subAgents = new ArrayList<SubAgent>();
         subAgents.add(new MultithreadedUCTPlayer());
-//        subAgents.add(new UCTPlayer());
+//        subAgents.add(new LearningPlayer());
     }
 
     @Override

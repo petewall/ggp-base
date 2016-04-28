@@ -57,6 +57,7 @@ public class ScoredMoveSet extends HashMap<Move, Double> {
         for (Move move : this.keySet()) {
             if (this.get(move).compareTo(bestScore) > 0) {
                 bestMove = move;
+                bestScore = this.get(move).doubleValue();
             }
         }
         return bestMove;

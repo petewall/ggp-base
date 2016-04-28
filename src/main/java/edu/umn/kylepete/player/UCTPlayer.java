@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.atomic.AtomicLong;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
@@ -156,6 +157,7 @@ public class UCTPlayer extends SubAgent {
         }
     }
 
+    protected AtomicLong depthCount = new AtomicLong();
     protected long gameIterations = 0;
     protected StateNode root = null;
     protected int roleIndex;
@@ -163,6 +165,7 @@ public class UCTPlayer extends SubAgent {
     private static boolean checkForDecisiveMoves = true;
 
     protected int runTheWork() throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
+        depthCount.set(0);
         int iterations = 0;
         while (System.currentTimeMillis() < finishBy) {
             StateNode current = treePolicy(this.root);
@@ -171,6 +174,14 @@ public class UCTPlayer extends SubAgent {
             iterations++;
         }
         return iterations;
+    }
+
+    private double getDistributionConfidence(int total, int visits, int branchingFactor) {
+        return 1 - Math.min(0, (double)visits / total - 1.0 / branchingFactor);
+    }
+
+    private double getComplexityConfidence(int total, int branchingFactor, long avgDepth) {
+        return total / Math.pow(avgDepth, branchingFactor);
     }
 
     @Override
@@ -188,8 +199,15 @@ public class UCTPlayer extends SubAgent {
         gameIterations += totalIterations;
 
         for (List<Move> moveset : this.root.children.keySet()) {
-            moveSet.put(moveset.get(roleIndex), getUCB1(this.root, moveset, 0));
-//            moveList.add(new ScoredMove(moveset.get(roleIndex), getUCB1(this.root, moveset, 0)));
+            Move move = moveset.get(roleIndex);
+            double ucb1 = getUCB1(this.root, moveset, 0);
+            moveSet.put(move, ucb1);
+
+            double distributionConfidence = getDistributionConfidence(totalIterations, root.children.get(moveset).visits, root.children.size());
+            moveSet.multiplyValue(move, distributionConfidence);
+
+            double complexityConfidence = getComplexityConfidence(totalIterations, root.children.size(), depthCount.get() / totalIterations);
+            moveSet.multiplyValue(move, complexityConfidence);
         }
         moveSet.normalize();
         return moveSet;
@@ -359,7 +377,9 @@ public class UCTPlayer extends SubAgent {
     protected double defaultPolicy(StateMachine stateMachine, StateNode current) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
 //        System.out.println(Thread.currentThread().getName() + "DefaultPolicy: " + current);
         MachineState startState = current.state;
-        MachineState terminalState = stateMachine.performDepthCharge(startState, null);
+        int[] depth = new int[1];
+        MachineState terminalState = stateMachine.performDepthCharge(startState, depth);
+        depthCount.addAndGet(depth[0]);
         return stateMachine.getGoal(terminalState, getRole()) / 100.0;
     }
 
