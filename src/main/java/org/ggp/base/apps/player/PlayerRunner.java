@@ -35,8 +35,7 @@ public final class PlayerRunner
             }
         }
         if (chosenGamerClass == null) {
-            System.out.println("Could not find player class with that name. Available choices are: " + Arrays.toString(availableGamers.toArray()));
-            return;
+            throw new IllegalArgumentException("Could not find player class with that name. Available choices are: " + Arrays.toString(availableGamers.toArray()));
         }
         Gamer gamer = (Gamer) chosenGamerClass.newInstance();
         new GamePlayer(port, gamer).start();

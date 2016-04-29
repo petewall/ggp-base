@@ -37,9 +37,10 @@ public final class GamePlayer extends Thread implements Subject
             try {
                 listener = new ServerSocket(port);
             } catch (IOException ex) {
-                listener = null;
-                port++;
-                System.err.println("Failed to start gamer on port: " + (port-1) + " trying port " + port);
+                //listener = null;
+                //port++;
+                //System.err.println("Failed to start gamer on port: " + (port-1) + " trying port " + port);
+            	throw new IOException("Failed to start gamer on port: " + port, ex);
             }
         }
 

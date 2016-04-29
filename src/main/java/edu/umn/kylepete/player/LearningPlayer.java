@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.ggp.base.apps.player.detail.DetailPanel;
 import org.ggp.base.apps.player.detail.SimpleDetailPanel;
+import org.ggp.base.player.GamePlayer;
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
 import org.ggp.base.player.gamer.exception.GamePreviewException;
 import org.ggp.base.util.game.Game;
@@ -80,5 +81,26 @@ public class LearningPlayer extends SubAgent {
     @Override
     public DetailPanel getDetailPanel() {
         return new SimpleDetailPanel();
+    }
+
+    public static void main(String[] args)
+    {
+        if (args.length != 1) {
+            System.err.println("Usage: GamePlayer <port>");
+            System.exit(1);
+        }
+
+        try {
+            GamePlayer player = new GamePlayer(Integer.valueOf(args[0]), new LearningPlayer());
+            player.run();
+        } catch (NumberFormatException e) {
+            System.err.println("Illegal port number: " + args[0]);
+            e.printStackTrace();
+            System.exit(2);
+        } catch (IOException e) {
+            System.err.println("IO Exception: " + e);
+            e.printStackTrace();
+            System.exit(3);
+        }
     }
 }

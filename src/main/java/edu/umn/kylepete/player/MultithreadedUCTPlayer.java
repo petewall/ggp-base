@@ -1,7 +1,9 @@
 package edu.umn.kylepete.player;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
+import org.ggp.base.player.GamePlayer;
 import org.ggp.base.util.statemachine.StateMachine;
 import org.ggp.base.util.statemachine.cache.CachedStateMachine;
 import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
@@ -79,6 +81,27 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         threadPool = new ArrayList<WorkerThread>(cores);
         for (int i = 0; i < cores; ++i) {
             threadPool.add(new WorkerThread(i));
+        }
+    }
+
+    public static void main(String[] args)
+    {
+        if (args.length != 1) {
+            System.err.println("Usage: GamePlayer <port>");
+            System.exit(1);
+        }
+
+        try {
+            GamePlayer player = new GamePlayer(Integer.valueOf(args[0]), new MultithreadedUCTPlayer());
+            player.run();
+        } catch (NumberFormatException e) {
+            System.err.println("Illegal port number: " + args[0]);
+            e.printStackTrace();
+            System.exit(2);
+        } catch (IOException e) {
+            System.err.println("IO Exception: " + e);
+            e.printStackTrace();
+            System.exit(3);
         }
     }
 }

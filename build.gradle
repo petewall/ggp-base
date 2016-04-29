@@ -24,6 +24,8 @@ dependencies {
         'lib/javassist/javassist.jar',
         'lib/reflections/reflections-0.9.9-RC1.jar',
         'lib/Htmlparser/htmlparser-1.4.jar',
+        'lib/JUnit/junit-4.11.jar',
+        'lib/JUnit/hamcrest-core-1.3.jar',
     )
     testCompile files(
         'lib/JUnit/junit-4.11.jar',
@@ -36,6 +38,11 @@ dependencies {
 //applications from the command line.
 repositories {
     mavenCentral()
+}
+
+
+compileJava {
+    excludes = ['**/TicTacToe*']
 }
 
 /*
@@ -123,9 +130,9 @@ task clojureGamer(type: JavaExec) {
 def playerJvmArgs = [
         '-Xmx1500m', //Gives players a max heap size of 1500 MB
         '-server',
-        '-XX:-DontCompileHugeMethods',
-        '-XX:MinHeapFreeRatio=10',
-        '-XX:MaxHeapFreeRatio=10']
+        '-XX:-DontCompileHugeMethods']
+        //'-XX:MinHeapFreeRatio=10',
+        //'-XX:MaxHeapFreeRatio=10']
 
 //See playerRunner.sh
 task playerRunner(type: JavaExec) {
