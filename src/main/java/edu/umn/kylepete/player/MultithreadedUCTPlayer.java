@@ -84,6 +84,23 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         }
     }
 
+    @Override
+    public void stateMachineStop() {
+        for (Thread thread : threadPool) {
+            thread.interrupt();
+        }
+        this.root = null;
+        System.out.println("Total iterations: " + gameIterations);
+    }
+
+    @Override
+    public void stateMachineAbort() {
+        for (Thread thread : threadPool) {
+            thread.interrupt();
+        }
+        this.root = null;
+    }
+
     public static void main(String[] args)
     {
         if (args.length != 1) {
