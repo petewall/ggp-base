@@ -180,8 +180,9 @@ public class UCTPlayer extends SubAgent {
         return 1 - Math.max(0, 1.0 / branchingFactor - (double)visits / total);
     }
 
-    private double getComplexityConfidence(int total, int branchingFactor, long avgDepth) {
-        return total / Math.pow(avgDepth, branchingFactor);
+    private double getComplexityConfidence(int total, int branchingFactor, double avgDepth) {
+        System.out.println("complexity confidence: total(" + total + "), branch(" + branchingFactor + "), depth(" + avgDepth + ")");
+        return Math.min(1, (total / (avgDepth * branchingFactor)) * (avgDepth / branchingFactor));
     }
 
     @Override
@@ -199,6 +200,7 @@ public class UCTPlayer extends SubAgent {
         System.out.println("ran " + totalIterations + " iterations.");
         gameIterations += totalIterations;
 
+        double complexityConfidence = getComplexityConfidence(totalIterations, root.children.size(), (double)depthCount.get() / totalIterations);
         for (List<Move> moveset : this.root.children.keySet()) {
             Move move = moveset.get(roleIndex);
             double ucb1 = getUCB1(this.root, moveset, 0);
@@ -207,6 +209,7 @@ public class UCTPlayer extends SubAgent {
 
             double distributionConfidence = getDistributionConfidence(totalIterations, root.children.get(moveset).visits, root.children.size());
             confidenceFactors.put(move, distributionConfidence);
+
         }
         scoredMoves.normalize();
 
@@ -214,8 +217,9 @@ public class UCTPlayer extends SubAgent {
             double before = scoredMoves.get(move);
             double confidence = confidenceFactors.get(move);
             scoredMoves.applyConfidence(move, confidence);
+            scoredMoves.applyConfidence(move, complexityConfidence);
             double after = scoredMoves.get(move);
-            System.out.println("    Applying confidence to move " + move + ": " + before + " * " + confidence + " == " + after);
+            System.out.println("    Applying confidence to move " + move + ": " + before + " * (" + confidence + ", " + complexityConfidence + ") == " + after);
         }
         scoredMoves.normalize();
         return scoredMoves;

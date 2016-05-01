@@ -23,15 +23,24 @@ public class ConfidenceAgent extends StateMachineGamer {
     }
 
     private Map<SubAgent, SubAgentThread> subAgents;
+    private int depth;
+    private int maxBranchingFactor;
 
     public ConfidenceAgent() {
         subAgents = new HashMap<SubAgent, SubAgentThread>();
         subAgents.put(new MultithreadedUCTPlayer(), null);
 //        subAgents.add(new LearningPlayer());
+        depth = 0;
+        maxBranchingFactor = 0;
     }
 
     @Override
     public Move stateMachineSelectMove(final long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
+        depth++;
+        int branchingFactor = getStateMachine().getLegalJointMoves(getCurrentState()).size();
+        if (branchingFactor > maxBranchingFactor) {
+            maxBranchingFactor = branchingFactor;
+        }
         long start = System.currentTimeMillis();
 
         if (getLastMove() != null) {
@@ -106,6 +115,8 @@ public class ConfidenceAgent extends StateMachineGamer {
         for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.stateMachineStop();
         }
+        System.out.println("Game depth: " + depth);
+        System.out.println("Max branching factor: " + maxBranchingFactor);
     }
 
     @Override
