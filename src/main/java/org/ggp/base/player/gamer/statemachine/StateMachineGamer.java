@@ -84,6 +84,10 @@ public abstract class StateMachineGamer extends Gamer
         return currentState;
     }
 
+    public final void setCurrentState(MachineState state) {
+        currentState = state;
+    }
+
     public final List<Move> getLastMove() {
         return lastMove;
     }

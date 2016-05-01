@@ -23,13 +23,15 @@ public class ConfidenceAgent extends StateMachineGamer {
     }
 
     private Map<SubAgent, SubAgentThread> subAgents;
+    private Map<SubAgent, Move> bestMoves;
     private int depth;
     private int maxBranchingFactor;
 
     public ConfidenceAgent() {
         subAgents = new HashMap<SubAgent, SubAgentThread>();
         subAgents.put(new MultithreadedUCTPlayer(), null);
-//        subAgents.add(new LearningPlayer());
+        subAgents.put(new LearningPlayer(), null);
+        bestMoves = new HashMap<SubAgent, Move>();
         depth = 0;
         maxBranchingFactor = 0;
     }
@@ -46,6 +48,7 @@ public class ConfidenceAgent extends StateMachineGamer {
         if (getLastMove() != null) {
             for (SubAgent subAgent : subAgents.keySet()) {
                 subAgent.setLastMove(getLastMove());
+                subAgent.setCurrentState(getCurrentState());
             }
         }
 
@@ -74,18 +77,22 @@ public class ConfidenceAgent extends StateMachineGamer {
                 break;
             }
             ScoredMoveSet subAgentMoveSet = thread.getMoveSet();
-            Move bestMove = subAgentMoveSet.getBestMove();
-            System.out.println("Best move from " + subAgent.getName() + ": " + subAgentMoveSet.getBestMove() + " --> " + subAgentMoveSet.get(bestMove));
+            bestMoves.put(subAgent, subAgentMoveSet.getBestMove());
             moveSet.combine(subAgentMoveSet);
         }
 
         if (chosenMove == null) {
+            for (SubAgent subAgent : bestMoves.keySet()) {
+                Move bestMove = bestMoves.get(subAgent);
+                System.out.println("Best move from " + subAgent.getName() + ": " + bestMove);
+            }
             chosenMove = moveSet.getBestMove();
             System.out.println("Picking from the best of: ");
             for (Move move : moveSet.keySet()) {
                 Double score = moveSet.get(move);
                 System.out.println("    " + move + " --> " + score);
             }
+            System.out.println("Chosen move: " + chosenMove);
         }
 
         long stop = System.currentTimeMillis();
