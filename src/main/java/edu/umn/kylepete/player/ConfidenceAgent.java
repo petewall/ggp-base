@@ -1,7 +1,8 @@
 package edu.umn.kylepete.player;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.ggp.base.player.gamer.event.GamerSelectedMoveEvent;
 import org.ggp.base.player.gamer.exception.GamePreviewException;
@@ -21,39 +22,61 @@ public class ConfidenceAgent extends StateMachineGamer {
         return "ConfidenceAgent";
     }
 
-    private List<SubAgent> subAgents;
+    private Map<SubAgent, SubAgentThread> subAgents;
 
     public ConfidenceAgent() {
-        subAgents = new ArrayList<SubAgent>();
-        subAgents.add(new MultithreadedUCTPlayer());
+        subAgents = new HashMap<SubAgent, SubAgentThread>();
+        subAgents.put(new MultithreadedUCTPlayer(), null);
 //        subAgents.add(new LearningPlayer());
     }
 
     @Override
-    public Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
+    public Move stateMachineSelectMove(final long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         long start = System.currentTimeMillis();
 
         if (getLastMove() != null) {
-            for (SubAgent subAgent : subAgents) {
+            for (SubAgent subAgent : subAgents.keySet()) {
                 subAgent.setLastMove(getLastMove());
             }
         }
 
-        Move chosenMove;
-        try {
-            ScoredMoveSet moveSet = new ScoredMoveSet();
-            for (SubAgent subAgent : subAgents) {
-                moveSet.combine(subAgent.scoreValidMoves(timeout));
+        Move chosenMove = null;
+        final ScoredMoveSet moveSet = new ScoredMoveSet();
+
+        // Start searching (create threads)
+        for (final SubAgent subAgent : subAgents.keySet()) {
+            SubAgentThread thread = new SubAgentThread(subAgent, timeout);
+            subAgents.put(subAgent, thread);
+            thread.start();
+        }
+
+        // Gather results (wait on threads)
+        for (final SubAgent subAgent : subAgents.keySet()) {
+            SubAgentThread thread = subAgents.get(subAgent);
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                System.err.println("Thread for " + subAgent.getName() + " interrupted.");
+                continue;
             }
+
+            if (thread.foundWinningMove()) {
+                chosenMove = thread.getWinningMove();
+                break;
+            }
+            ScoredMoveSet subAgentMoveSet = thread.getMoveSet();
+            Move bestMove = subAgentMoveSet.getBestMove();
+            System.out.println("Best move from " + subAgent.getName() + ": " + subAgentMoveSet.getBestMove() + " --> " + subAgentMoveSet.get(bestMove));
+            moveSet.combine(subAgentMoveSet);
+        }
+
+        if (chosenMove == null) {
             chosenMove = moveSet.getBestMove();
             System.out.println("Picking from the best of: ");
             for (Move move : moveSet.keySet()) {
                 Double score = moveSet.get(move);
-                System.out.println(move + " --> " + score);
+                System.out.println("    " + move + " --> " + score);
             }
-        } catch (WinningMoveException e) {
-            System.out.println("Found a winning move: " + e.move);
-            chosenMove = e.move;
         }
 
         long stop = System.currentTimeMillis();
@@ -65,7 +88,7 @@ public class ConfidenceAgent extends StateMachineGamer {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        for (SubAgent subAgent : subAgents) {
+        for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.setMatch(getMatch());
             subAgent.setRoleName(getRoleName());
             subAgent.setStateMachine(getStateMachine());
@@ -80,21 +103,21 @@ public class ConfidenceAgent extends StateMachineGamer {
 
     @Override
     public void stateMachineStop() {
-        for (SubAgent subAgent : subAgents) {
+        for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.stateMachineStop();
         }
     }
 
     @Override
     public void stateMachineAbort() {
-        for (SubAgent subAgent : subAgents) {
+        for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.stateMachineAbort();
         }
     }
 
     @Override
     public void preview(Game g, long timeout) throws GamePreviewException {
-        for (SubAgent subAgent : subAgents) {
+        for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.preview(g, timeout);
         }
     }

@@ -26,6 +26,16 @@ public class ScoredMoveSet extends HashMap<Move, Double> {
         }
     }
 
+    /**
+     * This must be run *after* normalization, and you must run normalization again
+     * @param confidence
+     */
+    public void applyConfidence(Move move, double confidenceFactor) {
+        Double current = get(move);
+        Double result = (current.doubleValue() - 0.5) * confidenceFactor + 0.5;
+        put(move, result);
+    }
+
     public void divideValue(Move move, double denominator) {
         double current = this.get(move).doubleValue();
         this.put(move, new Double (current / denominator));
@@ -37,7 +47,9 @@ public class ScoredMoveSet extends HashMap<Move, Double> {
             total += score.doubleValue();
         }
         for (Move move : this.keySet()) {
-            divideValue(move, total);
+            if (total > 0) {
+                divideValue(move, total);
+            }
         }
     }
 
@@ -61,5 +73,16 @@ public class ScoredMoveSet extends HashMap<Move, Double> {
             }
         }
         return bestMove;
+    }
+
+    @Override
+    public Double put(Move move, Double value) {
+        if (value.isNaN()) {
+            throw new IllegalArgumentException();
+        }
+        if (value.isInfinite()) {
+            throw new IllegalArgumentException();
+        }
+        return super.put(move, value);
     }
 }

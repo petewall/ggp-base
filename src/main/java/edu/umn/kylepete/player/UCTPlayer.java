@@ -177,7 +177,7 @@ public class UCTPlayer extends SubAgent {
     }
 
     private double getDistributionConfidence(int total, int visits, int branchingFactor) {
-        return 1 - Math.min(0, (double)visits / total - 1.0 / branchingFactor);
+        return 1 - Math.max(0, 1.0 / branchingFactor - (double)visits / total);
     }
 
     private double getComplexityConfidence(int total, int branchingFactor, long avgDepth) {
@@ -186,7 +186,8 @@ public class UCTPlayer extends SubAgent {
 
     @Override
     public ScoredMoveSet scoreValidMoves(long timeout) throws MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
-        ScoredMoveSet moveSet = new ScoredMoveSet();
+        ScoredMoveSet scoredMoves = new ScoredMoveSet();
+        ScoredMoveSet confidenceFactors = new ScoredMoveSet();
         finishBy = timeout - 1000;
 
         if (getLastMove() != null) {
@@ -201,16 +202,23 @@ public class UCTPlayer extends SubAgent {
         for (List<Move> moveset : this.root.children.keySet()) {
             Move move = moveset.get(roleIndex);
             double ucb1 = getUCB1(this.root, moveset, 0);
-            moveSet.put(move, ucb1);
+            System.out.println("    " + moveset + ": " + root.children.get(moveset));
+            scoredMoves.put(move, ucb1);
 
             double distributionConfidence = getDistributionConfidence(totalIterations, root.children.get(moveset).visits, root.children.size());
-            moveSet.multiplyValue(move, distributionConfidence);
-
-            double complexityConfidence = getComplexityConfidence(totalIterations, root.children.size(), depthCount.get() / totalIterations);
-            moveSet.multiplyValue(move, complexityConfidence);
+            confidenceFactors.put(move, distributionConfidence);
         }
-        moveSet.normalize();
-        return moveSet;
+        scoredMoves.normalize();
+
+        for (Move move : scoredMoves.keySet()) {
+            double before = scoredMoves.get(move);
+            double confidence = confidenceFactors.get(move);
+            scoredMoves.applyConfidence(move, confidence);
+            double after = scoredMoves.get(move);
+            System.out.println("    Applying confidence to move " + move + ": " + before + " * " + confidence + " == " + after);
+        }
+        scoredMoves.normalize();
+        return scoredMoves;
     }
 
     @Override
