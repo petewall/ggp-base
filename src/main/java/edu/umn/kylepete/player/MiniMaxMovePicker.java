@@ -61,26 +61,23 @@ public class MiniMaxMovePicker implements MovePicker {
         }
     }
 
+    public ScoredMoveSet getScoredMoves(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException{
+         List<Move> moves = stateMachine.getLegalMoves(state, role);
+         System.out.println("[MM] Scoring the list of moves (" + moves + ")");
+         ScoredMoveSet moveSet = new ScoredMoveSet();
+
+         for (Move move : moves) {
+             double evaluation = evaluateMove(move, state, role, stateMachine);
+             System.out.println("[MM] Move " + move + ": " + evaluation);
+             moveSet.put(move, evaluation);
+         }
+         moveSet.normalize();
+         return moveSet;
+    }
+
     @Override
     public Move pickBestMove(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
-        double bestEvaluation = Double.NEGATIVE_INFINITY;
-        List<Move> moves = stateMachine.getLegalMoves(state, role);
-        System.out.println("[MM] Picking from the list of moves (" + moves + ")");
-        Move bestMove = moves.get(0);
-
-        if (moves.size() == 1) {
-            System.out.println("[MM] Only one valid move.  Returing that: " + bestMove);
-            return bestMove;
-        }
-
-        for (Move move : moves) {
-            double evaluation = evaluateMove(move, state, role, stateMachine);
-            System.out.println("[MM] Move " + moves + ": " + evaluation);
-            if (bestEvaluation < evaluation) {
-                bestEvaluation = evaluation;
-                bestMove = move;
-            }
-        }
-        return bestMove;
+    	ScoredMoveSet moveSet = getScoredMoves(state, role, stateMachine);
+    	return moveSet.getBestMove();
     }
 }

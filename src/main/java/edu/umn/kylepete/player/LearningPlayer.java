@@ -22,7 +22,7 @@ import edu.umn.kylepete.neuralnetworks.GameNeuralNetworkDatabase;
 import external.JSON.JSONException;
 
 public class LearningPlayer extends SubAgent {
-    private MovePicker picker;
+    private MiniMaxMovePicker picker;
 
     @Override
     public String getName() {
@@ -31,8 +31,7 @@ public class LearningPlayer extends SubAgent {
 
     @Override
     public ScoredMoveSet scoreValidMoves(long timeout) throws WinningMoveException, MoveDefinitionException, TransitionDefinitionException, GoalDefinitionException {
-        ScoredMoveSet moveList = new ScoredMoveSet();
-        return moveList;
+        return picker.getScoredMoves(getCurrentState(), getRole(), getStateMachine());
     }
 
     @Override
