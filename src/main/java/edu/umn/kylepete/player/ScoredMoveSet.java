@@ -28,12 +28,24 @@ public class ScoredMoveSet extends HashMap<Move, Double> {
 
     /**
      * This must be run *after* normalization, and you must run normalization again
+     * 0 = no confidence, score will push to .5
+	 * 1 = full confidence, score will not be changed
      * @param confidence
      */
     public void applyConfidence(Move move, double confidenceFactor) {
         Double current = get(move);
         Double result = (current.doubleValue() - 0.5) * confidenceFactor + 0.5;
         put(move, result);
+    }
+
+    /**
+     * This must be run *after* normalization, and you must run normalization again
+     * @param confidence
+     */
+    public void applyConfidenceToAllMoves(double confidenceFactor) {
+    	for (Move move : this.keySet()) {
+    		applyConfidence(move, confidenceFactor);
+        }
     }
 
     public void divideValue(Move move, double denominator) {
