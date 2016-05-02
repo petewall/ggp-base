@@ -17,16 +17,12 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
-import edu.umn.kylepete.neuralnetworks.GameNeuralNetwork;
-import edu.umn.kylepete.neuralnetworks.GameNeuralNetworkDatabase;
-import external.JSON.JSONException;
-
-public class LearningPlayer extends SubAgent {
+public class MiniMaxRandomPlayer extends SubAgent {
     private MiniMaxMovePicker picker;
 
     @Override
     public String getName() {
-        return "LearningPlayer";
+        return "MiniMaxRandomPlayer";
     }
 
     @Override
@@ -58,13 +54,8 @@ public class LearningPlayer extends SubAgent {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-		try {
-			GameNeuralNetwork gameNeuralNetwork = GameNeuralNetworkDatabase.readFromFile("gameDatabase_8games.json").getGameNeuralNetwork(getMatch().getGame());
-			System.out.println("Found game knowledge trained from " + gameNeuralNetwork.getTrainCount() + " games.");
-			picker = new MiniMaxNeuralNetworkMovePicker(gameNeuralNetwork, 2);
-		} catch (InterruptedException | JSONException | IOException e) {
-			throw new RuntimeException(e);
-		}
+    	picker = new MiniMaxRandomMovePicker(4);
+
     }
 
     @Override
@@ -90,7 +81,7 @@ public class LearningPlayer extends SubAgent {
         }
 
         try {
-            GamePlayer player = new GamePlayer(Integer.valueOf(args[0]), new LearningPlayer());
+            GamePlayer player = new GamePlayer(Integer.valueOf(args[0]), new MiniMaxRandomPlayer());
             player.run();
         } catch (NumberFormatException e) {
             System.err.println("Illegal port number: " + args[0]);

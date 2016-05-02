@@ -10,16 +10,12 @@ import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 
-import edu.umn.kylepete.neuralnetworks.GameNeuralNetwork;
-
-public class MiniMaxMovePicker implements MovePicker {
+public abstract class MiniMaxMovePicker implements MovePicker {
 
     private int maxDepth;
-    private GameNeuralNetwork neuralNetwork;
 
-    public MiniMaxMovePicker(GameNeuralNetwork neuralNetwork, int maxDepth){
+    public MiniMaxMovePicker(int maxDepth){
     	this.maxDepth = maxDepth;
-    	this.neuralNetwork = neuralNetwork;
     }
 
     private Role getNextPlayer(Role role, StateMachine stateMachine) {
@@ -33,18 +29,20 @@ public class MiniMaxMovePicker implements MovePicker {
     }
 
     private double evaluateMove(Move move, MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
-        return evaluateMove(0, move, state, role, stateMachine);
+        return evaluateMove(1, move, state, role, stateMachine);
     }
 
     private double evaluateMove(int depth, Move move, MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
         MachineState nextState = stateMachine.getRandomNextState(state, role, move);
         if (stateMachine.isTerminal(nextState)) {
-            int evaluation = stateMachine.getGoal(nextState, role);
-            System.out.println("[MM] Depth " + depth + "/" + maxDepth + ": Goal state.  Returning " + evaluation);
+            int goal = stateMachine.getGoal(nextState, role);
+            double depthAdjustment = 0.0001 * depth;
+            double evaluation = goal * (1-depthAdjustment) + 50 * depthAdjustment;
+            log("Goal state " + goal + ".  Returning " + evaluation, depth);
             return evaluation;
         } else if (depth >= maxDepth) {
-        	double evaluation = neuralNetwork.evaluateState(role, nextState);
-            System.out.println("[MM] Depth " + depth + "/" + maxDepth + ": Hit depth limit. Running neural network. Returning " + evaluation);
+        	double evaluation = evaluateState(role, nextState);
+            log("Hit depth limit. Ran heuristic. Returning " + evaluation, depth);
             return evaluation;
         } else {
             Role nextPlayer = getNextPlayer(role, stateMachine);
@@ -56,22 +54,46 @@ public class MiniMaxMovePicker implements MovePicker {
                     bestEvaluation = evaluation;
                 }
             }
-            System.out.println("[MM] Depth " + depth + "/" + maxDepth + ": Calculated minimax.  Returning " + (100 - bestEvaluation));
+            log("Calculated minimax.  Returning " + (100 - bestEvaluation), depth);
             return 100 - bestEvaluation;
         }
     }
 
+    private void log(String message, Integer depth){
+    	StringBuilder sb = new StringBuilder();
+    	sb.append("[MM] ");
+    	if(depth != null){
+            for(int i = 0 ; i < depth; i++){
+            	sb.append("    ");
+            }
+    		sb.append("Depth " + depth + "/" + maxDepth + ": ");
+    	}
+    	sb.append(message);
+    	System.out.println(sb.toString());
+    }
+
+    abstract protected double evaluateState(Role role, MachineState state);
+
     public ScoredMoveSet getScoredMoves(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException{
          List<Move> moves = stateMachine.getLegalMoves(state, role);
-         System.out.println("[MM] Scoring the list of moves (" + moves + ")");
+         log("Scoring the list of moves (" + moves + ")", null);
          ScoredMoveSet moveSet = new ScoredMoveSet();
 
          for (Move move : moves) {
+             log("Evaluating move " + move, null);
              double evaluation = evaluateMove(move, state, role, stateMachine);
-             System.out.println("[MM] Move " + move + ": " + evaluation);
              moveSet.put(move, evaluation);
          }
          moveSet.normalize();
+         StringBuilder sb = new StringBuilder();
+         sb.append("Final scores: ");
+         for(Move move : moveSet.keySet()){
+        	 sb.append(move.toString());
+        	 sb.append("=");
+        	 sb.append(moveSet.get(move));
+        	 sb.append(" ");
+         }
+         log(sb.toString(), null);
          return moveSet;
     }
 
