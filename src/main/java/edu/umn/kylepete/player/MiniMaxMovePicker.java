@@ -28,14 +28,17 @@ public abstract class MiniMaxMovePicker implements MovePicker {
         return role;
     }
 
-    private double evaluateMove(Move move, MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
+    private double evaluateMove(Move move, MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException, WinningMoveException {
         return evaluateMove(1, move, state, role, stateMachine);
     }
 
-    private double evaluateMove(int depth, Move move, MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
+    private double evaluateMove(int depth, Move move, MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException, WinningMoveException {
         MachineState nextState = stateMachine.getRandomNextState(state, role, move);
         if (stateMachine.isTerminal(nextState)) {
             int goal = stateMachine.getGoal(nextState, role);
+            if(depth == 1 && goal == 100){
+            	throw new WinningMoveException(move);
+        	}
             double depthAdjustment = 0.0001 * depth;
             double evaluation = goal * (1-depthAdjustment) + 50 * depthAdjustment;
             log("Goal state " + goal + ".  Returning " + evaluation, depth);
@@ -74,7 +77,7 @@ public abstract class MiniMaxMovePicker implements MovePicker {
 
     abstract protected double evaluateState(Role role, MachineState state);
 
-    public ScoredMoveSet getScoredMoves(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException{
+    public ScoredMoveSet getScoredMoves(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException, WinningMoveException{
          List<Move> moves = stateMachine.getLegalMoves(state, role);
          log("Scoring the list of moves (" + moves + ")", null);
          ScoredMoveSet moveSet = new ScoredMoveSet();
@@ -99,7 +102,12 @@ public abstract class MiniMaxMovePicker implements MovePicker {
 
     @Override
     public Move pickBestMove(MachineState state, Role role, StateMachine stateMachine) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
-    	ScoredMoveSet moveSet = getScoredMoves(state, role, stateMachine);
-    	return moveSet.getBestMove();
+    	try{
+    		ScoredMoveSet moveSet = getScoredMoves(state, role, stateMachine);
+        	return moveSet.getBestMove();
+    	}catch(WinningMoveException e){
+    		log("WinningMoveException: Returning move " + e.move, null);
+    		return e.move;
+    	}
     }
 }
