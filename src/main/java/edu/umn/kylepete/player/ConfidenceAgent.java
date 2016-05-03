@@ -25,6 +25,8 @@ public class ConfidenceAgent extends StateMachineGamer {
     private Map<SubAgent, SubAgentThread> subAgents;
     private Map<SubAgent, Move> bestMoves;
     private int depth;
+    private int minBranchingFactor;
+    private double avgBranchingFactor;
     private int maxBranchingFactor;
 
     public ConfidenceAgent() {
@@ -33,18 +35,28 @@ public class ConfidenceAgent extends StateMachineGamer {
         subAgents.put(new LearningPlayer(), null);
         bestMoves = new HashMap<SubAgent, Move>();
         depth = 0;
-        maxBranchingFactor = 0;
+        minBranchingFactor = Integer.MAX_VALUE;
+        avgBranchingFactor = 0;
+        maxBranchingFactor = Integer.MIN_VALUE;
     }
 
     @Override
     public Move stateMachineSelectMove(final long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
+        // Start the clock
+        long start = System.currentTimeMillis();
+
+        // Update statistical records
         depth++;
         int branchingFactor = getStateMachine().getLegalJointMoves(getCurrentState()).size();
         if (branchingFactor > maxBranchingFactor) {
             maxBranchingFactor = branchingFactor;
         }
-        long start = System.currentTimeMillis();
+        avgBranchingFactor = avgBranchingFactor + ((branchingFactor - avgBranchingFactor) / depth);
+        if (branchingFactor < minBranchingFactor) {
+            minBranchingFactor = branchingFactor;
+        }
 
+        // Update the previous move for all agents
         if (getLastMove() != null) {
             for (SubAgent subAgent : subAgents.keySet()) {
                 subAgent.setLastMove(getLastMove());
@@ -52,6 +64,7 @@ public class ConfidenceAgent extends StateMachineGamer {
             }
         }
 
+        // Prepare variables
         Move chosenMove = null;
         final ScoredMoveSet moveSet = new ScoredMoveSet();
 
@@ -81,6 +94,7 @@ public class ConfidenceAgent extends StateMachineGamer {
             moveSet.combine(subAgentMoveSet);
         }
 
+        // Pick the best move (if a winning move wasn't already found)
         if (chosenMove == null) {
             for (SubAgent subAgent : bestMoves.keySet()) {
                 Move bestMove = bestMoves.get(subAgent);
@@ -95,6 +109,7 @@ public class ConfidenceAgent extends StateMachineGamer {
             System.out.println("Chosen move: " + chosenMove);
         }
 
+        // Wrap up and submit the move
         long stop = System.currentTimeMillis();
         List<Move> validMoves = getStateMachine().getLegalMoves(getCurrentState(), getRole());
         notifyObservers(new GamerSelectedMoveEvent(validMoves, chosenMove, stop - start));
@@ -123,6 +138,8 @@ public class ConfidenceAgent extends StateMachineGamer {
             subAgent.stateMachineStop();
         }
         System.out.println("Game depth: " + depth);
+        System.out.println("Min branching factor: " + minBranchingFactor);
+        System.out.println("Avg branching factor: " + avgBranchingFactor);
         System.out.println("Max branching factor: " + maxBranchingFactor);
     }
 
