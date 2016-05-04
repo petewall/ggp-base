@@ -77,6 +77,7 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         super.stateMachineMetaGame(timeout);
         int cores = Runtime.getRuntime().availableProcessors();
+        cores = cores / 2;
         log("Starting " + cores + " threads");
         threadPool = new ArrayList<WorkerThread>(cores);
         for (int i = 0; i < cores; ++i) {
