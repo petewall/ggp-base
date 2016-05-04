@@ -37,6 +37,7 @@ public abstract class MiniMaxMovePicker implements MovePicker {
         if (stateMachine.isTerminal(nextState)) {
             int goal = stateMachine.getGoal(nextState, role);
             if(depth == 1 && goal == 100){
+        		log("WinningMoveException for move " + move, depth);
             	throw new WinningMoveException(move);
         	}
             double depthAdjustment = 0.0001 * depth;
@@ -89,14 +90,11 @@ public abstract class MiniMaxMovePicker implements MovePicker {
          }
          moveSet.normalize();
          StringBuilder sb = new StringBuilder();
-         sb.append("Final scores: ");
+         log("Final scores: ", null);
          for(Move move : moveSet.keySet()){
-        	 sb.append(move.toString());
-        	 sb.append("=");
-        	 sb.append(moveSet.get(move));
-        	 sb.append(" ");
+        	 log("    " + move + " --> " + moveSet.get(move), null);
          }
-         log(sb.toString(), null);
+         log("Best move: " + moveSet.getBestMove(), null);
          return moveSet;
     }
 
@@ -106,7 +104,6 @@ public abstract class MiniMaxMovePicker implements MovePicker {
     		ScoredMoveSet moveSet = getScoredMoves(state, role, stateMachine);
         	return moveSet.getBestMove();
     	}catch(WinningMoveException e){
-    		log("WinningMoveException: Returning move " + e.move, null);
     		return e.move;
     	}
     }

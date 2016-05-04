@@ -79,7 +79,7 @@ public class UCTPlayer extends SubAgent {
                 if (this.children.containsKey(moveSet)) {
                     this.children.get(moveSet).merge(child);
                 } else {
-                    //System.out.println("Moveset wasn't found: " + moveSet);
+                    //log("Moveset wasn't found: " + moveSet);
                     this.children.put(moveSet, child);
                 }
             }
@@ -90,7 +90,7 @@ public class UCTPlayer extends SubAgent {
                 if (threadName != null)
                     threadName = Thread.currentThread().getName();
                 if (!Thread.currentThread().getName().equals(threadName)) {
-                    System.out.println("Thread confusion!");
+                    log("Thread confusion!");
                 }
             }
         }
@@ -181,7 +181,7 @@ public class UCTPlayer extends SubAgent {
     }
 
     private double getComplexityConfidence(int total, int branchingFactor, double avgDepth) {
-        System.out.println("complexity confidence: total(" + total + "), branch(" + branchingFactor + "), depth(" + avgDepth + ")");
+        log("complexity confidence: total(" + total + "), branch(" + branchingFactor + "), depth(" + avgDepth + ")");
         return Math.min(1, (total / (avgDepth * branchingFactor)) * (avgDepth / branchingFactor));
     }
 
@@ -197,14 +197,14 @@ public class UCTPlayer extends SubAgent {
         }
 
         int totalIterations = runTheWork();
-        System.out.println("ran " + totalIterations + " iterations.");
+        log("ran " + totalIterations + " iterations.");
         gameIterations += totalIterations;
 
         double complexityConfidence = getComplexityConfidence(totalIterations, root.children.size(), (double)depthCount.get() / totalIterations);
         for (List<Move> moveset : this.root.children.keySet()) {
             Move move = moveset.get(roleIndex);
             double ucb1 = getUCB1(this.root, moveset, 0);
-            System.out.println("    " + moveset + ": " + root.children.get(moveset));
+            log("    " + moveset + ": " + root.children.get(moveset));
             scoredMoves.put(move, ucb1);
 
             double distributionConfidence = getDistributionConfidence(totalIterations, root.children.get(moveset).visits, root.children.size());
@@ -219,7 +219,7 @@ public class UCTPlayer extends SubAgent {
             scoredMoves.applyConfidence(move, confidence);
             scoredMoves.applyConfidence(move, complexityConfidence);
             double after = scoredMoves.get(move);
-            System.out.println("    Applying confidence to move " + move + ": " + before + " * (" + confidence + ", " + complexityConfidence + ") == " + after);
+            log("    Applying confidence to move " + move + ": " + before + " * (" + confidence + ", " + complexityConfidence + ") == " + after);
         }
         scoredMoves.normalize();
         return scoredMoves;
@@ -231,13 +231,13 @@ public class UCTPlayer extends SubAgent {
 
         ScoredMoveSet moveSet = scoreValidMoves(timeout);
         Move chosenMove = moveSet.getBestMove();
-        System.out.println("Picking from the best of: ");
+        log("Picking from the best of: ");
         checkDepths(this.root, true);
 
         long stop = System.currentTimeMillis();
         List<Move> validMoves = getStateMachine().getLegalMoves(this.root.state, getRole());
         notifyObservers(new GamerSelectedMoveEvent(validMoves, chosenMove, stop - start));
-        System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
+        log("ran for " + (stop - start) / 1000.0 + " seconds");
         return chosenMove;
     }
 
@@ -248,10 +248,10 @@ public class UCTPlayer extends SubAgent {
             if (depth == null) {
                 depth = new Integer(node.depth);
             } else if (depth.intValue() != node.depth) {
-                System.out.println("The depths don't agree!");
+                log("The depths don't agree!");
             }
             if (printNodes) {
-                System.out.println("    " + node + " --> " + moveset);
+                log("    " + node + " --> " + moveset);
             }
         }
     }
@@ -279,12 +279,12 @@ public class UCTPlayer extends SubAgent {
                 if (newNode != null) {
                     return newNode;
                 }
-//                System.out.println("The new node was null!");
+//                log("The new node was null!");
             }
             List<Move> moveset = bestMoveSet(current, 1.44);
             current = current.children.get(moveset);
             if (current == null) {
-                System.out.println("The best child was null!");
+                log("The best child was null!");
             }
         }
         return current;
@@ -319,11 +319,11 @@ public class UCTPlayer extends SubAgent {
                 }
             }
             if (winning) {
-//                System.out.println("Found a decisive winning move!");
+//                log("Found a decisive winning move!");
                 return move;
             }
             if (losing) {
-//                System.out.println("Found a decisive losing move!");
+//                log("Found a decisive losing move!");
                 return move;
             }
         }
@@ -342,7 +342,7 @@ public class UCTPlayer extends SubAgent {
             return node;
         }
 
-//        System.out.println("Someone expanded them all!");
+//        log("Someone expanded them all!");
         return null;
     }
 
@@ -372,7 +372,7 @@ public class UCTPlayer extends SubAgent {
         for (List<Move> moveset : current.children.keySet()) {
             double UCB1 = getUCB1(current, moveset, explorationConstant);
             if (Double.isNaN(UCB1)) {
-                System.out.println("Whuh oh!");
+                log("Whuh oh!");
             }
             if (UCB1 > best) {
                 bestMoveSet = moveset;
@@ -387,7 +387,7 @@ public class UCTPlayer extends SubAgent {
     }
 
     protected double defaultPolicy(StateMachine stateMachine, StateNode current) throws GoalDefinitionException, MoveDefinitionException, TransitionDefinitionException {
-//        System.out.println(Thread.currentThread().getName() + "DefaultPolicy: " + current);
+//        log(Thread.currentThread().getName() + "DefaultPolicy: " + current);
         MachineState startState = current.state;
         int[] depth = new int[1];
         MachineState terminalState = stateMachine.performDepthCharge(startState, depth);
@@ -425,7 +425,7 @@ public class UCTPlayer extends SubAgent {
     @Override
     public void stateMachineStop() {
         this.root = null;
-        System.out.println("Total iterations: " + gameIterations);
+        log("Total iterations: " + gameIterations);
     }
 
     @Override
@@ -436,5 +436,9 @@ public class UCTPlayer extends SubAgent {
     @Override
     public DetailPanel getDetailPanel() {
         return new SimpleDetailPanel();
+    }
+
+    protected void log(String message){
+    	System.out.println("[UCT] " + message);
     }
 }

@@ -98,22 +98,22 @@ public class ConfidenceAgent extends StateMachineGamer {
         if (chosenMove == null) {
             for (SubAgent subAgent : bestMoves.keySet()) {
                 Move bestMove = bestMoves.get(subAgent);
-                System.out.println("Best move from " + subAgent.getName() + ": " + bestMove);
+                log("Best move from " + subAgent.getName() + ": " + bestMove);
             }
             chosenMove = moveSet.getBestMove();
-            System.out.println("Picking from the best of: ");
+            log("Picking the best combined of: ");
             for (Move move : moveSet.keySet()) {
                 Double score = moveSet.get(move);
-                System.out.println("    " + move + " --> " + score);
+                log("    " + move + " --> " + score);
             }
-            System.out.println("Chosen move: " + chosenMove);
+            log("Chosen move: " + chosenMove);
         }
 
         // Wrap up and submit the move
         long stop = System.currentTimeMillis();
         List<Move> validMoves = getStateMachine().getLegalMoves(getCurrentState(), getRole());
         notifyObservers(new GamerSelectedMoveEvent(validMoves, chosenMove, stop - start));
-        System.out.println("ran for " + (stop - start) / 1000.0 + " seconds");
+        log("ran for " + (stop - start) / 1000.0 + " seconds");
         return chosenMove;
     }
 
@@ -137,10 +137,10 @@ public class ConfidenceAgent extends StateMachineGamer {
         for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.stateMachineStop();
         }
-        System.out.println("Game depth: " + depth);
-        System.out.println("Min branching factor: " + minBranchingFactor);
-        System.out.println("Avg branching factor: " + avgBranchingFactor);
-        System.out.println("Max branching factor: " + maxBranchingFactor);
+        log("Game depth: " + depth);
+        log("Min branching factor: " + minBranchingFactor);
+        log("Avg branching factor: " + avgBranchingFactor);
+        log("Max branching factor: " + maxBranchingFactor);
     }
 
     @Override
@@ -155,5 +155,9 @@ public class ConfidenceAgent extends StateMachineGamer {
         for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.preview(g, timeout);
         }
+    }
+
+    private void log(String message){
+    	System.out.println("[Confidence] " + message);
     }
 }

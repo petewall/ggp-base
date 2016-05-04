@@ -33,9 +33,9 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         @Override
         public void run() {
             try {
-//                System.out.println(getName() + ": Making copies!");
+//                log(getName() + ": Making copies!");
                 rootCopy = root.makeCopy();
-//                System.out.println(getName() + ": Done.");
+//                log(getName() + ": Done.");
                 while (System.currentTimeMillis() < finishBy) {
                     StateNode current = treePolicy(stateMachine, rootCopy);
                     double value = defaultPolicy(stateMachine, current);
@@ -62,9 +62,9 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
                 WorkerThread thread = threadPool.get(i);
                 thread.join();
                 totalIterations += thread.iterations;
-//                System.out.println(thread.getName() + ": Merging to root");
+//                log(thread.getName() + ": Merging to root");
                 this.root.merge(thread.rootCopy);
-//                System.out.println(thread.getName() + ": Done");
+//                log(thread.getName() + ": Done");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -77,7 +77,7 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
         super.stateMachineMetaGame(timeout);
         int cores = Runtime.getRuntime().availableProcessors();
-        System.out.println("Starting " + cores + " threads");
+        log("Starting " + cores + " threads");
         threadPool = new ArrayList<WorkerThread>(cores);
         for (int i = 0; i < cores; ++i) {
             threadPool.add(new WorkerThread(i));
@@ -90,7 +90,7 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
             thread.interrupt();
         }
         this.root = null;
-        System.out.println("Total iterations: " + gameIterations);
+        log("Total iterations: " + gameIterations);
     }
 
     @Override
