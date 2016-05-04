@@ -1,0 +1,105 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-MiniMaxRandomPlayer-vs-LearningPlayer-20160503_223902.game2",
+    "moves": [
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 2 )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "LearningPlayer",
+        "MiniMaxRandomPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "n2m8N8QoJ0gfY3uuTuPtW1sAaf0G6960",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462333186073,
+    "stateTimes": [
+        1462333186085,
+        1462333187987,
+        1462333188470,
+        1462333190312,
+        1462333190813,
+        1462333192762,
+        1462333193255,
+        1462333193767
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( control black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 4 1 red ) ( cell 8 1 black ) )",
+        "( ( cell 3 1 red ) ( control black ) ( cell 4 1 red ) ( cell 8 1 black ) )",
+        "( ( control red ) ( cell 3 1 red ) ( cell 8 2 black ) ( cell 4 1 red ) ( cell 8 1 black ) )",
+        "( ( cell 3 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( control black ) ( cell 4 1 red ) ( cell 8 1 black ) )",
+        "( ( control red ) ( cell 3 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( cell 8 3 black ) ( cell 4 1 red ) ( cell 8 1 black ) )",
+        "( ( cell 3 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( cell 8 3 black ) ( control black ) ( cell 4 1 red ) ( cell 2 1 red ) ( cell 8 1 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}
