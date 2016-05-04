@@ -54,7 +54,7 @@ public class MiniMaxRandomPlayer extends SubAgent {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-    	picker = new MiniMaxRandomMovePicker(4);
+    	picker = new MiniMaxRandomMovePicker(3);
 
     }
 
