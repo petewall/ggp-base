@@ -1,0 +1,1109 @@
+2016-04-21 20:25:30.583 - Reading game archives from file /Users/christik/eclipse/workspaces/eclipse4.5/umn/ggp-base/archives/match-archive-ALL.txt
+2016-04-21 20:26:53.031 - Found 432 unique games to train with a total of 342637 matches.
+
+
+
+
+2016-04-21 20:26:55.217 (Game 4) - Starting to train game http://games.ggp.org/base/games/numbertictactoe/v0/ from 1 matches.
+2016-04-21 20:26:55.217 (Game 7) - Starting to train game http://games.ggp.org/base/games/knightfight/v0/ from 1 matches.
+2016-04-21 20:26:55.217 (Game 4) - Building neural network...
+2016-04-21 20:26:55.217 (Game 7) - Building neural network...
+
+
+2016-04-21 20:26:55.411 (Game 1) - Starting to train game http://games.ggp.org/base/games/checkersTorus/v1/ from 1 matches.
+2016-04-21 20:26:55.411 (Game 1) - Building neural network...
+
+
+2016-04-21 20:26:55.713 (Game 6) - Starting to train game http://games.ggp.org/base/games/checkers-newgoals/v1/ from 1 matches.
+2016-04-21 20:26:55.713 (Game 6) - Building neural network...
+java.io.IOException: Could not load URL: http://games.ggp.org/dresden/games/guard_intruder/v0/
+	at org.ggp.base.util.loader.RemoteResourceLoader.loadRaw(RemoteResourceLoader.java:59)
+	at org.ggp.base.util.loader.RemoteResourceLoader.loadRaw(RemoteResourceLoader.java:40)
+	at org.ggp.base.util.loader.RemoteResourceLoader.loadJSON(RemoteResourceLoader.java:26)
+	at org.ggp.base.util.loader.RemoteResourceLoader.loadJSON(RemoteResourceLoader.java:23)
+	at org.ggp.base.util.game.RemoteGameRepository.getGameMetadataFromRepository(RemoteGameRepository.java:110)
+	at org.ggp.base.util.game.RemoteGameRepository.loadSingleGame(RemoteGameRepository.java:50)
+	at edu.umn.kylepete.neuralnetworks.NeuralNetworkTrainer$GameTrainer.run(NeuralNetworkTrainer.java:240)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+2016-04-21 20:26:56.503 (Game 5) - Starting to train game http://games.ggp.org/stanford/games/tictictoe/v0/ from 1 matches.
+2016-04-21 20:26:56.503 (Game 5) - Building neural network...
+2016-04-21 20:26:56.508 (Game 4) - Built GameNeuralNetwork for game Number Tic-Tac-Toe  (http://games.ggp.org/base/games/numbertictactoe/v0/)
+  Neural Network count: 6  Total neurons: 11628
+  NeuralNetwork for goal: ( goal even 0 )
+    Total layers: 5
+    Total neurons: 1939
+  NeuralNetwork for goal: ( goal even 100 )
+    Total layers: 5
+    Total neurons: 1939
+  NeuralNetwork for goal: ( goal even 50 )
+    Total layers: 4
+    Total neurons: 1936
+  NeuralNetwork for goal: ( goal odd 0 )
+    Total layers: 5
+    Total neurons: 1939
+  NeuralNetwork for goal: ( goal odd 100 )
+    Total layers: 5
+    Total neurons: 1939
+  NeuralNetwork for goal: ( goal odd 50 )
+    Total layers: 4
+    Total neurons: 1936
+2016-04-21 20:26:56.508 (Game 4) - Loading games from archive...
+
+
+2016-04-21 20:26:56.717 (Game 2) - Starting to train game http://games.ggp.org/dresden/games/Goldrush/v0/ from 1 matches.
+2016-04-21 20:26:56.717 (Game 2) - Building neural network...
+
+
+2016-04-21 20:26:56.723 (Game 3) - Starting to train game http://games.ggp.org/dresden/games/mastermind/v0/ from 1 matches.
+2016-04-21 20:26:56.723 (Game 3) - Building neural network...
+
+
+2016-04-21 20:26:56.872 (Game 9) - Starting to train game http://games.ggp.org/dresden/games/SC_TestOnly_enabled/v0/ from 1 matches.
+2016-04-21 20:26:56.872 (Game 9) - Building neural network...
+2016-04-21 20:26:57.262 (Game 5) - Built GameNeuralNetwork for game Tic Tic Toe  (http://games.ggp.org/stanford/games/tictictoe/v0/)
+  Neural Network count: 6  Total neurons: 724
+  NeuralNetwork for goal: ( goal white 0 )
+    Total layers: 5
+    Total neurons: 90
+  NeuralNetwork for goal: ( goal white 100 )
+    Total layers: 5
+    Total neurons: 90
+  NeuralNetwork for goal: ( goal white 50 )
+    Total layers: 6
+    Total neurons: 182
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 5
+    Total neurons: 90
+  NeuralNetwork for goal: ( goal black 50 )
+    Total layers: 6
+    Total neurons: 182
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 5
+    Total neurons: 90
+2016-04-21 20:26:57.263 (Game 5) - Loading games from archive...
+2016-04-21 20:27:01.537 (Game 9) - Built GameNeuralNetwork for game zNYxdkLQol1/1toaFn3KMqNQyIAoVN20/c3KbBUQnfs=  (http://games.ggp.org/dresden/games/SC_TestOnly_enabled/v0/)
+  Neural Network count: 22  Total neurons: 22
+  NeuralNetwork for goal: ( goal Wizard 80 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 90 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 20 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 50 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 40 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 60 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 70 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 10 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 0 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Wizard 30 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 70 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 10 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 60 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 50 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 20 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 40 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 30 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 0 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 90 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal Sorceress 80 )
+    Total layers: 1
+    Total neurons: 1
+2016-04-21 20:27:01.537 (Game 9) - Loading games from archive...
+2016-04-21 20:27:03.525 (Game 2) - Built GameNeuralNetwork for game WWbaCgEkzKwbIUOpNXxFP9L6UzQJtUOdBQ0MC2VfB8A=  (http://games.ggp.org/dresden/games/Goldrush/v0/)
+  Neural Network count: 22  Total neurons: 4822
+  NeuralNetwork for goal: ( goal Red 80 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 70 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 10 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 60 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 30 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 20 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 40 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 100 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 50 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 90 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Red 0 )
+    Total layers: 5
+    Total neurons: 401
+  NeuralNetwork for goal: ( goal Green 60 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 0 )
+    Total layers: 5
+    Total neurons: 401
+  NeuralNetwork for goal: ( goal Green 70 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 10 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 50 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 100 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 40 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 20 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 80 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 90 )
+    Total layers: 4
+    Total neurons: 201
+  NeuralNetwork for goal: ( goal Green 30 )
+    Total layers: 4
+    Total neurons: 201
+2016-04-21 20:27:03.525 (Game 2) - Loading games from archive...
+2016-04-21 20:27:06.332 (Game 3) - Built GameNeuralNetwork for game 5meFojwWHGNxT/NABeQMTBGZh9xsoXVYM+Svvt1ZBkk=  (http://games.ggp.org/dresden/games/mastermind/v0/)
+  Neural Network count: 10  Total neurons: 410831
+  NeuralNetwork for goal: ( goal player 100 )
+    Total layers: 11
+    Total neurons: 5798
+  NeuralNetwork for goal: ( goal player 35 )
+    Total layers: 8
+    Total neurons: 77765
+  NeuralNetwork for goal: ( goal player 15 )
+    Total layers: 6
+    Total neurons: 158981
+  NeuralNetwork for goal: ( goal player 80 )
+    Total layers: 10
+    Total neurons: 1449
+  NeuralNetwork for goal: ( goal player 50 )
+    Total layers: 10
+    Total neurons: 17333
+  NeuralNetwork for goal: ( goal player 0 )
+    Total layers: 4
+    Total neurons: 145157
+  NeuralNetwork for goal: ( goal player 85 )
+    Total layers: 10
+    Total neurons: 1449
+  NeuralNetwork for goal: ( goal player 95 )
+    Total layers: 10
+    Total neurons: 1449
+  NeuralNetwork for goal: ( goal player 90 )
+    Total layers: 10
+    Total neurons: 1449
+  NeuralNetwork for goal: ( goal random 100 )
+    Total layers: 1
+    Total neurons: 1
+2016-04-21 20:27:06.332 (Game 3) - Loading games from archive...
+2016-04-21 20:27:07.671 (Game 1) - Built GameNeuralNetwork for game Checkers on a Torus  (http://games.ggp.org/base/games/checkersTorus/v1/)
+  Neural Network count: 26  Total neurons: 26
+  NeuralNetwork for goal: ( goal black 32 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 56 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 8 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 80 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 48 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 72 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 40 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 24 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 64 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 16 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 90 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 80 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 40 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 90 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 24 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 64 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 48 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 8 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 0 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 72 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 32 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 56 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 16 )
+    Total layers: 1
+    Total neurons: 1
+2016-04-21 20:27:07.671 (Game 1) - Loading games from archive...
+2016-04-21 20:27:07.813 (Game 7) - Built GameNeuralNetwork for game Knight Fight  (http://games.ggp.org/base/games/knightfight/v0/)
+  Neural Network count: 4  Total neurons: 1608
+  NeuralNetwork for goal: ( goal white 0 )
+    Total layers: 3
+    Total neurons: 402
+  NeuralNetwork for goal: ( goal white 100 )
+    Total layers: 3
+    Total neurons: 402
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 3
+    Total neurons: 402
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 3
+    Total neurons: 402
+2016-04-21 20:27:07.813 (Game 7) - Loading games from archive...
+2016-04-21 20:27:19.616 (Game 6) - Built GameNeuralNetwork for game Checkers with Modified Goals  (http://games.ggp.org/base/games/checkers-newgoals/v1/)
+  Neural Network count: 22  Total neurons: 1116
+  NeuralNetwork for goal: ( goal black 40 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal black 30 )
+    Total layers: 3
+    Total neurons: 46
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal black 60 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal black 20 )
+    Total layers: 3
+    Total neurons: 42
+  NeuralNetwork for goal: ( goal black 55 )
+    Total layers: 3
+    Total neurons: 54
+  NeuralNetwork for goal: ( goal black 70 )
+    Total layers: 3
+    Total neurons: 46
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal black 10 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal black 90 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal black 80 )
+    Total layers: 3
+    Total neurons: 42
+  NeuralNetwork for goal: ( goal red 60 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal red 80 )
+    Total layers: 3
+    Total neurons: 42
+  NeuralNetwork for goal: ( goal red 30 )
+    Total layers: 3
+    Total neurons: 46
+  NeuralNetwork for goal: ( goal red 90 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal red 0 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal red 70 )
+    Total layers: 3
+    Total neurons: 46
+  NeuralNetwork for goal: ( goal red 40 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal red 10 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal red 45 )
+    Total layers: 3
+    Total neurons: 54
+  NeuralNetwork for goal: ( goal red 100 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal red 20 )
+    Total layers: 3
+    Total neurons: 42
+2016-04-21 20:27:19.616 (Game 6) - Loading games from archive...
+2016-04-21 20:30:18.716 (Game 1) - Training...
+2016-04-21 20:30:18.716 (Game 2) - Training...
+2016-04-21 20:30:18.716 (Game 5) - Training...
+2016-04-21 20:30:18.716 (Game 9) - Training...
+2016-04-21 20:30:18.716 (Game 4) - Training...
+2016-04-21 20:30:18.717 (Game 3) - Training...
+2016-04-21 20:30:18.731 (Game 7) - Training...
+2016-04-21 20:30:18.789 (Game 9) - Finished training game (1 matches) in 0.0011 minutes.
+2016-04-21 20:30:18.790 (Game 9) - Trained game 9 of 432 in a total of 4.80375 minutes.
+2016-04-21 20:30:18.857 (Game 9) - Wrote game database to archives/defaultGameDatabase.json
+2016-04-21 20:30:18.963 (Game 5) - Finished training game (1 matches) in 0.004116666666666667 minutes.
+2016-04-21 20:30:18.963 (Game 5) - Trained game 5 of 432 in a total of 4.806633333333334 minutes.
+2016-04-21 20:30:19.014 (Game 1) - Finished training game (1 matches) in 0.004966666666666666 minutes.
+2016-04-21 20:30:19.014 (Game 1) - Trained game 1 of 432 in a total of 4.807483333333334 minutes.
+2016-04-21 20:30:19.099 (Game 5) - Wrote game database to archives/defaultGameDatabase.json
+2016-04-21 20:30:19.112 (Game 7) - Finished training game (1 matches) in 0.006333333333333333 minutes.
+2016-04-21 20:30:19.112 (Game 7) - Trained game 7 of 432 in a total of 4.809116666666667 minutes.
+
+
+2016-04-21 20:30:19.119 (Game 10) - Starting to train game http://games.ggp.org/dresden/games/RobinsonRoulette_no_white_peg/v0/ from 1 matches.
+2016-04-21 20:30:19.119 (Game 10) - Building neural network...
+2016-04-21 20:30:19.140 (Game 10) - Failed to train game http://games.ggp.org/dresden/games/RobinsonRoulette_no_white_peg/v0/ due to a training exception: java.util.concurrent.ExecutionException java.lang.IllegalStateException: var is ?x;
+varDomains key set is [];
+varsInHead is [];
+rule is ( <= ( goal player 100 ) ( not ( true ( outer ?x empty ) ) ) )
+2016-04-21 20:30:19.187 (Game 1) - Wrote game database to archives/defaultGameDatabase.json
+2016-04-21 20:30:19.512 (Game 7) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:30:19.709 (Game 11) - Starting to train game http://games.ggp.org/dresden/games/Checkers-BreakThrough/v0/ from 1 matches.
+2016-04-21 20:30:19.709 (Game 11) - Building neural network...
+
+
+2016-04-21 20:30:19.816 (Game 12) - Starting to train game http://games.ggp.org/base/games/lightsOnParallel/v0/ from 1 matches.
+2016-04-21 20:30:19.816 (Game 12) - Building neural network...
+2016-04-21 20:30:19.852 (Game 12) - Built GameNeuralNetwork for game Lights On Parallel  (http://games.ggp.org/base/games/lightsOnParallel/v0/)
+  Neural Network count: 2  Total neurons: 212
+  NeuralNetwork for goal: ( goal robot 0 )
+    Total layers: 4
+    Total neurons: 106
+  NeuralNetwork for goal: ( goal robot 100 )
+    Total layers: 4
+    Total neurons: 106
+2016-04-21 20:30:19.852 (Game 12) - Loading games from archive...
+
+
+2016-04-21 20:30:20.093 (Game 13) - Starting to train game http://games.ggp.org/base/games/checkers-suicide-cylinder-mustjump/v1/ from 1 matches.
+2016-04-21 20:30:20.093 (Game 13) - Building neural network...
+
+
+2016-04-21 20:30:20.197 (Game 14) - Starting to train game http://games.ggp.org/dresden/games/vacuumcleaner_obstacles_6/v0/ from 1 matches.
+2016-04-21 20:30:20.197 (Game 14) - Building neural network...
+2016-04-21 20:30:20.545 (Game 2) - Finished training game (1 matches) in 0.03048333333333333 minutes.
+2016-04-21 20:30:20.545 (Game 2) - Trained game 2 of 432 in a total of 4.833 minutes.
+2016-04-21 20:30:20.757 (Game 2) - Wrote game database to archives/defaultGameDatabase.json
+2016-04-21 20:30:20.797 (Game 11) - Built GameNeuralNetwork for game VCW84DG3lAe6wld2yMBfoHwSp4FfYVmvBs2jS6EuaWE=  (http://games.ggp.org/dresden/games/Checkers-BreakThrough/v0/)
+  Neural Network count: 6  Total neurons: 1804
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 6
+    Total neurons: 294
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 6
+    Total neurons: 294
+  NeuralNetwork for goal: ( goal black 50 )
+    Total layers: 4
+    Total neurons: 314
+  NeuralNetwork for goal: ( goal white 0 )
+    Total layers: 6
+    Total neurons: 294
+  NeuralNetwork for goal: ( goal white 50 )
+    Total layers: 4
+    Total neurons: 314
+  NeuralNetwork for goal: ( goal white 100 )
+    Total layers: 6
+    Total neurons: 294
+2016-04-21 20:30:20.797 (Game 11) - Loading games from archive...
+
+
+2016-04-21 20:30:21.087 (Game 15) - Starting to train game http://games.ggp.org/base/games/ticTacHeaven/v0/ from 2 matches.
+2016-04-21 20:30:21.087 (Game 15) - Building neural network...
+2016-04-21 20:30:21.278 (Game 15) - Built GameNeuralNetwork for game Tic Tac Heaven  (http://games.ggp.org/base/games/ticTacHeaven/v0/)
+  Neural Network count: 6  Total neurons: 15008
+  NeuralNetwork for goal: ( goal oplayer 100 )
+    Total layers: 8
+    Total neurons: 1799
+  NeuralNetwork for goal: ( goal oplayer 0 )
+    Total layers: 9
+    Total neurons: 3033
+  NeuralNetwork for goal: ( goal oplayer 50 )
+    Total layers: 8
+    Total neurons: 2672
+  NeuralNetwork for goal: ( goal xplayer 100 )
+    Total layers: 8
+    Total neurons: 1799
+  NeuralNetwork for goal: ( goal xplayer 0 )
+    Total layers: 9
+    Total neurons: 3033
+  NeuralNetwork for goal: ( goal xplayer 50 )
+    Total layers: 8
+    Total neurons: 2672
+2016-04-21 20:30:21.278 (Game 15) - Loading games from archive...
+2016-04-21 20:30:21.293 (Game 4) - Finished training game (1 matches) in 0.04293333333333334 minutes.
+2016-04-21 20:30:21.293 (Game 4) - Trained game 4 of 432 in a total of 4.845466666666667 minutes.
+2016-04-21 20:30:22.475 (Game 4) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:30:22.665 (Game 16) - Starting to train game http://games.ggp.org/dresden/games/Nine_Mens_Morris_0.11_2p/v0/ from 2 matches.
+2016-04-21 20:30:22.666 (Game 16) - Building neural network...
+2016-04-21 20:30:23.364 (Game 6) - Training...
+2016-04-21 20:30:24.088 (Game 16) - Built GameNeuralNetwork for game 1OlCEaYUb2buw2ghQkd9PKb5MwwwygsUfje3btFvPFc=  (http://games.ggp.org/dresden/games/Nine_Mens_Morris_0.11_2p/v0/)
+  Neural Network count: 4  Total neurons: 4
+  NeuralNetwork for goal: ( goal white 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal white 0 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 1
+    Total neurons: 1
+2016-04-21 20:30:24.088 (Game 16) - Loading games from archive...
+2016-04-21 20:30:26.021 (Game 6) - Finished training game (1 matches) in 0.044283333333333334 minutes.
+2016-04-21 20:30:26.021 (Game 6) - Trained game 6 of 432 in a total of 4.924266666666667 minutes.
+2016-04-21 20:30:26.470 (Game 6) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:30:26.690 (Game 17) - Starting to train game http://games.ggp.org/base/games/lightsOnSimul4/v0/ from 2 matches.
+2016-04-21 20:30:26.690 (Game 17) - Building neural network...
+2016-04-21 20:30:26.789 (Game 17) - Built GameNeuralNetwork for game Lights On Simult-4  (http://games.ggp.org/base/games/lightsOnSimul4/v0/)
+  Neural Network count: 2  Total neurons: 212
+  NeuralNetwork for goal: ( goal robot 0 )
+    Total layers: 4
+    Total neurons: 106
+  NeuralNetwork for goal: ( goal robot 100 )
+    Total layers: 4
+    Total neurons: 106
+2016-04-21 20:30:26.789 (Game 17) - Loading games from archive...
+2016-04-21 20:30:44.076 (Game 13) - Built GameNeuralNetwork for game Checkers on a Cylinder, Suicide, Must-Jump  (http://games.ggp.org/base/games/checkers-suicide-cylinder-mustjump/v1/)
+  Neural Network count: 22  Total neurons: 1116
+  NeuralNetwork for goal: ( goal black 60 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal black 20 )
+    Total layers: 3
+    Total neurons: 42
+  NeuralNetwork for goal: ( goal black 90 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal black 70 )
+    Total layers: 3
+    Total neurons: 46
+  NeuralNetwork for goal: ( goal black 40 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal black 10 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal black 55 )
+    Total layers: 3
+    Total neurons: 54
+  NeuralNetwork for goal: ( goal black 80 )
+    Total layers: 3
+    Total neurons: 42
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal black 30 )
+    Total layers: 3
+    Total neurons: 46
+  NeuralNetwork for goal: ( goal red 100 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal red 40 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal red 20 )
+    Total layers: 3
+    Total neurons: 42
+  NeuralNetwork for goal: ( goal red 0 )
+    Total layers: 4
+    Total neurons: 76
+  NeuralNetwork for goal: ( goal red 90 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal red 70 )
+    Total layers: 3
+    Total neurons: 46
+  NeuralNetwork for goal: ( goal red 80 )
+    Total layers: 3
+    Total neurons: 42
+  NeuralNetwork for goal: ( goal red 60 )
+    Total layers: 3
+    Total neurons: 50
+  NeuralNetwork for goal: ( goal red 10 )
+    Total layers: 3
+    Total neurons: 38
+  NeuralNetwork for goal: ( goal red 45 )
+    Total layers: 3
+    Total neurons: 54
+  NeuralNetwork for goal: ( goal red 30 )
+    Total layers: 3
+    Total neurons: 46
+2016-04-21 20:30:44.077 (Game 13) - Loading games from archive...
+2016-04-21 20:32:58.885 (Game 3) - Finished training game (1 matches) in 2.6694833333333334 minutes.
+2016-04-21 20:32:58.885 (Game 3) - Trained game 3 of 432 in a total of 7.4719999999999995 minutes.
+2016-04-21 20:33:16.721 (Game 3) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:33:17.036 (Game 18) - Starting to train game http://games.ggp.org/dresden/games/vacuumcleaner_obstacles_2/v0/ from 2 matches.
+2016-04-21 20:33:17.037 (Game 18) - Building neural network...
+2016-04-21 20:33:41.010 (Game 16) - Training...
+2016-04-21 20:33:41.010 (Game 17) - Training...
+2016-04-21 20:33:41.010 (Game 11) - Training...
+2016-04-21 20:33:41.010 (Game 12) - Training...
+2016-04-21 20:33:41.011 (Game 15) - Training...
+2016-04-21 20:33:41.374 (Game 16) - Finished training game (2 matches) in 0.006066666666666666 minutes.
+2016-04-21 20:33:41.375 (Game 16) - Trained game 16 of 432 in a total of 8.180150000000001 minutes.
+2016-04-21 20:33:41.406 (Game 17) - Finished training game (2 matches) in 0.0066 minutes.
+2016-04-21 20:33:41.407 (Game 17) - Trained game 17 of 432 in a total of 8.1807 minutes.
+2016-04-21 20:33:46.012 (Game 12) - Finished training game (1 matches) in 0.08335000000000001 minutes.
+2016-04-21 20:33:46.012 (Game 12) - Trained game 12 of 432 in a total of 8.25745 minutes.
+2016-04-21 20:34:14.650 (Game 15) - Finished training game (2 matches) in 0.5606500000000001 minutes.
+2016-04-21 20:34:14.651 (Game 15) - Trained game 15 of 432 in a total of 8.734766666666667 minutes.
+2016-04-21 20:34:34.965 (Game 16) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:34:35.434 (Game 19) - Starting to train game http://games.ggp.org/dresden/games/small_dominion/v0/ from 2 matches.
+2016-04-21 20:34:35.435 (Game 19) - Building neural network...
+2016-04-21 20:34:35.735 (Game 13) - Training...
+2016-04-21 20:34:38.545 (Game 17) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:34:38.887 (Game 20) - Starting to train game http://games.ggp.org/dresden/games/Catch-Me-If-You-Can/v0/ from 2 matches.
+2016-04-21 20:34:38.887 (Game 20) - Building neural network...
+2016-04-21 20:34:40.966 (Game 20) - Built GameNeuralNetwork for game kDifOzarXcKBcJHm+FUDTmK6fO0M0Fu8UDoyYQRgY1c=  (http://games.ggp.org/dresden/games/Catch-Me-If-You-Can/v0/)
+  Neural Network count: 4  Total neurons: 894
+  NeuralNetwork for goal: ( goal guard 0 )
+    Total layers: 5
+    Total neurons: 289
+  NeuralNetwork for goal: ( goal guard 100 )
+    Total layers: 4
+    Total neurons: 158
+  NeuralNetwork for goal: ( goal intruder 0 )
+    Total layers: 5
+    Total neurons: 289
+  NeuralNetwork for goal: ( goal intruder 100 )
+    Total layers: 4
+    Total neurons: 158
+2016-04-21 20:34:40.966 (Game 20) - Loading games from archive...
+2016-04-21 20:34:49.285 (Game 12) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:34:49.739 (Game 21) - Starting to train game http://games.ggp.org/dresden/games/vacuumcleaner_obstacles_5/v0/ from 2 matches.
+2016-04-21 20:34:49.739 (Game 21) - Building neural network...
+2016-04-21 20:34:49.900 (Game 11) - Finished training game (1 matches) in 1.14815 minutes.
+2016-04-21 20:34:49.900 (Game 11) - Trained game 11 of 432 in a total of 9.32225 minutes.
+2016-04-21 20:34:50.000 (Game 13) - Finished training game (1 matches) in 0.23775000000000002 minutes.
+2016-04-21 20:34:50.000 (Game 13) - Trained game 13 of 432 in a total of 9.323916666666666 minutes.
+2016-04-21 20:35:54.385 (Game 15) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:35:58.702 (Game 22) - Starting to train game http://games.ggp.org/dresden/games/fizzbuzz/v0/ from 2 matches.
+2016-04-21 20:35:58.702 (Game 22) - Building neural network...
+2016-04-21 20:35:59.183 (Game 22) - Built GameNeuralNetwork for game kykAPj+h0dF6ui+TXQzVNsM3GrlZPrrIP2KHOL+2ll4=  (http://games.ggp.org/dresden/games/fizzbuzz/v0/)
+  Neural Network count: 5  Total neurons: 39
+  NeuralNetwork for goal: ( goal player 75 )
+    Total layers: 2
+    Total neurons: 7
+  NeuralNetwork for goal: ( goal player 25 )
+    Total layers: 2
+    Total neurons: 7
+  NeuralNetwork for goal: ( goal player 0 )
+    Total layers: 2
+    Total neurons: 17
+  NeuralNetwork for goal: ( goal player 50 )
+    Total layers: 2
+    Total neurons: 7
+  NeuralNetwork for goal: ( goal player 100 )
+    Total layers: 1
+    Total neurons: 1
+2016-04-21 20:35:59.183 (Game 22) - Loading games from archive...
+2016-04-21 20:36:29.583 (Game 11) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:36:29.996 (Game 23) - Starting to train game http://games.ggp.org/dresden/games/ggp-course2013_michal13/v0/ from 2 matches.
+2016-04-21 20:36:29.996 (Game 23) - Building neural network...
+2016-04-21 20:36:33.059 (Game 13) - Wrote game database to archives/defaultGameDatabase.json
+
+
+2016-04-21 20:36:33.368 (Game 24) - Starting to train game http://games.ggp.org/base/games/checkersTorusNoKings/v0/ from 2 matches.
+2016-04-21 20:36:33.368 (Game 24) - Building neural network...
+2016-04-21 20:36:35.261 (Game 24) - Built GameNeuralNetwork for game Checkers on a Torus without Kings  (http://games.ggp.org/base/games/checkersTorusNoKings/v0/)
+  Neural Network count: 26  Total neurons: 26
+  NeuralNetwork for goal: ( goal black 32 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 0 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 8 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 80 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 56 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 72 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 90 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 48 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 16 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 64 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 24 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal black 40 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 16 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 0 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 64 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 48 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 56 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 32 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 40 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 72 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 100 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 90 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 24 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 80 )
+    Total layers: 1
+    Total neurons: 1
+  NeuralNetwork for goal: ( goal red 8 )
+    Total layers: 1
+    Total neurons: 1
+2016-04-21 20:36:35.261 (Game 24) - Loading games from archive...
+2016-04-21 20:36:43.470 (Game 18) - Built GameNeuralNetwork for game U7OHdGgSzSD6WLcz4ALeXq+SxOeXCnMPyrptlN2k9PA=  (http://games.ggp.org/dresden/games/vacuumcleaner_obstacles_2/v0/)
+  Neural Network count: 101  Total neurons: 960
+  NeuralNetwork for goal: ( goal agent 73 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 14 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 59 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 96 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 97 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 89 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 66 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 31 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 10 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 22 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 93 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 29 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 19 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 100 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 62 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 50 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 78 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 30 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 26 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 54 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 91 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 90 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 24 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 41 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 53 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 42 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 23 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 35 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 56 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 8 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 94 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 2 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 17 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 16 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 81 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 80 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 74 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 4 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 63 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 6 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 20 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 33 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 11 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 34 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 65 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 60 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 51 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 3 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 61 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 47 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 39 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 36 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 21 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 7 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 58 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 15 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 12 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 40 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 0 )
+    Total layers: 3
+    Total neurons: 110
+  NeuralNetwork for goal: ( goal agent 44 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 85 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 75 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 83 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 86 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 55 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 1 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 70 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 76 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 13 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 64 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 82 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 27 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 43 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 25 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 92 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 32 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 95 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 84 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 69 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 9 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 57 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 87 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 72 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 77 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 67 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 45 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 48 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 99 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 46 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 71 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 79 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 38 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 18 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 5 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 98 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 49 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 28 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 52 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 88 )
+    Total layers: 2
+    Total neurons: 4
+  NeuralNetwork for goal: ( goal agent 37 )
+    Total layers: 3
+    Total neurons: 10
+  NeuralNetwork for goal: ( goal agent 68 )
+    Total layers: 3
+    Total neurons: 10
+2016-04-21 20:36:43.470 (Game 18) - Loading games from archive...
