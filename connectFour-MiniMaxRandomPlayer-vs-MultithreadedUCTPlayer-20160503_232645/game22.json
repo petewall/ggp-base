@@ -1,0 +1,175 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        0,
+        100
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160503_232645.game22",
+    "moves": [
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ],
+        [
+            "( drop 1 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ],
+        [
+            "( drop 6 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 8 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 7 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "MultithreadedUCTPlayer",
+        "MiniMaxRandomPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "Qm8fzHTuh9xXD43CwmOxnJYDN4545Z0T",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462338003169,
+    "stateTimes": [
+        1462338003171,
+        1462338012228,
+        1462338021305,
+        1462338030384,
+        1462338039424,
+        1462338048494,
+        1462338057557,
+        1462338066642,
+        1462338075690,
+        1462338084741,
+        1462338093746,
+        1462338102804,
+        1462338111867,
+        1462338120908,
+        1462338129914
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( cell 3 1 red ) ( control black ) )",
+        "( ( control red ) ( cell 3 1 red ) ( cell 1 1 black ) )",
+        "( ( cell 3 1 red ) ( control black ) ( cell 1 1 black ) ( cell 1 2 red ) )",
+        "( ( control red ) ( cell 3 1 red ) ( cell 1 1 black ) ( cell 1 3 black ) ( cell 1 2 red ) )",
+        "( ( cell 6 1 red ) ( cell 3 1 red ) ( control black ) ( cell 1 1 black ) ( cell 1 3 black ) ( cell 1 2 red ) )",
+        "( ( control red ) ( cell 1 4 black ) ( cell 6 1 red ) ( cell 3 1 red ) ( cell 1 1 black ) ( cell 1 3 black ) ( cell 1 2 red ) )",
+        "( ( cell 1 4 black ) ( cell 6 1 red ) ( cell 3 1 red ) ( cell 5 1 red ) ( control black ) ( cell 1 1 black ) ( cell 1 3 black ) ( cell 1 2 red ) )",
+        "( ( control red ) ( cell 1 4 black ) ( cell 6 1 red ) ( cell 3 1 red ) ( cell 5 1 red ) ( cell 1 1 black ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( cell 1 4 black ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 3 1 red ) ( cell 5 1 red ) ( control black ) ( cell 1 1 black ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 1 4 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 3 1 red ) ( cell 5 1 red ) ( cell 1 1 black ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( cell 1 4 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 3 1 red ) ( cell 5 1 red ) ( control black ) ( cell 1 1 black ) ( cell 3 2 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 1 4 black ) ( cell 7 1 black ) ( cell 8 1 red ) ( cell 6 1 red ) ( cell 1 5 black ) ( cell 5 1 red ) ( cell 3 2 red ) ( cell 1 3 black ) ( cell 4 1 black ) ( cell 3 1 red ) ( cell 1 1 black ) ( cell 1 2 red ) )",
+        "( ( cell 1 4 black ) ( cell 7 1 black ) ( cell 8 1 red ) ( cell 6 1 red ) ( cell 1 5 black ) ( cell 5 1 red ) ( cell 3 3 red ) ( cell 3 2 red ) ( cell 1 3 black ) ( cell 4 1 black ) ( cell 3 1 red ) ( control black ) ( cell 1 1 black ) ( cell 1 2 red ) )",
+        "( ( control red ) ( cell 1 4 black ) ( cell 7 1 black ) ( cell 8 1 red ) ( cell 6 1 red ) ( cell 1 5 black ) ( cell 5 1 red ) ( cell 3 3 red ) ( cell 3 2 red ) ( cell 1 3 black ) ( cell 4 1 black ) ( cell 3 1 red ) ( cell 1 1 black ) ( cell 1 2 red ) ( cell 1 6 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

@@ -1,0 +1,195 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        0,
+        100
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-LearningPlayer-vs-MultithreadedUCTPlayer-20160504_015422.game40",
+    "moves": [
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 6 )"
+        ],
+        [
+            "( drop 2 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 3 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 3 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 6 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 2 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 3 )"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "MultithreadedUCTPlayer",
+        "LearningPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "5rKU5WE8LcTuTyPe0Mq3E6D945HLnVSM",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462351476292,
+    "stateTimes": [
+        1462351476294,
+        1462351485529,
+        1462351494591,
+        1462351503646,
+        1462351512680,
+        1462351521741,
+        1462351530746,
+        1462351539792,
+        1462351548845,
+        1462351557898,
+        1462351566984,
+        1462351576057,
+        1462351585115,
+        1462351594141,
+        1462351603148,
+        1462351612178,
+        1462351621186
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( cell 5 1 red ) ( control black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 1 red ) ( control black ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 6 1 black ) ( cell 5 1 red ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 6 1 black ) ( cell 5 1 red ) ( control black ) ( cell 4 1 red ) ( cell 2 1 red ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 6 1 black ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 4 1 red ) ( cell 2 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 6 1 black ) ( cell 5 1 red ) ( control black ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( control red ) ( cell 6 1 black ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( cell 5 3 red ) ( cell 6 1 black ) ( cell 5 1 red ) ( control black ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 6 1 black ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 5 4 red ) ( cell 6 1 black ) ( cell 5 1 red ) ( control black ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 5 4 red ) ( cell 6 1 black ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 5 4 red ) ( cell 6 1 black ) ( cell 4 2 red ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( control black ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 5 4 red ) ( cell 6 1 black ) ( cell 4 2 red ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 5 4 red ) ( cell 6 1 black ) ( cell 4 2 red ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 2 2 red ) ( control black ) ( cell 2 1 red ) )",
+        "( ( cell 3 3 black ) ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 5 4 red ) ( cell 6 1 black ) ( cell 4 2 red ) ( cell 5 1 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 2 2 red ) ( cell 3 4 black ) ( cell 2 1 red ) )"
+    ],
+    "tournamentNameFromHost": ""
+}
