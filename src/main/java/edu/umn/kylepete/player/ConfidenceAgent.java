@@ -22,7 +22,7 @@ import external.JSON.JSONObject;
 public class ConfidenceAgent extends StateMachineGamer {
     @Override
     public String getName() {
-        return "ConfidenceAgent";
+        return "ConfidencePlayer";
     }
 
     private Map<SubAgent, SubAgentThread> subAgents;

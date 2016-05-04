@@ -1,8 +1,8 @@
 #!/bin/bash
 
-GAME_KEY=connectFour
-P1=ConfidencePlayer
-P2=LearningPlayer
+GAME_KEY=checkers
+P1=LearningPlayer
+P2=MultithreadedUCTPlayer
 
 NUM_GAMES=100
 START_CLOCK=30

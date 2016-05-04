@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GAME_KEY=connectFour
-P1=ConfidencePlayer
+GAME_KEY=checkers
+P1=MiniMaxRandomPlayer
 P2=LearningPlayer
 
 NUM_GAMES=100

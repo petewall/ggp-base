@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GAME_KEY=connectFour
+GAME_KEY=nineBoardTicTacToe
 P1=ConfidencePlayer
 P2=LearningPlayer
 
