@@ -18,6 +18,8 @@ import org.ggp.base.util.statemachine.exceptions.GoalDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 
+import external.JSON.JSONException;
+
 
 /**
  * The base class for Gamers that rely on representing games as state machines.
@@ -59,13 +61,15 @@ public abstract class StateMachineGamer extends Gamer
      * @throws TransitionDefinitionException
      * @throws MoveDefinitionException
      * @throws GoalDefinitionException
+     * @throws JSONException
      */
-    public abstract Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException;
+    public abstract Move stateMachineSelectMove(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException, JSONException;
 
     /**
      * Defines any actions that the player takes upon the game cleanly ending.
+     * @throws JSONException
      */
-    public abstract void stateMachineStop();
+    public abstract void stateMachineStop() throws JSONException;
 
     /**
      * Defines any actions that the player takes upon the game abruptly ending.

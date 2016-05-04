@@ -16,6 +16,9 @@ import org.ggp.base.util.statemachine.exceptions.MoveDefinitionException;
 import org.ggp.base.util.statemachine.exceptions.TransitionDefinitionException;
 import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 
+import external.JSON.JSONException;
+import external.JSON.JSONObject;
+
 public class ConfidenceAgent extends StateMachineGamer {
     @Override
     public String getName() {
@@ -30,24 +33,22 @@ public class ConfidenceAgent extends StateMachineGamer {
     private int maxBranchingFactor;
 
     public ConfidenceAgent() {
-        subAgents = new HashMap<SubAgent, SubAgentThread>();
-        subAgents.put(new MultithreadedUCTPlayer(), null);
-        subAgents.put(new LearningPlayer(), null);
-        bestMoves = new HashMap<SubAgent, Move>();
-        depth = 0;
-        minBranchingFactor = Integer.MAX_VALUE;
-        avgBranchingFactor = 0;
-        maxBranchingFactor = Integer.MIN_VALUE;
+
     }
 
     @Override
-    public Move stateMachineSelectMove(final long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
+    public Move stateMachineSelectMove(final long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException, JSONException {
         // Start the clock
         long start = System.currentTimeMillis();
+        JSONObject jsonStats = new JSONObject();
 
         // Update statistical records
         depth++;
+        jsonStats.put("depth", depth);
         int branchingFactor = getStateMachine().getLegalJointMoves(getCurrentState()).size();
+        int possibleMoves = getStateMachine().getLegalMoves(getCurrentState(), getRole()).size();
+        jsonStats.put("possibleMoves", possibleMoves);
+        jsonStats.put("branchingFactor", branchingFactor);
         if (branchingFactor > maxBranchingFactor) {
             maxBranchingFactor = branchingFactor;
         }
@@ -86,20 +87,18 @@ public class ConfidenceAgent extends StateMachineGamer {
             }
 
             if (thread.foundWinningMove()) {
-                chosenMove = thread.getWinningMove();
-                break;
+            	chosenMove = thread.getWinningMove();
+                bestMoves.put(subAgent, chosenMove);
+                log("Found a winning move: " + chosenMove);
+            }else{
+                ScoredMoveSet subAgentMoveSet = thread.getMoveSet();
+                bestMoves.put(subAgent, subAgentMoveSet.getBestMove());
+                moveSet.combine(subAgentMoveSet);
             }
-            ScoredMoveSet subAgentMoveSet = thread.getMoveSet();
-            bestMoves.put(subAgent, subAgentMoveSet.getBestMove());
-            moveSet.combine(subAgentMoveSet);
         }
 
         // Pick the best move (if a winning move wasn't already found)
         if (chosenMove == null) {
-            for (SubAgent subAgent : bestMoves.keySet()) {
-                Move bestMove = bestMoves.get(subAgent);
-                log("Best move from " + subAgent.getName() + ": " + bestMove);
-            }
             chosenMove = moveSet.getBestMove();
             log("Picking the best combined of: ");
             for (Move move : moveSet.keySet()) {
@@ -108,6 +107,22 @@ public class ConfidenceAgent extends StateMachineGamer {
             }
             log("Chosen move: " + chosenMove);
         }
+
+        jsonStats.put("chosenMove", chosenMove.toString());
+        boolean allAgentsAgree = true;
+        for (SubAgent subAgent : bestMoves.keySet()) {
+            Move bestMove = bestMoves.get(subAgent);
+            log("Best move from " + subAgent.getName() + ": " + bestMove);
+            jsonStats.put("bestMove_" + subAgent.getName(), bestMove.toString());
+            boolean agentMoveChosen = true;
+            if(!bestMove.toString().equals(chosenMove.toString())){
+            	agentMoveChosen = false;
+            	allAgentsAgree = false;
+            }
+            jsonStats.put("chosenMove_" + subAgent.getName(), agentMoveChosen);
+        }
+        jsonStats.put("allAgentsAgree", allAgentsAgree);
+        log("MOVE_STATS: " + jsonStats.toString());
 
         // Wrap up and submit the move
         long stop = System.currentTimeMillis();
@@ -119,7 +134,16 @@ public class ConfidenceAgent extends StateMachineGamer {
 
     @Override
     public void stateMachineMetaGame(long timeout) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException {
-        for (SubAgent subAgent : subAgents.keySet()) {
+    	subAgents = new HashMap<SubAgent, SubAgentThread>();
+    	subAgents.put(new MultithreadedUCTPlayer(), null);
+    	subAgents.put(new LearningPlayer(), null);
+    	bestMoves = new HashMap<SubAgent, Move>();
+    	depth = 0;
+    	minBranchingFactor = Integer.MAX_VALUE;
+    	avgBranchingFactor = 0;
+    	maxBranchingFactor = Integer.MIN_VALUE;
+
+    	for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.setMatch(getMatch());
             subAgent.setRoleName(getRoleName());
             subAgent.setStateMachine(getStateMachine());
@@ -133,7 +157,7 @@ public class ConfidenceAgent extends StateMachineGamer {
     }
 
     @Override
-    public void stateMachineStop() {
+    public void stateMachineStop() throws JSONException {
         for (SubAgent subAgent : subAgents.keySet()) {
             subAgent.stateMachineStop();
         }
@@ -141,6 +165,13 @@ public class ConfidenceAgent extends StateMachineGamer {
         log("Min branching factor: " + minBranchingFactor);
         log("Avg branching factor: " + avgBranchingFactor);
         log("Max branching factor: " + maxBranchingFactor);
+
+        JSONObject jsonStats = new JSONObject();
+        jsonStats.put("gameDepth", depth);
+        jsonStats.put("minBranchingFactor", minBranchingFactor);
+        jsonStats.put("avgBranchingFactor", avgBranchingFactor);
+        jsonStats.put("maxBranchingFactor", maxBranchingFactor);
+        log("GAME_STATS: " + jsonStats.toString());
     }
 
     @Override

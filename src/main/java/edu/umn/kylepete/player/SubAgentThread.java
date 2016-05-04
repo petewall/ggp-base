@@ -23,7 +23,6 @@ public class SubAgentThread extends Thread {
         try {
             moveSet = agent.scoreValidMoves(timeout);
         } catch (WinningMoveException e) {
-            System.out.println("Found a winning move: " + e.move);
             winningMove = e.move;
         } catch (MoveDefinitionException e) {
             // TODO Auto-generated catch block
