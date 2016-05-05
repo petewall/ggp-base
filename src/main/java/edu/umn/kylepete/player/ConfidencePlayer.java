@@ -19,7 +19,7 @@ import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 import external.JSON.JSONException;
 import external.JSON.JSONObject;
 
-public class ConfidenceAgent extends StateMachineGamer {
+public class ConfidencePlayer extends StateMachineGamer {
     @Override
     public String getName() {
         return "ConfidencePlayer";
@@ -32,7 +32,7 @@ public class ConfidenceAgent extends StateMachineGamer {
     private double avgBranchingFactor;
     private int maxBranchingFactor;
 
-    public ConfidenceAgent() {
+    public ConfidencePlayer() {
 
     }
 
