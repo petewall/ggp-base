@@ -123,13 +123,13 @@ public final class GameServer extends Thread implements Subject
         // Add error events to mostRecentErrors for recording.
         if (event instanceof ServerIllegalMoveEvent) {
             ServerIllegalMoveEvent sEvent = (ServerIllegalMoveEvent)event;
-            mostRecentErrors.put(sEvent.getRole(), "IL " + sEvent.getMove());
+            mostRecentErrors.put(sEvent.getRole(), "IllegalMove" + sEvent.getMove());
         } else if (event instanceof ServerTimeoutEvent) {
             ServerTimeoutEvent sEvent = (ServerTimeoutEvent)event;
-            mostRecentErrors.put(sEvent.getRole(), "TO");
+            mostRecentErrors.put(sEvent.getRole(), "ServerTimeout");
         } else if (event instanceof ServerConnectionErrorEvent) {
             ServerConnectionErrorEvent sEvent = (ServerConnectionErrorEvent)event;
-            mostRecentErrors.put(sEvent.getRole(), "CE");
+            mostRecentErrors.put(sEvent.getRole(), "ServerConnectionError");
         }
     }
 
