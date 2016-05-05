@@ -1,0 +1,145 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858.game42",
+    "moves": [
+        [
+            "( drop 6 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 8 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 7 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidenceAgent",
+        "MultithreadedUCTPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "XEumy6q0nsy4nVqhbYRIiFNTJlfgjtgu",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462438047299,
+    "stateTimes": [
+        1462438047301,
+        1462438056559,
+        1462438065635,
+        1462438074698,
+        1462438083759,
+        1462438092808,
+        1462438101869,
+        1462438110919,
+        1462438119973,
+        1462438129054,
+        1462438138121,
+        1462438147126
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( cell 6 1 red ) ( control black ) )",
+        "( ( control red ) ( cell 6 1 red ) ( cell 4 1 black ) )",
+        "( ( cell 6 1 red ) ( cell 8 1 red ) ( control black ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 8 2 black ) ( cell 4 1 black ) )",
+        "( ( cell 6 1 red ) ( cell 8 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( control black ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( cell 4 1 black ) )",
+        "( ( cell 7 1 black ) ( cell 6 1 red ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( control black ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 7 1 black ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( cell 8 3 black ) ( cell 4 1 black ) )",
+        "( ( cell 5 3 red ) ( cell 7 1 black ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( cell 8 3 black ) ( control black ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 5 3 red ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( cell 8 3 black ) ( cell 8 4 black ) ( cell 4 1 black ) )",
+        "( ( cell 5 3 red ) ( cell 7 1 black ) ( cell 5 4 red ) ( cell 6 1 red ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 5 1 red ) ( cell 8 2 black ) ( cell 8 3 black ) ( control black ) ( cell 8 4 black ) ( cell 4 1 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

@@ -1,0 +1,325 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-ConfidenceAgent-vs-LearningPlayer-20160504_181416.game3",
+    "moves": [
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 1 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 2 )"
+        ],
+        [
+            "( drop 6 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 7 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 6 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 6 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 6 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 7 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 7 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 7 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 8 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 2 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidenceAgent",
+        "LearningPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "h3uBf10HwATJH5wfT8XUANa1xKLl3oc7",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462404277732,
+    "stateTimes": [
+        1462404277735,
+        1462404287061,
+        1462404296101,
+        1462404305148,
+        1462404314208,
+        1462404323239,
+        1462404332245,
+        1462404341291,
+        1462404350310,
+        1462404359337,
+        1462404368356,
+        1462404377403,
+        1462404386434,
+        1462404395451,
+        1462404404457,
+        1462404413507,
+        1462404422555,
+        1462404431583,
+        1462404440591,
+        1462404449628,
+        1462404458675,
+        1462404467693,
+        1462404476744,
+        1462404485773,
+        1462404494832,
+        1462404503860,
+        1462404512884,
+        1462404521892,
+        1462404530899,
+        1462404539908
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( control black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 5 1 black ) ( cell 3 1 red ) ( control black ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 1 black ) ( cell 3 1 red ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 1 black ) ( cell 3 1 red ) ( cell 1 1 red ) ( control black ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 1 black ) ( cell 2 1 black ) ( cell 3 1 red ) ( cell 1 1 red ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 2 1 black ) ( cell 3 1 red ) ( cell 1 1 red ) ( control black ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 7 1 black ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 2 1 black ) ( cell 3 1 red ) ( cell 1 1 red ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 7 1 black ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 2 1 black ) ( cell 3 1 red ) ( cell 1 1 red ) ( control black ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 2 1 black ) ( cell 3 1 red ) ( cell 1 1 red ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 2 1 black ) ( cell 3 1 red ) ( cell 4 2 red ) ( cell 1 1 red ) ( control black ) ( cell 4 1 red ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 7 2 red ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 7 2 red ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( cell 4 4 red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 7 2 red ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 4 4 red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 7 2 red ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 4 5 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( cell 4 4 red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 7 2 red ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 7 3 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 4 5 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 4 4 red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 7 2 red ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 4 5 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( cell 4 4 red ) ( cell 5 3 red ) ( cell 4 3 black ) ( cell 6 2 black ) ( cell 7 1 black ) ( cell 7 2 red ) ( cell 6 3 red ) ( cell 5 4 red ) ( cell 5 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 7 3 red ) ( cell 3 2 red ) ( cell 7 4 black ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 6 4 black ) ( cell 4 5 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 2 red ) ( cell 5 4 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 3 2 red ) ( cell 4 6 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( cell 4 4 red ) ( cell 4 3 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 4 5 black ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 2 red ) ( cell 5 4 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 3 2 red ) ( cell 4 6 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) ( cell 4 4 red ) ( cell 4 3 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 8 2 red ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 4 5 black ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 2 red ) ( cell 5 4 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 3 2 red ) ( cell 4 6 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( cell 4 4 red ) ( cell 4 3 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 8 2 red ) ( cell 8 3 black ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 4 5 black ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 2 red ) ( cell 5 4 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 3 2 red ) ( cell 4 6 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) ( cell 4 4 red ) ( cell 4 3 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 8 2 red ) ( cell 8 3 black ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 4 5 black ) ( cell 2 2 red ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( control red ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 2 red ) ( cell 5 4 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 3 2 red ) ( cell 8 4 black ) ( cell 4 6 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( cell 4 4 red ) ( cell 4 3 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 8 2 red ) ( cell 8 3 black ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 4 5 black ) ( cell 2 2 red ) ( cell 8 1 black ) )",
+        "( ( cell 5 2 black ) ( cell 5 3 red ) ( cell 6 2 black ) ( cell 7 2 red ) ( cell 5 4 red ) ( cell 3 3 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 3 2 red ) ( cell 8 4 black ) ( cell 4 6 black ) ( cell 6 4 black ) ( cell 3 1 red ) ( cell 2 1 black ) ( cell 1 1 red ) ( control black ) ( cell 4 4 red ) ( cell 4 3 black ) ( cell 6 3 red ) ( cell 5 1 black ) ( cell 7 1 black ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 8 2 red ) ( cell 8 3 black ) ( cell 4 1 red ) ( cell 5 5 black ) ( cell 4 5 black ) ( cell 2 2 red ) ( cell 8 1 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

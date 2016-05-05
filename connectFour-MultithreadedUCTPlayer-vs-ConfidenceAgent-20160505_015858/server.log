@@ -1,0 +1,604 @@
+Updating the game cache...
+01:59:16 (Game 1) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+01:59:16 (Game 1) - Playing game...
+Updating the game cache took: 7925ms.
+02:01:59 (Game 1) - Completed game with scores [0, 100]
+02:01:59 (Game 1) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=100 
+02:01:59 (Game 1) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game1.json
+02:01:59 - Finished 1 of 100 games in 2.78 minutes. Estimated 275.18 minutes remaining.
+02:02:02 (Game 2) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:02:02 (Game 2) - Playing game...
+02:05:49 (Game 2) - Completed game with scores [100, 0]
+02:05:49 (Game 2) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=200 
+02:05:49 (Game 2) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game2.json
+02:05:49 - Finished 2 of 100 games in 6.61 minutes. Estimated 323.80 minutes remaining.
+02:05:52 (Game 3) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:05:52 (Game 3) - Playing game...
+02:07:05 (Game 3) - Completed game with scores [0, 100]
+02:07:05 (Game 3) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=300 
+02:07:05 (Game 3) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game3.json
+02:07:05 - Finished 3 of 100 games in 7.87 minutes. Estimated 254.42 minutes remaining.
+02:07:08 (Game 4) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:07:08 (Game 4) - Playing game...
+02:08:11 (Game 4) - Completed game with scores [100, 0]
+02:08:11 (Game 4) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=400 
+02:08:11 (Game 4) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game4.json
+02:08:11 - Finished 4 of 100 games in 8.98 minutes. Estimated 215.49 minutes remaining.
+02:08:14 (Game 5) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:08:14 (Game 5) - Playing game...
+02:10:03 (Game 5) - Completed game with scores [0, 100]
+02:10:03 (Game 5) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=500 
+02:10:03 (Game 5) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game5.json
+02:10:03 - Finished 5 of 100 games in 10.84 minutes. Estimated 206.03 minutes remaining.
+02:10:06 (Game 6) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:10:06 (Game 6) - Playing game...
+02:13:17 (Game 6) - Completed game with scores [100, 0]
+02:13:17 (Game 6) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=600 
+02:13:17 (Game 6) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game6.json
+02:13:17 - Finished 6 of 100 games in 14.07 minutes. Estimated 220.38 minutes remaining.
+02:13:20 (Game 7) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:13:20 (Game 7) - Playing game...
+02:17:15 (Game 7) - Completed game with scores [0, 100]
+02:17:15 (Game 7) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=700 
+02:17:15 (Game 7) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game7.json
+02:17:15 - Finished 7 of 100 games in 18.04 minutes. Estimated 239.68 minutes remaining.
+02:17:18 (Game 8) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:17:18 (Game 8) - Playing game...
+02:18:40 (Game 8) - Completed game with scores [100, 0]
+02:18:40 (Game 8) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=800 
+02:18:40 (Game 8) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game8.json
+02:18:40 - Finished 8 of 100 games in 19.45 minutes. Estimated 223.73 minutes remaining.
+02:18:43 (Game 9) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:18:43 (Game 9) - Playing game...
+02:19:56 (Game 9) - Completed game with scores [0, 100]
+02:19:56 (Game 9) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=900 
+02:19:56 (Game 9) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game9.json
+02:19:56 - Finished 9 of 100 games in 20.72 minutes. Estimated 209.48 minutes remaining.
+02:19:59 (Game 10) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:19:59 (Game 10) - Playing game...
+02:23:09 (Game 10) - Completed game with scores [100, 0]
+02:23:09 (Game 10) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1000 
+02:23:09 (Game 10) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game10.json
+02:23:09 - Finished 10 of 100 games in 23.94 minutes. Estimated 215.47 minutes remaining.
+02:23:12 (Game 11) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:23:12 (Game 11) - Playing game...
+02:25:37 (Game 11) - Completed game with scores [0, 100]
+02:25:37 (Game 11) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1100 
+02:25:37 (Game 11) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game11.json
+02:25:37 - Finished 11 of 100 games in 26.41 minutes. Estimated 213.69 minutes remaining.
+02:25:40 (Game 12) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:25:40 (Game 12) - Playing game...
+02:27:02 (Game 12) - Completed game with scores [100, 0]
+02:27:02 (Game 12) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1200 
+02:27:02 (Game 12) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game12.json
+02:27:02 - Finished 12 of 100 games in 27.82 minutes. Estimated 204.04 minutes remaining.
+02:27:05 (Game 13) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:27:05 (Game 13) - Playing game...
+02:29:30 (Game 13) - Completed game with scores [0, 100]
+02:29:30 (Game 13) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1300 
+02:29:30 (Game 13) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game13.json
+02:29:30 - Finished 13 of 100 games in 30.29 minutes. Estimated 202.72 minutes remaining.
+02:29:33 (Game 14) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:29:33 (Game 14) - Playing game...
+02:31:49 (Game 14) - Completed game with scores [100, 0]
+02:31:49 (Game 14) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1400 
+02:31:49 (Game 14) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game14.json
+02:31:49 - Finished 14 of 100 games in 32.61 minutes. Estimated 200.33 minutes remaining.
+02:31:52 (Game 15) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:31:52 (Game 15) - Playing game...
+02:34:54 (Game 15) - Completed game with scores [0, 100]
+02:34:54 (Game 15) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1500 
+02:34:54 (Game 15) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game15.json
+02:34:54 - Finished 15 of 100 games in 35.69 minutes. Estimated 202.24 minutes remaining.
+02:34:57 (Game 16) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:34:57 (Game 16) - Playing game...
+02:36:19 (Game 16) - Completed game with scores [100, 0]
+02:36:19 (Game 16) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1600 
+02:36:19 (Game 16) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game16.json
+02:36:19 - Finished 16 of 100 games in 37.10 minutes. Estimated 194.78 minutes remaining.
+02:36:22 (Game 17) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:36:22 (Game 17) - Playing game...
+02:38:47 (Game 17) - Completed game with scores [0, 100]
+02:38:47 (Game 17) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1700 
+02:38:47 (Game 17) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game17.json
+02:38:47 - Finished 17 of 100 games in 39.57 minutes. Estimated 193.20 minutes remaining.
+02:38:50 (Game 18) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:38:50 (Game 18) - Playing game...
+02:39:54 (Game 18) - Completed game with scores [100, 0]
+02:39:54 (Game 18) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1800 
+02:39:54 (Game 18) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game18.json
+02:39:54 - Finished 18 of 100 games in 40.68 minutes. Estimated 185.34 minutes remaining.
+02:39:57 (Game 19) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:39:57 (Game 19) - Playing game...
+02:41:27 (Game 19) - Completed game with scores [0, 100]
+02:41:27 (Game 19) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=1900 
+02:41:27 (Game 19) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game19.json
+02:41:27 - Finished 19 of 100 games in 42.25 minutes. Estimated 180.10 minutes remaining.
+02:41:30 (Game 20) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:41:30 (Game 20) - Playing game...
+02:45:35 (Game 20) - Completed game with scores [100, 0]
+02:45:35 (Game 20) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=2000 
+02:45:35 (Game 20) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game20.json
+02:45:35 - Finished 20 of 100 games in 46.37 minutes. Estimated 185.49 minutes remaining.
+02:45:38 (Game 21) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:45:38 (Game 21) - Playing game...
+02:47:45 (Game 21) - Completed game with scores [0, 100]
+02:47:45 (Game 21) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=2100 
+02:47:45 (Game 21) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game21.json
+02:47:45 - Finished 21 of 100 games in 48.54 minutes. Estimated 182.60 minutes remaining.
+02:47:48 (Game 22) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:47:48 (Game 22) - Playing game...
+02:48:52 (Game 22) - Completed game with scores [100, 0]
+02:48:52 (Game 22) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=2200 
+02:48:52 (Game 22) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game22.json
+02:48:52 - Finished 22 of 100 games in 49.65 minutes. Estimated 176.04 minutes remaining.
+02:48:55 (Game 23) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:48:55 (Game 23) - Playing game...
+02:53:45 (Game 23) - Completed game with scores [0, 100]
+02:53:45 (Game 23) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=2300 
+02:53:45 (Game 23) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game23.json
+02:53:45 - Finished 23 of 100 games in 54.53 minutes. Estimated 182.57 minutes remaining.
+02:53:48 (Game 24) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:53:48 (Game 24) - Playing game...
+02:55:27 (Game 24) - Completed game with scores [100, 0]
+02:55:27 (Game 24) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidenceAgent=2400 
+02:55:27 (Game 24) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game24.json
+02:55:27 - Finished 24 of 100 games in 56.25 minutes. Estimated 178.12 minutes remaining.
+02:55:30 (Game 25) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+02:55:30 (Game 25) - Playing game...
+02:58:41 (Game 25) - Completed game with scores [100, 0]
+02:58:41 (Game 25) - Cumulative scores: MultithreadedUCTPlayer=100 ConfidenceAgent=2400 
+02:58:41 (Game 25) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game25.json
+02:58:41 - Finished 25 of 100 games in 59.48 minutes. Estimated 178.43 minutes remaining.
+02:58:44 (Game 26) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+02:58:44 (Game 26) - Playing game...
+03:01:00 (Game 26) - Completed game with scores [100, 0]
+03:01:00 (Game 26) - Cumulative scores: MultithreadedUCTPlayer=100 ConfidenceAgent=2500 
+03:01:00 (Game 26) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game26.json
+03:01:00 - Finished 26 of 100 games in 61.80 minutes. Estimated 175.88 minutes remaining.
+03:01:03 (Game 27) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:01:03 (Game 27) - Playing game...
+03:03:19 (Game 27) - Completed game with scores [100, 0]
+03:03:19 (Game 27) - Cumulative scores: MultithreadedUCTPlayer=200 ConfidenceAgent=2500 
+03:03:19 (Game 27) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game27.json
+03:03:19 - Finished 27 of 100 games in 64.11 minutes. Estimated 173.34 minutes remaining.
+03:03:22 (Game 28) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:03:22 (Game 28) - Playing game...
+03:06:15 (Game 28) - Completed game with scores [100, 0]
+03:06:15 (Game 28) - Cumulative scores: MultithreadedUCTPlayer=200 ConfidenceAgent=2600 
+03:06:15 (Game 28) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game28.json
+03:06:15 - Finished 28 of 100 games in 67.04 minutes. Estimated 172.38 minutes remaining.
+03:06:18 (Game 29) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:06:18 (Game 29) - Playing game...
+03:09:19 (Game 29) - Completed game with scores [0, 100]
+03:09:19 (Game 29) - Cumulative scores: MultithreadedUCTPlayer=200 ConfidenceAgent=2700 
+03:09:19 (Game 29) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game29.json
+03:09:19 - Finished 29 of 100 games in 70.11 minutes. Estimated 171.64 minutes remaining.
+03:09:22 (Game 30) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:09:22 (Game 30) - Playing game...
+03:12:14 (Game 30) - Completed game with scores [100, 0]
+03:12:14 (Game 30) - Cumulative scores: MultithreadedUCTPlayer=200 ConfidenceAgent=2800 
+03:12:14 (Game 30) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game30.json
+03:12:14 - Finished 30 of 100 games in 73.03 minutes. Estimated 170.40 minutes remaining.
+03:12:17 (Game 31) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:12:17 (Game 31) - Playing game...
+03:14:52 (Game 31) - Completed game with scores [100, 0]
+03:14:52 (Game 31) - Cumulative scores: MultithreadedUCTPlayer=300 ConfidenceAgent=2800 
+03:14:52 (Game 31) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game31.json
+03:14:52 - Finished 31 of 100 games in 75.65 minutes. Estimated 168.38 minutes remaining.
+03:14:55 (Game 32) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:14:55 (Game 32) - Playing game...
+03:17:11 (Game 32) - Completed game with scores [100, 0]
+03:17:11 (Game 32) - Cumulative scores: MultithreadedUCTPlayer=300 ConfidenceAgent=2900 
+03:17:11 (Game 32) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game32.json
+03:17:11 - Finished 32 of 100 games in 77.97 minutes. Estimated 165.68 minutes remaining.
+03:17:14 (Game 33) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:17:14 (Game 33) - Playing game...
+03:20:06 (Game 33) - Completed game with scores [100, 0]
+03:20:06 (Game 33) - Cumulative scores: MultithreadedUCTPlayer=400 ConfidenceAgent=2900 
+03:20:06 (Game 33) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game33.json
+03:20:06 - Finished 33 of 100 games in 80.89 minutes. Estimated 164.24 minutes remaining.
+03:20:09 (Game 34) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:20:09 (Game 34) - Playing game...
+03:23:38 (Game 34) - Completed game with scores [100, 0]
+03:23:38 (Game 34) - Cumulative scores: MultithreadedUCTPlayer=400 ConfidenceAgent=3000 
+03:23:38 (Game 34) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game34.json
+03:23:38 - Finished 34 of 100 games in 84.42 minutes. Estimated 163.87 minutes remaining.
+03:23:41 (Game 35) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:23:41 (Game 35) - Playing game...
+03:24:53 (Game 35) - Completed game with scores [0, 100]
+03:24:53 (Game 35) - Cumulative scores: MultithreadedUCTPlayer=400 ConfidenceAgent=3100 
+03:24:53 (Game 35) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game35.json
+03:24:53 - Finished 35 of 100 games in 85.68 minutes. Estimated 159.12 minutes remaining.
+03:24:56 (Game 36) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:24:56 (Game 36) - Playing game...
+03:28:25 (Game 36) - Completed game with scores [100, 0]
+03:28:25 (Game 36) - Cumulative scores: MultithreadedUCTPlayer=400 ConfidenceAgent=3200 
+03:28:25 (Game 36) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game36.json
+03:28:25 - Finished 36 of 100 games in 89.21 minutes. Estimated 158.59 minutes remaining.
+03:28:28 (Game 37) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:28:28 (Game 37) - Playing game...
+03:34:03 (Game 37) - Completed game with scores [100, 0]
+03:34:03 (Game 37) - Cumulative scores: MultithreadedUCTPlayer=500 ConfidenceAgent=3200 
+03:34:03 (Game 37) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game37.json
+03:34:03 - Finished 37 of 100 games in 94.85 minutes. Estimated 161.50 minutes remaining.
+03:34:06 (Game 38) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:34:06 (Game 38) - Playing game...
+03:35:46 (Game 38) - Completed game with scores [100, 0]
+03:35:46 (Game 38) - Cumulative scores: MultithreadedUCTPlayer=500 ConfidenceAgent=3300 
+03:35:46 (Game 38) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game38.json
+03:35:46 - Finished 38 of 100 games in 96.56 minutes. Estimated 157.55 minutes remaining.
+03:35:49 (Game 39) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:35:49 (Game 39) - Playing game...
+03:39:00 (Game 39) - Completed game with scores [100, 0]
+03:39:00 (Game 39) - Cumulative scores: MultithreadedUCTPlayer=600 ConfidenceAgent=3300 
+03:39:00 (Game 39) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game39.json
+03:39:00 - Finished 39 of 100 games in 99.79 minutes. Estimated 156.07 minutes remaining.
+03:39:03 (Game 40) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:39:03 (Game 40) - Playing game...
+03:44:11 (Game 40) - Completed game with scores [0, 100]
+03:44:11 (Game 40) - Cumulative scores: MultithreadedUCTPlayer=700 ConfidenceAgent=3300 
+03:44:11 (Game 40) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game40.json
+03:44:11 - Finished 40 of 100 games in 104.97 minutes. Estimated 157.45 minutes remaining.
+03:44:14 (Game 41) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:44:14 (Game 41) - Playing game...
+03:47:24 (Game 41) - Completed game with scores [100, 0]
+03:47:24 (Game 41) - Cumulative scores: MultithreadedUCTPlayer=800 ConfidenceAgent=3300 
+03:47:24 (Game 41) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game41.json
+03:47:24 - Finished 41 of 100 games in 108.19 minutes. Estimated 155.69 minutes remaining.
+03:47:27 (Game 42) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:47:27 (Game 42) - Playing game...
+03:49:07 (Game 42) - Completed game with scores [100, 0]
+03:49:07 (Game 42) - Cumulative scores: MultithreadedUCTPlayer=800 ConfidenceAgent=3400 
+03:49:07 (Game 42) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game42.json
+03:49:07 - Finished 42 of 100 games in 109.90 minutes. Estimated 151.77 minutes remaining.
+03:49:10 (Game 43) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:49:10 (Game 43) - Playing game...
+03:53:14 (Game 43) - Completed game with scores [100, 0]
+03:53:14 (Game 43) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=3400 
+03:53:14 (Game 43) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game43.json
+03:53:14 - Finished 43 of 100 games in 114.03 minutes. Estimated 151.16 minutes remaining.
+03:53:17 (Game 44) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+03:53:17 (Game 44) - Playing game...
+03:54:39 (Game 44) - Completed game with scores [100, 0]
+03:54:39 (Game 44) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=3500 
+03:54:39 (Game 44) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game44.json
+03:54:39 - Finished 44 of 100 games in 115.45 minutes. Estimated 146.93 minutes remaining.
+03:54:42 (Game 45) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+03:54:42 (Game 45) - Playing game...
+04:00:08 (Game 45) - Completed game with scores [0, 100]
+04:00:08 (Game 45) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=3600 
+04:00:08 (Game 45) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game45.json
+04:00:08 - Finished 45 of 100 games in 120.93 minutes. Estimated 147.81 minutes remaining.
+04:00:11 (Game 46) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:00:11 (Game 46) - Playing game...
+04:01:51 (Game 46) - Completed game with scores [100, 0]
+04:01:51 (Game 46) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=3700 
+04:01:51 (Game 46) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game46.json
+04:01:51 - Finished 46 of 100 games in 122.65 minutes. Estimated 143.98 minutes remaining.
+04:01:54 (Game 47) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:01:54 (Game 47) - Playing game...
+04:05:14 (Game 47) - Completed game with scores [0, 100]
+04:05:14 (Game 47) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=3800 
+04:05:14 (Game 47) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game47.json
+04:05:14 - Finished 47 of 100 games in 126.02 minutes. Estimated 142.11 minutes remaining.
+04:05:17 (Game 48) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:05:17 (Game 48) - Playing game...
+04:07:51 (Game 48) - Completed game with scores [100, 0]
+04:07:51 (Game 48) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=3900 
+04:07:51 (Game 48) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game48.json
+04:07:51 - Finished 48 of 100 games in 128.64 minutes. Estimated 139.36 minutes remaining.
+04:07:54 (Game 49) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:07:54 (Game 49) - Playing game...
+04:09:43 (Game 49) - Completed game with scores [0, 100]
+04:09:43 (Game 49) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=4000 
+04:09:43 (Game 49) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game49.json
+04:09:43 - Finished 49 of 100 games in 130.50 minutes. Estimated 135.83 minutes remaining.
+04:09:46 (Game 50) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:09:46 (Game 50) - Playing game...
+04:13:33 (Game 50) - Completed game with scores [100, 0]
+04:13:33 (Game 50) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=4100 
+04:13:33 (Game 50) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game50.json
+04:13:33 - Finished 50 of 100 games in 134.33 minutes. Estimated 134.33 minutes remaining.
+04:13:36 (Game 51) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:13:36 (Game 51) - Playing game...
+04:15:06 (Game 51) - Completed game with scores [0, 100]
+04:15:06 (Game 51) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidenceAgent=4200 
+04:15:06 (Game 51) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game51.json
+04:15:06 - Finished 51 of 100 games in 135.90 minutes. Estimated 130.57 minutes remaining.
+04:15:09 (Game 52) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:15:09 (Game 52) - Playing game...
+04:19:05 (Game 52) - Completed game with scores [0, 100]
+04:19:05 (Game 52) - Cumulative scores: MultithreadedUCTPlayer=1000 ConfidenceAgent=4200 
+04:19:05 (Game 52) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game52.json
+04:19:05 - Finished 52 of 100 games in 139.88 minutes. Estimated 129.12 minutes remaining.
+04:19:08 (Game 53) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:19:08 (Game 53) - Playing game...
+04:22:27 (Game 53) - Completed game with scores [0, 100]
+04:22:27 (Game 53) - Cumulative scores: MultithreadedUCTPlayer=1000 ConfidenceAgent=4300 
+04:22:27 (Game 53) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game53.json
+04:22:27 - Finished 53 of 100 games in 143.25 minutes. Estimated 127.03 minutes remaining.
+04:22:30 (Game 54) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:22:30 (Game 54) - Playing game...
+04:27:02 (Game 54) - Completed game with scores [0, 100]
+04:27:02 (Game 54) - Cumulative scores: MultithreadedUCTPlayer=1100 ConfidenceAgent=4300 
+04:27:02 (Game 54) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game54.json
+04:27:02 - Finished 54 of 100 games in 147.83 minutes. Estimated 125.93 minutes remaining.
+04:27:05 (Game 55) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:27:05 (Game 55) - Playing game...
+04:28:36 (Game 55) - Completed game with scores [0, 100]
+04:28:36 (Game 55) - Cumulative scores: MultithreadedUCTPlayer=1100 ConfidenceAgent=4400 
+04:28:36 (Game 55) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game55.json
+04:28:36 - Finished 55 of 100 games in 149.40 minutes. Estimated 122.23 minutes remaining.
+04:28:39 (Game 56) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:28:39 (Game 56) - Playing game...
+04:30:55 (Game 56) - Completed game with scores [100, 0]
+04:30:55 (Game 56) - Cumulative scores: MultithreadedUCTPlayer=1100 ConfidenceAgent=4500 
+04:30:55 (Game 56) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game56.json
+04:30:55 - Finished 56 of 100 games in 151.71 minutes. Estimated 119.20 minutes remaining.
+04:30:58 (Game 57) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:30:58 (Game 57) - Playing game...
+04:34:36 (Game 57) - Completed game with scores [0, 100]
+04:34:36 (Game 57) - Cumulative scores: MultithreadedUCTPlayer=1100 ConfidenceAgent=4600 
+04:34:36 (Game 57) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game57.json
+04:34:36 - Finished 57 of 100 games in 155.39 minutes. Estimated 117.22 minutes remaining.
+04:34:39 (Game 58) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:34:39 (Game 58) - Playing game...
+04:37:22 (Game 58) - Completed game with scores [0, 100]
+04:37:22 (Game 58) - Cumulative scores: MultithreadedUCTPlayer=1200 ConfidenceAgent=4600 
+04:37:22 (Game 58) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game58.json
+04:37:22 - Finished 58 of 100 games in 158.16 minutes. Estimated 114.53 minutes remaining.
+04:37:25 (Game 59) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:37:25 (Game 59) - Playing game...
+04:44:13 (Game 59) - Completed game with scores [100, 0]
+04:44:13 (Game 59) - Cumulative scores: MultithreadedUCTPlayer=1300 ConfidenceAgent=4600 
+04:44:13 (Game 59) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game59.json
+04:44:13 - Finished 59 of 100 games in 165.00 minutes. Estimated 114.66 minutes remaining.
+04:44:16 (Game 60) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:44:16 (Game 60) - Playing game...
+04:45:19 (Game 60) - Completed game with scores [100, 0]
+04:45:19 (Game 60) - Cumulative scores: MultithreadedUCTPlayer=1300 ConfidenceAgent=4700 
+04:45:19 (Game 60) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game60.json
+04:45:19 - Finished 60 of 100 games in 166.12 minutes. Estimated 110.74 minutes remaining.
+04:45:22 (Game 61) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:45:22 (Game 61) - Playing game...
+04:46:26 (Game 61) - Completed game with scores [100, 0]
+04:46:26 (Game 61) - Cumulative scores: MultithreadedUCTPlayer=1400 ConfidenceAgent=4700 
+04:46:26 (Game 61) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game61.json
+04:46:26 - Finished 61 of 100 games in 167.23 minutes. Estimated 106.91 minutes remaining.
+04:46:29 (Game 62) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:46:29 (Game 62) - Playing game...
+04:48:27 (Game 62) - Completed game with scores [100, 0]
+04:48:27 (Game 62) - Cumulative scores: MultithreadedUCTPlayer=1400 ConfidenceAgent=4800 
+04:48:27 (Game 62) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game62.json
+04:48:27 - Finished 62 of 100 games in 169.24 minutes. Estimated 103.73 minutes remaining.
+04:48:30 (Game 63) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:48:30 (Game 63) - Playing game...
+04:49:34 (Game 63) - Completed game with scores [100, 0]
+04:49:34 (Game 63) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidenceAgent=4800 
+04:49:34 (Game 63) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game63.json
+04:49:34 - Finished 63 of 100 games in 170.36 minutes. Estimated 100.05 minutes remaining.
+04:49:37 (Game 64) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:49:37 (Game 64) - Playing game...
+04:51:35 (Game 64) - Completed game with scores [100, 0]
+04:51:35 (Game 64) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidenceAgent=4900 
+04:51:35 (Game 64) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game64.json
+04:51:35 - Finished 64 of 100 games in 172.37 minutes. Estimated 96.96 minutes remaining.
+04:51:38 (Game 65) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:51:38 (Game 65) - Playing game...
+04:56:10 (Game 65) - Completed game with scores [0, 100]
+04:56:10 (Game 65) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidenceAgent=5000 
+04:56:10 (Game 65) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game65.json
+04:56:10 - Finished 65 of 100 games in 176.95 minutes. Estimated 95.28 minutes remaining.
+04:56:13 (Game 66) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+04:56:13 (Game 66) - Playing game...
+04:59:42 (Game 66) - Completed game with scores [100, 0]
+04:59:42 (Game 66) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidenceAgent=5100 
+04:59:42 (Game 66) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game66.json
+04:59:42 - Finished 66 of 100 games in 180.48 minutes. Estimated 92.98 minutes remaining.
+04:59:45 (Game 67) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+04:59:45 (Game 67) - Playing game...
+05:02:10 (Game 67) - Completed game with scores [0, 100]
+05:02:10 (Game 67) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidenceAgent=5200 
+05:02:10 (Game 67) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game67.json
+05:02:10 - Finished 67 of 100 games in 182.95 minutes. Estimated 90.11 minutes remaining.
+05:02:13 (Game 68) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:02:13 (Game 68) - Playing game...
+05:05:50 (Game 68) - Completed game with scores [0, 100]
+05:05:50 (Game 68) - Cumulative scores: MultithreadedUCTPlayer=1600 ConfidenceAgent=5200 
+05:05:50 (Game 68) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game68.json
+05:05:50 - Finished 68 of 100 games in 186.63 minutes. Estimated 87.82 minutes remaining.
+05:05:53 (Game 69) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:05:53 (Game 69) - Playing game...
+05:08:27 (Game 69) - Completed game with scores [100, 0]
+05:08:27 (Game 69) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5200 
+05:08:27 (Game 69) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game69.json
+05:08:27 - Finished 69 of 100 games in 189.25 minutes. Estimated 85.02 minutes remaining.
+05:08:30 (Game 70) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:08:30 (Game 70) - Playing game...
+05:11:04 (Game 70) - Completed game with scores [100, 0]
+05:11:04 (Game 70) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5300 
+05:11:04 (Game 70) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game70.json
+05:11:04 - Finished 70 of 100 games in 191.86 minutes. Estimated 82.23 minutes remaining.
+05:11:07 (Game 71) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:11:07 (Game 71) - Playing game...
+05:12:20 (Game 71) - Completed game with scores [0, 100]
+05:12:20 (Game 71) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5400 
+05:12:20 (Game 71) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game71.json
+05:12:20 - Finished 71 of 100 games in 193.13 minutes. Estimated 78.88 minutes remaining.
+05:12:23 (Game 72) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:12:23 (Game 72) - Playing game...
+05:14:03 (Game 72) - Completed game with scores [100, 0]
+05:14:03 (Game 72) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5500 
+05:14:03 (Game 72) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game72.json
+05:14:03 - Finished 72 of 100 games in 194.84 minutes. Estimated 75.77 minutes remaining.
+05:14:06 (Game 73) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:14:06 (Game 73) - Playing game...
+05:15:19 (Game 73) - Completed game with scores [0, 100]
+05:15:19 (Game 73) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5600 
+05:15:19 (Game 73) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game73.json
+05:15:19 - Finished 73 of 100 games in 196.10 minutes. Estimated 72.53 minutes remaining.
+05:15:22 (Game 74) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:15:22 (Game 74) - Playing game...
+05:16:25 (Game 74) - Completed game with scores [100, 0]
+05:16:25 (Game 74) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5700 
+05:16:25 (Game 74) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game74.json
+05:16:25 - Finished 74 of 100 games in 197.22 minutes. Estimated 69.29 minutes remaining.
+05:16:28 (Game 75) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:16:28 (Game 75) - Playing game...
+05:21:18 (Game 75) - Completed game with scores [0, 100]
+05:21:18 (Game 75) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5800 
+05:21:18 (Game 75) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game75.json
+05:21:18 - Finished 75 of 100 games in 202.10 minutes. Estimated 67.37 minutes remaining.
+05:21:21 (Game 76) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:21:21 (Game 76) - Playing game...
+05:24:14 (Game 76) - Completed game with scores [100, 0]
+05:24:14 (Game 76) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=5900 
+05:24:14 (Game 76) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game76.json
+05:24:14 - Finished 76 of 100 games in 205.02 minutes. Estimated 64.74 minutes remaining.
+05:24:17 (Game 77) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:24:17 (Game 77) - Playing game...
+05:26:42 (Game 77) - Completed game with scores [0, 100]
+05:26:42 (Game 77) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=6000 
+05:26:42 (Game 77) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game77.json
+05:26:42 - Finished 77 of 100 games in 207.49 minutes. Estimated 61.98 minutes remaining.
+05:26:45 (Game 78) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:26:45 (Game 78) - Playing game...
+05:27:48 (Game 78) - Completed game with scores [100, 0]
+05:27:48 (Game 78) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidenceAgent=6100 
+05:27:48 (Game 78) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game78.json
+05:27:48 - Finished 78 of 100 games in 208.60 minutes. Estimated 58.84 minutes remaining.
+05:27:51 (Game 79) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:27:51 (Game 79) - Playing game...
+05:30:44 (Game 79) - Completed game with scores [100, 0]
+05:30:44 (Game 79) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6100 
+05:30:44 (Game 79) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game79.json
+05:30:44 - Finished 79 of 100 games in 211.52 minutes. Estimated 56.23 minutes remaining.
+05:30:47 (Game 80) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:30:47 (Game 80) - Playing game...
+05:33:57 (Game 80) - Completed game with scores [100, 0]
+05:33:57 (Game 80) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6200 
+05:33:57 (Game 80) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game80.json
+05:33:57 - Finished 80 of 100 games in 214.74 minutes. Estimated 53.69 minutes remaining.
+05:34:00 (Game 81) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:34:00 (Game 81) - Playing game...
+05:35:31 (Game 81) - Completed game with scores [0, 100]
+05:35:31 (Game 81) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6300 
+05:35:31 (Game 81) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game81.json
+05:35:31 - Finished 81 of 100 games in 216.30 minutes. Estimated 50.74 minutes remaining.
+05:35:34 (Game 82) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:35:34 (Game 82) - Playing game...
+05:36:37 (Game 82) - Completed game with scores [100, 0]
+05:36:37 (Game 82) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6400 
+05:36:37 (Game 82) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game82.json
+05:36:37 - Finished 82 of 100 games in 217.41 minutes. Estimated 47.72 minutes remaining.
+05:36:40 (Game 83) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:36:40 (Game 83) - Playing game...
+05:38:29 (Game 83) - Completed game with scores [0, 100]
+05:38:29 (Game 83) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6500 
+05:38:29 (Game 83) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game83.json
+05:38:29 - Finished 83 of 100 games in 219.28 minutes. Estimated 44.91 minutes remaining.
+05:38:32 (Game 84) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:38:32 (Game 84) - Playing game...
+05:39:36 (Game 84) - Completed game with scores [100, 0]
+05:39:36 (Game 84) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6600 
+05:39:36 (Game 84) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game84.json
+05:39:36 - Finished 84 of 100 games in 220.39 minutes. Estimated 41.98 minutes remaining.
+05:39:39 (Game 85) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:39:39 (Game 85) - Playing game...
+05:42:22 (Game 85) - Completed game with scores [0, 100]
+05:42:22 (Game 85) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6700 
+05:42:22 (Game 85) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game85.json
+05:42:22 - Finished 85 of 100 games in 223.16 minutes. Estimated 39.38 minutes remaining.
+05:42:25 (Game 86) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:42:25 (Game 86) - Playing game...
+05:46:12 (Game 86) - Completed game with scores [100, 0]
+05:46:12 (Game 86) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6800 
+05:46:12 (Game 86) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game86.json
+05:46:12 - Finished 86 of 100 games in 226.99 minutes. Estimated 36.95 minutes remaining.
+05:46:15 (Game 87) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:46:15 (Game 87) - Playing game...
+05:48:58 (Game 87) - Completed game with scores [0, 100]
+05:48:58 (Game 87) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidenceAgent=6900 
+05:48:58 (Game 87) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game87.json
+05:48:58 - Finished 87 of 100 games in 229.76 minutes. Estimated 34.33 minutes remaining.
+05:49:01 (Game 88) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:49:01 (Game 88) - Playing game...
+05:52:57 (Game 88) - Completed game with scores [0, 100]
+05:52:57 (Game 88) - Cumulative scores: MultithreadedUCTPlayer=1900 ConfidenceAgent=6900 
+05:52:57 (Game 88) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game88.json
+05:52:57 - Finished 88 of 100 games in 233.74 minutes. Estimated 31.87 minutes remaining.
+05:53:00 (Game 89) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:53:00 (Game 89) - Playing game...
+05:56:29 (Game 89) - Completed game with scores [100, 0]
+05:56:29 (Game 89) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=6900 
+05:56:29 (Game 89) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game89.json
+05:56:29 - Finished 89 of 100 games in 237.27 minutes. Estimated 29.33 minutes remaining.
+05:56:32 (Game 90) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+05:56:32 (Game 90) - Playing game...
+05:58:48 (Game 90) - Completed game with scores [100, 0]
+05:58:48 (Game 90) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7000 
+05:58:48 (Game 90) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game90.json
+05:58:48 - Finished 90 of 100 games in 239.58 minutes. Estimated 26.62 minutes remaining.
+05:58:51 (Game 91) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+05:58:51 (Game 91) - Playing game...
+06:00:03 (Game 91) - Completed game with scores [0, 100]
+06:00:03 (Game 91) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7100 
+06:00:03 (Game 91) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game91.json
+06:00:03 - Finished 91 of 100 games in 240.85 minutes. Estimated 23.82 minutes remaining.
+06:00:06 (Game 92) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+06:00:06 (Game 92) - Playing game...
+06:02:22 (Game 92) - Completed game with scores [100, 0]
+06:02:22 (Game 92) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7200 
+06:02:22 (Game 92) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game92.json
+06:02:22 - Finished 92 of 100 games in 243.16 minutes. Estimated 21.14 minutes remaining.
+06:02:25 (Game 93) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+06:02:25 (Game 93) - Playing game...
+06:04:32 (Game 93) - Completed game with scores [0, 100]
+06:04:32 (Game 93) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7300 
+06:04:32 (Game 93) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game93.json
+06:04:32 - Finished 93 of 100 games in 245.33 minutes. Estimated 18.47 minutes remaining.
+06:04:35 (Game 94) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+06:04:35 (Game 94) - Playing game...
+06:08:04 (Game 94) - Completed game with scores [100, 0]
+06:08:04 (Game 94) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7400 
+06:08:04 (Game 94) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game94.json
+06:08:04 - Finished 94 of 100 games in 248.86 minutes. Estimated 15.88 minutes remaining.
+06:08:07 (Game 95) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+06:08:07 (Game 95) - Playing game...
+06:10:50 (Game 95) - Completed game with scores [0, 100]
+06:10:50 (Game 95) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7500 
+06:10:50 (Game 95) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game95.json
+06:10:50 - Finished 95 of 100 games in 251.63 minutes. Estimated 13.24 minutes remaining.
+06:10:53 (Game 96) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+06:10:53 (Game 96) - Playing game...
+06:12:15 (Game 96) - Completed game with scores [100, 0]
+06:12:15 (Game 96) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7600 
+06:12:15 (Game 96) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game96.json
+06:12:15 - Finished 96 of 100 games in 253.04 minutes. Estimated 10.54 minutes remaining.
+06:12:18 (Game 97) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+06:12:18 (Game 97) - Playing game...
+06:14:43 (Game 97) - Completed game with scores [0, 100]
+06:14:43 (Game 97) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7700 
+06:14:43 (Game 97) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game97.json
+06:14:43 - Finished 97 of 100 games in 255.51 minutes. Estimated 7.90 minutes remaining.
+06:14:46 (Game 98) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+06:14:46 (Game 98) - Playing game...
+06:16:26 (Game 98) - Completed game with scores [100, 0]
+06:16:26 (Game 98) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7800 
+06:16:26 (Game 98) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game98.json
+06:16:26 - Finished 98 of 100 games in 257.22 minutes. Estimated 5.25 minutes remaining.
+06:16:29 (Game 99) - Initializing game with players: [MultithreadedUCTPlayer, ConfidenceAgent]
+06:16:29 (Game 99) - Playing game...
+06:19:12 (Game 99) - Completed game with scores [0, 100]
+06:19:12 (Game 99) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=7900 
+06:19:12 (Game 99) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game99.json
+06:19:12 - Finished 99 of 100 games in 259.99 minutes. Estimated 2.63 minutes remaining.
+06:19:15 (Game 100) - Initializing game with players: [ConfidenceAgent, MultithreadedUCTPlayer]
+06:19:15 (Game 100) - Playing game...
+06:21:13 (Game 100) - Completed game with scores [100, 0]
+06:21:13 (Game 100) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidenceAgent=8000 
+06:21:13 (Game 100) - Saving match to file connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858/game100.json
+06:21:13 - Finished 100 of 100 games in 262.01 minutes. Estimated 0.00 minutes remaining.
+06:21:13 - Successfully finished tournament. 0 matches contained errors.
+06:21:13 - Average player scores: MultithreadedUCTPlayer=20.0000 ConfidenceAgent=80.0000 

@@ -2,7 +2,7 @@
 
 GAME_KEY=connectFour
 P1=MiniMaxRandomPlayer
-P2=ConfidencePlayer
+P2=ConfidenceAgent
 
 NUM_GAMES=100
 START_CLOCK=30

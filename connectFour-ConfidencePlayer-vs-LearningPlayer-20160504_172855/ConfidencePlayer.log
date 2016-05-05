@@ -1,0 +1,12 @@
+Starting up preconfigured player on port 9147 using player class named ConfidencePlayer
+Exception in thread "main" java.lang.IllegalArgumentException: Could not find player class with that name. Available choices are: [HumanGamer, SampleClojureGamerStub, SampleMonteCarloGamer, UCTPlayer, MiniMaxRandomPlayer, NeuralNetworkPlayer, KioskGamer, MultithreadedUCTPlayer, SamplePythonGamerStub, SampleAlphabetGamer, SampleRandomGamer, SampleMonteCarloGamer, SampleSearchLightGamer, RandomGamer, SampleNoopGamer, ConfidenceAgent, LearningPlayer]
+	at org.ggp.base.apps.player.PlayerRunner.main(PlayerRunner.java:38)
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':playerRunner'.
+> Process 'command '/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/bin/java'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.

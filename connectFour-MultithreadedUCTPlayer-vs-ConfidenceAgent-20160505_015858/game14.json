@@ -1,0 +1,185 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-MultithreadedUCTPlayer-vs-ConfidenceAgent-20160505_015858.game14",
+    "moves": [
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 7 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 7 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 7 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 7 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidenceAgent",
+        "MultithreadedUCTPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "2LQfNE80zy0ZIOlgSSQ8CNFWcu5iOlnf",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462433373516,
+    "stateTimes": [
+        1462433373519,
+        1462433382829,
+        1462433391907,
+        1462433400970,
+        1462433410050,
+        1462433419118,
+        1462433428190,
+        1462433437276,
+        1462433446346,
+        1462433455391,
+        1462433464458,
+        1462433473524,
+        1462433482587,
+        1462433491642,
+        1462433500679,
+        1462433509727
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( control black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 7 1 red ) ( cell 5 1 black ) ( control black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 7 1 red ) ( cell 5 1 black ) ( cell 1 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 7 1 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( control black ) ( cell 1 1 black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 7 1 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 1 1 black ) ( cell 4 1 red ) ( cell 7 2 black ) )",
+        "( ( cell 7 1 red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( control black ) ( cell 1 1 black ) ( cell 4 1 red ) ( cell 7 2 black ) )",
+        "( ( control red ) ( cell 7 1 red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 5 4 black ) ( cell 1 1 black ) ( cell 4 1 red ) ( cell 7 2 black ) )",
+        "( ( cell 7 1 red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 5 4 black ) ( cell 7 3 red ) ( control black ) ( cell 1 1 black ) ( cell 4 1 red ) ( cell 7 2 black ) )",
+        "( ( control red ) ( cell 7 1 red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 5 4 black ) ( cell 7 3 red ) ( cell 1 1 black ) ( cell 4 1 red ) ( cell 7 2 black ) ( cell 8 1 black ) )",
+        "( ( cell 7 1 red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 4 2 red ) ( cell 5 4 black ) ( cell 7 3 red ) ( control black ) ( cell 1 1 black ) ( cell 4 1 red ) ( cell 7 2 black ) ( cell 8 1 black ) )",
+        "( ( cell 7 1 red ) ( control red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 4 2 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 4 1 red ) ( cell 5 4 black ) ( cell 1 1 black ) ( cell 7 2 black ) ( cell 8 1 black ) )",
+        "( ( cell 7 1 red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 4 3 red ) ( cell 4 2 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 4 1 red ) ( cell 5 4 black ) ( control black ) ( cell 1 1 black ) ( cell 7 2 black ) ( cell 8 1 black ) )",
+        "( ( cell 7 1 red ) ( control red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 4 3 red ) ( cell 4 2 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 4 1 red ) ( cell 5 4 black ) ( cell 8 2 black ) ( cell 1 1 black ) ( cell 7 2 black ) ( cell 8 1 black ) )",
+        "( ( cell 7 1 red ) ( cell 4 4 red ) ( cell 5 3 red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 4 3 red ) ( cell 4 2 red ) ( cell 7 3 red ) ( cell 7 4 black ) ( cell 4 1 red ) ( cell 5 4 black ) ( cell 8 2 black ) ( control black ) ( cell 1 1 black ) ( cell 7 2 black ) ( cell 8 1 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

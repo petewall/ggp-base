@@ -1,0 +1,135 @@
+{
+    "errors": [
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ],
+        [
+            "CE",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        0,
+        100
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-ConfidencePlayer-vs-LearningPlayer-20160504_172855.game83",
+    "moves": [
+        [
+            "( drop 8 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 6 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 7 )"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidencePlayer",
+        "LearningPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "EFbty6RFS0DZFqlnKidDxZ5Q5Dc70fPp",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462402385057,
+    "stateTimes": [
+        1462402385059,
+        1462402385275,
+        1462402386585,
+        1462402386610,
+        1462402388073,
+        1462402388100,
+        1462402389731,
+        1462402389761,
+        1462402391561,
+        1462402391594,
+        1462402391845
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( cell 8 1 red ) ( control black ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 8 1 red ) )",
+        "( ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( control black ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 4 1 black ) )",
+        "( ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 4 2 red ) ( control black ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 4 3 black ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 4 2 red ) ( cell 4 1 black ) )",
+        "( ( cell 4 3 black ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 3 1 red ) ( cell 4 2 red ) ( control black ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 4 3 black ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 3 1 red ) ( cell 6 1 black ) ( cell 4 2 red ) ( cell 4 1 black ) )",
+        "( ( cell 4 4 red ) ( cell 4 3 black ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 3 1 red ) ( cell 6 1 black ) ( cell 4 2 red ) ( control black ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 4 4 red ) ( cell 4 3 black ) ( cell 5 1 black ) ( cell 7 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 3 1 red ) ( cell 6 1 black ) ( cell 4 2 red ) ( cell 4 1 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

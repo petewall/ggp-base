@@ -1,0 +1,165 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-ConfidenceAgent-vs-LearningPlayer-20160504_181416.game87",
+    "moves": [
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 8 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 3 )"
+        ],
+        [
+            "( drop 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 2 )"
+        ],
+        [
+            "( drop 6 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ],
+        [
+            "( drop 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 8 )"
+        ],
+        [
+            "( drop 2 )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidenceAgent",
+        "LearningPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "YDZaXXrPV691H38zFnnSG9Oknj9N5Lpr",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462426741416,
+    "stateTimes": [
+        1462426741418,
+        1462426750686,
+        1462426759727,
+        1462426768754,
+        1462426777809,
+        1462426786878,
+        1462426795912,
+        1462426804966,
+        1462426814008,
+        1462426823060,
+        1462426832095,
+        1462426841133,
+        1462426850139,
+        1462426859145
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( control black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 5 1 black ) ( cell 8 1 red ) ( control black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 8 1 red ) ( cell 3 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( control black ) ( cell 3 1 black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 8 1 red ) ( cell 2 1 black ) ( cell 3 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 5 1 black ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 2 1 black ) ( control black ) ( cell 3 1 black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 2 1 black ) ( cell 1 1 black ) ( cell 3 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 5 1 black ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 2 1 black ) ( cell 4 2 red ) ( control black ) ( cell 1 1 black ) ( cell 3 1 black ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 4 3 black ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 2 1 black ) ( cell 4 2 red ) ( cell 1 1 black ) ( cell 3 1 black ) ( cell 4 1 red ) )",
+        "( ( cell 4 3 black ) ( cell 5 1 black ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 8 1 red ) ( cell 2 1 black ) ( cell 4 2 red ) ( control black ) ( cell 1 1 black ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) )",
+        "( ( control red ) ( cell 4 3 black ) ( cell 5 1 black ) ( cell 8 1 red ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 2 1 black ) ( cell 8 2 black ) ( cell 1 1 black ) )",
+        "( ( cell 4 3 black ) ( cell 5 1 black ) ( cell 8 1 red ) ( cell 5 2 red ) ( cell 6 1 red ) ( cell 4 2 red ) ( cell 3 1 black ) ( cell 3 2 red ) ( cell 4 1 red ) ( cell 2 2 red ) ( cell 2 1 black ) ( cell 8 2 black ) ( control black ) ( cell 1 1 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}
