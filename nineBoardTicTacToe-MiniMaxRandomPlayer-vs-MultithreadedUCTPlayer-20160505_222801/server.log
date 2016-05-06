@@ -1,0 +1,652 @@
+22:28:19 (Game 1) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+22:28:19 (Game 1) - Playing game...
+22:33:34 (Game 1) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+22:33:34 (Game 1) - Completed game with scores [0, 100]
+22:33:34 (Game 1) - Cumulative scores: MiniMaxRandomPlayer=0 MultithreadedUCTPlayer=100 
+22:33:34 (Game 1) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game1.json
+22:33:34 - Finished 1 of 100 games in 5.30 minutes. Estimated 525.14 minutes remaining.
+22:33:37 (Game 2) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+22:33:37 (Game 2) - Playing game...
+22:39:04 (Game 2) - Completed game with scores [0, 100]
+22:39:04 (Game 2) - Cumulative scores: MiniMaxRandomPlayer=100 MultithreadedUCTPlayer=100 
+22:39:04 (Game 2) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game2.json
+22:39:04 - Finished 2 of 100 games in 10.81 minutes. Estimated 529.72 minutes remaining.
+22:39:07 (Game 3) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+22:39:07 (Game 3) - Playing game...
+22:45:07 (Game 3) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+22:45:07 (Game 3) - Completed game with scores [100, 0]
+22:45:07 (Game 3) - Cumulative scores: MiniMaxRandomPlayer=200 MultithreadedUCTPlayer=100 
+22:45:07 (Game 3) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game3.json
+22:45:07 - Finished 3 of 100 games in 16.86 minutes. Estimated 545.19 minutes remaining.
+22:45:10 (Game 4) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+22:45:10 (Game 4) - Playing game...
+22:51:06 (Game 4) - Completed game with scores [100, 0]
+22:51:06 (Game 4) - Cumulative scores: MiniMaxRandomPlayer=200 MultithreadedUCTPlayer=200 
+22:51:06 (Game 4) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game4.json
+22:51:06 - Finished 4 of 100 games in 22.84 minutes. Estimated 548.18 minutes remaining.
+22:51:09 (Game 5) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+22:51:09 (Game 5) - Playing game...
+22:55:03 (Game 5) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+22:55:03 (Game 5) - Completed game with scores [100, 0]
+22:55:03 (Game 5) - Cumulative scores: MiniMaxRandomPlayer=300 MultithreadedUCTPlayer=200 
+22:55:03 (Game 5) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game5.json
+22:55:03 - Finished 5 of 100 games in 26.78 minutes. Estimated 508.82 minutes remaining.
+22:55:06 (Game 6) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+22:55:06 (Game 6) - Playing game...
+23:00:43 (Game 6) - Completed game with scores [100, 0]
+23:00:43 (Game 6) - Cumulative scores: MiniMaxRandomPlayer=300 MultithreadedUCTPlayer=300 
+23:00:43 (Game 6) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game6.json
+23:00:43 - Finished 6 of 100 games in 32.45 minutes. Estimated 508.35 minutes remaining.
+23:00:46 (Game 7) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:00:46 (Game 7) - Playing game...
+23:07:37 (Game 7) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+23:07:37 (Game 7) - Completed game with scores [0, 100]
+23:07:37 (Game 7) - Cumulative scores: MiniMaxRandomPlayer=300 MultithreadedUCTPlayer=400 
+23:07:37 (Game 7) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game7.json
+23:07:37 - Finished 7 of 100 games in 39.36 minutes. Estimated 522.94 minutes remaining.
+23:07:40 (Game 8) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:07:40 (Game 8) - Playing game...
+23:11:02 (Game 8) - Completed game with scores [0, 100]
+23:11:02 (Game 8) - Cumulative scores: MiniMaxRandomPlayer=400 MultithreadedUCTPlayer=400 
+23:11:02 (Game 8) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game8.json
+23:11:02 - Finished 8 of 100 games in 42.77 minutes. Estimated 491.82 minutes remaining.
+23:11:05 (Game 9) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:11:05 (Game 9) - Playing game...
+23:15:35 (Game 9) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+23:15:35 (Game 9) - Completed game with scores [100, 0]
+23:15:35 (Game 9) - Cumulative scores: MiniMaxRandomPlayer=500 MultithreadedUCTPlayer=400 
+23:15:35 (Game 9) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game9.json
+23:15:35 - Finished 9 of 100 games in 47.32 minutes. Estimated 478.44 minutes remaining.
+23:15:38 (Game 10) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:15:38 (Game 10) - Playing game...
+23:17:27 (Game 10) - Completed game with scores [0, 100]
+23:17:27 (Game 10) - Cumulative scores: MiniMaxRandomPlayer=600 MultithreadedUCTPlayer=400 
+23:17:27 (Game 10) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game10.json
+23:17:27 - Finished 10 of 100 games in 49.19 minutes. Estimated 442.72 minutes remaining.
+23:17:30 (Game 11) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:17:30 (Game 11) - Playing game...
+23:18:22 (Game 11) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+23:18:22 (Game 11) - Completed game with scores [100, 0]
+23:18:22 (Game 11) - Cumulative scores: MiniMaxRandomPlayer=700 MultithreadedUCTPlayer=400 
+23:18:22 (Game 11) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game11.json
+23:18:22 - Finished 11 of 100 games in 50.10 minutes. Estimated 405.32 minutes remaining.
+23:18:25 (Game 12) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:18:25 (Game 12) - Playing game...
+23:23:52 (Game 12) - Completed game with scores [0, 100]
+23:23:52 (Game 12) - Cumulative scores: MiniMaxRandomPlayer=800 MultithreadedUCTPlayer=400 
+23:23:52 (Game 12) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game12.json
+23:23:52 - Finished 12 of 100 games in 55.60 minutes. Estimated 407.73 minutes remaining.
+23:23:55 (Game 13) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:23:55 (Game 13) - Playing game...
+23:29:33 (Game 13) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+23:29:33 (Game 13) - Completed game with scores [0, 100]
+23:29:33 (Game 13) - Cumulative scores: MiniMaxRandomPlayer=800 MultithreadedUCTPlayer=500 
+23:29:33 (Game 13) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game13.json
+23:29:33 - Finished 13 of 100 games in 61.29 minutes. Estimated 410.17 minutes remaining.
+23:29:36 (Game 14) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:29:36 (Game 14) - Playing game...
+23:32:03 (Game 14) - Completed game with scores [0, 100]
+23:32:03 (Game 14) - Cumulative scores: MiniMaxRandomPlayer=900 MultithreadedUCTPlayer=500 
+23:32:03 (Game 14) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game14.json
+23:32:03 - Finished 14 of 100 games in 63.79 minutes. Estimated 391.85 minutes remaining.
+23:32:06 (Game 15) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:32:06 (Game 15) - Playing game...
+23:38:13 (Game 15) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+23:38:13 (Game 15) - Completed game with scores [100, 0]
+23:38:13 (Game 15) - Cumulative scores: MiniMaxRandomPlayer=1000 MultithreadedUCTPlayer=500 
+23:38:13 (Game 15) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game15.json
+23:38:13 - Finished 15 of 100 games in 69.95 minutes. Estimated 396.36 minutes remaining.
+23:38:16 (Game 16) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:38:16 (Game 16) - Playing game...
+23:42:14 (Game 16) - Completed game with scores [0, 100]
+23:42:14 (Game 16) - Cumulative scores: MiniMaxRandomPlayer=1100 MultithreadedUCTPlayer=500 
+23:42:14 (Game 16) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game16.json
+23:42:14 - Finished 16 of 100 games in 73.96 minutes. Estimated 388.31 minutes remaining.
+23:42:17 (Game 17) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:42:17 (Game 17) - Playing game...
+23:49:08 (Game 17) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+23:49:08 (Game 17) - Completed game with scores [0, 100]
+23:49:08 (Game 17) - Cumulative scores: MiniMaxRandomPlayer=1100 MultithreadedUCTPlayer=600 
+23:49:08 (Game 17) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game17.json
+23:49:08 - Finished 17 of 100 games in 80.88 minutes. Estimated 394.87 minutes remaining.
+23:49:11 (Game 18) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:49:11 (Game 18) - Playing game...
+23:52:15 (Game 18) - Completed game with scores [0, 100]
+23:52:15 (Game 18) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=600 
+23:52:15 (Game 18) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game18.json
+23:52:15 - Finished 18 of 100 games in 83.99 minutes. Estimated 382.60 minutes remaining.
+23:52:18 (Game 19) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:52:18 (Game 19) - Playing game...
+23:56:53 (Game 19) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+23:56:53 (Game 19) - Completed game with scores [100, 0]
+23:56:53 (Game 19) - Cumulative scores: MiniMaxRandomPlayer=1300 MultithreadedUCTPlayer=600 
+23:56:53 (Game 19) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game19.json
+23:56:53 - Finished 19 of 100 games in 88.62 minutes. Estimated 377.81 minutes remaining.
+23:56:56 (Game 20) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:56:56 (Game 20) - Playing game...
+00:02:34 (Game 20) - Completed game with scores [100, 0]
+00:02:34 (Game 20) - Cumulative scores: MiniMaxRandomPlayer=1300 MultithreadedUCTPlayer=700 
+00:02:34 (Game 20) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game20.json
+00:02:34 - Finished 20 of 100 games in 94.30 minutes. Estimated 377.21 minutes remaining.
+00:02:37 (Game 21) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:02:37 (Game 21) - Playing game...
+00:08:43 (Game 21) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+00:08:43 (Game 21) - Completed game with scores [100, 0]
+00:08:43 (Game 21) - Cumulative scores: MiniMaxRandomPlayer=1400 MultithreadedUCTPlayer=700 
+00:08:43 (Game 21) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game21.json
+00:08:43 - Finished 21 of 100 games in 100.46 minutes. Estimated 377.91 minutes remaining.
+00:08:46 (Game 22) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:08:46 (Game 22) - Playing game...
+00:14:32 (Game 22) - Completed game with scores [0, 100]
+00:14:32 (Game 22) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=700 
+00:14:32 (Game 22) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game22.json
+00:14:32 - Finished 22 of 100 games in 106.28 minutes. Estimated 376.80 minutes remaining.
+00:14:35 (Game 23) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:14:35 (Game 23) - Playing game...
+00:21:28 (Game 23) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+00:21:28 (Game 23) - Completed game with scores [0, 100]
+00:21:28 (Game 23) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=800 
+00:21:28 (Game 23) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game23.json
+00:21:28 - Finished 23 of 100 games in 113.20 minutes. Estimated 378.96 minutes remaining.
+00:21:31 (Game 24) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:21:31 (Game 24) - Playing game...
+00:27:54 (Game 24) - Completed game with scores [0, 100]
+00:27:54 (Game 24) - Cumulative scores: MiniMaxRandomPlayer=1600 MultithreadedUCTPlayer=800 
+00:27:54 (Game 24) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game24.json
+00:27:54 - Finished 24 of 100 games in 119.64 minutes. Estimated 378.85 minutes remaining.
+00:27:57 (Game 25) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:27:57 (Game 25) - Playing game...
+00:33:08 (Game 25) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+00:33:08 (Game 25) - Completed game with scores [100, 0]
+00:33:08 (Game 25) - Cumulative scores: MiniMaxRandomPlayer=1700 MultithreadedUCTPlayer=800 
+00:33:08 (Game 25) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game25.json
+00:33:08 - Finished 25 of 100 games in 124.88 minutes. Estimated 374.63 minutes remaining.
+00:33:11 (Game 26) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:33:11 (Game 26) - Playing game...
+00:39:16 (Game 26) - Completed game with scores [0, 100]
+00:39:16 (Game 26) - Cumulative scores: MiniMaxRandomPlayer=1800 MultithreadedUCTPlayer=800 
+00:39:16 (Game 26) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game26.json
+00:39:16 - Finished 26 of 100 games in 131.01 minutes. Estimated 372.87 minutes remaining.
+00:39:19 (Game 27) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:39:19 (Game 27) - Playing game...
+00:45:16 (Game 27) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+00:45:16 (Game 27) - Completed game with scores [0, 100]
+00:45:16 (Game 27) - Cumulative scores: MiniMaxRandomPlayer=1800 MultithreadedUCTPlayer=900 
+00:45:16 (Game 27) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game27.json
+00:45:16 - Finished 27 of 100 games in 137.00 minutes. Estimated 370.42 minutes remaining.
+00:45:19 (Game 28) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:45:19 (Game 28) - Playing game...
+00:50:48 (Game 28) - Completed game with scores [0, 100]
+00:50:48 (Game 28) - Cumulative scores: MiniMaxRandomPlayer=1900 MultithreadedUCTPlayer=900 
+00:50:48 (Game 28) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game28.json
+00:50:48 - Finished 28 of 100 games in 142.54 minutes. Estimated 366.53 minutes remaining.
+00:50:51 (Game 29) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:50:51 (Game 29) - Playing game...
+00:55:46 (Game 29) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+00:55:46 (Game 29) - Completed game with scores [100, 0]
+00:55:46 (Game 29) - Cumulative scores: MiniMaxRandomPlayer=2000 MultithreadedUCTPlayer=900 
+00:55:46 (Game 29) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game29.json
+00:55:46 - Finished 29 of 100 games in 147.50 minutes. Estimated 361.12 minutes remaining.
+00:55:49 (Game 30) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:55:49 (Game 30) - Playing game...
+00:59:30 (Game 30) - Completed game with scores [0, 100]
+00:59:30 (Game 30) - Cumulative scores: MiniMaxRandomPlayer=2100 MultithreadedUCTPlayer=900 
+00:59:30 (Game 30) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game30.json
+00:59:30 - Finished 30 of 100 games in 151.23 minutes. Estimated 352.87 minutes remaining.
+00:59:33 (Game 31) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:59:33 (Game 31) - Playing game...
+01:01:23 (Game 31) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+01:01:23 (Game 31) - Completed game with scores [100, 0]
+01:01:23 (Game 31) - Cumulative scores: MiniMaxRandomPlayer=2200 MultithreadedUCTPlayer=900 
+01:01:23 (Game 31) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game31.json
+01:01:23 - Finished 31 of 100 games in 153.12 minutes. Estimated 340.82 minutes remaining.
+01:01:26 (Game 32) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:01:26 (Game 32) - Playing game...
+01:05:06 (Game 32) - Completed game with scores [0, 100]
+01:05:06 (Game 32) - Cumulative scores: MiniMaxRandomPlayer=2300 MultithreadedUCTPlayer=900 
+01:05:06 (Game 32) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game32.json
+01:05:06 - Finished 32 of 100 games in 156.84 minutes. Estimated 333.28 minutes remaining.
+01:05:09 (Game 33) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:05:09 (Game 33) - Playing game...
+01:10:20 (Game 33) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+01:10:20 (Game 33) - Completed game with scores [100, 0]
+01:10:20 (Game 33) - Cumulative scores: MiniMaxRandomPlayer=2400 MultithreadedUCTPlayer=900 
+01:10:20 (Game 33) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game33.json
+01:10:20 - Finished 33 of 100 games in 162.08 minutes. Estimated 329.06 minutes remaining.
+01:10:23 (Game 34) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:10:23 (Game 34) - Playing game...
+01:16:29 (Game 34) - Completed game with scores [0, 100]
+01:16:29 (Game 34) - Cumulative scores: MiniMaxRandomPlayer=2500 MultithreadedUCTPlayer=900 
+01:16:29 (Game 34) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game34.json
+01:16:29 - Finished 34 of 100 games in 168.22 minutes. Estimated 326.55 minutes remaining.
+01:16:32 (Game 35) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:16:32 (Game 35) - Playing game...
+01:22:20 (Game 35) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+01:22:20 (Game 35) - Completed game with scores [100, 0]
+01:22:20 (Game 35) - Cumulative scores: MiniMaxRandomPlayer=2600 MultithreadedUCTPlayer=900 
+01:22:20 (Game 35) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game35.json
+01:22:20 - Finished 35 of 100 games in 174.07 minutes. Estimated 323.27 minutes remaining.
+01:22:23 (Game 36) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:22:23 (Game 36) - Playing game...
+01:26:57 (Game 36) - Completed game with scores [0, 100]
+01:26:57 (Game 36) - Cumulative scores: MiniMaxRandomPlayer=2700 MultithreadedUCTPlayer=900 
+01:26:57 (Game 36) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game36.json
+01:26:57 - Finished 36 of 100 games in 178.69 minutes. Estimated 317.67 minutes remaining.
+01:27:00 (Game 37) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:27:00 (Game 37) - Playing game...
+01:32:11 (Game 37) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+01:32:11 (Game 37) - Completed game with scores [100, 0]
+01:32:11 (Game 37) - Cumulative scores: MiniMaxRandomPlayer=2800 MultithreadedUCTPlayer=900 
+01:32:11 (Game 37) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game37.json
+01:32:11 - Finished 37 of 100 games in 183.92 minutes. Estimated 313.15 minutes remaining.
+01:32:14 (Game 38) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:32:14 (Game 38) - Playing game...
+01:36:12 (Game 38) - Completed game with scores [0, 100]
+01:36:12 (Game 38) - Cumulative scores: MiniMaxRandomPlayer=2900 MultithreadedUCTPlayer=900 
+01:36:12 (Game 38) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game38.json
+01:36:12 - Finished 38 of 100 games in 187.93 minutes. Estimated 306.62 minutes remaining.
+01:36:15 (Game 39) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:36:15 (Game 39) - Playing game...
+01:41:26 (Game 39) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+01:41:26 (Game 39) - Completed game with scores [100, 0]
+01:41:26 (Game 39) - Cumulative scores: MiniMaxRandomPlayer=3000 MultithreadedUCTPlayer=900 
+01:41:26 (Game 39) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game39.json
+01:41:26 - Finished 39 of 100 games in 193.17 minutes. Estimated 302.14 minutes remaining.
+01:41:29 (Game 40) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:41:29 (Game 40) - Playing game...
+01:48:20 (Game 40) - Completed game with scores [100, 0]
+01:48:20 (Game 40) - Cumulative scores: MiniMaxRandomPlayer=3000 MultithreadedUCTPlayer=1000 
+01:48:20 (Game 40) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game40.json
+01:48:20 - Finished 40 of 100 games in 200.07 minutes. Estimated 300.10 minutes remaining.
+01:48:23 (Game 41) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:48:23 (Game 41) - Playing game...
+01:54:47 (Game 41) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+01:54:47 (Game 41) - Completed game with scores [100, 0]
+01:54:47 (Game 41) - Cumulative scores: MiniMaxRandomPlayer=3100 MultithreadedUCTPlayer=1000 
+01:54:47 (Game 41) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game41.json
+01:54:47 - Finished 41 of 100 games in 206.51 minutes. Estimated 297.18 minutes remaining.
+01:54:50 (Game 42) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:54:50 (Game 42) - Playing game...
+02:00:01 (Game 42) - Completed game with scores [0, 100]
+02:00:01 (Game 42) - Cumulative scores: MiniMaxRandomPlayer=3200 MultithreadedUCTPlayer=1000 
+02:00:01 (Game 42) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game42.json
+02:00:01 - Finished 42 of 100 games in 211.75 minutes. Estimated 292.41 minutes remaining.
+02:00:04 (Game 43) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:00:04 (Game 43) - Playing game...
+02:04:56 (Game 43) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:04:56 (Game 43) - Completed game with scores [100, 0]
+02:04:56 (Game 43) - Cumulative scores: MiniMaxRandomPlayer=3300 MultithreadedUCTPlayer=1000 
+02:04:56 (Game 43) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game43.json
+02:04:56 - Finished 43 of 100 games in 216.67 minutes. Estimated 287.22 minutes remaining.
+02:04:59 (Game 44) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:04:59 (Game 44) - Playing game...
+02:11:04 (Game 44) - Completed game with scores [0, 100]
+02:11:04 (Game 44) - Cumulative scores: MiniMaxRandomPlayer=3400 MultithreadedUCTPlayer=1000 
+02:11:04 (Game 44) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game44.json
+02:11:04 - Finished 44 of 100 games in 222.80 minutes. Estimated 283.57 minutes remaining.
+02:11:07 (Game 45) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:11:07 (Game 45) - Playing game...
+02:16:01 (Game 45) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:16:01 (Game 45) - Completed game with scores [100, 0]
+02:16:01 (Game 45) - Cumulative scores: MiniMaxRandomPlayer=3500 MultithreadedUCTPlayer=1000 
+02:16:01 (Game 45) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game45.json
+02:16:01 - Finished 45 of 100 games in 227.75 minutes. Estimated 278.36 minutes remaining.
+02:16:04 (Game 46) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:16:04 (Game 46) - Playing game...
+02:19:44 (Game 46) - Completed game with scores [0, 100]
+02:19:44 (Game 46) - Cumulative scores: MiniMaxRandomPlayer=3600 MultithreadedUCTPlayer=1000 
+02:19:44 (Game 46) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game46.json
+02:19:44 - Finished 46 of 100 games in 231.46 minutes. Estimated 271.72 minutes remaining.
+02:19:47 (Game 47) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:19:47 (Game 47) - Playing game...
+02:24:40 (Game 47) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:24:40 (Game 47) - Completed game with scores [100, 0]
+02:24:40 (Game 47) - Cumulative scores: MiniMaxRandomPlayer=3700 MultithreadedUCTPlayer=1000 
+02:24:40 (Game 47) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game47.json
+02:24:40 - Finished 47 of 100 games in 236.40 minutes. Estimated 266.58 minutes remaining.
+02:24:43 (Game 48) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:24:43 (Game 48) - Playing game...
+02:27:10 (Game 48) - Completed game with scores [0, 100]
+02:27:10 (Game 48) - Cumulative scores: MiniMaxRandomPlayer=3800 MultithreadedUCTPlayer=1000 
+02:27:10 (Game 48) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game48.json
+02:27:10 - Finished 48 of 100 games in 238.90 minutes. Estimated 258.81 minutes remaining.
+02:27:13 (Game 49) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:27:13 (Game 49) - Playing game...
+02:34:22 (Game 49) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:34:22 (Game 49) - Completed game with scores [0, 100]
+02:34:22 (Game 49) - Cumulative scores: MiniMaxRandomPlayer=3800 MultithreadedUCTPlayer=1100 
+02:34:22 (Game 49) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game49.json
+02:34:22 - Finished 49 of 100 games in 246.10 minutes. Estimated 256.14 minutes remaining.
+02:34:25 (Game 50) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:34:25 (Game 50) - Playing game...
+02:37:28 (Game 50) - Completed game with scores [0, 100]
+02:37:28 (Game 50) - Cumulative scores: MiniMaxRandomPlayer=3900 MultithreadedUCTPlayer=1100 
+02:37:28 (Game 50) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game50.json
+02:37:28 - Finished 50 of 100 games in 249.21 minutes. Estimated 249.21 minutes remaining.
+02:37:31 (Game 51) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:37:31 (Game 51) - Playing game...
+02:41:30 (Game 51) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:41:30 (Game 51) - Completed game with scores [100, 0]
+02:41:30 (Game 51) - Cumulative scores: MiniMaxRandomPlayer=4000 MultithreadedUCTPlayer=1100 
+02:41:30 (Game 51) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game51.json
+02:41:30 - Finished 51 of 100 games in 253.23 minutes. Estimated 243.30 minutes remaining.
+02:41:33 (Game 52) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:41:33 (Game 52) - Playing game...
+02:45:49 (Game 52) - Completed game with scores [0, 100]
+02:45:49 (Game 52) - Cumulative scores: MiniMaxRandomPlayer=4100 MultithreadedUCTPlayer=1100 
+02:45:49 (Game 52) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game52.json
+02:45:49 - Finished 52 of 100 games in 257.55 minutes. Estimated 237.74 minutes remaining.
+02:45:52 (Game 53) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:45:52 (Game 53) - Playing game...
+02:49:51 (Game 53) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:49:51 (Game 53) - Completed game with scores [100, 0]
+02:49:51 (Game 53) - Cumulative scores: MiniMaxRandomPlayer=4200 MultithreadedUCTPlayer=1100 
+02:49:51 (Game 53) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game53.json
+02:49:51 - Finished 53 of 100 games in 261.58 minutes. Estimated 231.97 minutes remaining.
+02:49:54 (Game 54) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:49:54 (Game 54) - Playing game...
+02:55:13 (Game 54) - Completed game with scores [100, 0]
+02:55:13 (Game 54) - Cumulative scores: MiniMaxRandomPlayer=4200 MultithreadedUCTPlayer=1200 
+02:55:13 (Game 54) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game54.json
+02:55:13 - Finished 54 of 100 games in 266.95 minutes. Estimated 227.40 minutes remaining.
+02:55:16 (Game 55) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:55:16 (Game 55) - Playing game...
+02:58:56 (Game 55) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:58:56 (Game 55) - Completed game with scores [100, 0]
+02:58:56 (Game 55) - Cumulative scores: MiniMaxRandomPlayer=4300 MultithreadedUCTPlayer=1200 
+02:58:56 (Game 55) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game55.json
+02:58:56 - Finished 55 of 100 games in 270.67 minutes. Estimated 221.46 minutes remaining.
+02:58:59 (Game 56) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:58:59 (Game 56) - Playing game...
+03:04:10 (Game 56) - Completed game with scores [0, 100]
+03:04:10 (Game 56) - Cumulative scores: MiniMaxRandomPlayer=4400 MultithreadedUCTPlayer=1200 
+03:04:10 (Game 56) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game56.json
+03:04:10 - Finished 56 of 100 games in 275.90 minutes. Estimated 216.78 minutes remaining.
+03:04:13 (Game 57) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:04:13 (Game 57) - Playing game...
+03:09:44 (Game 57) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:09:44 (Game 57) - Completed game with scores [100, 0]
+03:09:44 (Game 57) - Cumulative scores: MiniMaxRandomPlayer=4500 MultithreadedUCTPlayer=1200 
+03:09:44 (Game 57) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game57.json
+03:09:44 - Finished 57 of 100 games in 281.47 minutes. Estimated 212.34 minutes remaining.
+03:09:47 (Game 58) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:09:47 (Game 58) - Playing game...
+03:13:46 (Game 58) - Completed game with scores [0, 100]
+03:13:46 (Game 58) - Cumulative scores: MiniMaxRandomPlayer=4600 MultithreadedUCTPlayer=1200 
+03:13:46 (Game 58) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game58.json
+03:13:46 - Finished 58 of 100 games in 285.50 minutes. Estimated 206.74 minutes remaining.
+03:13:49 (Game 59) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:13:49 (Game 59) - Playing game...
+03:18:24 (Game 59) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:18:24 (Game 59) - Completed game with scores [100, 0]
+03:18:24 (Game 59) - Cumulative scores: MiniMaxRandomPlayer=4700 MultithreadedUCTPlayer=1200 
+03:18:24 (Game 59) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game59.json
+03:18:24 - Finished 59 of 100 games in 290.14 minutes. Estimated 201.62 minutes remaining.
+03:18:27 (Game 60) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:18:27 (Game 60) - Playing game...
+03:22:43 (Game 60) - Completed game with scores [0, 100]
+03:22:43 (Game 60) - Cumulative scores: MiniMaxRandomPlayer=4800 MultithreadedUCTPlayer=1200 
+03:22:43 (Game 60) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game60.json
+03:22:43 - Finished 60 of 100 games in 294.46 minutes. Estimated 196.31 minutes remaining.
+03:22:46 (Game 61) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:22:46 (Game 61) - Playing game...
+03:27:40 (Game 61) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:27:40 (Game 61) - Completed game with scores [100, 0]
+03:27:40 (Game 61) - Cumulative scores: MiniMaxRandomPlayer=4900 MultithreadedUCTPlayer=1200 
+03:27:40 (Game 61) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game61.json
+03:27:40 - Finished 61 of 100 games in 299.40 minutes. Estimated 191.42 minutes remaining.
+03:27:43 (Game 62) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:27:43 (Game 62) - Playing game...
+03:34:16 (Game 62) - Completed game with scores [100, 0]
+03:34:16 (Game 62) - Cumulative scores: MiniMaxRandomPlayer=4900 MultithreadedUCTPlayer=1300 
+03:34:16 (Game 62) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game62.json
+03:34:16 - Finished 62 of 100 games in 306.00 minutes. Estimated 187.55 minutes remaining.
+03:34:19 (Game 63) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:34:19 (Game 63) - Playing game...
+03:40:07 (Game 63) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:40:07 (Game 63) - Completed game with scores [100, 0]
+03:40:07 (Game 63) - Cumulative scores: MiniMaxRandomPlayer=5000 MultithreadedUCTPlayer=1300 
+03:40:07 (Game 63) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game63.json
+03:40:07 - Finished 63 of 100 games in 311.85 minutes. Estimated 183.15 minutes remaining.
+03:40:10 (Game 64) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:40:10 (Game 64) - Playing game...
+03:42:55 (Game 64) - Completed game with scores [0, 100]
+03:42:55 (Game 64) - Cumulative scores: MiniMaxRandomPlayer=5100 MultithreadedUCTPlayer=1300 
+03:42:55 (Game 64) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game64.json
+03:42:55 - Finished 64 of 100 games in 314.65 minutes. Estimated 176.99 minutes remaining.
+03:42:58 (Game 65) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:42:58 (Game 65) - Playing game...
+03:48:28 (Game 65) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:48:28 (Game 65) - Completed game with scores [100, 0]
+03:48:28 (Game 65) - Cumulative scores: MiniMaxRandomPlayer=5200 MultithreadedUCTPlayer=1300 
+03:48:28 (Game 65) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game65.json
+03:48:28 - Finished 65 of 100 games in 320.20 minutes. Estimated 172.41 minutes remaining.
+03:48:31 (Game 66) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:48:31 (Game 66) - Playing game...
+03:50:57 (Game 66) - Completed game with scores [0, 100]
+03:50:57 (Game 66) - Cumulative scores: MiniMaxRandomPlayer=5300 MultithreadedUCTPlayer=1300 
+03:50:57 (Game 66) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game66.json
+03:50:57 - Finished 66 of 100 games in 322.69 minutes. Estimated 166.24 minutes remaining.
+03:51:00 (Game 67) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:51:00 (Game 67) - Playing game...
+03:57:51 (Game 67) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:57:51 (Game 67) - Completed game with scores [0, 100]
+03:57:51 (Game 67) - Cumulative scores: MiniMaxRandomPlayer=5300 MultithreadedUCTPlayer=1400 
+03:57:51 (Game 67) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game67.json
+03:57:51 - Finished 67 of 100 games in 329.59 minutes. Estimated 162.34 minutes remaining.
+03:57:54 (Game 68) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:57:54 (Game 68) - Playing game...
+04:01:34 (Game 68) - Completed game with scores [0, 100]
+04:01:34 (Game 68) - Cumulative scores: MiniMaxRandomPlayer=5400 MultithreadedUCTPlayer=1400 
+04:01:34 (Game 68) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game68.json
+04:01:34 - Finished 68 of 100 games in 333.31 minutes. Estimated 156.85 minutes remaining.
+04:01:37 (Game 69) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+04:01:37 (Game 69) - Playing game...
+04:05:54 (Game 69) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+04:05:54 (Game 69) - Completed game with scores [100, 0]
+04:05:54 (Game 69) - Cumulative scores: MiniMaxRandomPlayer=5500 MultithreadedUCTPlayer=1400 
+04:05:54 (Game 69) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game69.json
+04:05:54 - Finished 69 of 100 games in 337.64 minutes. Estimated 151.69 minutes remaining.
+04:05:57 (Game 70) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+04:05:57 (Game 70) - Playing game...
+04:11:26 (Game 70) - Completed game with scores [0, 100]
+04:11:26 (Game 70) - Cumulative scores: MiniMaxRandomPlayer=5600 MultithreadedUCTPlayer=1400 
+04:11:26 (Game 70) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game70.json
+04:11:26 - Finished 70 of 100 games in 343.17 minutes. Estimated 147.07 minutes remaining.
+04:11:29 (Game 71) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+04:11:29 (Game 71) - Playing game...
+04:16:41 (Game 71) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+04:16:41 (Game 71) - Completed game with scores [100, 0]
+04:16:41 (Game 71) - Cumulative scores: MiniMaxRandomPlayer=5700 MultithreadedUCTPlayer=1400 
+04:16:41 (Game 71) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game71.json
+04:16:41 - Finished 71 of 100 games in 348.42 minutes. Estimated 142.31 minutes remaining.
+04:16:44 (Game 72) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+04:16:44 (Game 72) - Playing game...
+04:23:16 (Game 72) - Completed game with scores [100, 0]
+04:23:16 (Game 72) - Cumulative scores: MiniMaxRandomPlayer=5700 MultithreadedUCTPlayer=1500 
+04:23:16 (Game 72) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game72.json
+04:23:16 - Finished 72 of 100 games in 355.01 minutes. Estimated 138.06 minutes remaining.
+04:23:19 (Game 73) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+04:23:19 (Game 73) - Playing game...
+04:29:44 (Game 73) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+04:29:44 (Game 73) - Completed game with scores [100, 0]
+04:29:44 (Game 73) - Cumulative scores: MiniMaxRandomPlayer=5800 MultithreadedUCTPlayer=1500 
+04:29:44 (Game 73) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game73.json
+04:29:44 - Finished 73 of 100 games in 361.47 minutes. Estimated 133.69 minutes remaining.
+04:29:47 (Game 74) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+04:29:47 (Game 74) - Playing game...
+04:37:13 (Game 74) - Completed game with scores [100, 0]
+04:37:13 (Game 74) - Cumulative scores: MiniMaxRandomPlayer=5800 MultithreadedUCTPlayer=1600 
+04:37:13 (Game 74) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game74.json
+04:37:13 - Finished 74 of 100 games in 368.96 minutes. Estimated 129.63 minutes remaining.
+04:37:16 (Game 75) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+04:37:16 (Game 75) - Playing game...
+04:44:08 (Game 75) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+04:44:08 (Game 75) - Completed game with scores [0, 100]
+04:44:08 (Game 75) - Cumulative scores: MiniMaxRandomPlayer=5800 MultithreadedUCTPlayer=1700 
+04:44:08 (Game 75) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game75.json
+04:44:08 - Finished 75 of 100 games in 375.87 minutes. Estimated 125.29 minutes remaining.
+04:44:11 (Game 76) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+04:44:11 (Game 76) - Playing game...
+04:49:04 (Game 76) - Completed game with scores [0, 100]
+04:49:04 (Game 76) - Cumulative scores: MiniMaxRandomPlayer=5900 MultithreadedUCTPlayer=1700 
+04:49:04 (Game 76) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game76.json
+04:49:04 - Finished 76 of 100 games in 380.80 minutes. Estimated 120.25 minutes remaining.
+04:49:07 (Game 77) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+04:49:07 (Game 77) - Playing game...
+04:54:18 (Game 77) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+04:54:18 (Game 77) - Completed game with scores [100, 0]
+04:54:18 (Game 77) - Cumulative scores: MiniMaxRandomPlayer=6000 MultithreadedUCTPlayer=1700 
+04:54:18 (Game 77) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game77.json
+04:54:18 - Finished 77 of 100 games in 386.04 minutes. Estimated 115.31 minutes remaining.
+04:54:21 (Game 78) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+04:54:21 (Game 78) - Playing game...
+05:00:36 (Game 78) - Completed game with scores [100, 0]
+05:00:36 (Game 78) - Cumulative scores: MiniMaxRandomPlayer=6000 MultithreadedUCTPlayer=1800 
+05:00:36 (Game 78) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game78.json
+05:00:36 - Finished 78 of 100 games in 392.34 minutes. Estimated 110.66 minutes remaining.
+05:00:39 (Game 79) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:00:39 (Game 79) - Playing game...
+05:05:32 (Game 79) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+05:05:32 (Game 79) - Completed game with scores [100, 0]
+05:05:32 (Game 79) - Cumulative scores: MiniMaxRandomPlayer=6100 MultithreadedUCTPlayer=1800 
+05:05:32 (Game 79) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game79.json
+05:05:32 - Finished 79 of 100 games in 397.27 minutes. Estimated 105.60 minutes remaining.
+05:05:35 (Game 80) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:05:35 (Game 80) - Playing game...
+05:11:04 (Game 80) - Completed game with scores [0, 100]
+05:11:04 (Game 80) - Cumulative scores: MiniMaxRandomPlayer=6200 MultithreadedUCTPlayer=1800 
+05:11:04 (Game 80) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game80.json
+05:11:04 - Finished 80 of 100 games in 402.80 minutes. Estimated 100.70 minutes remaining.
+05:11:07 (Game 81) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:11:07 (Game 81) - Playing game...
+05:12:13 (Game 81) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+05:12:13 (Game 81) - Completed game with scores [0, 100]
+05:12:13 (Game 81) - Cumulative scores: MiniMaxRandomPlayer=6200 MultithreadedUCTPlayer=1900 
+05:12:13 (Game 81) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game81.json
+05:12:13 - Finished 81 of 100 games in 403.95 minutes. Estimated 94.75 minutes remaining.
+05:12:16 (Game 82) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:12:16 (Game 82) - Playing game...
+05:17:17 (Game 82) - Completed game with scores [100, 0]
+05:17:17 (Game 82) - Cumulative scores: MiniMaxRandomPlayer=6200 MultithreadedUCTPlayer=2000 
+05:17:17 (Game 82) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game82.json
+05:17:17 - Finished 82 of 100 games in 409.03 minutes. Estimated 89.79 minutes remaining.
+05:17:20 (Game 83) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:17:20 (Game 83) - Playing game...
+05:24:02 (Game 83) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+05:24:02 (Game 83) - Completed game with scores [100, 0]
+05:24:02 (Game 83) - Cumulative scores: MiniMaxRandomPlayer=6300 MultithreadedUCTPlayer=2000 
+05:24:02 (Game 83) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game83.json
+05:24:02 - Finished 83 of 100 games in 415.77 minutes. Estimated 85.16 minutes remaining.
+05:24:05 (Game 84) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:24:05 (Game 84) - Playing game...
+05:29:51 (Game 84) - Completed game with scores [0, 100]
+05:29:51 (Game 84) - Cumulative scores: MiniMaxRandomPlayer=6400 MultithreadedUCTPlayer=2000 
+05:29:51 (Game 84) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game84.json
+05:29:51 - Finished 84 of 100 games in 421.59 minutes. Estimated 80.30 minutes remaining.
+05:29:54 (Game 85) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:29:54 (Game 85) - Playing game...
+05:36:46 (Game 85) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+05:36:46 (Game 85) - Completed game with scores [0, 100]
+05:36:46 (Game 85) - Cumulative scores: MiniMaxRandomPlayer=6400 MultithreadedUCTPlayer=2100 
+05:36:46 (Game 85) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game85.json
+05:36:46 - Finished 85 of 100 games in 428.50 minutes. Estimated 75.62 minutes remaining.
+05:36:49 (Game 86) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:36:49 (Game 86) - Playing game...
+05:41:23 (Game 86) - Completed game with scores [0, 100]
+05:41:23 (Game 86) - Cumulative scores: MiniMaxRandomPlayer=6500 MultithreadedUCTPlayer=2100 
+05:41:23 (Game 86) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game86.json
+05:41:23 - Finished 86 of 100 games in 433.13 minutes. Estimated 70.51 minutes remaining.
+05:41:26 (Game 87) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:41:26 (Game 87) - Playing game...
+05:44:48 (Game 87) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+05:44:48 (Game 87) - Completed game with scores [100, 0]
+05:44:48 (Game 87) - Cumulative scores: MiniMaxRandomPlayer=6600 MultithreadedUCTPlayer=2100 
+05:44:48 (Game 87) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game87.json
+05:44:48 - Finished 87 of 100 games in 436.54 minutes. Estimated 65.23 minutes remaining.
+05:44:51 (Game 88) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:44:51 (Game 88) - Playing game...
+05:51:15 (Game 88) - Completed game with scores [0, 100]
+05:51:15 (Game 88) - Cumulative scores: MiniMaxRandomPlayer=6700 MultithreadedUCTPlayer=2100 
+05:51:15 (Game 88) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game88.json
+05:51:15 - Finished 88 of 100 games in 442.98 minutes. Estimated 60.41 minutes remaining.
+05:51:18 (Game 89) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:51:18 (Game 89) - Playing game...
+05:56:11 (Game 89) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+05:56:11 (Game 89) - Completed game with scores [100, 0]
+05:56:11 (Game 89) - Cumulative scores: MiniMaxRandomPlayer=6800 MultithreadedUCTPlayer=2100 
+05:56:11 (Game 89) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game89.json
+05:56:11 - Finished 89 of 100 games in 447.93 minutes. Estimated 55.36 minutes remaining.
+05:56:14 (Game 90) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:56:14 (Game 90) - Playing game...
+06:02:02 (Game 90) - Completed game with scores [0, 100]
+06:02:02 (Game 90) - Cumulative scores: MiniMaxRandomPlayer=6900 MultithreadedUCTPlayer=2100 
+06:02:02 (Game 90) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game90.json
+06:02:02 - Finished 90 of 100 games in 453.77 minutes. Estimated 50.42 minutes remaining.
+06:02:05 (Game 91) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+06:02:05 (Game 91) - Playing game...
+06:09:23 (Game 91) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+06:09:23 (Game 91) - Completed game with scores [100, 0]
+06:09:23 (Game 91) - Cumulative scores: MiniMaxRandomPlayer=7000 MultithreadedUCTPlayer=2100 
+06:09:23 (Game 91) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game91.json
+06:09:23 - Finished 91 of 100 games in 461.12 minutes. Estimated 45.61 minutes remaining.
+06:09:26 (Game 92) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+06:09:26 (Game 92) - Playing game...
+06:16:26 (Game 92) - Completed game with scores [0, 100]
+06:16:26 (Game 92) - Cumulative scores: MiniMaxRandomPlayer=7100 MultithreadedUCTPlayer=2100 
+06:16:26 (Game 92) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game92.json
+06:16:26 - Finished 92 of 100 games in 468.18 minutes. Estimated 40.71 minutes remaining.
+06:16:29 (Game 93) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+06:16:29 (Game 93) - Playing game...
+06:20:28 (Game 93) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+06:20:28 (Game 93) - Completed game with scores [100, 0]
+06:20:28 (Game 93) - Cumulative scores: MiniMaxRandomPlayer=7200 MultithreadedUCTPlayer=2100 
+06:20:28 (Game 93) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game93.json
+06:20:28 - Finished 93 of 100 games in 472.20 minutes. Estimated 35.54 minutes remaining.
+06:20:31 (Game 94) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+06:20:31 (Game 94) - Playing game...
+06:27:04 (Game 94) - Completed game with scores [100, 0]
+06:27:04 (Game 94) - Cumulative scores: MiniMaxRandomPlayer=7200 MultithreadedUCTPlayer=2200 
+06:27:04 (Game 94) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game94.json
+06:27:04 - Finished 94 of 100 games in 478.81 minutes. Estimated 30.56 minutes remaining.
+06:27:07 (Game 95) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+06:27:07 (Game 95) - Playing game...
+06:33:22 (Game 95) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+06:33:22 (Game 95) - Completed game with scores [0, 100]
+06:33:22 (Game 95) - Cumulative scores: MiniMaxRandomPlayer=7200 MultithreadedUCTPlayer=2300 
+06:33:22 (Game 95) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game95.json
+06:33:23 - Finished 95 of 100 games in 485.11 minutes. Estimated 25.53 minutes remaining.
+06:33:26 (Game 96) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+06:33:26 (Game 96) - Playing game...
+06:39:58 (Game 96) - Completed game with scores [100, 0]
+06:39:58 (Game 96) - Cumulative scores: MiniMaxRandomPlayer=7200 MultithreadedUCTPlayer=2400 
+06:39:58 (Game 96) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game96.json
+06:39:58 - Finished 96 of 100 games in 491.71 minutes. Estimated 20.49 minutes remaining.
+06:40:01 (Game 97) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+06:40:01 (Game 97) - Playing game...
+06:46:44 (Game 97) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+06:46:44 (Game 97) - Completed game with scores [100, 0]
+06:46:44 (Game 97) - Cumulative scores: MiniMaxRandomPlayer=7300 MultithreadedUCTPlayer=2400 
+06:46:44 (Game 97) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game97.json
+06:46:44 - Finished 97 of 100 games in 498.47 minutes. Estimated 15.42 minutes remaining.
+06:46:47 (Game 98) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+06:46:47 (Game 98) - Playing game...
+06:50:27 (Game 98) - Completed game with scores [0, 100]
+06:50:27 (Game 98) - Cumulative scores: MiniMaxRandomPlayer=7400 MultithreadedUCTPlayer=2400 
+06:50:27 (Game 98) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game98.json
+06:50:27 - Finished 98 of 100 games in 502.18 minutes. Estimated 10.25 minutes remaining.
+06:50:30 (Game 99) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+06:50:30 (Game 99) - Playing game...
+06:56:35 (Game 99) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+06:56:35 (Game 99) - Completed game with scores [100, 0]
+06:56:35 (Game 99) - Cumulative scores: MiniMaxRandomPlayer=7500 MultithreadedUCTPlayer=2400 
+06:56:35 (Game 99) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game99.json
+06:56:35 - Finished 99 of 100 games in 508.32 minutes. Estimated 5.13 minutes remaining.
+06:56:38 (Game 100) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+06:56:38 (Game 100) - Playing game...
+07:00:55 (Game 100) - Completed game with scores [0, 100]
+07:00:55 (Game 100) - Cumulative scores: MiniMaxRandomPlayer=7600 MultithreadedUCTPlayer=2400 
+07:00:55 (Game 100) - Saving match to file nineBoardTicTacToe-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160505_222801/game100.json
+07:00:55 - Finished 100 of 100 games in 512.65 minutes. Estimated 0.00 minutes remaining.
+07:00:55 - Successfully finished tournament. 50 matches contained errors.
+07:00:55 - Average player scores: MiniMaxRandomPlayer=76.0000 MultithreadedUCTPlayer=24.0000 
