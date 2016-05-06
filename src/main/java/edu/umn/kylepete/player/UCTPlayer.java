@@ -32,7 +32,7 @@ public class UCTPlayer extends SubAgent {
 
     protected class StateNode {
         public StateNode(StateNode parent, MachineState state, double currentReward, int visits) {
-            this(parent.depth, state, currentReward, visits);
+            this(parent.depth + 1, state, currentReward, visits);
             this.parent = parent;
         }
 
@@ -193,7 +193,11 @@ public class UCTPlayer extends SubAgent {
 
         if (getLastMove() != null) {
             List<Move> theLastMove = getLastMove();
-            this.root = this.root.children.get(theLastMove);
+            StateNode newRoot = this.root.children.get(theLastMove);
+            if (newRoot == null) { // The opponent picked a move we didn't search
+                newRoot = new StateNode(root, getStateMachine().getNextState(root.state, theLastMove));
+            }
+            this.root = newRoot;
         }
 
         int totalIterations = runTheWork();

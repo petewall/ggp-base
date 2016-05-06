@@ -17,6 +17,7 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         return "MultithreadedUCTPlayer";
     }
 
+    private boolean running = false;
     private ArrayList<WorkerThread> threadPool;
     private class WorkerThread extends Thread {
         private StateMachine stateMachine;
@@ -33,17 +34,15 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         @Override
         public void run() {
             try {
-//                log(getName() + ": Making copies!");
                 rootCopy = root.makeCopy();
-//                log(getName() + ": Done.");
-                while (System.currentTimeMillis() < finishBy) {
+                while (running && System.currentTimeMillis() < finishBy) {
                     StateNode current = treePolicy(stateMachine, rootCopy);
                     double value = defaultPolicy(stateMachine, current);
                     backup(current, value);
                     iterations++;
                 }
             } catch (Exception e) {
-                // TODO Auto-generated catch block
+                log(this.getName() + " caught an exception: " + e.getMessage());
                 e.printStackTrace();
             }
         }
@@ -61,10 +60,10 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
             try {
                 WorkerThread thread = threadPool.get(i);
                 thread.join();
-                totalIterations += thread.iterations;
-//                log(thread.getName() + ": Merging to root");
-                this.root.merge(thread.rootCopy);
-//                log(thread.getName() + ": Done");
+                if (running) {
+                    totalIterations += thread.iterations;
+                    this.root.merge(thread.rootCopy);
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -83,23 +82,19 @@ public class MultithreadedUCTPlayer extends UCTPlayer {
         for (int i = 0; i < cores; ++i) {
             threadPool.add(new WorkerThread(i));
         }
+        running = true;
     }
 
     @Override
     public void stateMachineStop() {
-        for (Thread thread : threadPool) {
-            thread.interrupt();
-        }
-        this.root = null;
-        log("Total iterations: " + gameIterations);
+        running = false;
+        super.stateMachineStop();
     }
 
     @Override
     public void stateMachineAbort() {
-        for (Thread thread : threadPool) {
-            thread.interrupt();
-        }
-        this.root = null;
+        running = false;
+        super.stateMachineAbort();
     }
 
     public static void main(String[] args)
