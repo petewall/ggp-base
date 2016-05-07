@@ -47,6 +47,11 @@ public final class GameServerRunner
     public static void main(String[] args) throws IOException, SymbolFormatException, GdlFormatException, InterruptedException, GoalDefinitionException, JSONException
     {
         // Extract the desired configuration from the command line.
+        File pauseTouchFile = new File(System.getProperty("user.home") + File.separator + "pauseTournaments");
+        System.out.println("Checking if pause file exists");
+        if (pauseTouchFile.exists()) {
+            System.out.println("it does!");
+        }
         String tourneyName = args[0];
         String gameKey = args[1];
         Game game = GameRepository.getDefaultRepository().getGame(gameKey);
@@ -80,6 +85,12 @@ public final class GameServerRunner
         int errorCount = 0;
         for(int i = 1; i <= repetitions; i++){
 	        Thread.sleep(3000); // wait a few seconds for the players to startup
+	        if (pauseTouchFile.exists()) {
+	            log("Paused", i);
+	            --i;
+	            startTime += 3000; // Skip the time spend paused.  This makes the elapsed time still correct.
+	            continue;
+	        }
         	log("Initializing game with players: " + Arrays.toString(playerNames.toArray()) , i);
 
             String matchName = tourneyName + ".game" + i;
