@@ -1,0 +1,135 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/connectFour/v0/",
+    "goalValues": [
+        0,
+        100
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "connectFour-MiniMaxRandomPlayer-vs-ConfidencePlayer-20160507_003557.game27",
+    "moves": [
+        [
+            "( drop 1 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 4 )"
+        ],
+        [
+            "( drop 1 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 1 )"
+        ],
+        [
+            "( drop 1 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 5 )"
+        ],
+        [
+            "( drop 1 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 3 )"
+        ],
+        [
+            "( drop 1 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( drop 2 )"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "MiniMaxRandomPlayer",
+        "ConfidencePlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "IUEuzsHjftTgDsuOqidjjpg5dHeKIr30",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462602632879,
+    "stateTimes": [
+        1462602632881,
+        1462602642153,
+        1462602651193,
+        1462602660237,
+        1462602669303,
+        1462602678354,
+        1462602687423,
+        1462602696460,
+        1462602705501,
+        1462602714507,
+        1462602723512
+    ],
+    "states": [
+        "( ( control red ) )",
+        "( ( cell 1 1 red ) ( control black ) )",
+        "( ( control red ) ( cell 1 1 red ) ( cell 4 1 black ) )",
+        "( ( cell 1 1 red ) ( control black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 1 1 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( cell 1 1 red ) ( control black ) ( cell 1 4 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 1 1 red ) ( cell 1 4 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( cell 5 1 black ) ( cell 1 5 red ) ( cell 1 1 red ) ( control black ) ( cell 1 4 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 1 5 red ) ( cell 1 1 red ) ( cell 3 1 black ) ( cell 1 4 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( cell 5 1 black ) ( cell 1 6 red ) ( cell 1 5 red ) ( cell 1 1 red ) ( control black ) ( cell 3 1 black ) ( cell 1 4 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )",
+        "( ( control red ) ( cell 5 1 black ) ( cell 2 1 black ) ( cell 1 6 red ) ( cell 1 5 red ) ( cell 1 1 red ) ( cell 3 1 black ) ( cell 1 4 red ) ( cell 1 3 black ) ( cell 1 2 red ) ( cell 4 1 black ) )"
+    ],
+    "tournamentNameFromHost": ""
+}
