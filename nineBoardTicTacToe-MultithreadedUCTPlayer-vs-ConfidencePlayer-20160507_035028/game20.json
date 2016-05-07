@@ -1,0 +1,95 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/nineBoardTicTacToe/v0/",
+    "goalValues": [
+        0,
+        100
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028.game20",
+    "moves": [
+        [
+            "( play 3 3 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 3 1 o )"
+        ],
+        [
+            "( play 3 1 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 1 3 o )"
+        ],
+        [
+            "( play 1 3 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 2 2 o )"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidencePlayer",
+        "MultithreadedUCTPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "TrGrJaNKNspl0mcGSg7c7Kd7AQgwbL8O",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462616377354,
+    "stateTimes": [
+        1462616377356,
+        1462616388575,
+        1462616399589,
+        1462616410603,
+        1462616421620,
+        1462616432645,
+        1462616443662
+    ],
+    "states": [
+        "( ( control xPlayer ) )",
+        "( ( control oPlayer ) ( currentBoard 3 2 ) ( mark 3 3 3 2 x ) )",
+        "( ( control xPlayer ) ( currentBoard 3 1 ) ( mark 3 2 3 1 o ) ( mark 3 3 3 2 x ) )",
+        "( ( control oPlayer ) ( mark 3 1 3 2 x ) ( currentBoard 3 2 ) ( mark 3 2 3 1 o ) ( mark 3 3 3 2 x ) )",
+        "( ( control xPlayer ) ( mark 3 1 3 2 x ) ( currentBoard 1 3 ) ( mark 3 2 3 1 o ) ( mark 3 2 1 3 o ) ( mark 3 3 3 2 x ) )",
+        "( ( control oPlayer ) ( mark 3 1 3 2 x ) ( mark 1 3 3 2 x ) ( currentBoard 3 2 ) ( mark 3 2 3 1 o ) ( mark 3 2 1 3 o ) ( mark 3 3 3 2 x ) )",
+        "( ( control xPlayer ) ( mark 3 1 3 2 x ) ( mark 1 3 3 2 x ) ( mark 3 2 3 1 o ) ( mark 3 2 2 2 o ) ( currentBoard 2 2 ) ( mark 3 2 1 3 o ) ( mark 3 3 3 2 x ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

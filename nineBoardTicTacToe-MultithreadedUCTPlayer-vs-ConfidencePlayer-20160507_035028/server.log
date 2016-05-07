@@ -1,0 +1,653 @@
+Checking if pause file exists
+03:50:50 (Game 1) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+03:50:50 (Game 1) - Playing game...
+03:53:39 (Game 1) - Completed game with scores [0, 100]
+03:53:39 (Game 1) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidencePlayer=100 
+03:53:39 (Game 1) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game1.json
+03:53:39 - Finished 1 of 100 games in 2.86 minutes. Estimated 283.30 minutes remaining.
+03:53:42 (Game 2) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+03:53:42 (Game 2) - Playing game...
+03:58:24 (Game 2) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+03:58:24 (Game 2) - Completed game with scores [100, 0]
+03:58:24 (Game 2) - Cumulative scores: MultithreadedUCTPlayer=0 ConfidencePlayer=200 
+03:58:24 (Game 2) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game2.json
+03:58:24 - Finished 2 of 100 games in 7.62 minutes. Estimated 373.34 minutes remaining.
+03:58:27 (Game 3) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+03:58:27 (Game 3) - Playing game...
+04:05:08 (Game 3) - Completed game with scores [100, 0]
+04:05:08 (Game 3) - Cumulative scores: MultithreadedUCTPlayer=100 ConfidencePlayer=200 
+04:05:08 (Game 3) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game3.json
+04:05:08 - Finished 3 of 100 games in 14.35 minutes. Estimated 463.93 minutes remaining.
+04:05:11 (Game 4) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+04:05:11 (Game 4) - Playing game...
+04:11:05 (Game 4) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+04:11:05 (Game 4) - Completed game with scores [100, 0]
+04:11:05 (Game 4) - Cumulative scores: MultithreadedUCTPlayer=100 ConfidencePlayer=300 
+04:11:05 (Game 4) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game4.json
+04:11:05 - Finished 4 of 100 games in 20.31 minutes. Estimated 487.44 minutes remaining.
+04:11:08 (Game 5) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+04:11:08 (Game 5) - Playing game...
+04:14:17 (Game 5) - Completed game with scores [0, 100]
+04:14:17 (Game 5) - Cumulative scores: MultithreadedUCTPlayer=100 ConfidencePlayer=400 
+04:14:17 (Game 5) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game5.json
+04:14:17 - Finished 5 of 100 games in 23.50 minutes. Estimated 446.55 minutes remaining.
+04:14:20 (Game 6) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+04:14:20 (Game 6) - Playing game...
+04:16:42 (Game 6) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+04:16:42 (Game 6) - Completed game with scores [0, 100]
+04:16:42 (Game 6) - Cumulative scores: MultithreadedUCTPlayer=200 ConfidencePlayer=400 
+04:16:42 (Game 6) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game6.json
+04:16:42 - Finished 6 of 100 games in 25.91 minutes. Estimated 405.96 minutes remaining.
+04:16:45 (Game 7) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+04:16:45 (Game 7) - Playing game...
+04:21:06 (Game 7) - Completed game with scores [0, 100]
+04:21:06 (Game 7) - Cumulative scores: MultithreadedUCTPlayer=200 ConfidencePlayer=500 
+04:21:06 (Game 7) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game7.json
+04:21:06 - Finished 7 of 100 games in 30.33 minutes. Estimated 402.89 minutes remaining.
+04:21:09 (Game 8) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+04:21:09 (Game 8) - Playing game...
+04:28:46 (Game 8) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+04:28:46 (Game 8) - Completed game with scores [0, 100]
+04:28:46 (Game 8) - Cumulative scores: MultithreadedUCTPlayer=300 ConfidencePlayer=500 
+04:28:46 (Game 8) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game8.json
+04:28:46 - Finished 8 of 100 games in 37.99 minutes. Estimated 436.88 minutes remaining.
+04:28:49 (Game 9) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+04:28:49 (Game 9) - Playing game...
+04:31:38 (Game 9) - Completed game with scores [0, 100]
+04:31:38 (Game 9) - Cumulative scores: MultithreadedUCTPlayer=300 ConfidencePlayer=600 
+04:31:38 (Game 9) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game9.json
+04:31:38 - Finished 9 of 100 games in 40.86 minutes. Estimated 413.09 minutes remaining.
+04:31:41 (Game 10) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+04:31:41 (Game 10) - Playing game...
+04:36:06 (Game 10) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+04:36:06 (Game 10) - Completed game with scores [100, 0]
+04:36:06 (Game 10) - Cumulative scores: MultithreadedUCTPlayer=300 ConfidencePlayer=700 
+04:36:06 (Game 10) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game10.json
+04:36:06 - Finished 10 of 100 games in 45.32 minutes. Estimated 407.88 minutes remaining.
+04:36:09 (Game 11) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+04:36:09 (Game 11) - Playing game...
+04:40:12 (Game 11) - Completed game with scores [0, 100]
+04:40:12 (Game 11) - Cumulative scores: MultithreadedUCTPlayer=300 ConfidencePlayer=800 
+04:40:12 (Game 11) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game11.json
+04:40:12 - Finished 11 of 100 games in 49.42 minutes. Estimated 399.86 minutes remaining.
+04:40:15 (Game 12) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+04:40:15 (Game 12) - Playing game...
+04:43:13 (Game 12) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+04:43:13 (Game 12) - Completed game with scores [0, 100]
+04:43:13 (Game 12) - Cumulative scores: MultithreadedUCTPlayer=400 ConfidencePlayer=800 
+04:43:13 (Game 12) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game12.json
+04:43:13 - Finished 12 of 100 games in 52.44 minutes. Estimated 384.57 minutes remaining.
+04:43:16 (Game 13) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+04:43:16 (Game 13) - Playing game...
+04:46:04 (Game 13) - Completed game with scores [0, 100]
+04:46:04 (Game 13) - Cumulative scores: MultithreadedUCTPlayer=400 ConfidencePlayer=900 
+04:46:04 (Game 13) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game13.json
+04:46:04 - Finished 13 of 100 games in 55.29 minutes. Estimated 370.02 minutes remaining.
+04:46:07 (Game 14) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+04:46:07 (Game 14) - Playing game...
+04:50:48 (Game 14) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+04:50:48 (Game 14) - Completed game with scores [100, 0]
+04:50:48 (Game 14) - Cumulative scores: MultithreadedUCTPlayer=400 ConfidencePlayer=1000 
+04:50:48 (Game 14) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game14.json
+04:50:48 - Finished 14 of 100 games in 60.02 minutes. Estimated 368.67 minutes remaining.
+04:50:51 (Game 15) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+04:50:51 (Game 15) - Playing game...
+04:57:11 (Game 15) - Completed game with scores [100, 0]
+04:57:11 (Game 15) - Cumulative scores: MultithreadedUCTPlayer=500 ConfidencePlayer=1000 
+04:57:11 (Game 15) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game15.json
+04:57:11 - Finished 15 of 100 games in 66.41 minutes. Estimated 376.32 minutes remaining.
+04:57:14 (Game 16) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+04:57:14 (Game 16) - Playing game...
+05:04:12 (Game 16) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+05:04:12 (Game 16) - Completed game with scores [0, 100]
+05:04:12 (Game 16) - Cumulative scores: MultithreadedUCTPlayer=600 ConfidencePlayer=1000 
+05:04:12 (Game 16) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game16.json
+05:04:12 - Finished 16 of 100 games in 73.43 minutes. Estimated 385.49 minutes remaining.
+05:04:15 (Game 17) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+05:04:15 (Game 17) - Playing game...
+05:10:18 (Game 17) - Completed game with scores [100, 0]
+05:10:18 (Game 17) - Cumulative scores: MultithreadedUCTPlayer=700 ConfidencePlayer=1000 
+05:10:18 (Game 17) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game17.json
+05:10:18 - Finished 17 of 100 games in 79.52 minutes. Estimated 388.27 minutes remaining.
+05:10:21 (Game 18) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+05:10:21 (Game 18) - Playing game...
+05:12:42 (Game 18) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+05:12:42 (Game 18) - Completed game with scores [0, 100]
+05:12:42 (Game 18) - Cumulative scores: MultithreadedUCTPlayer=800 ConfidencePlayer=1000 
+05:12:42 (Game 18) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game18.json
+05:12:42 - Finished 18 of 100 games in 81.92 minutes. Estimated 373.19 minutes remaining.
+05:12:45 (Game 19) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+05:12:45 (Game 19) - Playing game...
+05:19:34 (Game 19) - Completed game with scores [0, 100]
+05:19:34 (Game 19) - Cumulative scores: MultithreadedUCTPlayer=800 ConfidencePlayer=1100 
+05:19:34 (Game 19) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game19.json
+05:19:34 - Finished 19 of 100 games in 88.78 minutes. Estimated 378.50 minutes remaining.
+05:19:37 (Game 20) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+05:19:37 (Game 20) - Playing game...
+05:20:53 (Game 20) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+05:20:53 (Game 20) - Completed game with scores [0, 100]
+05:20:53 (Game 20) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidencePlayer=1100 
+05:20:53 (Game 20) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game20.json
+05:20:53 - Finished 20 of 100 games in 90.11 minutes. Estimated 360.43 minutes remaining.
+05:20:56 (Game 21) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+05:20:56 (Game 21) - Playing game...
+05:26:00 (Game 21) - Completed game with scores [0, 100]
+05:26:00 (Game 21) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidencePlayer=1200 
+05:26:00 (Game 21) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game21.json
+05:26:00 - Finished 21 of 100 games in 95.22 minutes. Estimated 358.21 minutes remaining.
+05:26:03 (Game 22) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+05:26:03 (Game 22) - Playing game...
+05:30:26 (Game 22) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+05:30:26 (Game 22) - Completed game with scores [100, 0]
+05:30:26 (Game 22) - Cumulative scores: MultithreadedUCTPlayer=900 ConfidencePlayer=1300 
+05:30:26 (Game 22) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game22.json
+05:30:26 - Finished 22 of 100 games in 99.65 minutes. Estimated 353.31 minutes remaining.
+05:30:29 (Game 23) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+05:30:29 (Game 23) - Playing game...
+05:35:18 (Game 23) - Completed game with scores [100, 0]
+05:35:18 (Game 23) - Cumulative scores: MultithreadedUCTPlayer=1000 ConfidencePlayer=1300 
+05:35:18 (Game 23) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game23.json
+05:35:18 - Finished 23 of 100 games in 104.52 minutes. Estimated 349.92 minutes remaining.
+05:35:21 (Game 24) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+05:35:21 (Game 24) - Playing game...
+05:38:00 (Game 24) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+05:38:00 (Game 24) - Completed game with scores [0, 100]
+05:38:00 (Game 24) - Cumulative scores: MultithreadedUCTPlayer=1100 ConfidencePlayer=1300 
+05:38:00 (Game 24) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game24.json
+05:38:00 - Finished 24 of 100 games in 107.21 minutes. Estimated 339.51 minutes remaining.
+05:38:03 (Game 25) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+05:38:03 (Game 25) - Playing game...
+05:41:46 (Game 25) - Completed game with scores [0, 100]
+05:41:46 (Game 25) - Cumulative scores: MultithreadedUCTPlayer=1100 ConfidencePlayer=1400 
+05:41:46 (Game 25) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game25.json
+05:41:46 - Finished 25 of 100 games in 110.99 minutes. Estimated 332.98 minutes remaining.
+05:41:49 (Game 26) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+05:41:49 (Game 26) - Playing game...
+05:48:12 (Game 26) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+05:48:12 (Game 26) - Completed game with scores [0, 100]
+05:48:12 (Game 26) - Cumulative scores: MultithreadedUCTPlayer=1200 ConfidencePlayer=1400 
+05:48:12 (Game 26) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game26.json
+05:48:12 - Finished 26 of 100 games in 117.41 minutes. Estimated 334.17 minutes remaining.
+05:48:15 (Game 27) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+05:48:15 (Game 27) - Playing game...
+05:54:53 (Game 27) - Completed game with scores [100, 0]
+05:54:53 (Game 27) - Cumulative scores: MultithreadedUCTPlayer=1300 ConfidencePlayer=1400 
+05:54:53 (Game 27) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game27.json
+05:54:53 - Finished 27 of 100 games in 124.10 minutes. Estimated 335.53 minutes remaining.
+05:54:56 (Game 28) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+05:54:56 (Game 28) - Playing game...
+05:58:13 (Game 28) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+05:58:13 (Game 28) - Completed game with scores [0, 100]
+05:58:13 (Game 28) - Cumulative scores: MultithreadedUCTPlayer=1400 ConfidencePlayer=1400 
+05:58:13 (Game 28) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game28.json
+05:58:13 - Finished 28 of 100 games in 127.43 minutes. Estimated 327.69 minutes remaining.
+05:58:16 (Game 29) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+05:58:16 (Game 29) - Playing game...
+06:01:04 (Game 29) - Completed game with scores [0, 100]
+06:01:04 (Game 29) - Cumulative scores: MultithreadedUCTPlayer=1400 ConfidencePlayer=1500 
+06:01:04 (Game 29) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game29.json
+06:01:04 - Finished 29 of 100 games in 130.29 minutes. Estimated 318.98 minutes remaining.
+06:01:07 (Game 30) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+06:01:07 (Game 30) - Playing game...
+06:03:55 (Game 30) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+06:03:55 (Game 30) - Completed game with scores [100, 0]
+06:03:55 (Game 30) - Cumulative scores: MultithreadedUCTPlayer=1400 ConfidencePlayer=1600 
+06:03:55 (Game 30) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game30.json
+06:03:55 - Finished 30 of 100 games in 133.14 minutes. Estimated 310.66 minutes remaining.
+06:03:58 (Game 31) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+06:03:58 (Game 31) - Playing game...
+06:08:38 (Game 31) - Completed game with scores [0, 100]
+06:08:38 (Game 31) - Cumulative scores: MultithreadedUCTPlayer=1400 ConfidencePlayer=1700 
+06:08:38 (Game 31) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game31.json
+06:08:38 - Finished 31 of 100 games in 137.85 minutes. Estimated 306.82 minutes remaining.
+06:08:41 (Game 32) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+06:08:41 (Game 32) - Playing game...
+06:12:25 (Game 32) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+06:12:25 (Game 32) - Completed game with scores [100, 0]
+06:12:25 (Game 32) - Cumulative scores: MultithreadedUCTPlayer=1400 ConfidencePlayer=1800 
+06:12:25 (Game 32) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game32.json
+06:12:25 - Finished 32 of 100 games in 141.63 minutes. Estimated 300.97 minutes remaining.
+06:12:28 (Game 33) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+06:12:28 (Game 33) - Playing game...
+06:18:12 (Game 33) - Completed game with scores [100, 0]
+06:18:12 (Game 33) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidencePlayer=1800 
+06:18:12 (Game 33) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game33.json
+06:18:12 - Finished 33 of 100 games in 147.42 minutes. Estimated 299.30 minutes remaining.
+06:18:15 (Game 34) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+06:18:15 (Game 34) - Playing game...
+06:23:12 (Game 34) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+06:23:12 (Game 34) - Completed game with scores [100, 0]
+06:23:12 (Game 34) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidencePlayer=1900 
+06:23:12 (Game 34) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game34.json
+06:23:12 - Finished 34 of 100 games in 152.42 minutes. Estimated 295.88 minutes remaining.
+06:23:15 (Game 35) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+06:23:15 (Game 35) - Playing game...
+06:28:13 (Game 35) - Completed game with scores [0, 100]
+06:28:13 (Game 35) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidencePlayer=2000 
+06:28:13 (Game 35) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game35.json
+06:28:13 - Finished 35 of 100 games in 157.43 minutes. Estimated 292.37 minutes remaining.
+06:28:16 (Game 36) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+06:28:16 (Game 36) - Playing game...
+06:31:41 (Game 36) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+06:31:41 (Game 36) - Completed game with scores [100, 0]
+06:31:41 (Game 36) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidencePlayer=2100 
+06:31:41 (Game 36) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game36.json
+06:31:41 - Finished 36 of 100 games in 160.91 minutes. Estimated 286.06 minutes remaining.
+06:31:44 (Game 37) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+06:31:44 (Game 37) - Playing game...
+06:38:14 (Game 37) - Completed game with scores [0, 100]
+06:38:14 (Game 37) - Cumulative scores: MultithreadedUCTPlayer=1500 ConfidencePlayer=2200 
+06:38:14 (Game 37) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game37.json
+06:38:14 - Finished 37 of 100 games in 167.46 minutes. Estimated 285.13 minutes remaining.
+06:38:17 (Game 38) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+06:38:17 (Game 38) - Playing game...
+06:44:40 (Game 38) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+06:44:40 (Game 38) - Completed game with scores [0, 100]
+06:44:40 (Game 38) - Cumulative scores: MultithreadedUCTPlayer=1600 ConfidencePlayer=2200 
+06:44:40 (Game 38) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game38.json
+06:44:40 - Finished 38 of 100 games in 173.88 minutes. Estimated 283.70 minutes remaining.
+06:44:43 (Game 39) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+06:44:43 (Game 39) - Playing game...
+06:47:31 (Game 39) - Completed game with scores [0, 100]
+06:47:31 (Game 39) - Cumulative scores: MultithreadedUCTPlayer=1600 ConfidencePlayer=2300 
+06:47:31 (Game 39) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game39.json
+06:47:31 - Finished 39 of 100 games in 176.73 minutes. Estimated 276.43 minutes remaining.
+06:47:34 (Game 40) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+06:47:34 (Game 40) - Playing game...
+06:51:56 (Game 40) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+06:51:56 (Game 40) - Completed game with scores [100, 0]
+06:51:56 (Game 40) - Cumulative scores: MultithreadedUCTPlayer=1600 ConfidencePlayer=2400 
+06:51:56 (Game 40) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game40.json
+06:51:56 - Finished 40 of 100 games in 181.15 minutes. Estimated 271.73 minutes remaining.
+06:51:59 (Game 41) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+06:51:59 (Game 41) - Playing game...
+06:56:59 (Game 41) - Completed game with scores [0, 100]
+06:56:59 (Game 41) - Cumulative scores: MultithreadedUCTPlayer=1600 ConfidencePlayer=2500 
+06:56:59 (Game 41) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game41.json
+06:56:59 - Finished 41 of 100 games in 186.20 minutes. Estimated 267.94 minutes remaining.
+06:57:02 (Game 42) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+06:57:02 (Game 42) - Playing game...
+07:01:42 (Game 42) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+07:01:42 (Game 42) - Completed game with scores [100, 0]
+07:01:42 (Game 42) - Cumulative scores: MultithreadedUCTPlayer=1600 ConfidencePlayer=2600 
+07:01:42 (Game 42) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game42.json
+07:01:42 - Finished 42 of 100 games in 190.93 minutes. Estimated 263.66 minutes remaining.
+07:01:45 (Game 43) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+07:01:45 (Game 43) - Playing game...
+07:09:30 (Game 43) - Completed game with scores [0, 100]
+07:09:30 (Game 43) - Cumulative scores: MultithreadedUCTPlayer=1600 ConfidencePlayer=2700 
+07:09:30 (Game 43) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game43.json
+07:09:30 - Finished 43 of 100 games in 198.72 minutes. Estimated 263.42 minutes remaining.
+07:09:33 (Game 44) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+07:09:33 (Game 44) - Playing game...
+07:12:31 (Game 44) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+07:12:31 (Game 44) - Completed game with scores [0, 100]
+07:12:31 (Game 44) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidencePlayer=2700 
+07:12:31 (Game 44) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game44.json
+07:12:31 - Finished 44 of 100 games in 201.74 minutes. Estimated 256.76 minutes remaining.
+07:12:34 (Game 45) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+07:12:34 (Game 45) - Playing game...
+07:16:55 (Game 45) - Completed game with scores [0, 100]
+07:16:55 (Game 45) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidencePlayer=2800 
+07:16:55 (Game 45) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game45.json
+07:16:55 - Finished 45 of 100 games in 206.14 minutes. Estimated 251.95 minutes remaining.
+07:16:58 (Game 46) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+07:16:58 (Game 46) - Playing game...
+07:22:34 (Game 46) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+07:22:34 (Game 46) - Completed game with scores [100, 0]
+07:22:34 (Game 46) - Cumulative scores: MultithreadedUCTPlayer=1700 ConfidencePlayer=2900 
+07:22:34 (Game 46) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game46.json
+07:22:34 - Finished 46 of 100 games in 211.79 minutes. Estimated 248.62 minutes remaining.
+07:22:37 (Game 47) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+07:22:37 (Game 47) - Playing game...
+07:28:38 (Game 47) - Completed game with scores [100, 0]
+07:28:38 (Game 47) - Cumulative scores: MultithreadedUCTPlayer=1800 ConfidencePlayer=2900 
+07:28:38 (Game 47) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game47.json
+07:28:38 - Finished 47 of 100 games in 217.86 minutes. Estimated 245.67 minutes remaining.
+07:28:41 (Game 48) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+07:28:41 (Game 48) - Playing game...
+07:35:01 (Game 48) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+07:35:01 (Game 48) - Completed game with scores [0, 100]
+07:35:01 (Game 48) - Cumulative scores: MultithreadedUCTPlayer=1900 ConfidencePlayer=2900 
+07:35:01 (Game 48) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game48.json
+07:35:01 - Finished 48 of 100 games in 224.24 minutes. Estimated 242.93 minutes remaining.
+07:35:04 (Game 49) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+07:35:04 (Game 49) - Playing game...
+07:39:26 (Game 49) - Completed game with scores [0, 100]
+07:39:26 (Game 49) - Cumulative scores: MultithreadedUCTPlayer=1900 ConfidencePlayer=3000 
+07:39:26 (Game 49) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game49.json
+07:39:26 - Finished 49 of 100 games in 228.65 minutes. Estimated 237.98 minutes remaining.
+07:39:29 (Game 50) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+07:39:29 (Game 50) - Playing game...
+07:45:06 (Game 50) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+07:45:06 (Game 50) - Completed game with scores [100, 0]
+07:45:06 (Game 50) - Cumulative scores: MultithreadedUCTPlayer=1900 ConfidencePlayer=3100 
+07:45:06 (Game 50) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game50.json
+07:45:06 - Finished 50 of 100 games in 234.31 minutes. Estimated 234.31 minutes remaining.
+07:45:09 (Game 51) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+07:45:09 (Game 51) - Playing game...
+07:48:16 (Game 51) - Completed game with scores [0, 100]
+07:48:16 (Game 51) - Cumulative scores: MultithreadedUCTPlayer=1900 ConfidencePlayer=3200 
+07:48:16 (Game 51) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game51.json
+07:48:16 - Finished 51 of 100 games in 237.48 minutes. Estimated 228.17 minutes remaining.
+07:48:19 (Game 52) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+07:48:19 (Game 52) - Playing game...
+07:54:58 (Game 52) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+07:54:58 (Game 52) - Completed game with scores [0, 100]
+07:54:58 (Game 52) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3200 
+07:54:58 (Game 52) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game52.json
+07:54:58 - Finished 52 of 100 games in 244.18 minutes. Estimated 225.40 minutes remaining.
+07:55:01 (Game 53) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+07:55:01 (Game 53) - Playing game...
+07:59:40 (Game 53) - Completed game with scores [0, 100]
+07:59:40 (Game 53) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3300 
+07:59:40 (Game 53) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game53.json
+07:59:40 - Finished 53 of 100 games in 248.88 minutes. Estimated 220.71 minutes remaining.
+07:59:43 (Game 54) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+07:59:43 (Game 54) - Playing game...
+08:05:18 (Game 54) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+08:05:18 (Game 54) - Completed game with scores [100, 0]
+08:05:18 (Game 54) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3400 
+08:05:18 (Game 54) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game54.json
+08:05:18 - Finished 54 of 100 games in 254.52 minutes. Estimated 216.81 minutes remaining.
+08:05:21 (Game 55) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+08:05:21 (Game 55) - Playing game...
+08:10:19 (Game 55) - Completed game with scores [0, 100]
+08:10:19 (Game 55) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3500 
+08:10:19 (Game 55) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game55.json
+08:10:19 - Finished 55 of 100 games in 259.54 minutes. Estimated 212.35 minutes remaining.
+08:10:22 (Game 56) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+08:10:22 (Game 56) - Playing game...
+08:15:57 (Game 56) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+08:15:57 (Game 56) - Completed game with scores [100, 0]
+08:15:57 (Game 56) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3600 
+08:15:57 (Game 56) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game56.json
+08:15:57 - Finished 56 of 100 games in 265.16 minutes. Estimated 208.34 minutes remaining.
+08:16:00 (Game 57) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+08:16:00 (Game 57) - Playing game...
+08:20:03 (Game 57) - Completed game with scores [0, 100]
+08:20:03 (Game 57) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3700 
+08:20:03 (Game 57) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game57.json
+08:20:03 - Finished 57 of 100 games in 269.26 minutes. Estimated 203.13 minutes remaining.
+08:20:06 (Game 58) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+08:20:06 (Game 58) - Playing game...
+08:24:08 (Game 58) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+08:24:08 (Game 58) - Completed game with scores [100, 0]
+08:24:08 (Game 58) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3800 
+08:24:08 (Game 58) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game58.json
+08:24:08 - Finished 58 of 100 games in 273.35 minutes. Estimated 197.94 minutes remaining.
+08:24:11 (Game 59) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+08:24:11 (Game 59) - Playing game...
+08:29:28 (Game 59) - Completed game with scores [0, 100]
+08:29:28 (Game 59) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=3900 
+08:29:28 (Game 59) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game59.json
+08:29:28 - Finished 59 of 100 games in 278.69 minutes. Estimated 193.66 minutes remaining.
+08:29:31 (Game 60) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+08:29:31 (Game 60) - Playing game...
+08:35:43 (Game 60) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+08:35:43 (Game 60) - Completed game with scores [100, 0]
+08:35:43 (Game 60) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=4000 
+08:35:43 (Game 60) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game60.json
+08:35:43 - Finished 60 of 100 games in 284.94 minutes. Estimated 189.96 minutes remaining.
+08:35:46 (Game 61) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+08:35:46 (Game 61) - Playing game...
+08:40:24 (Game 61) - Completed game with scores [0, 100]
+08:40:24 (Game 61) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=4100 
+08:40:24 (Game 61) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game61.json
+08:40:24 - Finished 61 of 100 games in 289.63 minutes. Estimated 185.17 minutes remaining.
+08:40:27 (Game 62) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+08:40:27 (Game 62) - Playing game...
+08:45:27 (Game 62) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+08:45:27 (Game 62) - Completed game with scores [100, 0]
+08:45:27 (Game 62) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=4200 
+08:45:27 (Game 62) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game62.json
+08:45:27 - Finished 62 of 100 games in 294.68 minutes. Estimated 180.61 minutes remaining.
+08:45:30 (Game 63) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+08:45:30 (Game 63) - Playing game...
+08:50:42 (Game 63) - Completed game with scores [0, 100]
+08:50:42 (Game 63) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=4300 
+08:50:42 (Game 63) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game63.json
+08:50:42 - Finished 63 of 100 games in 299.91 minutes. Estimated 176.14 minutes remaining.
+08:50:45 (Game 64) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+08:50:45 (Game 64) - Playing game...
+08:55:43 (Game 64) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+08:55:43 (Game 64) - Completed game with scores [100, 0]
+08:55:43 (Game 64) - Cumulative scores: MultithreadedUCTPlayer=2000 ConfidencePlayer=4400 
+08:55:43 (Game 64) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game64.json
+08:55:43 - Finished 64 of 100 games in 304.93 minutes. Estimated 171.52 minutes remaining.
+08:55:46 (Game 65) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+08:55:46 (Game 65) - Playing game...
+09:01:25 (Game 65) - Completed game with scores [100, 0]
+09:01:25 (Game 65) - Cumulative scores: MultithreadedUCTPlayer=2100 ConfidencePlayer=4400 
+09:01:25 (Game 65) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game65.json
+09:01:25 - Finished 65 of 100 games in 310.63 minutes. Estimated 167.26 minutes remaining.
+09:01:28 (Game 66) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:01:28 (Game 66) - Playing game...
+09:04:20 (Game 66) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:04:20 (Game 66) - Completed game with scores [100, 0]
+09:04:20 (Game 66) - Cumulative scores: MultithreadedUCTPlayer=2100 ConfidencePlayer=4500 
+09:04:20 (Game 66) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game66.json
+09:04:20 - Finished 66 of 100 games in 313.56 minutes. Estimated 161.53 minutes remaining.
+09:04:23 (Game 67) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:04:23 (Game 67) - Playing game...
+09:09:35 (Game 67) - Completed game with scores [0, 100]
+09:09:35 (Game 67) - Cumulative scores: MultithreadedUCTPlayer=2100 ConfidencePlayer=4600 
+09:09:35 (Game 67) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game67.json
+09:09:35 - Finished 67 of 100 games in 318.80 minutes. Estimated 157.02 minutes remaining.
+09:09:38 (Game 68) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:09:38 (Game 68) - Playing game...
+09:13:07 (Game 68) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:13:07 (Game 68) - Completed game with scores [100, 0]
+09:13:07 (Game 68) - Cumulative scores: MultithreadedUCTPlayer=2100 ConfidencePlayer=4700 
+09:13:07 (Game 68) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game68.json
+09:13:07 - Finished 68 of 100 games in 322.33 minutes. Estimated 151.68 minutes remaining.
+09:13:10 (Game 69) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:13:10 (Game 69) - Playing game...
+09:18:57 (Game 69) - Completed game with scores [0, 100]
+09:18:57 (Game 69) - Cumulative scores: MultithreadedUCTPlayer=2100 ConfidencePlayer=4800 
+09:18:57 (Game 69) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game69.json
+09:18:57 - Finished 69 of 100 games in 328.17 minutes. Estimated 147.44 minutes remaining.
+09:19:00 (Game 70) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:19:00 (Game 70) - Playing game...
+09:20:11 (Game 70) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:20:11 (Game 70) - Completed game with scores [0, 100]
+09:20:11 (Game 70) - Cumulative scores: MultithreadedUCTPlayer=2200 ConfidencePlayer=4800 
+09:20:11 (Game 70) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game70.json
+09:20:11 - Finished 70 of 100 games in 329.41 minutes. Estimated 141.18 minutes remaining.
+09:20:14 (Game 71) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:20:14 (Game 71) - Playing game...
+09:23:36 (Game 71) - Completed game with scores [0, 100]
+09:23:36 (Game 71) - Cumulative scores: MultithreadedUCTPlayer=2200 ConfidencePlayer=4900 
+09:23:36 (Game 71) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game71.json
+09:23:36 - Finished 71 of 100 games in 332.82 minutes. Estimated 135.94 minutes remaining.
+09:23:39 (Game 72) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:23:39 (Game 72) - Playing game...
+09:26:30 (Game 72) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:26:30 (Game 72) - Completed game with scores [100, 0]
+09:26:30 (Game 72) - Cumulative scores: MultithreadedUCTPlayer=2200 ConfidencePlayer=5000 
+09:26:30 (Game 72) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game72.json
+09:26:30 - Finished 72 of 100 games in 335.72 minutes. Estimated 130.56 minutes remaining.
+09:26:33 (Game 73) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:26:33 (Game 73) - Playing game...
+09:32:30 (Game 73) - Completed game with scores [100, 0]
+09:32:30 (Game 73) - Cumulative scores: MultithreadedUCTPlayer=2300 ConfidencePlayer=5000 
+09:32:30 (Game 73) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game73.json
+09:32:30 - Finished 73 of 100 games in 341.72 minutes. Estimated 126.39 minutes remaining.
+09:32:33 (Game 74) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:32:33 (Game 74) - Playing game...
+09:34:02 (Game 74) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:34:02 (Game 74) - Completed game with scores [0, 100]
+09:34:02 (Game 74) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5000 
+09:34:02 (Game 74) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game74.json
+09:34:02 - Finished 74 of 100 games in 343.26 minutes. Estimated 120.61 minutes remaining.
+09:34:05 (Game 75) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:34:06 (Game 75) - Playing game...
+09:37:28 (Game 75) - Completed game with scores [0, 100]
+09:37:28 (Game 75) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5100 
+09:37:28 (Game 75) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game75.json
+09:37:28 - Finished 75 of 100 games in 346.69 minutes. Estimated 115.56 minutes remaining.
+09:37:31 (Game 76) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:37:31 (Game 76) - Playing game...
+09:42:35 (Game 76) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:42:35 (Game 76) - Completed game with scores [100, 0]
+09:42:35 (Game 76) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5200 
+09:42:35 (Game 76) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game76.json
+09:42:35 - Finished 76 of 100 games in 351.80 minutes. Estimated 111.09 minutes remaining.
+09:42:38 (Game 77) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:42:38 (Game 77) - Playing game...
+09:46:36 (Game 77) - Completed game with scores [0, 100]
+09:46:36 (Game 77) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5300 
+09:46:36 (Game 77) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game77.json
+09:46:36 - Finished 77 of 100 games in 355.83 minutes. Estimated 106.29 minutes remaining.
+09:46:39 (Game 78) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:46:39 (Game 78) - Playing game...
+09:50:45 (Game 78) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:50:45 (Game 78) - Completed game with scores [100, 0]
+09:50:45 (Game 78) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5400 
+09:50:45 (Game 78) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game78.json
+09:50:45 - Finished 78 of 100 games in 359.96 minutes. Estimated 101.53 minutes remaining.
+09:50:48 (Game 79) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:50:48 (Game 79) - Playing game...
+09:53:33 (Game 79) - Completed game with scores [0, 100]
+09:53:33 (Game 79) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5500 
+09:53:33 (Game 79) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game79.json
+09:53:33 - Finished 79 of 100 games in 362.77 minutes. Estimated 96.43 minutes remaining.
+09:53:36 (Game 80) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:53:36 (Game 80) - Playing game...
+09:57:23 (Game 80) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+09:57:23 (Game 80) - Completed game with scores [100, 0]
+09:57:23 (Game 80) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5600 
+09:57:23 (Game 80) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game80.json
+09:57:23 - Finished 80 of 100 games in 366.61 minutes. Estimated 91.65 minutes remaining.
+09:57:26 (Game 81) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+09:57:26 (Game 81) - Playing game...
+09:58:59 (Game 81) - Completed game with scores [0, 100]
+09:58:59 (Game 81) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5700 
+09:58:59 (Game 81) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game81.json
+09:58:59 - Finished 81 of 100 games in 368.20 minutes. Estimated 86.37 minutes remaining.
+09:59:02 (Game 82) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+09:59:02 (Game 82) - Playing game...
+10:02:11 (Game 82) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+10:02:11 (Game 82) - Completed game with scores [100, 0]
+10:02:11 (Game 82) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5800 
+10:02:11 (Game 82) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game82.json
+10:02:11 - Finished 82 of 100 games in 371.40 minutes. Estimated 81.53 minutes remaining.
+10:02:14 (Game 83) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+10:02:14 (Game 83) - Playing game...
+10:06:31 (Game 83) - Completed game with scores [0, 100]
+10:06:31 (Game 83) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=5900 
+10:06:31 (Game 83) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game83.json
+10:06:31 - Finished 83 of 100 games in 375.73 minutes. Estimated 76.96 minutes remaining.
+10:06:34 (Game 84) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+10:06:34 (Game 84) - Playing game...
+10:10:19 (Game 84) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+10:10:19 (Game 84) - Completed game with scores [100, 0]
+10:10:19 (Game 84) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=6000 
+10:10:19 (Game 84) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game84.json
+10:10:19 - Finished 84 of 100 games in 379.54 minutes. Estimated 72.29 minutes remaining.
+10:10:22 (Game 85) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+10:10:22 (Game 85) - Playing game...
+10:15:02 (Game 85) - Completed game with scores [0, 100]
+10:15:02 (Game 85) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=6100 
+10:15:02 (Game 85) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game85.json
+10:15:02 - Finished 85 of 100 games in 384.25 minutes. Estimated 67.81 minutes remaining.
+10:15:05 (Game 86) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+10:15:05 (Game 86) - Playing game...
+10:20:03 (Game 86) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+10:20:03 (Game 86) - Completed game with scores [100, 0]
+10:20:03 (Game 86) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=6200 
+10:20:03 (Game 86) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game86.json
+10:20:03 - Finished 86 of 100 games in 389.27 minutes. Estimated 63.37 minutes remaining.
+10:20:06 (Game 87) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+10:20:06 (Game 87) - Playing game...
+10:25:36 (Game 87) - Completed game with scores [0, 100]
+10:25:36 (Game 87) - Cumulative scores: MultithreadedUCTPlayer=2400 ConfidencePlayer=6300 
+10:25:36 (Game 87) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game87.json
+10:25:36 - Finished 87 of 100 games in 394.82 minutes. Estimated 59.00 minutes remaining.
+10:25:39 (Game 88) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+10:25:39 (Game 88) - Playing game...
+10:32:17 (Game 88) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+10:32:17 (Game 88) - Completed game with scores [0, 100]
+10:32:17 (Game 88) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=6300 
+10:32:17 (Game 88) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game88.json
+10:32:17 - Finished 88 of 100 games in 401.50 minutes. Estimated 54.75 minutes remaining.
+10:32:20 (Game 89) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+10:32:20 (Game 89) - Playing game...
+10:36:36 (Game 89) - Completed game with scores [0, 100]
+10:36:36 (Game 89) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=6400 
+10:36:36 (Game 89) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game89.json
+10:36:36 - Finished 89 of 100 games in 405.82 minutes. Estimated 50.16 minutes remaining.
+10:36:39 (Game 90) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+10:36:39 (Game 90) - Playing game...
+10:40:43 (Game 90) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+10:40:43 (Game 90) - Completed game with scores [100, 0]
+10:40:43 (Game 90) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=6500 
+10:40:43 (Game 90) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game90.json
+10:40:43 - Finished 90 of 100 games in 409.94 minutes. Estimated 45.55 minutes remaining.
+10:40:46 (Game 91) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+10:40:46 (Game 91) - Playing game...
+10:46:16 (Game 91) - Completed game with scores [0, 100]
+10:46:16 (Game 91) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=6600 
+10:46:16 (Game 91) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game91.json
+10:46:16 - Finished 91 of 100 games in 415.48 minutes. Estimated 41.09 minutes remaining.
+10:46:19 (Game 92) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+10:46:19 (Game 92) - Playing game...
+10:52:35 (Game 92) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+10:52:35 (Game 92) - Completed game with scores [100, 0]
+10:52:35 (Game 92) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=6700 
+10:52:35 (Game 92) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game92.json
+10:52:35 - Finished 92 of 100 games in 421.80 minutes. Estimated 36.68 minutes remaining.
+10:52:38 (Game 93) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+10:52:38 (Game 93) - Playing game...
+10:56:19 (Game 93) - Completed game with scores [0, 100]
+10:56:19 (Game 93) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=6800 
+10:56:19 (Game 93) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game93.json
+10:56:19 - Finished 93 of 100 games in 425.54 minutes. Estimated 32.03 minutes remaining.
+10:56:22 (Game 94) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+10:56:22 (Game 94) - Playing game...
+11:00:09 (Game 94) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+11:00:09 (Game 94) - Completed game with scores [100, 0]
+11:00:09 (Game 94) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=6900 
+11:00:09 (Game 94) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game94.json
+11:00:09 - Finished 94 of 100 games in 429.37 minutes. Estimated 27.41 minutes remaining.
+11:00:12 (Game 95) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+11:00:12 (Game 95) - Playing game...
+11:02:21 (Game 95) - Completed game with scores [0, 100]
+11:02:21 (Game 95) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=7000 
+11:02:21 (Game 95) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game95.json
+11:02:21 - Finished 95 of 100 games in 431.57 minutes. Estimated 22.71 minutes remaining.
+11:02:24 (Game 96) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+11:02:24 (Game 96) - Playing game...
+11:07:42 (Game 96) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+11:07:42 (Game 96) - Completed game with scores [100, 0]
+11:07:42 (Game 96) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=7100 
+11:07:42 (Game 96) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game96.json
+11:07:42 - Finished 96 of 100 games in 436.92 minutes. Estimated 18.21 minutes remaining.
+11:07:45 (Game 97) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+11:07:45 (Game 97) - Playing game...
+11:13:14 (Game 97) - Completed game with scores [0, 100]
+11:13:14 (Game 97) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=7200 
+11:13:14 (Game 97) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game97.json
+11:13:14 - Finished 97 of 100 games in 442.45 minutes. Estimated 13.68 minutes remaining.
+11:13:17 (Game 98) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+11:13:17 (Game 98) - Playing game...
+11:18:36 (Game 98) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+11:18:36 (Game 98) - Completed game with scores [100, 0]
+11:18:36 (Game 98) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=7300 
+11:18:36 (Game 98) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game98.json
+11:18:36 - Finished 98 of 100 games in 447.82 minutes. Estimated 9.14 minutes remaining.
+11:18:39 (Game 99) - Initializing game with players: [MultithreadedUCTPlayer, ConfidencePlayer]
+11:18:39 (Game 99) - Playing game...
+11:22:19 (Game 99) - Completed game with scores [0, 100]
+11:22:19 (Game 99) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=7400 
+11:22:19 (Game 99) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game99.json
+11:22:19 - Finished 99 of 100 games in 451.54 minutes. Estimated 4.56 minutes remaining.
+11:22:22 (Game 100) - Initializing game with players: [ConfidencePlayer, MultithreadedUCTPlayer]
+11:22:22 (Game 100) - Playing game...
+11:27:02 (Game 100) - WARNING: This match contains errors from the following players: [ConfidencePlayer]
+11:27:02 (Game 100) - Completed game with scores [100, 0]
+11:27:02 (Game 100) - Cumulative scores: MultithreadedUCTPlayer=2500 ConfidencePlayer=7500 
+11:27:02 (Game 100) - Saving match to file nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028/game100.json
+11:27:02 - Finished 100 of 100 games in 456.26 minutes. Estimated 0.00 minutes remaining.
+11:27:02 - Successfully finished tournament. 50 matches contained errors.
+11:27:02 - Average player scores: MultithreadedUCTPlayer=25.0000 ConfidencePlayer=75.0000 

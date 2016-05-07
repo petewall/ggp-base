@@ -1,0 +1,465 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/nineBoardTicTacToe/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "nineBoardTicTacToe-LearningPlayer-vs-MultithreadedUCTPlayer-20160506_192409.game96",
+    "moves": [
+        [
+            "( play 1 1 2 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 3 3 2 o )"
+        ],
+        [
+            "( play 3 2 3 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 3 1 2 o )"
+        ],
+        [
+            "( play 1 2 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 1 2 o )"
+        ],
+        [
+            "( play 1 2 1 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 2 1 1 o )"
+        ],
+        [
+            "( play 1 1 2 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 2 2 2 o )"
+        ],
+        [
+            "( play 2 2 2 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 1 2 2 o )"
+        ],
+        [
+            "( play 2 2 3 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 1 3 1 o )"
+        ],
+        [
+            "( play 3 1 3 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 3 3 1 o )"
+        ],
+        [
+            "( play 3 1 1 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 1 3 2 o )"
+        ],
+        [
+            "( play 3 2 1 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 1 1 3 o )"
+        ],
+        [
+            "( play 1 3 3 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 1 1 3 o )"
+        ],
+        [
+            "( play 1 3 1 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 3 2 1 o )"
+        ],
+        [
+            "( play 2 1 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 2 1 o )"
+        ],
+        [
+            "( play 2 1 1 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 3 3 3 o )"
+        ],
+        [
+            "( play 3 3 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 2 3 o )"
+        ],
+        [
+            "( play 2 3 2 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 3 3 3 o )"
+        ],
+        [
+            "( play 3 3 2 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 2 3 3 o )"
+        ],
+        [
+            "( play 3 3 1 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 1 2 1 o )"
+        ],
+        [
+            "( play 2 1 1 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 1 1 1 o )"
+        ],
+        [
+            "( play 1 1 1 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 2 2 3 o )"
+        ],
+        [
+            "( play 2 3 2 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 1 3 1 o )"
+        ],
+        [
+            "( play 3 1 2 2 x )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "MultithreadedUCTPlayer",
+        "LearningPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "HnqYveEpInBpKVRClOATOqC5SqQJkZOp",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462609557378,
+    "stateTimes": [
+        1462609557380,
+        1462609566897,
+        1462609576013,
+        1462609585119,
+        1462609594229,
+        1462609603332,
+        1462609612593,
+        1462609621768,
+        1462609630980,
+        1462609640202,
+        1462609649403,
+        1462609658525,
+        1462609667664,
+        1462609676835,
+        1462609686009,
+        1462609695260,
+        1462609704524,
+        1462609713770,
+        1462609722997,
+        1462609732109,
+        1462609741279,
+        1462609750412,
+        1462609759650,
+        1462609768782,
+        1462609777956,
+        1462609787074,
+        1462609796173,
+        1462609805288,
+        1462609814416,
+        1462609823499,
+        1462609832606,
+        1462609841819,
+        1462609850949,
+        1462609860084,
+        1462609869148,
+        1462609878262,
+        1462609887276,
+        1462609896321,
+        1462609905338,
+        1462609914429,
+        1462609923445,
+        1462609932462,
+        1462609941480,
+        1462609950497
+    ],
+    "states": [
+        "( ( control xPlayer ) )",
+        "( ( currentBoard 2 3 ) ( control oPlayer ) ( mark 1 1 2 3 x ) )",
+        "( ( control xPlayer ) ( mark 2 3 3 2 o ) ( currentBoard 3 2 ) ( mark 1 1 2 3 x ) )",
+        "( ( control oPlayer ) ( mark 2 3 3 2 o ) ( mark 3 2 3 3 x ) ( currentBoard 3 3 ) ( mark 1 1 2 3 x ) )",
+        "( ( control xPlayer ) ( mark 2 3 3 2 o ) ( currentBoard 1 2 ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) )",
+        "( ( control oPlayer ) ( mark 2 3 3 2 o ) ( currentBoard 3 2 ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control xPlayer ) ( mark 2 3 3 2 o ) ( mark 3 2 1 2 o ) ( currentBoard 1 2 ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control oPlayer ) ( mark 2 3 3 2 o ) ( mark 3 2 1 2 o ) ( currentBoard 1 2 ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control xPlayer ) ( mark 2 3 3 2 o ) ( mark 3 2 1 2 o ) ( currentBoard 1 1 ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control oPlayer ) ( mark 2 3 3 2 o ) ( mark 3 2 1 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 3 3 1 2 o ) ( currentBoard 2 2 ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control xPlayer ) ( mark 2 3 3 2 o ) ( mark 3 2 1 2 o ) ( mark 1 2 1 1 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 3 3 1 2 o ) ( currentBoard 2 2 ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control oPlayer ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 2 3 3 2 o ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( currentBoard 2 1 ) )",
+        "( ( control xPlayer ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( currentBoard 2 2 ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control oPlayer ) ( currentBoard 3 1 ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control xPlayer ) ( mark 3 1 3 1 o ) ( currentBoard 3 1 ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control oPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( currentBoard 3 3 ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) )",
+        "( ( control xPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( currentBoard 3 1 ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) ( mark 3 3 3 1 o ) )",
+        "( ( control oPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 3 1 1 1 x ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( currentBoard 1 1 ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) ( mark 3 3 3 1 o ) )",
+        "( ( control xPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( currentBoard 3 2 ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 3 1 1 1 x ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) ( mark 3 3 3 1 o ) )",
+        "( ( control oPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 3 1 1 1 x ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( currentBoard 1 1 ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) ( mark 3 3 3 1 o ) )",
+        "( ( control xPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 3 1 1 1 x ) ( mark 2 1 2 2 o ) ( mark 1 1 1 3 o ) ( mark 2 3 3 2 o ) ( currentBoard 1 3 ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) ( mark 3 3 3 1 o ) )",
+        "( ( control oPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( currentBoard 3 1 ) ( mark 3 2 1 2 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 3 1 1 1 x ) ( mark 2 1 2 2 o ) ( mark 1 1 1 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) )",
+        "( ( control xPlayer ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 1 o ) ( mark 1 2 1 2 x ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 3 1 1 1 x ) ( mark 2 1 2 2 o ) ( mark 1 1 1 3 o ) ( mark 2 3 3 2 o ) ( currentBoard 1 3 ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 1 1 2 3 x ) ( mark 2 2 3 1 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( currentBoard 1 3 ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( currentBoard 2 1 ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( currentBoard 3 2 ) ( mark 1 2 1 2 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( currentBoard 2 1 ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( currentBoard 1 3 ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 1 3 3 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( currentBoard 3 3 ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( currentBoard 3 2 ) ( mark 1 2 1 2 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 1 3 3 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( currentBoard 2 3 ) ( mark 1 3 3 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( currentBoard 2 3 ) ( mark 1 3 3 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( currentBoard 3 3 ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( currentBoard 2 2 ) ( mark 3 3 3 2 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( currentBoard 3 3 ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( currentBoard 1 1 ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( currentBoard 2 1 ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( currentBoard 1 1 ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 2 1 1 1 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( currentBoard 1 1 ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 2 1 1 1 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 1 1 1 1 o ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( mark 3 2 1 2 o ) ( currentBoard 1 2 ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 1 1 1 2 x ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 2 1 1 1 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 1 1 1 1 o ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( currentBoard 2 3 ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 1 1 1 2 x ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 2 1 1 1 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 1 1 1 1 o ) ( mark 1 2 2 3 o ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 2 3 2 1 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 1 1 1 2 x ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 2 1 1 1 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 1 1 1 1 o ) ( mark 1 2 2 3 o ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( currentBoard 2 1 ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( currentBoard 3 1 ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 2 1 3 1 o ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 2 3 2 1 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control xPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 1 1 1 2 x ) ( mark 2 1 2 2 o ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 2 1 1 1 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 1 1 1 1 o ) ( mark 1 2 2 3 o ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 2 1 3 2 x ) )",
+        "( ( mark 1 3 1 3 x ) ( mark 3 1 3 3 x ) ( mark 3 1 3 1 o ) ( mark 1 1 2 1 o ) ( mark 3 2 1 2 o ) ( mark 3 1 1 3 o ) ( mark 2 2 2 2 o ) ( mark 1 2 1 2 x ) ( mark 2 3 2 3 x ) ( mark 1 3 2 1 o ) ( mark 3 1 1 1 x ) ( mark 2 1 3 1 o ) ( mark 1 1 1 3 o ) ( mark 2 3 3 3 o ) ( mark 1 3 3 3 o ) ( mark 3 3 1 1 x ) ( mark 2 1 1 3 x ) ( mark 1 1 2 3 x ) ( mark 2 3 2 1 x ) ( mark 1 2 3 2 x ) ( mark 1 3 3 1 x ) ( mark 3 3 3 1 o ) ( control oPlayer ) ( mark 3 2 2 1 o ) ( mark 3 3 2 2 x ) ( mark 1 2 1 1 o ) ( mark 3 2 3 3 x ) ( mark 1 1 2 2 x ) ( mark 1 1 3 2 o ) ( mark 1 1 1 2 x ) ( mark 2 1 2 2 o ) ( currentBoard 2 2 ) ( mark 3 3 3 2 x ) ( mark 2 2 3 3 o ) ( mark 2 1 1 1 x ) ( mark 3 2 2 3 o ) ( mark 2 3 3 2 o ) ( mark 3 2 1 1 x ) ( mark 2 2 2 1 x ) ( mark 1 1 1 1 o ) ( mark 1 2 2 3 o ) ( mark 3 3 1 2 o ) ( mark 2 2 3 1 x ) ( mark 3 1 2 2 x ) ( mark 2 1 3 2 x ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

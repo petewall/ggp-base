@@ -1,0 +1,85 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/nineBoardTicTacToe/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "nineBoardTicTacToe-LearningPlayer-vs-MultithreadedUCTPlayer-20160506_192409.game7",
+    "moves": [
+        [
+            "( play 3 3 1 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 2 3 3 o )"
+        ],
+        [
+            "( play 3 3 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 3 3 o )"
+        ],
+        [
+            "( play 3 3 2 2 x )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "LearningPlayer",
+        "MultithreadedUCTPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "eAmJ1IBcb0vT9DkWKUOpQUqgG1b5WbHM",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462582402075,
+    "stateTimes": [
+        1462582402078,
+        1462582413316,
+        1462582424333,
+        1462582435347,
+        1462582444696,
+        1462582453831
+    ],
+    "states": [
+        "( ( control xPlayer ) )",
+        "( ( control oPlayer ) ( mark 3 3 1 2 x ) ( currentBoard 1 2 ) )",
+        "( ( control xPlayer ) ( mark 3 3 1 2 x ) ( currentBoard 3 3 ) ( mark 1 2 3 3 o ) )",
+        "( ( control oPlayer ) ( mark 3 3 1 2 x ) ( currentBoard 3 2 ) ( mark 3 3 3 2 x ) ( mark 1 2 3 3 o ) )",
+        "( ( control xPlayer ) ( mark 3 3 1 2 x ) ( mark 3 2 3 3 o ) ( currentBoard 3 3 ) ( mark 3 3 3 2 x ) ( mark 1 2 3 3 o ) )",
+        "( ( control oPlayer ) ( mark 3 3 1 2 x ) ( mark 3 3 2 2 x ) ( mark 3 2 3 3 o ) ( currentBoard 2 2 ) ( mark 3 3 3 2 x ) ( mark 1 2 3 3 o ) )"
+    ],
+    "tournamentNameFromHost": ""
+}

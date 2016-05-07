@@ -1,0 +1,245 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/nineBoardTicTacToe/v0/",
+    "goalValues": [
+        100,
+        0
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "nineBoardTicTacToe-MultithreadedUCTPlayer-vs-ConfidencePlayer-20160507_035028.game32",
+    "moves": [
+        [
+            "( play 1 3 2 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 2 2 3 o )"
+        ],
+        [
+            "( play 2 3 1 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 2 1 2 o )"
+        ],
+        [
+            "( play 1 2 2 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 3 2 1 o )"
+        ],
+        [
+            "( play 2 1 3 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 3 1 3 o )"
+        ],
+        [
+            "( play 1 3 3 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 1 2 1 o )"
+        ],
+        [
+            "( play 2 1 2 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 3 3 1 o )"
+        ],
+        [
+            "( play 3 1 3 1 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 1 1 2 o )"
+        ],
+        [
+            "( play 1 2 1 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 3 1 3 o )"
+        ],
+        [
+            "( play 1 3 1 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 1 2 3 3 o )"
+        ],
+        [
+            "( play 3 3 2 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 2 2 2 1 o )"
+        ],
+        [
+            "( play 2 1 1 3 x )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidencePlayer",
+        "MultithreadedUCTPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "XKeI2jBOljNsxoPKBnVeFxfvYVY7ydEG",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462619321069,
+    "stateTimes": [
+        1462619321073,
+        1462619332319,
+        1462619343334,
+        1462619354347,
+        1462619365356,
+        1462619376378,
+        1462619387397,
+        1462619398424,
+        1462619409438,
+        1462619420464,
+        1462619431487,
+        1462619442512,
+        1462619453531,
+        1462619464553,
+        1462619475574,
+        1462619486598,
+        1462619497624,
+        1462619507892,
+        1462619517118,
+        1462619526873,
+        1462619536106,
+        1462619545231
+    ],
+    "states": [
+        "( ( control xPlayer ) )",
+        "( ( mark 1 3 2 2 x ) ( control oPlayer ) ( currentBoard 2 2 ) )",
+        "( ( control xPlayer ) ( currentBoard 2 3 ) ( mark 1 3 2 2 x ) ( mark 2 2 2 3 o ) )",
+        "( ( mark 1 3 2 2 x ) ( control oPlayer ) ( currentBoard 1 2 ) ( mark 2 2 2 3 o ) ( mark 2 3 1 2 x ) )",
+        "( ( control xPlayer ) ( mark 1 3 2 2 x ) ( currentBoard 1 2 ) ( mark 2 2 2 3 o ) ( mark 1 2 1 2 o ) ( mark 2 3 1 2 x ) )",
+        "( ( mark 1 2 2 3 x ) ( currentBoard 2 3 ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 2 2 2 3 o ) ( mark 1 2 1 2 o ) ( mark 2 3 1 2 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 1 3 2 2 x ) ( mark 2 3 2 1 o ) ( mark 2 2 2 3 o ) ( mark 1 2 1 2 o ) ( currentBoard 2 1 ) ( mark 2 3 1 2 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( currentBoard 3 3 ) ( mark 2 2 2 3 o ) ( mark 1 2 1 2 o ) ( mark 2 3 1 2 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 1 3 2 2 x ) ( mark 3 3 1 3 o ) ( currentBoard 1 3 ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 2 2 2 3 o ) ( mark 1 2 1 2 o ) ( mark 2 3 1 2 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 3 3 1 3 o ) ( currentBoard 3 1 ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 2 2 2 3 o ) ( mark 1 2 1 2 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 3 1 2 1 o ) ( mark 1 3 2 2 x ) ( mark 3 3 1 3 o ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 2 2 2 3 o ) ( mark 1 2 1 2 o ) ( currentBoard 2 1 ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 1 2 1 2 o ) ( currentBoard 2 3 ) ( mark 3 3 1 3 o ) ( mark 2 2 2 3 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( currentBoard 3 1 ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( mark 2 3 3 1 o ) ( mark 2 2 2 3 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( currentBoard 3 1 ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 2 2 2 3 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( currentBoard 1 2 ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 2 2 2 3 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( currentBoard 1 3 ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 2 2 2 3 o ) ( mark 1 2 1 3 x ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( currentBoard 1 3 ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 1 3 1 3 o ) ( mark 2 2 2 3 o ) ( mark 1 2 1 3 x ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( currentBoard 1 2 ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 1 3 1 3 o ) ( mark 1 3 1 2 x ) ( mark 2 2 2 3 o ) ( mark 1 2 1 3 x ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 1 3 1 3 o ) ( mark 1 3 1 2 x ) ( currentBoard 3 3 ) ( mark 2 2 2 3 o ) ( mark 1 2 1 3 x ) ( mark 1 2 3 3 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 3 3 2 2 x ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( currentBoard 2 2 ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 1 3 1 3 o ) ( mark 1 3 1 2 x ) ( mark 2 2 2 3 o ) ( mark 1 2 1 3 x ) ( mark 1 2 3 3 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( control xPlayer ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( mark 3 3 2 2 x ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 2 2 2 1 o ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 1 3 1 3 o ) ( mark 1 3 1 2 x ) ( mark 2 2 2 3 o ) ( mark 1 2 1 3 x ) ( mark 1 2 3 3 o ) ( currentBoard 2 1 ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )",
+        "( ( mark 1 2 2 3 x ) ( mark 3 1 2 1 o ) ( mark 2 1 2 3 x ) ( mark 1 3 2 2 x ) ( control oPlayer ) ( mark 3 3 2 2 x ) ( mark 2 3 2 1 o ) ( mark 2 1 3 3 x ) ( mark 2 2 2 1 o ) ( mark 3 1 1 2 o ) ( mark 1 2 1 2 o ) ( mark 3 3 1 3 o ) ( currentBoard 1 3 ) ( mark 3 1 3 1 x ) ( mark 2 3 3 1 o ) ( mark 1 3 1 3 o ) ( mark 2 1 1 3 x ) ( mark 1 3 1 2 x ) ( mark 2 2 2 3 o ) ( mark 1 2 1 3 x ) ( mark 1 2 3 3 o ) ( mark 2 3 1 2 x ) ( mark 1 3 3 1 x ) )"
+    ],
+    "tournamentNameFromHost": ""
+}
