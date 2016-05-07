@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x
-
 GAME_KEY=$1
 START_CLOCK=$2
 PLAY_CLOCK=$3
