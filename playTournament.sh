@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 GAME_KEY=$1
 START_CLOCK=$2
 PLAY_CLOCK=$3
@@ -29,7 +31,7 @@ echo "Starting player $P2 on port $P2_PORT and writing output to $P2.log"
 # wait for 10 seconds then make sure we have 2 jobs running (the two players)
 echo "Waiting for players to start..."
 sleep 10
-ps -p $(jobs -p) > /dev/null # run the ps command to make sure jobs is up to date
+jobs > /dev/null # run the jobs command without $() to make sure jobs is up to date
 jobCount=$(jobs -p | wc -l)
 if [ $jobCount -ne 2 ];then
     echo "Players didn't start properly. See player logs"
