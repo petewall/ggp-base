@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GAME_KEY=connectFour
-P1=ConfidenceAgent
+P1=ConfidencePlayer
 P2=LearningPlayer
 
 NUM_GAMES=100

@@ -2,7 +2,7 @@
 
 GAME_KEY=connectFour
 P1=MultithreadedUCTPlayer
-P2=ConfidenceAgent
+P2=ConfidencePlayer
 
 NUM_GAMES=100
 START_CLOCK=30
