@@ -16,6 +16,38 @@ var global = {
 var phaseStats = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
 var phaseBuckets = 10;
 
+var games = 0;
+var depths = {
+    total: 0
+};
+var branches = {
+    totalAvg: 0
+};
+
+function handleGameVars(depth, min, max, avg) {
+    games += 1;
+    depths.total += depth;
+    if (!depths.min || depths.min > depth) {
+        depths.min = depth;
+    }
+    if (!depths.max || depths.max < depth) {
+        depths.max = depth;
+    }
+
+    if (!branches.min || branches.min > min) {
+        branches.min = min;
+    }
+    if (!branches.max || branches.max < max) {
+        branches.max = max;
+    }
+    branches.totalAvg += avg;
+}
+
+function finalizeAverages() {
+    depths.avg = depths.total / games;
+    branches.avg = branches.totalAvg / games;
+}
+
 function gatherPhaseStatsFromDepthStats(statsAtDepth, matchDepth) {
     var i, phase;
     for (i = 1; i < statsAtDepth.length; i += 1) {
@@ -45,6 +77,7 @@ async.each(files, function (file, next) {
         for (i = 0; i < lines.length; i += 1) {
             if (lines[i].startsWith("[Confidence] GAME_STATS: ")) {
                 lineData = JSON.parse(lines[i].slice("[Confidence] GAME_STATS: ".length));
+                handleGameVars(lineData.gameDepth, lineData.minBranchingFactor, lineData.maxBranchingFactor, lineData.avgBranchingFactor);
                 gatherPhaseStatsFromDepthStats(statsAtDepth, lineData.gameDepth);
                 statsAtDepth = [];
             } else if (lines[i].startsWith("[Confidence] MOVE_STATS: ")) {
@@ -70,7 +103,16 @@ async.each(files, function (file, next) {
         next();
     });
 }, function () {
-    console.log("Moves   : " + moves);
+    console.log("Games    : " + games);
+    console.log("Moves    : " + moves);
+
+    finalizeAverages();
+    function printMinMaxAvg(name, statGroup) {
+        console.log(name + ": Min(" + statGroup.min + ") Max(" + statGroup.max + ") Avg(" + statGroup.avg + ")");
+    }
+    printMinMaxAvg("Depths   ", depths);
+    printMinMaxAvg("Branches ", branches);
+
     function printStat(name, statGroup) {
         console.log();
         console.log(name + " stats:");
