@@ -1,0 +1,115 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "ServerTimeout",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/nineBoardTicTacToe/v0/",
+    "goalValues": [
+        0,
+        100
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "nineBoardTicTacToe-ConfidencePlayer-vs-LearningPlayer-20160507_115803.game3",
+    "moves": [
+        [
+            "( play 3 3 3 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 3 3 2 o )"
+        ],
+        [
+            "( play 3 2 3 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 3 1 2 o )"
+        ],
+        [
+            "( play 1 2 3 2 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 2 1 2 o )"
+        ],
+        [
+            "( play 1 2 3 3 x )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( play 3 3 2 2 o )"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "ConfidencePlayer",
+        "LearningPlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "1XgaVHmxu8C40hSrF3AsslpSx1OlgDDl",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462641102652,
+    "stateTimes": [
+        1462641102656,
+        1462641113925,
+        1462641124942,
+        1462641135955,
+        1462641146974,
+        1462641157986,
+        1462641169002,
+        1462641180025,
+        1462641189825
+    ],
+    "states": [
+        "( ( control xPlayer ) )",
+        "( ( control oPlayer ) ( mark 3 3 3 3 x ) ( currentBoard 3 3 ) )",
+        "( ( mark 3 3 3 2 o ) ( control xPlayer ) ( mark 3 3 3 3 x ) ( currentBoard 3 2 ) )",
+        "( ( mark 3 3 3 2 o ) ( control oPlayer ) ( mark 3 3 3 3 x ) ( mark 3 2 3 3 x ) ( currentBoard 3 3 ) )",
+        "( ( mark 3 3 3 2 o ) ( control xPlayer ) ( mark 3 3 3 3 x ) ( currentBoard 1 2 ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) )",
+        "( ( mark 3 3 3 2 o ) ( control oPlayer ) ( mark 3 3 3 3 x ) ( currentBoard 3 2 ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( mark 1 2 3 2 x ) )",
+        "( ( mark 3 3 3 2 o ) ( control xPlayer ) ( mark 3 3 3 3 x ) ( mark 3 2 1 2 o ) ( currentBoard 1 2 ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( mark 1 2 3 2 x ) )",
+        "( ( mark 3 3 3 2 o ) ( control oPlayer ) ( mark 1 2 3 3 x ) ( mark 3 3 3 3 x ) ( mark 3 2 1 2 o ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( currentBoard 3 3 ) ( mark 1 2 3 2 x ) )",
+        "( ( mark 3 3 3 2 o ) ( control xPlayer ) ( mark 1 2 3 3 x ) ( mark 3 3 3 3 x ) ( mark 3 2 1 2 o ) ( mark 3 2 3 3 x ) ( mark 3 3 1 2 o ) ( currentBoard 2 2 ) ( mark 3 3 2 2 o ) ( mark 1 2 3 2 x ) )"
+    ],
+    "tournamentNameFromHost": ""
+}
