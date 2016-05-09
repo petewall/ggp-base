@@ -1,0 +1,325 @@
+{
+    "errors": [
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ],
+        [
+            "",
+            ""
+        ]
+    ],
+    "gameMetaURL": "http://games.ggp.org/base/games/checkers/v1/",
+    "goalValues": [
+        0,
+        100
+    ],
+    "isAborted": false,
+    "isCompleted": true,
+    "matchId": "checkers-ConfidencePlayer-vs-LearningPlayer-20160507_230235.game32",
+    "moves": [
+        [
+            "( move wp f 3 g 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp c 6 d 5 )"
+        ],
+        [
+            "( move wp g 4 h 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp g 6 f 5 )"
+        ],
+        [
+            "( move wp d 3 c 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp d 7 c 6 )"
+        ],
+        [
+            "( move wp e 2 d 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp h 7 g 6 )"
+        ],
+        [
+            "( move wp g 2 f 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp c 6 b 5 )"
+        ],
+        [
+            "( move wp f 3 g 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp e 8 d 7 )"
+        ],
+        [
+            "( move wp f 1 g 2 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp d 7 c 6 )"
+        ],
+        [
+            "( move wp g 2 f 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp g 8 h 7 )"
+        ],
+        [
+            "( move wp h 1 g 2 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp c 8 d 7 )"
+        ],
+        [
+            "( move wp d 1 e 2 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp b 5 a 4 )"
+        ],
+        [
+            "( move wp c 4 b 5 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp f 5 e 4 )"
+        ],
+        [
+            "( move wp d 3 c 4 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp g 6 f 5 )"
+        ],
+        [
+            "( move wp h 5 g 6 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp f 7 h 5 )"
+        ],
+        [
+            "( move wp c 2 d 3 )",
+            "noop"
+        ],
+        [
+            "noop",
+            "( move bp h 7 g 6 )"
+        ],
+        [
+            "( move wp b 1 c 2 )",
+            "noop"
+        ]
+    ],
+    "playClock": 10,
+    "playerNamesFromHost": [
+        "LearningPlayer",
+        "ConfidencePlayer"
+    ],
+    "previewClock": -1,
+    "randomToken": "gLP9wQOZ192SrZur15DF1jgxpCs3VIUH",
+    "scrambled": false,
+    "startClock": 30,
+    "startTime": 1462705171290,
+    "stateTimes": [
+        1462705171301,
+        1462705181449,
+        1462705191250,
+        1462705201388,
+        1462705211250,
+        1462705220513,
+        1462705229813,
+        1462705239399,
+        1462705249116,
+        1462705258989,
+        1462705268862,
+        1462705278867,
+        1462705288569,
+        1462705298253,
+        1462705308090,
+        1462705317353,
+        1462705327055,
+        1462705336281,
+        1462705345570,
+        1462705355205,
+        1462705364896,
+        1462705374479,
+        1462705384064,
+        1462705393754,
+        1462705403387,
+        1462705412958,
+        1462705422210,
+        1462705431607,
+        1462705441170,
+        1462705450202
+    ],
+    "states": [
+        "( ( cell h 8 b ) ( cell b 5 b ) ( cell a 7 b ) ( cell d 5 b ) ( cell f 8 b ) ( cell g 3 b ) ( cell h 3 wp ) ( cell c 3 b ) ( cell d 7 bp ) ( cell h 1 wp ) ( cell f 5 b ) ( cell c 7 b ) ( cell e 7 b ) ( cell h 5 b ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell a 3 b ) ( cell g 7 b ) ( cell f 2 b ) ( cell f 1 wp ) ( cell a 1 b ) ( cell f 4 b ) ( cell c 4 b ) ( piece_count red 12 ) ( cell b 8 b ) ( cell d 2 b ) ( cell a 4 b ) ( cell a 8 bp ) ( cell d 8 b ) ( cell h 4 b ) ( cell b 2 b ) ( cell a 6 bp ) ( step 1 ) ( cell e 2 wp ) ( cell b 3 wp ) ( cell e 3 b ) ( cell b 1 wp ) ( control red ) ( cell c 5 b ) ( cell e 8 bp ) ( cell a 5 b ) ( cell e 5 b ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( cell e 1 b ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 5 b ) ( cell b 7 bp ) ( cell c 1 b ) ( cell d 4 b ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell h 2 b ) ( cell b 6 b ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 2 wp ) ( cell g 4 b ) ( cell d 6 b ) ( cell b 4 b ) ( cell g 2 wp ) ( cell f 6 b ) ( cell g 1 b ) ( cell h 6 b ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( cell b 5 b ) ( cell d 5 b ) ( step 2 ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell h 1 wp ) ( cell d 7 bp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( cell f 5 b ) ( piece_count black 12 ) ( cell h 5 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell f 1 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 b ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( control red ) ( cell b 5 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell d 7 bp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( cell f 5 b ) ( step 3 ) ( piece_count black 12 ) ( cell h 5 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell f 1 wp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 b ) ( cell c 2 wp ) ( cell c 6 b ) ( piece_count red 12 ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( cell b 5 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( cell f 5 b ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell f 1 wp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 b ) ( step 4 ) ( cell c 2 wp ) ( cell c 6 b ) ( cell g 4 b ) ( piece_count red 12 ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( control red ) ( cell b 5 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell b 7 bp ) ( cell f 1 wp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 b ) ( cell c 2 wp ) ( cell c 6 b ) ( cell g 4 b ) ( piece_count red 12 ) ( step 5 ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell g 6 b ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( cell b 5 b ) ( cell d 3 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell b 7 bp ) ( control black ) ( cell f 1 wp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell c 6 b ) ( cell g 4 b ) ( piece_count red 12 ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( step 6 ) ( cell b 1 wp ) ( cell g 6 b ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( control red ) ( cell b 5 b ) ( cell d 3 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( step 7 ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell b 7 bp ) ( cell f 1 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell g 4 b ) ( piece_count red 12 ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell g 6 b ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( cell b 5 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( step 8 ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell b 7 bp ) ( control black ) ( cell f 1 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell g 4 b ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell g 6 b ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( control red ) ( cell b 5 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell f 1 wp ) ( step 9 ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell g 4 b ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell b 5 b ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell g 2 b ) ( cell f 3 wp ) ( cell f 1 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( step 10 ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell g 4 b ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( control red ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( step 11 ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell b 5 bp ) ( cell g 2 b ) ( cell f 3 wp ) ( cell f 1 wp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell c 6 b ) ( cell g 4 b ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( step 12 ) ( cell e 8 bp ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell b 5 bp ) ( cell g 2 b ) ( cell f 1 wp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell c 6 b ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell b 3 wp ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( control red ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell h 1 wp ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell b 5 bp ) ( cell g 2 b ) ( cell f 1 wp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell c 6 b ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( step 13 ) ( cell b 3 wp ) ( cell e 8 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell f 1 b ) ( cell h 1 wp ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell b 5 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell c 6 b ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell g 2 wp ) ( step 14 ) ( cell b 3 wp ) ( cell e 8 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell f 3 b ) ( control red ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell f 1 b ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell b 5 bp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( step 15 ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell h 3 wp ) ( cell d 5 bp ) ( cell f 1 b ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( step 16 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 8 bp ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell b 5 bp ) ( cell g 2 b ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell h 7 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( control red ) ( cell g 8 b ) ( step 17 ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell f 1 b ) ( cell h 1 wp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell b 5 bp ) ( cell g 2 b ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell f 1 b ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell d 7 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell b 5 bp ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 8 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell e 2 b ) ( cell a 4 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( step 18 ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( control red ) ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 1 wp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell b 5 bp ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell e 2 b ) ( step 19 ) ( cell a 4 b ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell g 6 bp ) ( step 20 ) ( cell b 7 bp ) ( control black ) ( cell b 5 bp ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell a 4 b ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( control red ) ( cell g 8 b ) ( cell b 5 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( step 21 ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 3 wp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell e 4 b ) ( cell c 4 b ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( step 22 ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell b 5 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( control red ) ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell d 3 wp ) ( cell f 5 b ) ( cell e 4 bp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell f 3 wp ) ( step 23 ) ( cell c 6 bp ) ( cell c 4 b ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell b 5 wp ) ( cell f 7 bp ) )",
+        "( ( cell g 8 b ) ( cell d 3 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell f 5 b ) ( cell e 4 bp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( step 24 ) ( cell d 1 b ) ( cell g 6 bp ) ( cell b 7 bp ) ( control black ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell b 5 wp ) ( cell f 7 bp ) )",
+        "( ( control red ) ( cell g 8 b ) ( step 25 ) ( cell d 3 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 5 wp ) ( cell h 7 bp ) ( cell e 4 bp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell b 7 bp ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell g 6 b ) ( cell b 5 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( cell g 8 b ) ( cell d 3 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 7 bp ) ( cell e 4 bp ) ( piece_count black 12 ) ( cell h 5 b ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell b 7 bp ) ( control black ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell c 4 wp ) ( cell c 2 wp ) ( piece_count red 12 ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell g 6 wp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( step 26 ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell b 5 wp ) ( cell f 5 bp ) ( cell f 7 bp ) )",
+        "( ( control red ) ( cell g 8 b ) ( cell d 3 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 7 bp ) ( cell h 5 bp ) ( cell e 4 bp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell b 7 bp ) ( cell f 7 b ) ( cell f 3 wp ) ( cell c 6 bp ) ( piece_count red 11 ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell c 8 b ) ( cell g 4 wp ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( step 27 ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell g 6 b ) ( cell b 5 wp ) ( cell f 5 bp ) )",
+        "( ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell h 7 bp ) ( cell d 3 wp ) ( cell h 5 bp ) ( cell e 4 bp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell b 7 bp ) ( control black ) ( cell f 7 b ) ( cell f 3 wp ) ( cell c 6 bp ) ( piece_count red 11 ) ( cell c 4 wp ) ( step 28 ) ( cell c 8 b ) ( cell g 4 wp ) ( cell c 2 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell g 6 b ) ( cell b 5 wp ) ( cell f 5 bp ) )",
+        "( ( control red ) ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell d 3 wp ) ( cell h 5 bp ) ( cell e 4 bp ) ( step 29 ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell g 6 bp ) ( cell b 7 bp ) ( cell f 7 b ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell h 7 b ) ( piece_count red 11 ) ( cell c 4 wp ) ( cell c 8 b ) ( cell g 4 wp ) ( cell c 2 b ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 1 wp ) ( cell b 5 wp ) ( cell f 5 bp ) )",
+        "( ( cell g 8 b ) ( cell h 3 wp ) ( cell d 5 bp ) ( cell a 4 bp ) ( cell f 1 b ) ( cell d 7 bp ) ( cell d 3 wp ) ( cell h 5 bp ) ( cell e 4 bp ) ( piece_count black 12 ) ( cell e 6 bp ) ( cell a 2 wp ) ( cell d 1 b ) ( cell g 6 bp ) ( cell b 1 b ) ( cell b 7 bp ) ( control black ) ( cell f 7 b ) ( cell f 3 wp ) ( cell c 6 bp ) ( cell h 7 b ) ( piece_count red 11 ) ( cell c 4 wp ) ( cell c 2 wp ) ( cell c 8 b ) ( cell g 4 wp ) ( step 30 ) ( cell a 8 bp ) ( cell a 6 bp ) ( cell e 2 wp ) ( cell g 2 wp ) ( cell b 3 wp ) ( cell e 8 b ) ( cell h 1 b ) ( cell b 5 wp ) ( cell f 5 bp ) )"
+    ],
+    "tournamentNameFromHost": ""
+}
