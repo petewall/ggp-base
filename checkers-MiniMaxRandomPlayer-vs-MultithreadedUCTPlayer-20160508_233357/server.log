@@ -1,0 +1,3821 @@
+Checking if pause file exists
+23:34:13 (Game 1) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:34:14 (Game 1) - Playing game...
+23:49:47 (Game 1) - Completed game with scores [0, 100]
+23:49:47 (Game 1) - Cumulative scores: MiniMaxRandomPlayer=0 MultithreadedUCTPlayer=100 
+23:49:47 (Game 1) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game1.json
+23:49:47 - Finished 1 of 100 games in 15.61 minutes. Estimated 1545.28 minutes remaining.
+23:49:50 (Game 2) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:49:50 (Game 2) - Playing game...
+00:05:27 (Game 2) - Completed game with scores [50, 50]
+00:05:27 (Game 2) - Cumulative scores: MiniMaxRandomPlayer=50 MultithreadedUCTPlayer=150 
+00:05:27 (Game 2) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game2.json
+00:05:27 - Finished 2 of 100 games in 31.28 minutes. Estimated 1532.66 minutes remaining.
+00:05:30 (Game 3) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:05:30 (Game 3) - Playing game...
+00:21:25 (Game 3) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+00:21:25 (Game 3) - Completed game with scores [0, 100]
+00:21:25 (Game 3) - Cumulative scores: MiniMaxRandomPlayer=50 MultithreadedUCTPlayer=250 
+00:21:25 (Game 3) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game3.json
+00:21:25 - Finished 3 of 100 games in 47.25 minutes. Estimated 1527.60 minutes remaining.
+00:21:28 (Game 4) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:21:28 (Game 4) - Playing game...
+00:37:14 (Game 4) - Completed game with scores [50, 50]
+00:37:14 (Game 4) - Cumulative scores: MiniMaxRandomPlayer=100 MultithreadedUCTPlayer=300 
+00:37:14 (Game 4) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game4.json
+00:37:14 - Finished 4 of 100 games in 63.06 minutes. Estimated 1513.56 minutes remaining.
+00:37:17 (Game 5) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:37:17 (Game 5) - Playing game...
+00:47:54 (Game 5) - Completed game with scores [100, 0]
+00:47:54 (Game 5) - Cumulative scores: MiniMaxRandomPlayer=200 MultithreadedUCTPlayer=300 
+00:47:54 (Game 5) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game5.json
+00:47:54 - Finished 5 of 100 games in 73.73 minutes. Estimated 1400.88 minutes remaining.
+00:47:57 (Game 6) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:47:57 (Game 6) - Playing game...
+01:03:44 (Game 6) - Completed game with scores [100, 0]
+01:03:44 (Game 6) - Cumulative scores: MiniMaxRandomPlayer=200 MultithreadedUCTPlayer=400 
+01:03:44 (Game 6) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game6.json
+01:03:44 - Finished 6 of 100 games in 89.55 minutes. Estimated 1402.99 minutes remaining.
+01:03:47 (Game 7) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:03:47 (Game 7) - Playing game...
+01:19:33 (Game 7) - Completed game with scores [0, 100]
+01:19:33 (Game 7) - Cumulative scores: MiniMaxRandomPlayer=200 MultithreadedUCTPlayer=500 
+01:19:33 (Game 7) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game7.json
+01:19:33 - Finished 7 of 100 games in 105.38 minutes. Estimated 1399.99 minutes remaining.
+01:19:36 (Game 8) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:19:36 (Game 8) - Playing game...
+01:35:23 (Game 8) - Completed game with scores [0, 100]
+01:35:23 (Game 8) - Cumulative scores: MiniMaxRandomPlayer=300 MultithreadedUCTPlayer=500 
+01:35:23 (Game 8) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game8.json
+01:35:23 - Finished 8 of 100 games in 121.22 minutes. Estimated 1393.99 minutes remaining.
+01:35:26 (Game 9) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:35:26 (Game 9) - Playing game...
+01:43:52 (Game 9) - Completed game with scores [100, 0]
+01:43:52 (Game 9) - Cumulative scores: MiniMaxRandomPlayer=400 MultithreadedUCTPlayer=500 
+01:43:52 (Game 9) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game9.json
+01:43:52 - Finished 9 of 100 games in 129.70 minutes. Estimated 1311.38 minutes remaining.
+01:43:55 (Game 10) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:43:55 (Game 10) - Playing game...
+01:59:42 (Game 10) - Completed game with scores [100, 0]
+01:59:42 (Game 10) - Cumulative scores: MiniMaxRandomPlayer=400 MultithreadedUCTPlayer=600 
+01:59:42 (Game 10) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game10.json
+01:59:42 - Finished 10 of 100 games in 145.53 minutes. Estimated 1309.74 minutes remaining.
+01:59:45 (Game 11) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:59:45 (Game 11) - Playing game...
+02:11:18 (Game 11) - Completed game with scores [100, 0]
+02:11:18 (Game 11) - Cumulative scores: MiniMaxRandomPlayer=500 MultithreadedUCTPlayer=600 
+02:11:18 (Game 11) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game11.json
+02:11:18 - Finished 11 of 100 games in 157.12 minutes. Estimated 1271.25 minutes remaining.
+02:11:21 (Game 12) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:11:21 (Game 12) - Playing game...
+02:27:10 (Game 12) - Completed game with scores [50, 50]
+02:27:10 (Game 12) - Cumulative scores: MiniMaxRandomPlayer=550 MultithreadedUCTPlayer=650 
+02:27:10 (Game 12) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game12.json
+02:27:10 - Finished 12 of 100 games in 172.99 minutes. Estimated 1268.59 minutes remaining.
+02:27:13 (Game 13) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:27:13 (Game 13) - Playing game...
+02:43:04 (Game 13) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:43:04 (Game 13) - Completed game with scores [0, 100]
+02:43:04 (Game 13) - Cumulative scores: MiniMaxRandomPlayer=550 MultithreadedUCTPlayer=750 
+02:43:04 (Game 13) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game13.json
+02:43:04 - Finished 13 of 100 games in 188.90 minutes. Estimated 1264.15 minutes remaining.
+02:43:07 (Game 14) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:43:07 (Game 14) - Playing game...
+02:58:55 (Game 14) - Completed game with scores [100, 0]
+02:58:55 (Game 14) - Cumulative scores: MiniMaxRandomPlayer=550 MultithreadedUCTPlayer=850 
+02:58:55 (Game 14) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game14.json
+02:58:55 - Finished 14 of 100 games in 204.74 minutes. Estimated 1257.69 minutes remaining.
+02:58:58 (Game 15) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:58:58 (Game 15) - Playing game...
+03:14:44 (Game 15) - Completed game with scores [0, 100]
+03:14:44 (Game 15) - Cumulative scores: MiniMaxRandomPlayer=550 MultithreadedUCTPlayer=950 
+03:14:44 (Game 15) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game15.json
+03:14:44 - Finished 15 of 100 games in 220.55 minutes. Estimated 1249.80 minutes remaining.
+03:14:47 (Game 16) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:14:47 (Game 16) - Playing game...
+03:30:37 (Game 16) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:30:37 (Game 16) - Completed game with scores [100, 0]
+03:30:37 (Game 16) - Cumulative scores: MiniMaxRandomPlayer=550 MultithreadedUCTPlayer=1050 
+03:30:37 (Game 16) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game16.json
+03:30:37 - Finished 16 of 100 games in 236.44 minutes. Estimated 1241.31 minutes remaining.
+03:30:40 (Game 17) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:30:40 (Game 17) - Playing game...
+03:46:28 (Game 17) - Completed game with scores [0, 100]
+03:46:28 (Game 17) - Cumulative scores: MiniMaxRandomPlayer=550 MultithreadedUCTPlayer=1150 
+03:46:28 (Game 17) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game17.json
+03:46:28 - Finished 17 of 100 games in 252.29 minutes. Estimated 1231.77 minutes remaining.
+03:46:31 (Game 18) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:46:31 (Game 18) - Playing game...
+03:58:56 (Game 18) - Completed game with scores [100, 0]
+03:58:56 (Game 18) - Cumulative scores: MiniMaxRandomPlayer=550 MultithreadedUCTPlayer=1250 
+03:58:56 (Game 18) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game18.json
+03:58:56 - Finished 18 of 100 games in 264.76 minutes. Estimated 1206.13 minutes remaining.
+03:58:59 (Game 19) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:58:59 (Game 19) - Playing game...
+04:05:16 (Game 19) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+04:05:16 (Game 19) - Completed game with scores [100, 0]
+04:05:16 (Game 19) - Cumulative scores: MiniMaxRandomPlayer=650 MultithreadedUCTPlayer=1250 
+04:05:16 (Game 19) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game19.json
+04:05:16 - Finished 19 of 100 games in 271.10 minutes. Estimated 1155.73 minutes remaining.
+04:05:19 (Game 20) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+04:05:19 (Game 20) - Playing game...
+04:21:07 (Game 20) - Completed game with scores [100, 0]
+04:21:07 (Game 20) - Cumulative scores: MiniMaxRandomPlayer=650 MultithreadedUCTPlayer=1350 
+04:21:07 (Game 20) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game20.json
+04:21:07 - Finished 20 of 100 games in 286.94 minutes. Estimated 1147.74 minutes remaining.
+04:21:10 (Game 21) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+04:21:10 (Game 21) - Playing game...
+04:36:57 (Game 21) - Completed game with scores [0, 100]
+04:36:57 (Game 21) - Cumulative scores: MiniMaxRandomPlayer=650 MultithreadedUCTPlayer=1450 
+04:36:57 (Game 21) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game21.json
+04:36:57 - Finished 21 of 100 games in 302.78 minutes. Estimated 1139.04 minutes remaining.
+04:37:00 (Game 22) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+04:37:00 (Game 22) - Playing game...
+04:52:49 (Game 22) - Completed game with scores [100, 0]
+04:52:49 (Game 22) - Cumulative scores: MiniMaxRandomPlayer=650 MultithreadedUCTPlayer=1550 
+04:52:49 (Game 22) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game22.json
+04:52:49 - Finished 22 of 100 games in 318.64 minutes. Estimated 1129.73 minutes remaining.
+04:52:52 (Game 23) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+04:52:52 (Game 23) - Playing game...
+05:08:42 (Game 23) - Completed game with scores [0, 100]
+05:08:42 (Game 23) - Cumulative scores: MiniMaxRandomPlayer=650 MultithreadedUCTPlayer=1650 
+05:08:42 (Game 23) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game23.json
+05:08:42 - Finished 23 of 100 games in 334.52 minutes. Estimated 1119.91 minutes remaining.
+05:08:45 (Game 24) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:08:45 (Game 24) - Playing game...
+05:24:31 (Game 24) - Completed game with scores [100, 0]
+05:24:31 (Game 24) - Cumulative scores: MiniMaxRandomPlayer=650 MultithreadedUCTPlayer=1750 
+05:24:31 (Game 24) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game24.json
+05:24:31 - Finished 24 of 100 games in 350.34 minutes. Estimated 1109.42 minutes remaining.
+05:24:34 (Game 25) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:24:34 (Game 25) - Playing game...
+05:40:23 (Game 25) - Completed game with scores [100, 0]
+05:40:23 (Game 25) - Cumulative scores: MiniMaxRandomPlayer=750 MultithreadedUCTPlayer=1750 
+05:40:23 (Game 25) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game25.json
+05:40:23 - Finished 25 of 100 games in 366.21 minutes. Estimated 1098.64 minutes remaining.
+05:40:26 (Game 26) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+05:40:26 (Game 26) - Playing game...
+05:56:13 (Game 26) - Completed game with scores [100, 0]
+05:56:13 (Game 26) - Cumulative scores: MiniMaxRandomPlayer=750 MultithreadedUCTPlayer=1850 
+05:56:13 (Game 26) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game26.json
+05:56:13 - Finished 26 of 100 games in 382.05 minutes. Estimated 1087.36 minutes remaining.
+05:56:16 (Game 27) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+05:56:16 (Game 27) - Playing game...
+06:05:23 (Game 27) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+06:05:23 (Game 27) - Completed game with scores [100, 0]
+06:05:23 (Game 27) - Cumulative scores: MiniMaxRandomPlayer=850 MultithreadedUCTPlayer=1850 
+06:05:23 (Game 27) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game27.json
+06:05:23 - Finished 27 of 100 games in 391.22 minutes. Estimated 1057.73 minutes remaining.
+06:05:26 (Game 28) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+06:05:26 (Game 28) - Playing game...
+06:21:14 (Game 28) - Completed game with scores [100, 0]
+06:21:14 (Game 28) - Cumulative scores: MiniMaxRandomPlayer=850 MultithreadedUCTPlayer=1950 
+06:21:14 (Game 28) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game28.json
+06:21:14 - Finished 28 of 100 games in 407.05 minutes. Estimated 1046.71 minutes remaining.
+06:21:17 (Game 29) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+06:21:17 (Game 29) - Playing game...
+06:37:05 (Game 29) - Completed game with scores [0, 100]
+06:37:05 (Game 29) - Cumulative scores: MiniMaxRandomPlayer=850 MultithreadedUCTPlayer=2050 
+06:37:05 (Game 29) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game29.json
+06:37:05 - Finished 29 of 100 games in 422.91 minutes. Estimated 1035.41 minutes remaining.
+06:37:08 (Game 30) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+06:37:08 (Game 30) - Playing game...
+06:52:54 (Game 30) - Completed game with scores [0, 100]
+06:52:54 (Game 30) - Cumulative scores: MiniMaxRandomPlayer=950 MultithreadedUCTPlayer=2050 
+06:52:54 (Game 30) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game30.json
+06:52:54 - Finished 30 of 100 games in 438.73 minutes. Estimated 1023.70 minutes remaining.
+06:52:57 (Game 31) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+06:52:57 (Game 31) - Playing game...
+07:08:45 (Game 31) - Completed game with scores [0, 100]
+07:08:45 (Game 31) - Cumulative scores: MiniMaxRandomPlayer=950 MultithreadedUCTPlayer=2150 
+07:08:45 (Game 31) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game31.json
+07:08:45 - Finished 31 of 100 games in 454.58 minutes. Estimated 1011.80 minutes remaining.
+07:08:48 (Game 32) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+07:08:48 (Game 32) - Playing game...
+07:24:36 (Game 32) - Completed game with scores [100, 0]
+07:24:36 (Game 32) - Cumulative scores: MiniMaxRandomPlayer=950 MultithreadedUCTPlayer=2250 
+07:24:36 (Game 32) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game32.json
+07:24:36 - Finished 32 of 100 games in 470.43 minutes. Estimated 999.65 minutes remaining.
+07:24:39 (Game 33) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+07:24:39 (Game 33) - Playing game...
+07:40:25 (Game 33) - Completed game with scores [0, 100]
+07:40:25 (Game 33) - Cumulative scores: MiniMaxRandomPlayer=950 MultithreadedUCTPlayer=2350 
+07:40:25 (Game 33) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game33.json
+07:40:25 - Finished 33 of 100 games in 486.24 minutes. Estimated 987.22 minutes remaining.
+07:40:28 (Game 34) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+07:40:28 (Game 34) - Playing game...
+07:56:08 (Game 34) - Completed game with scores [100, 0]
+07:56:08 (Game 34) - Cumulative scores: MiniMaxRandomPlayer=950 MultithreadedUCTPlayer=2450 
+07:56:08 (Game 34) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game34.json
+07:56:08 - Finished 34 of 100 games in 501.97 minutes. Estimated 974.41 minutes remaining.
+07:56:11 (Game 35) - Paused
+07:56:14 (Game 35) - Paused
+07:56:17 (Game 35) - Paused
+07:56:20 (Game 35) - Paused
+07:56:23 (Game 35) - Paused
+07:56:26 (Game 35) - Paused
+07:56:29 (Game 35) - Paused
+07:56:33 (Game 35) - Paused
+07:56:36 (Game 35) - Paused
+07:56:39 (Game 35) - Paused
+07:56:42 (Game 35) - Paused
+07:56:45 (Game 35) - Paused
+07:56:48 (Game 35) - Paused
+07:56:51 (Game 35) - Paused
+07:56:54 (Game 35) - Paused
+07:56:57 (Game 35) - Paused
+07:57:00 (Game 35) - Paused
+07:57:03 (Game 35) - Paused
+07:57:06 (Game 35) - Paused
+07:57:09 (Game 35) - Paused
+07:57:12 (Game 35) - Paused
+07:57:15 (Game 35) - Paused
+07:57:18 (Game 35) - Paused
+07:57:21 (Game 35) - Paused
+07:57:24 (Game 35) - Paused
+07:57:27 (Game 35) - Paused
+07:57:30 (Game 35) - Paused
+07:57:33 (Game 35) - Paused
+07:57:36 (Game 35) - Paused
+07:57:39 (Game 35) - Paused
+07:57:42 (Game 35) - Paused
+07:57:45 (Game 35) - Paused
+07:57:48 (Game 35) - Paused
+07:57:51 (Game 35) - Paused
+07:57:54 (Game 35) - Paused
+07:57:57 (Game 35) - Paused
+07:58:00 (Game 35) - Paused
+07:58:03 (Game 35) - Paused
+07:58:06 (Game 35) - Paused
+07:58:09 (Game 35) - Paused
+07:58:12 (Game 35) - Paused
+07:58:15 (Game 35) - Paused
+07:58:18 (Game 35) - Paused
+07:58:21 (Game 35) - Paused
+07:58:24 (Game 35) - Paused
+07:58:27 (Game 35) - Paused
+07:58:30 (Game 35) - Paused
+07:58:33 (Game 35) - Paused
+07:58:36 (Game 35) - Paused
+07:58:39 (Game 35) - Paused
+07:58:42 (Game 35) - Paused
+07:58:45 (Game 35) - Paused
+07:58:48 (Game 35) - Paused
+07:58:51 (Game 35) - Paused
+07:58:54 (Game 35) - Paused
+07:58:57 (Game 35) - Paused
+07:59:00 (Game 35) - Paused
+07:59:03 (Game 35) - Paused
+07:59:06 (Game 35) - Paused
+07:59:09 (Game 35) - Paused
+07:59:12 (Game 35) - Paused
+07:59:15 (Game 35) - Paused
+07:59:18 (Game 35) - Paused
+07:59:21 (Game 35) - Paused
+07:59:24 (Game 35) - Paused
+07:59:27 (Game 35) - Paused
+07:59:30 (Game 35) - Paused
+07:59:33 (Game 35) - Paused
+07:59:36 (Game 35) - Paused
+07:59:39 (Game 35) - Paused
+07:59:42 (Game 35) - Paused
+07:59:45 (Game 35) - Paused
+07:59:48 (Game 35) - Paused
+07:59:51 (Game 35) - Paused
+07:59:54 (Game 35) - Paused
+07:59:57 (Game 35) - Paused
+08:00:00 (Game 35) - Paused
+08:00:03 (Game 35) - Paused
+08:00:06 (Game 35) - Paused
+08:00:09 (Game 35) - Paused
+08:00:12 (Game 35) - Paused
+08:00:15 (Game 35) - Paused
+08:00:18 (Game 35) - Paused
+08:00:21 (Game 35) - Paused
+08:00:24 (Game 35) - Paused
+08:00:27 (Game 35) - Paused
+08:00:30 (Game 35) - Paused
+08:00:33 (Game 35) - Paused
+08:00:36 (Game 35) - Paused
+08:00:39 (Game 35) - Paused
+08:00:42 (Game 35) - Paused
+08:00:45 (Game 35) - Paused
+08:00:48 (Game 35) - Paused
+08:00:51 (Game 35) - Paused
+08:00:54 (Game 35) - Paused
+08:00:57 (Game 35) - Paused
+08:01:00 (Game 35) - Paused
+08:01:03 (Game 35) - Paused
+08:01:06 (Game 35) - Paused
+08:01:09 (Game 35) - Paused
+08:01:12 (Game 35) - Paused
+08:01:15 (Game 35) - Paused
+08:01:18 (Game 35) - Paused
+08:01:21 (Game 35) - Paused
+08:01:24 (Game 35) - Paused
+08:01:27 (Game 35) - Paused
+08:01:30 (Game 35) - Paused
+08:01:33 (Game 35) - Paused
+08:01:36 (Game 35) - Paused
+08:01:39 (Game 35) - Paused
+08:01:42 (Game 35) - Paused
+08:01:45 (Game 35) - Paused
+08:01:48 (Game 35) - Paused
+08:01:51 (Game 35) - Paused
+08:01:54 (Game 35) - Paused
+08:01:57 (Game 35) - Paused
+08:02:00 (Game 35) - Paused
+08:02:03 (Game 35) - Paused
+08:02:06 (Game 35) - Paused
+08:02:09 (Game 35) - Paused
+08:02:12 (Game 35) - Paused
+08:02:15 (Game 35) - Paused
+08:02:18 (Game 35) - Paused
+08:02:21 (Game 35) - Paused
+08:02:24 (Game 35) - Paused
+08:02:27 (Game 35) - Paused
+08:02:30 (Game 35) - Paused
+08:02:33 (Game 35) - Paused
+08:02:36 (Game 35) - Paused
+08:02:39 (Game 35) - Paused
+08:02:42 (Game 35) - Paused
+08:02:45 (Game 35) - Paused
+08:02:48 (Game 35) - Paused
+08:02:51 (Game 35) - Paused
+08:02:54 (Game 35) - Paused
+08:02:57 (Game 35) - Paused
+08:03:00 (Game 35) - Paused
+08:03:03 (Game 35) - Paused
+08:03:06 (Game 35) - Paused
+08:03:09 (Game 35) - Paused
+08:03:12 (Game 35) - Paused
+08:03:15 (Game 35) - Paused
+08:03:18 (Game 35) - Paused
+08:03:21 (Game 35) - Paused
+08:03:24 (Game 35) - Paused
+08:03:27 (Game 35) - Paused
+08:03:30 (Game 35) - Paused
+08:03:33 (Game 35) - Paused
+08:03:36 (Game 35) - Paused
+08:03:39 (Game 35) - Paused
+08:03:42 (Game 35) - Paused
+08:03:45 (Game 35) - Paused
+08:03:48 (Game 35) - Paused
+08:03:51 (Game 35) - Paused
+08:03:54 (Game 35) - Paused
+08:03:57 (Game 35) - Paused
+08:04:00 (Game 35) - Paused
+08:04:03 (Game 35) - Paused
+08:04:06 (Game 35) - Paused
+08:04:09 (Game 35) - Paused
+08:04:12 (Game 35) - Paused
+08:04:15 (Game 35) - Paused
+08:04:18 (Game 35) - Paused
+08:04:21 (Game 35) - Paused
+08:04:24 (Game 35) - Paused
+08:04:27 (Game 35) - Paused
+08:04:30 (Game 35) - Paused
+08:04:33 (Game 35) - Paused
+08:04:36 (Game 35) - Paused
+08:04:39 (Game 35) - Paused
+08:04:42 (Game 35) - Paused
+08:04:45 (Game 35) - Paused
+08:04:48 (Game 35) - Paused
+08:04:51 (Game 35) - Paused
+08:04:54 (Game 35) - Paused
+08:04:57 (Game 35) - Paused
+08:05:00 (Game 35) - Paused
+08:05:03 (Game 35) - Paused
+08:05:06 (Game 35) - Paused
+08:05:09 (Game 35) - Paused
+08:05:12 (Game 35) - Paused
+08:05:15 (Game 35) - Paused
+08:05:18 (Game 35) - Paused
+08:05:21 (Game 35) - Paused
+08:05:24 (Game 35) - Paused
+08:05:27 (Game 35) - Paused
+08:05:30 (Game 35) - Paused
+08:05:33 (Game 35) - Paused
+08:05:36 (Game 35) - Paused
+08:05:39 (Game 35) - Paused
+08:05:42 (Game 35) - Paused
+08:05:45 (Game 35) - Paused
+08:05:48 (Game 35) - Paused
+08:05:51 (Game 35) - Paused
+08:05:54 (Game 35) - Paused
+08:05:57 (Game 35) - Paused
+08:06:00 (Game 35) - Paused
+08:06:03 (Game 35) - Paused
+08:06:06 (Game 35) - Paused
+08:06:09 (Game 35) - Paused
+08:06:12 (Game 35) - Paused
+08:06:15 (Game 35) - Paused
+08:06:18 (Game 35) - Paused
+08:06:21 (Game 35) - Paused
+08:06:24 (Game 35) - Paused
+08:06:27 (Game 35) - Paused
+08:06:30 (Game 35) - Paused
+08:06:33 (Game 35) - Paused
+08:06:36 (Game 35) - Paused
+08:06:39 (Game 35) - Paused
+08:06:42 (Game 35) - Paused
+08:06:45 (Game 35) - Paused
+08:06:48 (Game 35) - Paused
+08:06:51 (Game 35) - Paused
+08:06:54 (Game 35) - Paused
+08:06:57 (Game 35) - Paused
+08:07:00 (Game 35) - Paused
+08:07:03 (Game 35) - Paused
+08:07:06 (Game 35) - Paused
+08:07:09 (Game 35) - Paused
+08:07:12 (Game 35) - Paused
+08:07:15 (Game 35) - Paused
+08:07:18 (Game 35) - Paused
+08:07:21 (Game 35) - Paused
+08:07:24 (Game 35) - Paused
+08:07:27 (Game 35) - Paused
+08:07:30 (Game 35) - Paused
+08:07:33 (Game 35) - Paused
+08:07:36 (Game 35) - Paused
+08:07:39 (Game 35) - Paused
+08:07:42 (Game 35) - Paused
+08:07:45 (Game 35) - Paused
+08:07:48 (Game 35) - Paused
+08:07:51 (Game 35) - Paused
+08:07:54 (Game 35) - Paused
+08:07:57 (Game 35) - Paused
+08:08:00 (Game 35) - Paused
+08:08:03 (Game 35) - Paused
+08:08:06 (Game 35) - Paused
+08:08:09 (Game 35) - Paused
+08:08:12 (Game 35) - Paused
+08:08:15 (Game 35) - Paused
+08:08:18 (Game 35) - Paused
+08:08:21 (Game 35) - Paused
+08:08:24 (Game 35) - Paused
+08:08:27 (Game 35) - Paused
+08:08:30 (Game 35) - Paused
+08:08:33 (Game 35) - Paused
+08:08:36 (Game 35) - Paused
+08:08:39 (Game 35) - Paused
+08:08:42 (Game 35) - Paused
+08:08:45 (Game 35) - Paused
+08:08:48 (Game 35) - Paused
+08:08:51 (Game 35) - Paused
+08:08:55 (Game 35) - Paused
+08:08:58 (Game 35) - Paused
+08:09:01 (Game 35) - Paused
+08:09:04 (Game 35) - Paused
+08:09:07 (Game 35) - Paused
+08:09:10 (Game 35) - Paused
+08:09:13 (Game 35) - Paused
+08:09:16 (Game 35) - Paused
+08:09:19 (Game 35) - Paused
+08:09:22 (Game 35) - Paused
+08:09:25 (Game 35) - Paused
+08:09:28 (Game 35) - Paused
+08:09:31 (Game 35) - Paused
+08:09:34 (Game 35) - Paused
+08:09:37 (Game 35) - Paused
+08:09:40 (Game 35) - Paused
+08:09:43 (Game 35) - Paused
+08:09:46 (Game 35) - Paused
+08:09:49 (Game 35) - Paused
+08:09:52 (Game 35) - Paused
+08:09:55 (Game 35) - Paused
+08:09:58 (Game 35) - Paused
+08:10:01 (Game 35) - Paused
+08:10:04 (Game 35) - Paused
+08:10:07 (Game 35) - Paused
+08:10:10 (Game 35) - Paused
+08:10:13 (Game 35) - Paused
+08:10:16 (Game 35) - Paused
+08:10:19 (Game 35) - Paused
+08:10:22 (Game 35) - Paused
+08:10:25 (Game 35) - Paused
+08:10:28 (Game 35) - Paused
+08:10:31 (Game 35) - Paused
+08:10:34 (Game 35) - Paused
+08:10:37 (Game 35) - Paused
+08:10:40 (Game 35) - Paused
+08:10:43 (Game 35) - Paused
+08:10:46 (Game 35) - Paused
+08:10:49 (Game 35) - Paused
+08:10:52 (Game 35) - Paused
+08:10:55 (Game 35) - Paused
+08:10:58 (Game 35) - Paused
+08:11:01 (Game 35) - Paused
+08:11:04 (Game 35) - Paused
+08:11:07 (Game 35) - Paused
+08:11:10 (Game 35) - Paused
+08:11:13 (Game 35) - Paused
+08:11:16 (Game 35) - Paused
+08:11:19 (Game 35) - Paused
+08:11:22 (Game 35) - Paused
+08:11:25 (Game 35) - Paused
+08:11:28 (Game 35) - Paused
+08:11:31 (Game 35) - Paused
+08:11:34 (Game 35) - Paused
+08:11:37 (Game 35) - Paused
+08:11:40 (Game 35) - Paused
+08:11:43 (Game 35) - Paused
+08:11:46 (Game 35) - Paused
+08:11:49 (Game 35) - Paused
+08:11:52 (Game 35) - Paused
+08:11:55 (Game 35) - Paused
+08:11:58 (Game 35) - Paused
+08:12:01 (Game 35) - Paused
+08:12:04 (Game 35) - Paused
+08:12:07 (Game 35) - Paused
+08:12:10 (Game 35) - Paused
+08:12:13 (Game 35) - Paused
+08:12:16 (Game 35) - Paused
+08:12:19 (Game 35) - Paused
+08:12:22 (Game 35) - Paused
+08:12:25 (Game 35) - Paused
+08:12:28 (Game 35) - Paused
+08:12:31 (Game 35) - Paused
+08:12:34 (Game 35) - Paused
+08:12:37 (Game 35) - Paused
+08:12:40 (Game 35) - Paused
+08:12:43 (Game 35) - Paused
+08:12:46 (Game 35) - Paused
+08:12:49 (Game 35) - Paused
+08:12:52 (Game 35) - Paused
+08:12:55 (Game 35) - Paused
+08:12:58 (Game 35) - Paused
+08:13:01 (Game 35) - Paused
+08:13:04 (Game 35) - Paused
+08:13:07 (Game 35) - Paused
+08:13:10 (Game 35) - Paused
+08:13:13 (Game 35) - Paused
+08:13:16 (Game 35) - Paused
+08:13:19 (Game 35) - Paused
+08:13:22 (Game 35) - Paused
+08:32:02 (Game 35) - Paused
+08:32:05 (Game 35) - Paused
+08:32:08 (Game 35) - Paused
+08:32:11 (Game 35) - Paused
+08:32:14 (Game 35) - Paused
+08:32:17 (Game 35) - Paused
+08:32:20 (Game 35) - Paused
+08:32:23 (Game 35) - Paused
+08:32:26 (Game 35) - Paused
+08:32:29 (Game 35) - Paused
+08:32:32 (Game 35) - Paused
+08:32:35 (Game 35) - Paused
+08:32:53 (Game 35) - Paused
+08:32:56 (Game 35) - Paused
+08:32:59 (Game 35) - Paused
+08:33:02 (Game 35) - Paused
+08:33:05 (Game 35) - Paused
+08:33:08 (Game 35) - Paused
+08:33:11 (Game 35) - Paused
+08:33:14 (Game 35) - Paused
+08:33:17 (Game 35) - Paused
+08:33:20 (Game 35) - Paused
+08:33:23 (Game 35) - Paused
+08:33:26 (Game 35) - Paused
+08:33:29 (Game 35) - Paused
+08:33:32 (Game 35) - Paused
+08:33:35 (Game 35) - Paused
+08:33:38 (Game 35) - Paused
+08:33:41 (Game 35) - Paused
+08:33:44 (Game 35) - Paused
+08:33:47 (Game 35) - Paused
+08:33:50 (Game 35) - Paused
+08:33:53 (Game 35) - Paused
+08:33:56 (Game 35) - Paused
+08:33:59 (Game 35) - Paused
+08:34:02 (Game 35) - Paused
+08:34:05 (Game 35) - Paused
+08:34:08 (Game 35) - Paused
+08:34:11 (Game 35) - Paused
+08:34:14 (Game 35) - Paused
+08:34:17 (Game 35) - Paused
+08:34:20 (Game 35) - Paused
+08:34:23 (Game 35) - Paused
+08:34:26 (Game 35) - Paused
+08:34:29 (Game 35) - Paused
+08:34:32 (Game 35) - Paused
+08:34:35 (Game 35) - Paused
+08:34:38 (Game 35) - Paused
+08:34:41 (Game 35) - Paused
+08:34:44 (Game 35) - Paused
+08:34:47 (Game 35) - Paused
+08:34:50 (Game 35) - Paused
+08:34:53 (Game 35) - Paused
+08:34:56 (Game 35) - Paused
+08:34:59 (Game 35) - Paused
+08:35:02 (Game 35) - Paused
+08:35:05 (Game 35) - Paused
+08:35:08 (Game 35) - Paused
+08:35:11 (Game 35) - Paused
+08:35:14 (Game 35) - Paused
+08:35:17 (Game 35) - Paused
+08:35:20 (Game 35) - Paused
+08:35:23 (Game 35) - Paused
+08:35:26 (Game 35) - Paused
+08:35:29 (Game 35) - Paused
+08:35:32 (Game 35) - Paused
+08:35:35 (Game 35) - Paused
+08:35:38 (Game 35) - Paused
+08:35:41 (Game 35) - Paused
+08:35:44 (Game 35) - Paused
+08:35:47 (Game 35) - Paused
+08:35:50 (Game 35) - Paused
+08:35:53 (Game 35) - Paused
+08:35:56 (Game 35) - Paused
+08:35:59 (Game 35) - Paused
+08:36:02 (Game 35) - Paused
+08:36:05 (Game 35) - Paused
+08:36:08 (Game 35) - Paused
+08:36:11 (Game 35) - Paused
+08:36:14 (Game 35) - Paused
+08:36:17 (Game 35) - Paused
+08:36:20 (Game 35) - Paused
+08:36:23 (Game 35) - Paused
+08:36:26 (Game 35) - Paused
+08:36:29 (Game 35) - Paused
+08:36:32 (Game 35) - Paused
+08:36:35 (Game 35) - Paused
+08:36:38 (Game 35) - Paused
+08:36:41 (Game 35) - Paused
+08:36:44 (Game 35) - Paused
+08:36:47 (Game 35) - Paused
+08:36:50 (Game 35) - Paused
+08:36:53 (Game 35) - Paused
+08:36:56 (Game 35) - Paused
+08:36:59 (Game 35) - Paused
+08:37:02 (Game 35) - Paused
+08:37:05 (Game 35) - Paused
+08:37:08 (Game 35) - Paused
+08:37:11 (Game 35) - Paused
+08:37:14 (Game 35) - Paused
+08:37:17 (Game 35) - Paused
+08:37:20 (Game 35) - Paused
+08:37:23 (Game 35) - Paused
+08:37:26 (Game 35) - Paused
+08:37:29 (Game 35) - Paused
+08:37:32 (Game 35) - Paused
+08:37:35 (Game 35) - Paused
+08:37:38 (Game 35) - Paused
+08:37:41 (Game 35) - Paused
+08:37:44 (Game 35) - Paused
+08:37:47 (Game 35) - Paused
+08:37:50 (Game 35) - Paused
+08:37:53 (Game 35) - Paused
+08:37:56 (Game 35) - Paused
+08:37:59 (Game 35) - Paused
+08:38:02 (Game 35) - Paused
+08:38:05 (Game 35) - Paused
+08:38:08 (Game 35) - Paused
+08:38:11 (Game 35) - Paused
+08:38:14 (Game 35) - Paused
+08:38:17 (Game 35) - Paused
+08:38:20 (Game 35) - Paused
+08:38:23 (Game 35) - Paused
+08:38:26 (Game 35) - Paused
+08:38:29 (Game 35) - Paused
+08:38:32 (Game 35) - Paused
+08:38:35 (Game 35) - Paused
+08:38:38 (Game 35) - Paused
+08:38:41 (Game 35) - Paused
+08:38:44 (Game 35) - Paused
+08:38:47 (Game 35) - Paused
+08:38:50 (Game 35) - Paused
+08:38:53 (Game 35) - Paused
+08:38:56 (Game 35) - Paused
+08:38:59 (Game 35) - Paused
+08:39:02 (Game 35) - Paused
+08:39:05 (Game 35) - Paused
+08:39:08 (Game 35) - Paused
+08:39:11 (Game 35) - Paused
+08:39:14 (Game 35) - Paused
+08:39:17 (Game 35) - Paused
+08:39:20 (Game 35) - Paused
+08:39:23 (Game 35) - Paused
+08:39:26 (Game 35) - Paused
+08:39:29 (Game 35) - Paused
+08:39:32 (Game 35) - Paused
+08:39:35 (Game 35) - Paused
+08:39:38 (Game 35) - Paused
+08:39:41 (Game 35) - Paused
+08:39:44 (Game 35) - Paused
+08:39:47 (Game 35) - Paused
+08:39:50 (Game 35) - Paused
+08:39:53 (Game 35) - Paused
+08:39:56 (Game 35) - Paused
+08:39:59 (Game 35) - Paused
+08:40:02 (Game 35) - Paused
+08:40:05 (Game 35) - Paused
+08:40:08 (Game 35) - Paused
+08:40:11 (Game 35) - Paused
+08:40:14 (Game 35) - Paused
+08:40:17 (Game 35) - Paused
+08:40:20 (Game 35) - Paused
+08:40:23 (Game 35) - Paused
+08:40:26 (Game 35) - Paused
+08:40:29 (Game 35) - Paused
+08:40:32 (Game 35) - Paused
+08:40:35 (Game 35) - Paused
+08:40:38 (Game 35) - Paused
+08:40:41 (Game 35) - Paused
+08:40:44 (Game 35) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+08:40:44 (Game 35) - Playing game...
+08:56:19 (Game 35) - Completed game with scores [0, 100]
+08:56:19 (Game 35) - Cumulative scores: MiniMaxRandomPlayer=950 MultithreadedUCTPlayer=2550 
+08:56:19 (Game 35) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game35.json
+08:56:19 - Finished 35 of 100 games in 536.49 minutes. Estimated 996.34 minutes remaining.
+08:56:22 (Game 36) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+08:56:22 (Game 36) - Playing game...
+09:11:57 (Game 36) - Completed game with scores [100, 0]
+09:11:57 (Game 36) - Cumulative scores: MiniMaxRandomPlayer=950 MultithreadedUCTPlayer=2650 
+09:11:57 (Game 36) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game36.json
+09:11:57 - Finished 36 of 100 games in 552.13 minutes. Estimated 981.56 minutes remaining.
+09:12:00 (Game 37) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+09:12:00 (Game 37) - Playing game...
+09:27:35 (Game 37) - Completed game with scores [50, 50]
+09:27:35 (Game 37) - Cumulative scores: MiniMaxRandomPlayer=1000 MultithreadedUCTPlayer=2700 
+09:27:35 (Game 37) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game37.json
+09:27:35 - Finished 37 of 100 games in 567.76 minutes. Estimated 966.72 minutes remaining.
+09:27:38 (Game 38) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+09:27:38 (Game 38) - Playing game...
+09:43:13 (Game 38) - Completed game with scores [100, 0]
+09:43:13 (Game 38) - Cumulative scores: MiniMaxRandomPlayer=1000 MultithreadedUCTPlayer=2800 
+09:43:13 (Game 38) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game38.json
+09:43:13 - Finished 38 of 100 games in 583.40 minutes. Estimated 951.86 minutes remaining.
+09:43:16 (Game 39) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+09:43:16 (Game 39) - Playing game...
+09:58:52 (Game 39) - Completed game with scores [100, 0]
+09:58:52 (Game 39) - Cumulative scores: MiniMaxRandomPlayer=1100 MultithreadedUCTPlayer=2800 
+09:58:52 (Game 39) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game39.json
+09:58:52 - Finished 39 of 100 games in 599.04 minutes. Estimated 936.97 minutes remaining.
+09:58:55 (Game 40) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+09:58:55 (Game 40) - Playing game...
+10:14:34 (Game 40) - Completed game with scores [100, 0]
+10:14:34 (Game 40) - Cumulative scores: MiniMaxRandomPlayer=1100 MultithreadedUCTPlayer=2900 
+10:14:34 (Game 40) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game40.json
+10:14:34 - Finished 40 of 100 games in 614.75 minutes. Estimated 922.12 minutes remaining.
+10:14:37 (Game 41) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+10:14:37 (Game 41) - Playing game...
+10:30:13 (Game 41) - Completed game with scores [0, 100]
+10:30:13 (Game 41) - Cumulative scores: MiniMaxRandomPlayer=1100 MultithreadedUCTPlayer=3000 
+10:30:13 (Game 41) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game41.json
+10:30:13 - Finished 41 of 100 games in 630.40 minutes. Estimated 907.16 minutes remaining.
+10:30:16 (Game 42) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+10:30:16 (Game 42) - Playing game...
+10:45:53 (Game 42) - Completed game with scores [0, 100]
+10:45:53 (Game 42) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3000 
+10:45:53 (Game 42) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game42.json
+10:45:53 - Finished 42 of 100 games in 646.05 minutes. Estimated 892.17 minutes remaining.
+10:45:56 (Game 43) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+10:45:56 (Game 43) - Playing game...
+11:01:32 (Game 43) - Completed game with scores [0, 100]
+11:01:32 (Game 43) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3100 
+11:01:32 (Game 43) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game43.json
+11:01:32 - Finished 43 of 100 games in 661.72 minutes. Estimated 877.16 minutes remaining.
+11:01:35 (Game 44) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+11:01:35 (Game 44) - Playing game...
+11:17:15 (Game 44) - Completed game with scores [100, 0]
+11:17:15 (Game 44) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3200 
+11:17:15 (Game 44) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game44.json
+11:17:15 - Finished 44 of 100 games in 677.43 minutes. Estimated 862.18 minutes remaining.
+11:17:18 (Game 45) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+11:17:18 (Game 45) - Playing game...
+11:32:54 (Game 45) - Completed game with scores [0, 100]
+11:32:54 (Game 45) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3300 
+11:32:54 (Game 45) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game45.json
+11:32:54 - Finished 45 of 100 games in 693.08 minutes. Estimated 847.09 minutes remaining.
+11:32:57 (Game 46) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+11:32:57 (Game 46) - Playing game...
+11:48:34 (Game 46) - Completed game with scores [100, 0]
+11:48:34 (Game 46) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3400 
+11:48:34 (Game 46) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game46.json
+11:48:34 - Finished 46 of 100 games in 708.74 minutes. Estimated 832.00 minutes remaining.
+11:48:37 (Game 47) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+11:48:37 (Game 47) - Playing game...
+12:04:17 (Game 47) - Completed game with scores [0, 100]
+12:04:17 (Game 47) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3500 
+12:04:17 (Game 47) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game47.json
+12:04:17 - Finished 47 of 100 games in 724.46 minutes. Estimated 816.94 minutes remaining.
+12:04:20 (Game 48) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+12:04:20 (Game 48) - Playing game...
+12:20:01 (Game 48) - Completed game with scores [100, 0]
+12:20:01 (Game 48) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3600 
+12:20:01 (Game 48) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game48.json
+12:20:01 - Finished 48 of 100 games in 740.19 minutes. Estimated 801.87 minutes remaining.
+12:20:04 (Game 49) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+12:20:04 (Game 49) - Playing game...
+12:35:44 (Game 49) - Completed game with scores [0, 100]
+12:35:44 (Game 49) - Cumulative scores: MiniMaxRandomPlayer=1200 MultithreadedUCTPlayer=3700 
+12:35:44 (Game 49) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game49.json
+12:35:44 - Finished 49 of 100 games in 755.91 minutes. Estimated 786.77 minutes remaining.
+12:35:47 (Game 50) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+12:35:47 (Game 50) - Playing game...
+12:51:26 (Game 50) - Completed game with scores [50, 50]
+12:51:26 (Game 50) - Cumulative scores: MiniMaxRandomPlayer=1250 MultithreadedUCTPlayer=3750 
+12:51:26 (Game 50) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game50.json
+12:51:26 - Finished 50 of 100 games in 771.62 minutes. Estimated 771.62 minutes remaining.
+12:51:29 (Game 51) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+12:51:29 (Game 51) - Playing game...
+13:07:11 (Game 51) - Completed game with scores [0, 100]
+13:07:11 (Game 51) - Cumulative scores: MiniMaxRandomPlayer=1250 MultithreadedUCTPlayer=3850 
+13:07:11 (Game 51) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game51.json
+13:07:11 - Finished 51 of 100 games in 787.36 minutes. Estimated 756.48 minutes remaining.
+13:07:14 (Game 52) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+13:07:14 (Game 52) - Playing game...
+13:22:55 (Game 52) - Completed game with scores [100, 0]
+13:22:55 (Game 52) - Cumulative scores: MiniMaxRandomPlayer=1250 MultithreadedUCTPlayer=3950 
+13:22:55 (Game 52) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game52.json
+13:22:55 - Finished 52 of 100 games in 803.10 minutes. Estimated 741.32 minutes remaining.
+13:22:58 (Game 53) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+13:22:58 (Game 53) - Playing game...
+13:38:38 (Game 53) - Completed game with scores [100, 0]
+13:38:38 (Game 53) - Cumulative scores: MiniMaxRandomPlayer=1350 MultithreadedUCTPlayer=3950 
+13:38:38 (Game 53) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game53.json
+13:38:38 - Finished 53 of 100 games in 818.82 minutes. Estimated 726.12 minutes remaining.
+13:38:41 (Game 54) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+13:38:41 (Game 54) - Playing game...
+13:54:23 (Game 54) - Completed game with scores [100, 0]
+13:54:23 (Game 54) - Cumulative scores: MiniMaxRandomPlayer=1350 MultithreadedUCTPlayer=4050 
+13:54:23 (Game 54) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game54.json
+13:54:23 - Finished 54 of 100 games in 834.55 minutes. Estimated 710.92 minutes remaining.
+13:54:26 (Game 55) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+13:54:26 (Game 55) - Playing game...
+14:10:00 (Game 55) - Completed game with scores [0, 100]
+14:10:00 (Game 55) - Cumulative scores: MiniMaxRandomPlayer=1350 MultithreadedUCTPlayer=4150 
+14:10:00 (Game 55) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game55.json
+14:10:00 - Finished 55 of 100 games in 850.18 minutes. Estimated 695.60 minutes remaining.
+14:10:03 (Game 56) - Paused
+14:10:06 (Game 56) - Paused
+14:10:09 (Game 56) - Paused
+14:10:12 (Game 56) - Paused
+14:10:15 (Game 56) - Paused
+14:10:18 (Game 56) - Paused
+14:10:21 (Game 56) - Paused
+14:10:24 (Game 56) - Paused
+14:10:27 (Game 56) - Paused
+14:10:30 (Game 56) - Paused
+14:10:33 (Game 56) - Paused
+14:10:36 (Game 56) - Paused
+14:10:39 (Game 56) - Paused
+14:10:42 (Game 56) - Paused
+14:10:45 (Game 56) - Paused
+14:10:48 (Game 56) - Paused
+14:10:51 (Game 56) - Paused
+14:10:54 (Game 56) - Paused
+14:10:57 (Game 56) - Paused
+14:11:00 (Game 56) - Paused
+14:11:03 (Game 56) - Paused
+14:11:06 (Game 56) - Paused
+14:11:09 (Game 56) - Paused
+14:11:12 (Game 56) - Paused
+14:11:15 (Game 56) - Paused
+14:11:18 (Game 56) - Paused
+14:11:21 (Game 56) - Paused
+14:11:24 (Game 56) - Paused
+14:11:27 (Game 56) - Paused
+14:11:30 (Game 56) - Paused
+14:11:33 (Game 56) - Paused
+14:11:36 (Game 56) - Paused
+14:11:39 (Game 56) - Paused
+14:11:42 (Game 56) - Paused
+14:11:45 (Game 56) - Paused
+14:11:48 (Game 56) - Paused
+14:11:51 (Game 56) - Paused
+14:11:54 (Game 56) - Paused
+14:11:57 (Game 56) - Paused
+14:12:00 (Game 56) - Paused
+14:12:04 (Game 56) - Paused
+14:12:07 (Game 56) - Paused
+14:12:10 (Game 56) - Paused
+14:12:13 (Game 56) - Paused
+14:12:16 (Game 56) - Paused
+14:12:19 (Game 56) - Paused
+14:12:22 (Game 56) - Paused
+14:12:25 (Game 56) - Paused
+14:12:28 (Game 56) - Paused
+14:12:31 (Game 56) - Paused
+14:12:34 (Game 56) - Paused
+14:12:37 (Game 56) - Paused
+14:12:40 (Game 56) - Paused
+14:12:43 (Game 56) - Paused
+14:12:46 (Game 56) - Paused
+14:12:49 (Game 56) - Paused
+14:12:52 (Game 56) - Paused
+14:12:55 (Game 56) - Paused
+14:12:58 (Game 56) - Paused
+14:13:01 (Game 56) - Paused
+14:13:04 (Game 56) - Paused
+14:13:07 (Game 56) - Paused
+14:13:10 (Game 56) - Paused
+14:13:13 (Game 56) - Paused
+14:13:16 (Game 56) - Paused
+14:13:19 (Game 56) - Paused
+14:13:22 (Game 56) - Paused
+14:13:25 (Game 56) - Paused
+14:13:28 (Game 56) - Paused
+14:13:31 (Game 56) - Paused
+14:13:34 (Game 56) - Paused
+14:13:37 (Game 56) - Paused
+14:13:40 (Game 56) - Paused
+14:13:43 (Game 56) - Paused
+14:13:46 (Game 56) - Paused
+14:13:49 (Game 56) - Paused
+14:13:52 (Game 56) - Paused
+14:13:55 (Game 56) - Paused
+14:13:58 (Game 56) - Paused
+14:14:01 (Game 56) - Paused
+14:14:04 (Game 56) - Paused
+14:14:07 (Game 56) - Paused
+14:14:10 (Game 56) - Paused
+14:14:13 (Game 56) - Paused
+14:14:16 (Game 56) - Paused
+14:14:19 (Game 56) - Paused
+14:14:22 (Game 56) - Paused
+14:14:25 (Game 56) - Paused
+14:14:28 (Game 56) - Paused
+14:14:31 (Game 56) - Paused
+14:14:34 (Game 56) - Paused
+14:14:37 (Game 56) - Paused
+14:14:40 (Game 56) - Paused
+14:14:43 (Game 56) - Paused
+14:14:46 (Game 56) - Paused
+14:14:49 (Game 56) - Paused
+14:14:52 (Game 56) - Paused
+14:14:55 (Game 56) - Paused
+14:14:58 (Game 56) - Paused
+14:15:01 (Game 56) - Paused
+14:15:04 (Game 56) - Paused
+14:15:07 (Game 56) - Paused
+14:15:10 (Game 56) - Paused
+14:15:13 (Game 56) - Paused
+14:15:16 (Game 56) - Paused
+14:15:19 (Game 56) - Paused
+14:15:22 (Game 56) - Paused
+14:15:25 (Game 56) - Paused
+14:15:28 (Game 56) - Paused
+14:15:31 (Game 56) - Paused
+14:15:34 (Game 56) - Paused
+14:15:37 (Game 56) - Paused
+14:15:40 (Game 56) - Paused
+14:15:43 (Game 56) - Paused
+14:15:46 (Game 56) - Paused
+14:15:49 (Game 56) - Paused
+14:15:52 (Game 56) - Paused
+14:15:55 (Game 56) - Paused
+14:15:58 (Game 56) - Paused
+14:16:01 (Game 56) - Paused
+14:16:04 (Game 56) - Paused
+14:16:07 (Game 56) - Paused
+14:16:10 (Game 56) - Paused
+14:16:13 (Game 56) - Paused
+14:16:16 (Game 56) - Paused
+14:16:19 (Game 56) - Paused
+14:16:22 (Game 56) - Paused
+14:16:25 (Game 56) - Paused
+14:16:28 (Game 56) - Paused
+14:16:31 (Game 56) - Paused
+14:16:34 (Game 56) - Paused
+14:16:37 (Game 56) - Paused
+14:16:40 (Game 56) - Paused
+14:16:43 (Game 56) - Paused
+14:16:46 (Game 56) - Paused
+14:16:49 (Game 56) - Paused
+14:16:52 (Game 56) - Paused
+14:16:55 (Game 56) - Paused
+14:16:58 (Game 56) - Paused
+14:17:01 (Game 56) - Paused
+14:17:04 (Game 56) - Paused
+14:17:07 (Game 56) - Paused
+14:17:10 (Game 56) - Paused
+14:17:13 (Game 56) - Paused
+14:17:16 (Game 56) - Paused
+14:17:19 (Game 56) - Paused
+14:17:22 (Game 56) - Paused
+14:17:25 (Game 56) - Paused
+14:17:28 (Game 56) - Paused
+14:17:31 (Game 56) - Paused
+14:17:34 (Game 56) - Paused
+14:17:37 (Game 56) - Paused
+14:17:40 (Game 56) - Paused
+14:17:43 (Game 56) - Paused
+14:17:46 (Game 56) - Paused
+14:17:49 (Game 56) - Paused
+14:17:52 (Game 56) - Paused
+14:17:55 (Game 56) - Paused
+14:17:58 (Game 56) - Paused
+14:18:01 (Game 56) - Paused
+14:18:04 (Game 56) - Paused
+14:18:07 (Game 56) - Paused
+14:18:10 (Game 56) - Paused
+14:18:13 (Game 56) - Paused
+14:18:16 (Game 56) - Paused
+14:18:19 (Game 56) - Paused
+14:18:22 (Game 56) - Paused
+14:18:25 (Game 56) - Paused
+14:18:28 (Game 56) - Paused
+14:18:31 (Game 56) - Paused
+14:18:34 (Game 56) - Paused
+14:18:37 (Game 56) - Paused
+14:18:40 (Game 56) - Paused
+14:18:43 (Game 56) - Paused
+14:18:46 (Game 56) - Paused
+14:18:49 (Game 56) - Paused
+14:18:52 (Game 56) - Paused
+14:18:55 (Game 56) - Paused
+14:18:58 (Game 56) - Paused
+14:19:01 (Game 56) - Paused
+14:19:04 (Game 56) - Paused
+14:19:07 (Game 56) - Paused
+14:19:10 (Game 56) - Paused
+14:19:13 (Game 56) - Paused
+14:19:16 (Game 56) - Paused
+14:19:19 (Game 56) - Paused
+14:19:22 (Game 56) - Paused
+14:19:25 (Game 56) - Paused
+14:19:28 (Game 56) - Paused
+14:19:31 (Game 56) - Paused
+14:19:34 (Game 56) - Paused
+14:19:37 (Game 56) - Paused
+14:19:40 (Game 56) - Paused
+14:19:43 (Game 56) - Paused
+14:19:46 (Game 56) - Paused
+14:19:49 (Game 56) - Paused
+14:19:52 (Game 56) - Paused
+14:19:55 (Game 56) - Paused
+14:19:58 (Game 56) - Paused
+14:20:01 (Game 56) - Paused
+14:20:04 (Game 56) - Paused
+14:20:07 (Game 56) - Paused
+14:20:10 (Game 56) - Paused
+14:20:13 (Game 56) - Paused
+14:20:16 (Game 56) - Paused
+14:20:19 (Game 56) - Paused
+14:20:22 (Game 56) - Paused
+14:20:25 (Game 56) - Paused
+14:20:28 (Game 56) - Paused
+14:20:31 (Game 56) - Paused
+14:20:34 (Game 56) - Paused
+14:20:37 (Game 56) - Paused
+14:20:40 (Game 56) - Paused
+14:20:43 (Game 56) - Paused
+14:20:46 (Game 56) - Paused
+14:20:49 (Game 56) - Paused
+14:20:52 (Game 56) - Paused
+14:20:55 (Game 56) - Paused
+14:20:58 (Game 56) - Paused
+14:21:01 (Game 56) - Paused
+14:21:04 (Game 56) - Paused
+14:21:07 (Game 56) - Paused
+14:21:10 (Game 56) - Paused
+14:21:13 (Game 56) - Paused
+14:21:16 (Game 56) - Paused
+14:21:19 (Game 56) - Paused
+14:21:22 (Game 56) - Paused
+14:21:25 (Game 56) - Paused
+14:21:28 (Game 56) - Paused
+14:21:31 (Game 56) - Paused
+14:21:34 (Game 56) - Paused
+14:21:37 (Game 56) - Paused
+14:21:40 (Game 56) - Paused
+14:21:43 (Game 56) - Paused
+14:21:46 (Game 56) - Paused
+14:21:49 (Game 56) - Paused
+14:21:52 (Game 56) - Paused
+14:21:55 (Game 56) - Paused
+14:21:58 (Game 56) - Paused
+14:22:01 (Game 56) - Paused
+14:22:04 (Game 56) - Paused
+14:22:07 (Game 56) - Paused
+14:22:10 (Game 56) - Paused
+14:22:13 (Game 56) - Paused
+14:22:16 (Game 56) - Paused
+14:22:19 (Game 56) - Paused
+14:22:22 (Game 56) - Paused
+14:22:25 (Game 56) - Paused
+14:22:28 (Game 56) - Paused
+14:22:31 (Game 56) - Paused
+14:22:34 (Game 56) - Paused
+14:22:37 (Game 56) - Paused
+14:22:40 (Game 56) - Paused
+14:22:43 (Game 56) - Paused
+14:22:46 (Game 56) - Paused
+14:22:49 (Game 56) - Paused
+14:22:52 (Game 56) - Paused
+14:22:55 (Game 56) - Paused
+14:22:58 (Game 56) - Paused
+14:23:01 (Game 56) - Paused
+14:23:04 (Game 56) - Paused
+14:23:07 (Game 56) - Paused
+14:23:10 (Game 56) - Paused
+14:23:13 (Game 56) - Paused
+14:23:16 (Game 56) - Paused
+14:23:19 (Game 56) - Paused
+14:23:22 (Game 56) - Paused
+14:23:25 (Game 56) - Paused
+14:23:28 (Game 56) - Paused
+14:23:31 (Game 56) - Paused
+14:23:34 (Game 56) - Paused
+14:23:37 (Game 56) - Paused
+14:23:40 (Game 56) - Paused
+14:23:43 (Game 56) - Paused
+14:23:46 (Game 56) - Paused
+14:23:49 (Game 56) - Paused
+14:23:52 (Game 56) - Paused
+14:23:55 (Game 56) - Paused
+14:23:58 (Game 56) - Paused
+14:24:01 (Game 56) - Paused
+14:24:04 (Game 56) - Paused
+14:24:07 (Game 56) - Paused
+14:24:10 (Game 56) - Paused
+14:24:13 (Game 56) - Paused
+14:24:16 (Game 56) - Paused
+14:24:19 (Game 56) - Paused
+14:24:22 (Game 56) - Paused
+14:24:25 (Game 56) - Paused
+14:24:28 (Game 56) - Paused
+14:24:31 (Game 56) - Paused
+14:24:34 (Game 56) - Paused
+14:24:37 (Game 56) - Paused
+14:24:40 (Game 56) - Paused
+14:24:43 (Game 56) - Paused
+14:24:46 (Game 56) - Paused
+14:24:49 (Game 56) - Paused
+14:24:52 (Game 56) - Paused
+14:24:55 (Game 56) - Paused
+14:24:58 (Game 56) - Paused
+14:25:01 (Game 56) - Paused
+14:25:04 (Game 56) - Paused
+14:25:07 (Game 56) - Paused
+14:25:10 (Game 56) - Paused
+14:25:13 (Game 56) - Paused
+14:25:16 (Game 56) - Paused
+14:25:19 (Game 56) - Paused
+14:25:22 (Game 56) - Paused
+14:25:25 (Game 56) - Paused
+14:25:28 (Game 56) - Paused
+14:25:31 (Game 56) - Paused
+14:25:34 (Game 56) - Paused
+14:25:37 (Game 56) - Paused
+14:25:40 (Game 56) - Paused
+14:25:43 (Game 56) - Paused
+14:25:46 (Game 56) - Paused
+14:25:49 (Game 56) - Paused
+14:25:52 (Game 56) - Paused
+14:25:55 (Game 56) - Paused
+14:25:58 (Game 56) - Paused
+14:26:01 (Game 56) - Paused
+14:26:04 (Game 56) - Paused
+14:26:07 (Game 56) - Paused
+14:26:10 (Game 56) - Paused
+14:26:13 (Game 56) - Paused
+14:26:16 (Game 56) - Paused
+14:26:19 (Game 56) - Paused
+14:26:22 (Game 56) - Paused
+14:26:25 (Game 56) - Paused
+14:26:28 (Game 56) - Paused
+14:26:31 (Game 56) - Paused
+14:26:34 (Game 56) - Paused
+14:26:37 (Game 56) - Paused
+14:26:40 (Game 56) - Paused
+14:26:43 (Game 56) - Paused
+14:26:46 (Game 56) - Paused
+14:26:49 (Game 56) - Paused
+14:26:52 (Game 56) - Paused
+14:26:56 (Game 56) - Paused
+14:26:59 (Game 56) - Paused
+14:27:02 (Game 56) - Paused
+14:27:05 (Game 56) - Paused
+14:27:08 (Game 56) - Paused
+14:27:11 (Game 56) - Paused
+14:27:14 (Game 56) - Paused
+14:27:17 (Game 56) - Paused
+14:27:20 (Game 56) - Paused
+14:27:23 (Game 56) - Paused
+14:27:26 (Game 56) - Paused
+14:27:29 (Game 56) - Paused
+14:27:32 (Game 56) - Paused
+14:27:35 (Game 56) - Paused
+14:27:38 (Game 56) - Paused
+14:27:41 (Game 56) - Paused
+14:27:44 (Game 56) - Paused
+14:27:47 (Game 56) - Paused
+14:27:50 (Game 56) - Paused
+14:27:53 (Game 56) - Paused
+14:27:56 (Game 56) - Paused
+14:27:59 (Game 56) - Paused
+14:28:02 (Game 56) - Paused
+14:28:05 (Game 56) - Paused
+14:28:08 (Game 56) - Paused
+14:28:11 (Game 56) - Paused
+14:28:14 (Game 56) - Paused
+14:28:17 (Game 56) - Paused
+14:28:20 (Game 56) - Paused
+14:28:23 (Game 56) - Paused
+14:28:26 (Game 56) - Paused
+14:28:29 (Game 56) - Paused
+14:28:32 (Game 56) - Paused
+14:28:35 (Game 56) - Paused
+14:28:38 (Game 56) - Paused
+14:28:41 (Game 56) - Paused
+14:28:44 (Game 56) - Paused
+14:28:47 (Game 56) - Paused
+14:28:50 (Game 56) - Paused
+14:28:53 (Game 56) - Paused
+14:28:56 (Game 56) - Paused
+14:28:59 (Game 56) - Paused
+14:29:02 (Game 56) - Paused
+14:29:05 (Game 56) - Paused
+14:29:08 (Game 56) - Paused
+14:29:11 (Game 56) - Paused
+14:29:14 (Game 56) - Paused
+14:29:17 (Game 56) - Paused
+14:29:20 (Game 56) - Paused
+14:29:23 (Game 56) - Paused
+14:29:26 (Game 56) - Paused
+14:29:29 (Game 56) - Paused
+14:29:32 (Game 56) - Paused
+14:29:35 (Game 56) - Paused
+14:29:38 (Game 56) - Paused
+14:29:41 (Game 56) - Paused
+14:29:44 (Game 56) - Paused
+14:29:47 (Game 56) - Paused
+14:29:50 (Game 56) - Paused
+14:29:53 (Game 56) - Paused
+14:29:56 (Game 56) - Paused
+14:29:59 (Game 56) - Paused
+14:30:02 (Game 56) - Paused
+14:30:05 (Game 56) - Paused
+14:30:08 (Game 56) - Paused
+14:30:11 (Game 56) - Paused
+14:30:14 (Game 56) - Paused
+14:30:17 (Game 56) - Paused
+14:30:20 (Game 56) - Paused
+14:30:23 (Game 56) - Paused
+14:30:26 (Game 56) - Paused
+14:30:29 (Game 56) - Paused
+14:30:32 (Game 56) - Paused
+14:30:35 (Game 56) - Paused
+14:30:38 (Game 56) - Paused
+14:30:41 (Game 56) - Paused
+14:30:44 (Game 56) - Paused
+14:30:47 (Game 56) - Paused
+14:30:50 (Game 56) - Paused
+14:30:53 (Game 56) - Paused
+14:30:56 (Game 56) - Paused
+14:30:59 (Game 56) - Paused
+14:31:02 (Game 56) - Paused
+14:31:05 (Game 56) - Paused
+14:31:08 (Game 56) - Paused
+14:31:11 (Game 56) - Paused
+14:31:14 (Game 56) - Paused
+14:31:17 (Game 56) - Paused
+14:31:20 (Game 56) - Paused
+14:31:23 (Game 56) - Paused
+14:31:26 (Game 56) - Paused
+14:31:29 (Game 56) - Paused
+14:31:32 (Game 56) - Paused
+14:31:35 (Game 56) - Paused
+14:31:38 (Game 56) - Paused
+14:31:41 (Game 56) - Paused
+14:31:44 (Game 56) - Paused
+14:31:47 (Game 56) - Paused
+14:31:50 (Game 56) - Paused
+14:31:53 (Game 56) - Paused
+14:31:56 (Game 56) - Paused
+14:31:59 (Game 56) - Paused
+14:32:02 (Game 56) - Paused
+14:32:05 (Game 56) - Paused
+14:32:08 (Game 56) - Paused
+14:32:11 (Game 56) - Paused
+14:32:14 (Game 56) - Paused
+14:32:17 (Game 56) - Paused
+14:32:20 (Game 56) - Paused
+14:32:23 (Game 56) - Paused
+14:32:26 (Game 56) - Paused
+14:32:29 (Game 56) - Paused
+14:32:32 (Game 56) - Paused
+14:32:35 (Game 56) - Paused
+14:32:38 (Game 56) - Paused
+14:32:41 (Game 56) - Paused
+14:32:44 (Game 56) - Paused
+14:32:47 (Game 56) - Paused
+14:32:50 (Game 56) - Paused
+14:32:53 (Game 56) - Paused
+14:32:56 (Game 56) - Paused
+14:32:59 (Game 56) - Paused
+14:33:02 (Game 56) - Paused
+14:33:05 (Game 56) - Paused
+14:33:08 (Game 56) - Paused
+14:33:11 (Game 56) - Paused
+14:33:14 (Game 56) - Paused
+14:33:17 (Game 56) - Paused
+14:33:20 (Game 56) - Paused
+14:33:23 (Game 56) - Paused
+14:33:26 (Game 56) - Paused
+14:33:29 (Game 56) - Paused
+14:33:32 (Game 56) - Paused
+14:33:35 (Game 56) - Paused
+14:33:38 (Game 56) - Paused
+14:33:41 (Game 56) - Paused
+14:33:44 (Game 56) - Paused
+14:33:47 (Game 56) - Paused
+14:33:50 (Game 56) - Paused
+14:33:53 (Game 56) - Paused
+14:33:56 (Game 56) - Paused
+14:33:59 (Game 56) - Paused
+14:34:02 (Game 56) - Paused
+14:34:05 (Game 56) - Paused
+14:34:08 (Game 56) - Paused
+14:34:11 (Game 56) - Paused
+14:34:14 (Game 56) - Paused
+14:34:17 (Game 56) - Paused
+14:34:20 (Game 56) - Paused
+14:34:23 (Game 56) - Paused
+14:34:26 (Game 56) - Paused
+14:34:29 (Game 56) - Paused
+14:34:32 (Game 56) - Paused
+14:34:35 (Game 56) - Paused
+14:34:38 (Game 56) - Paused
+14:34:41 (Game 56) - Paused
+14:34:44 (Game 56) - Paused
+14:34:47 (Game 56) - Paused
+14:34:50 (Game 56) - Paused
+14:34:53 (Game 56) - Paused
+14:34:56 (Game 56) - Paused
+14:34:59 (Game 56) - Paused
+14:35:02 (Game 56) - Paused
+14:35:05 (Game 56) - Paused
+14:35:08 (Game 56) - Paused
+14:35:11 (Game 56) - Paused
+14:35:14 (Game 56) - Paused
+14:35:17 (Game 56) - Paused
+14:35:20 (Game 56) - Paused
+14:35:23 (Game 56) - Paused
+14:35:26 (Game 56) - Paused
+14:35:29 (Game 56) - Paused
+14:35:32 (Game 56) - Paused
+14:35:35 (Game 56) - Paused
+14:35:38 (Game 56) - Paused
+14:35:41 (Game 56) - Paused
+14:35:44 (Game 56) - Paused
+14:35:47 (Game 56) - Paused
+14:35:50 (Game 56) - Paused
+14:35:53 (Game 56) - Paused
+14:35:56 (Game 56) - Paused
+14:35:59 (Game 56) - Paused
+14:36:02 (Game 56) - Paused
+14:36:05 (Game 56) - Paused
+14:36:08 (Game 56) - Paused
+14:36:11 (Game 56) - Paused
+14:36:14 (Game 56) - Paused
+14:36:17 (Game 56) - Paused
+14:36:20 (Game 56) - Paused
+14:36:23 (Game 56) - Paused
+14:36:26 (Game 56) - Paused
+14:36:29 (Game 56) - Paused
+14:36:32 (Game 56) - Paused
+14:36:35 (Game 56) - Paused
+14:36:38 (Game 56) - Paused
+14:36:41 (Game 56) - Paused
+14:36:44 (Game 56) - Paused
+14:36:47 (Game 56) - Paused
+14:36:50 (Game 56) - Paused
+14:36:53 (Game 56) - Paused
+14:36:56 (Game 56) - Paused
+14:36:59 (Game 56) - Paused
+14:37:02 (Game 56) - Paused
+14:37:05 (Game 56) - Paused
+14:37:08 (Game 56) - Paused
+14:37:11 (Game 56) - Paused
+14:37:14 (Game 56) - Paused
+14:37:17 (Game 56) - Paused
+14:37:20 (Game 56) - Paused
+14:37:23 (Game 56) - Paused
+14:37:26 (Game 56) - Paused
+14:37:29 (Game 56) - Paused
+14:37:32 (Game 56) - Paused
+14:37:35 (Game 56) - Paused
+14:37:38 (Game 56) - Paused
+14:37:41 (Game 56) - Paused
+14:37:44 (Game 56) - Paused
+14:37:47 (Game 56) - Paused
+14:37:50 (Game 56) - Paused
+14:37:53 (Game 56) - Paused
+14:37:56 (Game 56) - Paused
+14:37:59 (Game 56) - Paused
+14:38:02 (Game 56) - Paused
+14:38:05 (Game 56) - Paused
+14:38:08 (Game 56) - Paused
+14:38:11 (Game 56) - Paused
+14:38:14 (Game 56) - Paused
+14:38:17 (Game 56) - Paused
+14:38:20 (Game 56) - Paused
+14:38:23 (Game 56) - Paused
+14:38:26 (Game 56) - Paused
+14:38:29 (Game 56) - Paused
+14:38:32 (Game 56) - Paused
+14:38:35 (Game 56) - Paused
+14:38:38 (Game 56) - Paused
+14:38:41 (Game 56) - Paused
+14:38:44 (Game 56) - Paused
+14:38:47 (Game 56) - Paused
+14:38:50 (Game 56) - Paused
+14:38:53 (Game 56) - Paused
+14:38:56 (Game 56) - Paused
+14:38:59 (Game 56) - Paused
+14:39:02 (Game 56) - Paused
+14:39:05 (Game 56) - Paused
+14:39:08 (Game 56) - Paused
+14:39:11 (Game 56) - Paused
+14:39:14 (Game 56) - Paused
+14:39:17 (Game 56) - Paused
+14:39:20 (Game 56) - Paused
+14:39:23 (Game 56) - Paused
+14:39:26 (Game 56) - Paused
+14:39:29 (Game 56) - Paused
+14:39:32 (Game 56) - Paused
+14:39:35 (Game 56) - Paused
+14:39:38 (Game 56) - Paused
+14:39:41 (Game 56) - Paused
+14:39:44 (Game 56) - Paused
+14:39:47 (Game 56) - Paused
+14:39:50 (Game 56) - Paused
+14:39:53 (Game 56) - Paused
+14:39:56 (Game 56) - Paused
+14:39:59 (Game 56) - Paused
+14:40:02 (Game 56) - Paused
+14:40:05 (Game 56) - Paused
+14:40:08 (Game 56) - Paused
+14:40:11 (Game 56) - Paused
+14:40:14 (Game 56) - Paused
+14:40:17 (Game 56) - Paused
+14:40:20 (Game 56) - Paused
+14:40:23 (Game 56) - Paused
+14:40:26 (Game 56) - Paused
+14:40:29 (Game 56) - Paused
+14:40:32 (Game 56) - Paused
+14:40:35 (Game 56) - Paused
+14:40:38 (Game 56) - Paused
+14:40:41 (Game 56) - Paused
+14:40:44 (Game 56) - Paused
+14:40:47 (Game 56) - Paused
+14:40:50 (Game 56) - Paused
+14:40:53 (Game 56) - Paused
+14:40:56 (Game 56) - Paused
+14:40:59 (Game 56) - Paused
+14:41:02 (Game 56) - Paused
+14:41:05 (Game 56) - Paused
+14:41:08 (Game 56) - Paused
+14:41:11 (Game 56) - Paused
+14:41:14 (Game 56) - Paused
+14:41:17 (Game 56) - Paused
+14:41:20 (Game 56) - Paused
+14:41:23 (Game 56) - Paused
+14:41:26 (Game 56) - Paused
+14:41:29 (Game 56) - Paused
+14:41:32 (Game 56) - Paused
+14:41:35 (Game 56) - Paused
+14:41:38 (Game 56) - Paused
+14:41:41 (Game 56) - Paused
+14:41:44 (Game 56) - Paused
+14:41:47 (Game 56) - Paused
+14:41:50 (Game 56) - Paused
+14:41:53 (Game 56) - Paused
+14:41:57 (Game 56) - Paused
+14:42:00 (Game 56) - Paused
+14:42:03 (Game 56) - Paused
+14:42:06 (Game 56) - Paused
+14:42:09 (Game 56) - Paused
+14:42:12 (Game 56) - Paused
+14:42:15 (Game 56) - Paused
+14:42:18 (Game 56) - Paused
+14:42:21 (Game 56) - Paused
+14:42:24 (Game 56) - Paused
+14:42:27 (Game 56) - Paused
+14:42:30 (Game 56) - Paused
+14:42:33 (Game 56) - Paused
+14:42:36 (Game 56) - Paused
+14:42:39 (Game 56) - Paused
+14:42:42 (Game 56) - Paused
+14:42:45 (Game 56) - Paused
+14:42:48 (Game 56) - Paused
+14:42:51 (Game 56) - Paused
+14:42:54 (Game 56) - Paused
+14:42:57 (Game 56) - Paused
+14:43:00 (Game 56) - Paused
+14:43:03 (Game 56) - Paused
+14:43:06 (Game 56) - Paused
+14:43:09 (Game 56) - Paused
+14:43:12 (Game 56) - Paused
+14:43:15 (Game 56) - Paused
+14:43:18 (Game 56) - Paused
+14:43:21 (Game 56) - Paused
+14:43:24 (Game 56) - Paused
+14:43:27 (Game 56) - Paused
+14:43:30 (Game 56) - Paused
+14:43:33 (Game 56) - Paused
+14:43:36 (Game 56) - Paused
+14:43:39 (Game 56) - Paused
+14:43:42 (Game 56) - Paused
+14:43:45 (Game 56) - Paused
+14:43:48 (Game 56) - Paused
+14:43:51 (Game 56) - Paused
+14:43:54 (Game 56) - Paused
+14:43:57 (Game 56) - Paused
+14:44:00 (Game 56) - Paused
+14:44:03 (Game 56) - Paused
+14:44:06 (Game 56) - Paused
+14:44:09 (Game 56) - Paused
+14:44:12 (Game 56) - Paused
+14:44:15 (Game 56) - Paused
+14:44:18 (Game 56) - Paused
+14:44:21 (Game 56) - Paused
+14:44:24 (Game 56) - Paused
+14:44:27 (Game 56) - Paused
+14:44:30 (Game 56) - Paused
+14:44:33 (Game 56) - Paused
+14:44:36 (Game 56) - Paused
+14:44:39 (Game 56) - Paused
+14:44:42 (Game 56) - Paused
+14:44:45 (Game 56) - Paused
+14:44:48 (Game 56) - Paused
+14:44:51 (Game 56) - Paused
+14:44:54 (Game 56) - Paused
+14:44:57 (Game 56) - Paused
+14:45:00 (Game 56) - Paused
+14:45:03 (Game 56) - Paused
+14:45:06 (Game 56) - Paused
+14:45:09 (Game 56) - Paused
+14:45:12 (Game 56) - Paused
+14:45:15 (Game 56) - Paused
+14:45:18 (Game 56) - Paused
+14:45:21 (Game 56) - Paused
+14:45:24 (Game 56) - Paused
+14:45:27 (Game 56) - Paused
+14:45:30 (Game 56) - Paused
+14:45:33 (Game 56) - Paused
+14:45:36 (Game 56) - Paused
+14:45:39 (Game 56) - Paused
+14:45:42 (Game 56) - Paused
+14:45:45 (Game 56) - Paused
+14:45:48 (Game 56) - Paused
+14:45:51 (Game 56) - Paused
+14:45:54 (Game 56) - Paused
+14:45:57 (Game 56) - Paused
+14:46:00 (Game 56) - Paused
+14:46:03 (Game 56) - Paused
+14:46:06 (Game 56) - Paused
+14:46:09 (Game 56) - Paused
+14:46:12 (Game 56) - Paused
+14:46:15 (Game 56) - Paused
+14:46:18 (Game 56) - Paused
+14:46:21 (Game 56) - Paused
+14:46:24 (Game 56) - Paused
+14:46:27 (Game 56) - Paused
+14:46:30 (Game 56) - Paused
+14:46:33 (Game 56) - Paused
+14:46:36 (Game 56) - Paused
+14:46:39 (Game 56) - Paused
+14:46:42 (Game 56) - Paused
+14:46:45 (Game 56) - Paused
+14:46:48 (Game 56) - Paused
+14:46:51 (Game 56) - Paused
+14:46:54 (Game 56) - Paused
+14:46:57 (Game 56) - Paused
+14:47:00 (Game 56) - Paused
+14:47:03 (Game 56) - Paused
+14:47:06 (Game 56) - Paused
+14:47:09 (Game 56) - Paused
+14:47:12 (Game 56) - Paused
+14:47:15 (Game 56) - Paused
+14:47:18 (Game 56) - Paused
+14:47:21 (Game 56) - Paused
+14:47:24 (Game 56) - Paused
+14:47:27 (Game 56) - Paused
+14:47:30 (Game 56) - Paused
+14:47:33 (Game 56) - Paused
+14:47:36 (Game 56) - Paused
+14:47:39 (Game 56) - Paused
+14:47:42 (Game 56) - Paused
+14:47:45 (Game 56) - Paused
+14:47:48 (Game 56) - Paused
+14:47:51 (Game 56) - Paused
+14:47:54 (Game 56) - Paused
+14:47:57 (Game 56) - Paused
+14:48:00 (Game 56) - Paused
+14:48:03 (Game 56) - Paused
+14:48:06 (Game 56) - Paused
+14:48:09 (Game 56) - Paused
+14:48:12 (Game 56) - Paused
+14:48:15 (Game 56) - Paused
+14:48:18 (Game 56) - Paused
+14:48:21 (Game 56) - Paused
+14:48:24 (Game 56) - Paused
+14:48:27 (Game 56) - Paused
+14:48:30 (Game 56) - Paused
+14:48:33 (Game 56) - Paused
+14:48:36 (Game 56) - Paused
+14:48:39 (Game 56) - Paused
+14:48:42 (Game 56) - Paused
+14:48:45 (Game 56) - Paused
+14:48:48 (Game 56) - Paused
+14:48:51 (Game 56) - Paused
+14:48:54 (Game 56) - Paused
+14:48:57 (Game 56) - Paused
+14:49:00 (Game 56) - Paused
+14:49:03 (Game 56) - Paused
+14:49:06 (Game 56) - Paused
+14:49:09 (Game 56) - Paused
+14:49:12 (Game 56) - Paused
+14:49:15 (Game 56) - Paused
+14:49:18 (Game 56) - Paused
+14:49:21 (Game 56) - Paused
+14:49:24 (Game 56) - Paused
+14:49:27 (Game 56) - Paused
+14:49:30 (Game 56) - Paused
+14:49:33 (Game 56) - Paused
+14:49:36 (Game 56) - Paused
+14:49:39 (Game 56) - Paused
+14:49:42 (Game 56) - Paused
+14:49:45 (Game 56) - Paused
+14:49:48 (Game 56) - Paused
+14:49:51 (Game 56) - Paused
+14:49:54 (Game 56) - Paused
+14:49:57 (Game 56) - Paused
+14:50:00 (Game 56) - Paused
+14:50:03 (Game 56) - Paused
+14:50:06 (Game 56) - Paused
+14:50:09 (Game 56) - Paused
+14:50:12 (Game 56) - Paused
+14:50:15 (Game 56) - Paused
+14:50:18 (Game 56) - Paused
+14:50:21 (Game 56) - Paused
+14:50:24 (Game 56) - Paused
+14:50:27 (Game 56) - Paused
+14:50:30 (Game 56) - Paused
+14:50:33 (Game 56) - Paused
+14:50:36 (Game 56) - Paused
+14:50:39 (Game 56) - Paused
+14:50:42 (Game 56) - Paused
+14:50:45 (Game 56) - Paused
+14:50:48 (Game 56) - Paused
+14:50:51 (Game 56) - Paused
+14:50:54 (Game 56) - Paused
+14:50:57 (Game 56) - Paused
+14:51:00 (Game 56) - Paused
+14:51:03 (Game 56) - Paused
+14:51:06 (Game 56) - Paused
+14:51:09 (Game 56) - Paused
+14:51:12 (Game 56) - Paused
+14:51:15 (Game 56) - Paused
+14:51:18 (Game 56) - Paused
+14:51:21 (Game 56) - Paused
+14:51:24 (Game 56) - Paused
+14:51:27 (Game 56) - Paused
+14:51:30 (Game 56) - Paused
+14:51:33 (Game 56) - Paused
+14:51:36 (Game 56) - Paused
+14:51:39 (Game 56) - Paused
+14:51:42 (Game 56) - Paused
+14:51:45 (Game 56) - Paused
+14:51:48 (Game 56) - Paused
+14:51:51 (Game 56) - Paused
+14:51:54 (Game 56) - Paused
+14:51:57 (Game 56) - Paused
+14:52:00 (Game 56) - Paused
+14:52:03 (Game 56) - Paused
+14:52:06 (Game 56) - Paused
+14:52:09 (Game 56) - Paused
+14:52:12 (Game 56) - Paused
+14:52:15 (Game 56) - Paused
+14:52:18 (Game 56) - Paused
+14:52:21 (Game 56) - Paused
+14:52:24 (Game 56) - Paused
+14:52:27 (Game 56) - Paused
+14:52:30 (Game 56) - Paused
+14:52:33 (Game 56) - Paused
+14:52:36 (Game 56) - Paused
+14:52:39 (Game 56) - Paused
+14:52:42 (Game 56) - Paused
+14:52:45 (Game 56) - Paused
+14:52:48 (Game 56) - Paused
+14:52:51 (Game 56) - Paused
+14:52:54 (Game 56) - Paused
+14:52:57 (Game 56) - Paused
+14:53:00 (Game 56) - Paused
+14:53:03 (Game 56) - Paused
+14:53:06 (Game 56) - Paused
+14:53:09 (Game 56) - Paused
+14:53:12 (Game 56) - Paused
+14:53:15 (Game 56) - Paused
+14:53:18 (Game 56) - Paused
+14:53:21 (Game 56) - Paused
+14:53:24 (Game 56) - Paused
+14:53:27 (Game 56) - Paused
+14:53:30 (Game 56) - Paused
+14:53:33 (Game 56) - Paused
+14:53:36 (Game 56) - Paused
+14:53:39 (Game 56) - Paused
+14:53:42 (Game 56) - Paused
+14:53:45 (Game 56) - Paused
+14:53:48 (Game 56) - Paused
+14:53:51 (Game 56) - Paused
+14:53:54 (Game 56) - Paused
+14:53:57 (Game 56) - Paused
+14:54:00 (Game 56) - Paused
+14:54:03 (Game 56) - Paused
+14:54:06 (Game 56) - Paused
+14:54:09 (Game 56) - Paused
+14:54:12 (Game 56) - Paused
+14:54:15 (Game 56) - Paused
+14:54:18 (Game 56) - Paused
+14:54:21 (Game 56) - Paused
+14:54:24 (Game 56) - Paused
+14:54:27 (Game 56) - Paused
+14:54:30 (Game 56) - Paused
+14:54:33 (Game 56) - Paused
+14:54:36 (Game 56) - Paused
+14:54:39 (Game 56) - Paused
+14:54:42 (Game 56) - Paused
+14:54:45 (Game 56) - Paused
+14:54:48 (Game 56) - Paused
+14:54:51 (Game 56) - Paused
+14:54:54 (Game 56) - Paused
+14:54:57 (Game 56) - Paused
+14:55:00 (Game 56) - Paused
+14:55:03 (Game 56) - Paused
+14:55:06 (Game 56) - Paused
+14:55:09 (Game 56) - Paused
+14:55:12 (Game 56) - Paused
+14:55:15 (Game 56) - Paused
+14:55:18 (Game 56) - Paused
+14:55:21 (Game 56) - Paused
+14:55:24 (Game 56) - Paused
+14:55:27 (Game 56) - Paused
+14:55:30 (Game 56) - Paused
+14:55:33 (Game 56) - Paused
+14:55:36 (Game 56) - Paused
+14:55:39 (Game 56) - Paused
+14:55:42 (Game 56) - Paused
+14:55:45 (Game 56) - Paused
+14:55:48 (Game 56) - Paused
+14:55:51 (Game 56) - Paused
+14:55:54 (Game 56) - Paused
+14:55:57 (Game 56) - Paused
+14:56:00 (Game 56) - Paused
+14:56:03 (Game 56) - Paused
+14:56:06 (Game 56) - Paused
+14:56:09 (Game 56) - Paused
+14:56:12 (Game 56) - Paused
+14:56:15 (Game 56) - Paused
+14:56:18 (Game 56) - Paused
+14:56:21 (Game 56) - Paused
+14:56:24 (Game 56) - Paused
+14:56:27 (Game 56) - Paused
+14:56:30 (Game 56) - Paused
+14:56:33 (Game 56) - Paused
+14:56:36 (Game 56) - Paused
+14:56:39 (Game 56) - Paused
+14:56:42 (Game 56) - Paused
+14:56:45 (Game 56) - Paused
+14:56:48 (Game 56) - Paused
+14:56:51 (Game 56) - Paused
+14:56:55 (Game 56) - Paused
+14:56:58 (Game 56) - Paused
+14:57:01 (Game 56) - Paused
+14:57:04 (Game 56) - Paused
+14:57:07 (Game 56) - Paused
+14:57:10 (Game 56) - Paused
+14:57:13 (Game 56) - Paused
+14:57:16 (Game 56) - Paused
+14:57:19 (Game 56) - Paused
+14:57:22 (Game 56) - Paused
+14:57:25 (Game 56) - Paused
+14:57:28 (Game 56) - Paused
+14:57:31 (Game 56) - Paused
+14:57:34 (Game 56) - Paused
+14:57:37 (Game 56) - Paused
+14:57:40 (Game 56) - Paused
+14:57:43 (Game 56) - Paused
+14:57:46 (Game 56) - Paused
+14:57:49 (Game 56) - Paused
+14:57:52 (Game 56) - Paused
+14:57:55 (Game 56) - Paused
+14:57:58 (Game 56) - Paused
+14:58:01 (Game 56) - Paused
+14:58:04 (Game 56) - Paused
+14:58:07 (Game 56) - Paused
+14:58:10 (Game 56) - Paused
+14:58:13 (Game 56) - Paused
+14:58:16 (Game 56) - Paused
+14:58:19 (Game 56) - Paused
+14:58:22 (Game 56) - Paused
+14:58:25 (Game 56) - Paused
+14:58:28 (Game 56) - Paused
+14:58:31 (Game 56) - Paused
+14:58:34 (Game 56) - Paused
+14:58:37 (Game 56) - Paused
+14:58:40 (Game 56) - Paused
+14:58:43 (Game 56) - Paused
+14:58:46 (Game 56) - Paused
+14:58:49 (Game 56) - Paused
+14:58:52 (Game 56) - Paused
+14:58:55 (Game 56) - Paused
+14:58:58 (Game 56) - Paused
+14:59:01 (Game 56) - Paused
+14:59:04 (Game 56) - Paused
+14:59:07 (Game 56) - Paused
+14:59:10 (Game 56) - Paused
+14:59:13 (Game 56) - Paused
+14:59:16 (Game 56) - Paused
+14:59:19 (Game 56) - Paused
+14:59:22 (Game 56) - Paused
+14:59:25 (Game 56) - Paused
+14:59:28 (Game 56) - Paused
+14:59:31 (Game 56) - Paused
+14:59:34 (Game 56) - Paused
+14:59:37 (Game 56) - Paused
+14:59:40 (Game 56) - Paused
+14:59:43 (Game 56) - Paused
+14:59:46 (Game 56) - Paused
+14:59:49 (Game 56) - Paused
+14:59:52 (Game 56) - Paused
+14:59:55 (Game 56) - Paused
+14:59:58 (Game 56) - Paused
+15:00:01 (Game 56) - Paused
+15:00:04 (Game 56) - Paused
+15:00:07 (Game 56) - Paused
+15:00:10 (Game 56) - Paused
+15:00:13 (Game 56) - Paused
+15:00:16 (Game 56) - Paused
+15:00:19 (Game 56) - Paused
+15:00:22 (Game 56) - Paused
+15:00:25 (Game 56) - Paused
+15:00:28 (Game 56) - Paused
+15:00:31 (Game 56) - Paused
+15:00:34 (Game 56) - Paused
+15:00:37 (Game 56) - Paused
+15:00:40 (Game 56) - Paused
+15:00:43 (Game 56) - Paused
+15:00:46 (Game 56) - Paused
+15:00:49 (Game 56) - Paused
+15:00:52 (Game 56) - Paused
+15:00:55 (Game 56) - Paused
+15:00:58 (Game 56) - Paused
+15:01:01 (Game 56) - Paused
+15:01:04 (Game 56) - Paused
+15:01:07 (Game 56) - Paused
+15:01:10 (Game 56) - Paused
+15:01:13 (Game 56) - Paused
+15:01:16 (Game 56) - Paused
+15:01:19 (Game 56) - Paused
+15:01:22 (Game 56) - Paused
+15:01:25 (Game 56) - Paused
+15:01:28 (Game 56) - Paused
+15:01:31 (Game 56) - Paused
+15:01:34 (Game 56) - Paused
+15:01:37 (Game 56) - Paused
+15:01:40 (Game 56) - Paused
+15:01:43 (Game 56) - Paused
+15:01:46 (Game 56) - Paused
+15:01:49 (Game 56) - Paused
+15:01:52 (Game 56) - Paused
+15:01:55 (Game 56) - Paused
+15:01:58 (Game 56) - Paused
+15:02:01 (Game 56) - Paused
+15:02:04 (Game 56) - Paused
+15:02:07 (Game 56) - Paused
+15:02:10 (Game 56) - Paused
+15:02:13 (Game 56) - Paused
+15:02:16 (Game 56) - Paused
+15:02:19 (Game 56) - Paused
+15:02:22 (Game 56) - Paused
+15:02:25 (Game 56) - Paused
+15:02:28 (Game 56) - Paused
+15:02:31 (Game 56) - Paused
+15:02:34 (Game 56) - Paused
+15:02:37 (Game 56) - Paused
+15:02:40 (Game 56) - Paused
+15:02:43 (Game 56) - Paused
+15:02:46 (Game 56) - Paused
+15:02:49 (Game 56) - Paused
+15:02:52 (Game 56) - Paused
+15:02:55 (Game 56) - Paused
+15:02:58 (Game 56) - Paused
+15:03:01 (Game 56) - Paused
+15:03:04 (Game 56) - Paused
+15:03:07 (Game 56) - Paused
+15:03:10 (Game 56) - Paused
+15:03:13 (Game 56) - Paused
+15:03:16 (Game 56) - Paused
+15:03:19 (Game 56) - Paused
+15:03:22 (Game 56) - Paused
+15:03:25 (Game 56) - Paused
+15:03:28 (Game 56) - Paused
+15:03:31 (Game 56) - Paused
+15:03:34 (Game 56) - Paused
+15:03:37 (Game 56) - Paused
+15:03:40 (Game 56) - Paused
+15:03:43 (Game 56) - Paused
+15:03:46 (Game 56) - Paused
+15:03:49 (Game 56) - Paused
+15:03:52 (Game 56) - Paused
+15:03:55 (Game 56) - Paused
+15:03:58 (Game 56) - Paused
+15:04:01 (Game 56) - Paused
+15:04:04 (Game 56) - Paused
+15:04:07 (Game 56) - Paused
+15:04:10 (Game 56) - Paused
+15:04:13 (Game 56) - Paused
+15:04:16 (Game 56) - Paused
+15:04:19 (Game 56) - Paused
+15:04:22 (Game 56) - Paused
+15:04:25 (Game 56) - Paused
+15:04:28 (Game 56) - Paused
+15:04:31 (Game 56) - Paused
+15:04:34 (Game 56) - Paused
+15:04:37 (Game 56) - Paused
+15:04:40 (Game 56) - Paused
+15:04:43 (Game 56) - Paused
+15:04:46 (Game 56) - Paused
+15:04:49 (Game 56) - Paused
+15:04:52 (Game 56) - Paused
+15:04:55 (Game 56) - Paused
+15:04:58 (Game 56) - Paused
+15:05:01 (Game 56) - Paused
+15:05:04 (Game 56) - Paused
+15:05:07 (Game 56) - Paused
+15:05:10 (Game 56) - Paused
+15:05:13 (Game 56) - Paused
+15:05:16 (Game 56) - Paused
+15:05:19 (Game 56) - Paused
+15:05:22 (Game 56) - Paused
+15:05:25 (Game 56) - Paused
+15:05:28 (Game 56) - Paused
+15:05:31 (Game 56) - Paused
+15:05:34 (Game 56) - Paused
+15:05:37 (Game 56) - Paused
+15:05:40 (Game 56) - Paused
+15:05:43 (Game 56) - Paused
+15:05:46 (Game 56) - Paused
+15:05:49 (Game 56) - Paused
+15:05:52 (Game 56) - Paused
+15:05:55 (Game 56) - Paused
+15:05:58 (Game 56) - Paused
+15:06:01 (Game 56) - Paused
+15:06:04 (Game 56) - Paused
+15:06:07 (Game 56) - Paused
+15:06:10 (Game 56) - Paused
+15:06:13 (Game 56) - Paused
+15:06:16 (Game 56) - Paused
+15:06:19 (Game 56) - Paused
+15:06:22 (Game 56) - Paused
+15:06:25 (Game 56) - Paused
+15:06:28 (Game 56) - Paused
+15:06:31 (Game 56) - Paused
+15:06:34 (Game 56) - Paused
+15:06:37 (Game 56) - Paused
+15:06:40 (Game 56) - Paused
+15:06:43 (Game 56) - Paused
+15:06:46 (Game 56) - Paused
+15:06:49 (Game 56) - Paused
+15:06:52 (Game 56) - Paused
+15:06:55 (Game 56) - Paused
+15:06:58 (Game 56) - Paused
+15:07:01 (Game 56) - Paused
+15:07:04 (Game 56) - Paused
+15:07:07 (Game 56) - Paused
+15:07:10 (Game 56) - Paused
+15:07:13 (Game 56) - Paused
+15:07:16 (Game 56) - Paused
+15:07:19 (Game 56) - Paused
+15:07:22 (Game 56) - Paused
+15:07:25 (Game 56) - Paused
+15:07:28 (Game 56) - Paused
+15:07:31 (Game 56) - Paused
+15:07:34 (Game 56) - Paused
+15:07:37 (Game 56) - Paused
+15:07:40 (Game 56) - Paused
+15:07:43 (Game 56) - Paused
+15:07:46 (Game 56) - Paused
+15:07:49 (Game 56) - Paused
+15:07:52 (Game 56) - Paused
+15:07:55 (Game 56) - Paused
+15:07:58 (Game 56) - Paused
+15:08:01 (Game 56) - Paused
+15:08:04 (Game 56) - Paused
+15:08:07 (Game 56) - Paused
+15:08:10 (Game 56) - Paused
+15:08:13 (Game 56) - Paused
+15:08:16 (Game 56) - Paused
+15:08:19 (Game 56) - Paused
+15:08:22 (Game 56) - Paused
+15:08:25 (Game 56) - Paused
+15:08:28 (Game 56) - Paused
+15:08:31 (Game 56) - Paused
+15:08:34 (Game 56) - Paused
+15:08:37 (Game 56) - Paused
+15:08:40 (Game 56) - Paused
+15:12:32 (Game 56) - Paused
+15:12:35 (Game 56) - Paused
+15:12:38 (Game 56) - Paused
+15:12:41 (Game 56) - Paused
+15:12:44 (Game 56) - Paused
+15:12:47 (Game 56) - Paused
+15:12:50 (Game 56) - Paused
+15:12:53 (Game 56) - Paused
+15:12:56 (Game 56) - Paused
+15:12:59 (Game 56) - Paused
+15:13:02 (Game 56) - Paused
+15:13:05 (Game 56) - Paused
+15:13:08 (Game 56) - Paused
+15:13:11 (Game 56) - Paused
+15:13:14 (Game 56) - Paused
+15:13:17 (Game 56) - Paused
+15:13:20 (Game 56) - Paused
+15:13:23 (Game 56) - Paused
+15:13:26 (Game 56) - Paused
+15:13:29 (Game 56) - Paused
+15:13:32 (Game 56) - Paused
+15:13:35 (Game 56) - Paused
+15:13:38 (Game 56) - Paused
+15:13:41 (Game 56) - Paused
+15:13:44 (Game 56) - Paused
+15:13:47 (Game 56) - Paused
+15:13:50 (Game 56) - Paused
+15:13:53 (Game 56) - Paused
+15:13:56 (Game 56) - Paused
+15:13:59 (Game 56) - Paused
+15:14:02 (Game 56) - Paused
+15:14:05 (Game 56) - Paused
+15:14:08 (Game 56) - Paused
+15:14:11 (Game 56) - Paused
+15:14:14 (Game 56) - Paused
+15:14:17 (Game 56) - Paused
+15:14:20 (Game 56) - Paused
+15:14:23 (Game 56) - Paused
+15:14:26 (Game 56) - Paused
+15:14:29 (Game 56) - Paused
+15:14:32 (Game 56) - Paused
+15:14:35 (Game 56) - Paused
+15:14:38 (Game 56) - Paused
+15:14:41 (Game 56) - Paused
+15:14:44 (Game 56) - Paused
+15:14:47 (Game 56) - Paused
+15:14:50 (Game 56) - Paused
+15:14:53 (Game 56) - Paused
+15:14:56 (Game 56) - Paused
+15:14:59 (Game 56) - Paused
+15:15:02 (Game 56) - Paused
+15:15:05 (Game 56) - Paused
+15:15:08 (Game 56) - Paused
+15:15:11 (Game 56) - Paused
+15:15:14 (Game 56) - Paused
+15:15:17 (Game 56) - Paused
+15:15:20 (Game 56) - Paused
+15:15:23 (Game 56) - Paused
+15:15:26 (Game 56) - Paused
+15:15:29 (Game 56) - Paused
+15:15:32 (Game 56) - Paused
+15:15:35 (Game 56) - Paused
+15:15:38 (Game 56) - Paused
+15:15:41 (Game 56) - Paused
+15:15:44 (Game 56) - Paused
+15:15:47 (Game 56) - Paused
+15:15:50 (Game 56) - Paused
+15:15:53 (Game 56) - Paused
+15:15:56 (Game 56) - Paused
+15:15:59 (Game 56) - Paused
+15:16:02 (Game 56) - Paused
+15:16:05 (Game 56) - Paused
+15:16:08 (Game 56) - Paused
+15:16:11 (Game 56) - Paused
+15:16:14 (Game 56) - Paused
+15:16:17 (Game 56) - Paused
+15:16:20 (Game 56) - Paused
+15:16:23 (Game 56) - Paused
+15:16:26 (Game 56) - Paused
+15:16:29 (Game 56) - Paused
+15:16:32 (Game 56) - Paused
+15:16:35 (Game 56) - Paused
+15:16:38 (Game 56) - Paused
+15:16:41 (Game 56) - Paused
+15:16:44 (Game 56) - Paused
+15:16:47 (Game 56) - Paused
+15:16:50 (Game 56) - Paused
+15:16:53 (Game 56) - Paused
+15:16:56 (Game 56) - Paused
+15:16:59 (Game 56) - Paused
+15:17:02 (Game 56) - Paused
+15:17:05 (Game 56) - Paused
+15:17:08 (Game 56) - Paused
+15:17:11 (Game 56) - Paused
+15:17:14 (Game 56) - Paused
+15:17:17 (Game 56) - Paused
+15:17:20 (Game 56) - Paused
+15:17:23 (Game 56) - Paused
+15:17:26 (Game 56) - Paused
+15:17:29 (Game 56) - Paused
+15:17:32 (Game 56) - Paused
+15:17:35 (Game 56) - Paused
+15:17:38 (Game 56) - Paused
+15:17:41 (Game 56) - Paused
+15:17:44 (Game 56) - Paused
+15:17:47 (Game 56) - Paused
+15:17:50 (Game 56) - Paused
+15:17:53 (Game 56) - Paused
+15:17:56 (Game 56) - Paused
+15:17:59 (Game 56) - Paused
+15:18:02 (Game 56) - Paused
+15:18:05 (Game 56) - Paused
+15:18:08 (Game 56) - Paused
+15:18:11 (Game 56) - Paused
+15:18:14 (Game 56) - Paused
+15:18:17 (Game 56) - Paused
+15:18:20 (Game 56) - Paused
+15:18:23 (Game 56) - Paused
+15:18:26 (Game 56) - Paused
+15:18:29 (Game 56) - Paused
+15:18:32 (Game 56) - Paused
+15:18:35 (Game 56) - Paused
+15:18:38 (Game 56) - Paused
+15:18:41 (Game 56) - Paused
+15:18:44 (Game 56) - Paused
+15:18:47 (Game 56) - Paused
+15:18:50 (Game 56) - Paused
+15:18:53 (Game 56) - Paused
+15:18:56 (Game 56) - Paused
+15:18:59 (Game 56) - Paused
+15:19:02 (Game 56) - Paused
+15:19:05 (Game 56) - Paused
+15:19:08 (Game 56) - Paused
+15:19:11 (Game 56) - Paused
+15:19:14 (Game 56) - Paused
+15:19:17 (Game 56) - Paused
+15:19:20 (Game 56) - Paused
+15:19:23 (Game 56) - Paused
+15:19:26 (Game 56) - Paused
+15:19:29 (Game 56) - Paused
+15:19:32 (Game 56) - Paused
+15:19:35 (Game 56) - Paused
+15:19:38 (Game 56) - Paused
+15:19:41 (Game 56) - Paused
+15:19:44 (Game 56) - Paused
+15:19:47 (Game 56) - Paused
+15:19:50 (Game 56) - Paused
+15:19:53 (Game 56) - Paused
+15:19:56 (Game 56) - Paused
+15:19:59 (Game 56) - Paused
+15:20:02 (Game 56) - Paused
+15:20:05 (Game 56) - Paused
+15:20:08 (Game 56) - Paused
+15:20:11 (Game 56) - Paused
+15:20:14 (Game 56) - Paused
+15:20:17 (Game 56) - Paused
+15:20:20 (Game 56) - Paused
+15:20:23 (Game 56) - Paused
+15:20:26 (Game 56) - Paused
+15:20:29 (Game 56) - Paused
+15:20:32 (Game 56) - Paused
+15:20:35 (Game 56) - Paused
+15:20:38 (Game 56) - Paused
+15:20:41 (Game 56) - Paused
+15:20:44 (Game 56) - Paused
+15:20:47 (Game 56) - Paused
+15:20:50 (Game 56) - Paused
+15:20:53 (Game 56) - Paused
+15:20:56 (Game 56) - Paused
+15:20:59 (Game 56) - Paused
+15:21:02 (Game 56) - Paused
+15:21:05 (Game 56) - Paused
+15:21:08 (Game 56) - Paused
+15:21:11 (Game 56) - Paused
+15:21:14 (Game 56) - Paused
+15:21:17 (Game 56) - Paused
+15:21:20 (Game 56) - Paused
+15:21:23 (Game 56) - Paused
+15:21:26 (Game 56) - Paused
+15:21:29 (Game 56) - Paused
+15:21:32 (Game 56) - Paused
+15:21:35 (Game 56) - Paused
+15:21:38 (Game 56) - Paused
+15:21:41 (Game 56) - Paused
+15:21:44 (Game 56) - Paused
+15:21:47 (Game 56) - Paused
+15:21:50 (Game 56) - Paused
+15:21:53 (Game 56) - Paused
+15:21:56 (Game 56) - Paused
+15:21:59 (Game 56) - Paused
+15:22:02 (Game 56) - Paused
+15:22:05 (Game 56) - Paused
+15:22:08 (Game 56) - Paused
+15:22:11 (Game 56) - Paused
+15:22:14 (Game 56) - Paused
+15:22:17 (Game 56) - Paused
+15:22:20 (Game 56) - Paused
+15:22:23 (Game 56) - Paused
+15:22:26 (Game 56) - Paused
+15:22:29 (Game 56) - Paused
+15:22:32 (Game 56) - Paused
+15:22:35 (Game 56) - Paused
+15:22:38 (Game 56) - Paused
+15:22:41 (Game 56) - Paused
+15:22:44 (Game 56) - Paused
+15:22:47 (Game 56) - Paused
+15:22:50 (Game 56) - Paused
+15:22:53 (Game 56) - Paused
+15:22:56 (Game 56) - Paused
+15:22:59 (Game 56) - Paused
+15:23:02 (Game 56) - Paused
+15:23:05 (Game 56) - Paused
+15:23:08 (Game 56) - Paused
+15:23:11 (Game 56) - Paused
+15:23:14 (Game 56) - Paused
+15:23:17 (Game 56) - Paused
+15:23:21 (Game 56) - Paused
+15:23:24 (Game 56) - Paused
+15:23:27 (Game 56) - Paused
+15:23:30 (Game 56) - Paused
+15:23:33 (Game 56) - Paused
+15:23:36 (Game 56) - Paused
+15:23:39 (Game 56) - Paused
+15:23:42 (Game 56) - Paused
+15:23:45 (Game 56) - Paused
+15:23:48 (Game 56) - Paused
+15:23:51 (Game 56) - Paused
+15:23:54 (Game 56) - Paused
+15:23:57 (Game 56) - Paused
+15:24:00 (Game 56) - Paused
+15:24:03 (Game 56) - Paused
+15:24:06 (Game 56) - Paused
+15:24:09 (Game 56) - Paused
+15:24:12 (Game 56) - Paused
+15:24:15 (Game 56) - Paused
+15:24:18 (Game 56) - Paused
+15:24:21 (Game 56) - Paused
+15:24:24 (Game 56) - Paused
+15:24:27 (Game 56) - Paused
+15:24:30 (Game 56) - Paused
+15:24:33 (Game 56) - Paused
+15:24:36 (Game 56) - Paused
+15:24:39 (Game 56) - Paused
+15:24:42 (Game 56) - Paused
+15:24:45 (Game 56) - Paused
+15:24:48 (Game 56) - Paused
+15:24:51 (Game 56) - Paused
+15:24:54 (Game 56) - Paused
+15:24:57 (Game 56) - Paused
+15:25:00 (Game 56) - Paused
+15:25:03 (Game 56) - Paused
+15:25:06 (Game 56) - Paused
+15:25:09 (Game 56) - Paused
+15:25:12 (Game 56) - Paused
+15:25:15 (Game 56) - Paused
+15:25:18 (Game 56) - Paused
+15:25:21 (Game 56) - Paused
+15:25:24 (Game 56) - Paused
+15:25:27 (Game 56) - Paused
+15:25:30 (Game 56) - Paused
+15:25:33 (Game 56) - Paused
+15:25:36 (Game 56) - Paused
+15:25:39 (Game 56) - Paused
+15:25:42 (Game 56) - Paused
+15:25:45 (Game 56) - Paused
+15:25:48 (Game 56) - Paused
+15:25:51 (Game 56) - Paused
+15:25:54 (Game 56) - Paused
+15:25:57 (Game 56) - Paused
+15:26:00 (Game 56) - Paused
+15:26:03 (Game 56) - Paused
+15:26:06 (Game 56) - Paused
+15:26:09 (Game 56) - Paused
+15:26:12 (Game 56) - Paused
+15:26:15 (Game 56) - Paused
+15:26:18 (Game 56) - Paused
+15:26:21 (Game 56) - Paused
+15:26:24 (Game 56) - Paused
+15:26:27 (Game 56) - Paused
+15:26:30 (Game 56) - Paused
+15:26:33 (Game 56) - Paused
+15:26:36 (Game 56) - Paused
+15:26:39 (Game 56) - Paused
+15:26:42 (Game 56) - Paused
+15:26:45 (Game 56) - Paused
+15:26:48 (Game 56) - Paused
+15:26:51 (Game 56) - Paused
+15:26:54 (Game 56) - Paused
+15:26:57 (Game 56) - Paused
+15:27:00 (Game 56) - Paused
+15:27:03 (Game 56) - Paused
+15:27:06 (Game 56) - Paused
+15:27:09 (Game 56) - Paused
+15:27:12 (Game 56) - Paused
+15:27:15 (Game 56) - Paused
+15:27:18 (Game 56) - Paused
+15:27:21 (Game 56) - Paused
+15:27:24 (Game 56) - Paused
+15:27:27 (Game 56) - Paused
+15:27:30 (Game 56) - Paused
+15:27:33 (Game 56) - Paused
+15:27:36 (Game 56) - Paused
+15:27:39 (Game 56) - Paused
+15:27:42 (Game 56) - Paused
+15:27:45 (Game 56) - Paused
+15:27:48 (Game 56) - Paused
+15:27:51 (Game 56) - Paused
+15:27:54 (Game 56) - Paused
+15:27:57 (Game 56) - Paused
+15:28:00 (Game 56) - Paused
+15:28:03 (Game 56) - Paused
+15:28:06 (Game 56) - Paused
+15:28:09 (Game 56) - Paused
+15:28:12 (Game 56) - Paused
+15:28:15 (Game 56) - Paused
+15:28:18 (Game 56) - Paused
+15:28:21 (Game 56) - Paused
+15:28:24 (Game 56) - Paused
+15:28:27 (Game 56) - Paused
+15:28:30 (Game 56) - Paused
+15:28:33 (Game 56) - Paused
+15:28:36 (Game 56) - Paused
+15:28:39 (Game 56) - Paused
+15:28:42 (Game 56) - Paused
+15:28:45 (Game 56) - Paused
+15:28:48 (Game 56) - Paused
+15:28:51 (Game 56) - Paused
+15:28:54 (Game 56) - Paused
+15:28:57 (Game 56) - Paused
+15:29:00 (Game 56) - Paused
+15:29:03 (Game 56) - Paused
+15:29:06 (Game 56) - Paused
+15:29:09 (Game 56) - Paused
+15:29:12 (Game 56) - Paused
+15:29:15 (Game 56) - Paused
+15:29:18 (Game 56) - Paused
+15:29:21 (Game 56) - Paused
+15:29:24 (Game 56) - Paused
+15:29:27 (Game 56) - Paused
+15:29:30 (Game 56) - Paused
+15:29:33 (Game 56) - Paused
+15:29:36 (Game 56) - Paused
+15:29:39 (Game 56) - Paused
+15:29:42 (Game 56) - Paused
+15:29:45 (Game 56) - Paused
+15:29:48 (Game 56) - Paused
+15:29:51 (Game 56) - Paused
+15:29:54 (Game 56) - Paused
+15:29:57 (Game 56) - Paused
+15:30:00 (Game 56) - Paused
+15:30:03 (Game 56) - Paused
+15:30:06 (Game 56) - Paused
+15:30:09 (Game 56) - Paused
+15:30:12 (Game 56) - Paused
+15:30:15 (Game 56) - Paused
+15:30:18 (Game 56) - Paused
+15:30:21 (Game 56) - Paused
+15:30:24 (Game 56) - Paused
+15:30:27 (Game 56) - Paused
+15:30:30 (Game 56) - Paused
+15:30:33 (Game 56) - Paused
+15:30:36 (Game 56) - Paused
+15:30:39 (Game 56) - Paused
+15:30:42 (Game 56) - Paused
+15:30:45 (Game 56) - Paused
+15:30:48 (Game 56) - Paused
+15:30:51 (Game 56) - Paused
+15:30:54 (Game 56) - Paused
+15:30:57 (Game 56) - Paused
+15:31:00 (Game 56) - Paused
+15:31:03 (Game 56) - Paused
+15:31:06 (Game 56) - Paused
+15:31:09 (Game 56) - Paused
+15:31:12 (Game 56) - Paused
+15:31:15 (Game 56) - Paused
+15:31:18 (Game 56) - Paused
+15:31:21 (Game 56) - Paused
+15:31:24 (Game 56) - Paused
+15:31:27 (Game 56) - Paused
+15:31:30 (Game 56) - Paused
+15:31:33 (Game 56) - Paused
+15:31:36 (Game 56) - Paused
+15:31:39 (Game 56) - Paused
+15:31:42 (Game 56) - Paused
+15:31:45 (Game 56) - Paused
+15:31:48 (Game 56) - Paused
+15:31:51 (Game 56) - Paused
+15:31:54 (Game 56) - Paused
+15:31:57 (Game 56) - Paused
+15:32:00 (Game 56) - Paused
+15:32:03 (Game 56) - Paused
+15:32:06 (Game 56) - Paused
+15:32:09 (Game 56) - Paused
+15:32:12 (Game 56) - Paused
+15:32:15 (Game 56) - Paused
+15:32:18 (Game 56) - Paused
+15:32:21 (Game 56) - Paused
+15:32:24 (Game 56) - Paused
+15:32:27 (Game 56) - Paused
+15:32:30 (Game 56) - Paused
+15:32:33 (Game 56) - Paused
+15:32:36 (Game 56) - Paused
+15:32:39 (Game 56) - Paused
+15:32:42 (Game 56) - Paused
+15:32:45 (Game 56) - Paused
+15:32:48 (Game 56) - Paused
+15:32:51 (Game 56) - Paused
+15:32:54 (Game 56) - Paused
+15:32:57 (Game 56) - Paused
+15:33:00 (Game 56) - Paused
+15:33:03 (Game 56) - Paused
+15:33:06 (Game 56) - Paused
+15:33:09 (Game 56) - Paused
+15:33:12 (Game 56) - Paused
+15:33:15 (Game 56) - Paused
+15:33:18 (Game 56) - Paused
+15:33:21 (Game 56) - Paused
+15:33:24 (Game 56) - Paused
+15:33:27 (Game 56) - Paused
+15:33:30 (Game 56) - Paused
+15:33:33 (Game 56) - Paused
+15:33:36 (Game 56) - Paused
+15:33:39 (Game 56) - Paused
+15:33:42 (Game 56) - Paused
+15:33:45 (Game 56) - Paused
+15:33:48 (Game 56) - Paused
+15:33:51 (Game 56) - Paused
+15:33:54 (Game 56) - Paused
+15:33:57 (Game 56) - Paused
+15:34:00 (Game 56) - Paused
+15:34:03 (Game 56) - Paused
+15:34:06 (Game 56) - Paused
+15:34:09 (Game 56) - Paused
+15:34:12 (Game 56) - Paused
+15:34:15 (Game 56) - Paused
+15:34:18 (Game 56) - Paused
+15:34:21 (Game 56) - Paused
+15:34:24 (Game 56) - Paused
+15:34:27 (Game 56) - Paused
+15:34:30 (Game 56) - Paused
+15:34:33 (Game 56) - Paused
+15:34:36 (Game 56) - Paused
+15:34:39 (Game 56) - Paused
+15:34:42 (Game 56) - Paused
+15:34:45 (Game 56) - Paused
+15:34:48 (Game 56) - Paused
+15:34:51 (Game 56) - Paused
+15:34:54 (Game 56) - Paused
+15:34:57 (Game 56) - Paused
+15:35:00 (Game 56) - Paused
+15:35:03 (Game 56) - Paused
+15:35:06 (Game 56) - Paused
+15:35:09 (Game 56) - Paused
+15:35:12 (Game 56) - Paused
+15:35:15 (Game 56) - Paused
+15:35:18 (Game 56) - Paused
+15:35:21 (Game 56) - Paused
+15:35:24 (Game 56) - Paused
+15:35:27 (Game 56) - Paused
+15:35:30 (Game 56) - Paused
+15:35:33 (Game 56) - Paused
+15:35:36 (Game 56) - Paused
+15:35:39 (Game 56) - Paused
+15:35:42 (Game 56) - Paused
+15:35:45 (Game 56) - Paused
+15:35:48 (Game 56) - Paused
+15:35:51 (Game 56) - Paused
+15:35:54 (Game 56) - Paused
+15:35:57 (Game 56) - Paused
+15:36:00 (Game 56) - Paused
+15:36:03 (Game 56) - Paused
+15:36:06 (Game 56) - Paused
+15:36:09 (Game 56) - Paused
+15:36:12 (Game 56) - Paused
+15:36:15 (Game 56) - Paused
+15:36:18 (Game 56) - Paused
+15:36:21 (Game 56) - Paused
+15:36:24 (Game 56) - Paused
+15:36:27 (Game 56) - Paused
+15:36:30 (Game 56) - Paused
+15:36:33 (Game 56) - Paused
+15:36:36 (Game 56) - Paused
+15:36:39 (Game 56) - Paused
+15:36:42 (Game 56) - Paused
+15:36:45 (Game 56) - Paused
+15:36:48 (Game 56) - Paused
+15:36:51 (Game 56) - Paused
+15:36:54 (Game 56) - Paused
+15:36:57 (Game 56) - Paused
+15:37:00 (Game 56) - Paused
+15:37:03 (Game 56) - Paused
+15:37:06 (Game 56) - Paused
+15:37:09 (Game 56) - Paused
+15:37:12 (Game 56) - Paused
+15:37:15 (Game 56) - Paused
+15:37:18 (Game 56) - Paused
+15:37:21 (Game 56) - Paused
+15:37:24 (Game 56) - Paused
+15:37:27 (Game 56) - Paused
+15:37:30 (Game 56) - Paused
+15:37:33 (Game 56) - Paused
+15:37:36 (Game 56) - Paused
+15:37:39 (Game 56) - Paused
+15:37:42 (Game 56) - Paused
+15:37:45 (Game 56) - Paused
+15:37:48 (Game 56) - Paused
+15:37:51 (Game 56) - Paused
+15:37:54 (Game 56) - Paused
+15:37:57 (Game 56) - Paused
+15:38:00 (Game 56) - Paused
+15:38:03 (Game 56) - Paused
+15:38:06 (Game 56) - Paused
+15:38:09 (Game 56) - Paused
+15:38:12 (Game 56) - Paused
+15:38:15 (Game 56) - Paused
+15:38:18 (Game 56) - Paused
+15:38:21 (Game 56) - Paused
+15:38:24 (Game 56) - Paused
+15:38:27 (Game 56) - Paused
+15:38:30 (Game 56) - Paused
+15:38:33 (Game 56) - Paused
+15:38:36 (Game 56) - Paused
+15:38:39 (Game 56) - Paused
+15:38:42 (Game 56) - Paused
+15:38:45 (Game 56) - Paused
+15:38:48 (Game 56) - Paused
+15:38:51 (Game 56) - Paused
+15:38:54 (Game 56) - Paused
+15:38:57 (Game 56) - Paused
+15:39:00 (Game 56) - Paused
+15:39:03 (Game 56) - Paused
+15:39:06 (Game 56) - Paused
+15:39:09 (Game 56) - Paused
+15:39:12 (Game 56) - Paused
+15:39:15 (Game 56) - Paused
+15:39:18 (Game 56) - Paused
+15:39:21 (Game 56) - Paused
+15:39:24 (Game 56) - Paused
+15:39:27 (Game 56) - Paused
+15:39:30 (Game 56) - Paused
+15:39:33 (Game 56) - Paused
+15:39:36 (Game 56) - Paused
+15:39:39 (Game 56) - Paused
+15:39:42 (Game 56) - Paused
+15:39:45 (Game 56) - Paused
+15:39:48 (Game 56) - Paused
+15:39:51 (Game 56) - Paused
+15:39:54 (Game 56) - Paused
+15:39:57 (Game 56) - Paused
+15:40:00 (Game 56) - Paused
+15:40:03 (Game 56) - Paused
+15:40:06 (Game 56) - Paused
+15:40:09 (Game 56) - Paused
+15:40:12 (Game 56) - Paused
+15:40:15 (Game 56) - Paused
+15:40:18 (Game 56) - Paused
+15:40:21 (Game 56) - Paused
+15:40:24 (Game 56) - Paused
+15:40:27 (Game 56) - Paused
+15:40:30 (Game 56) - Paused
+15:40:33 (Game 56) - Paused
+15:40:36 (Game 56) - Paused
+15:40:39 (Game 56) - Paused
+15:40:42 (Game 56) - Paused
+15:40:46 (Game 56) - Paused
+15:40:49 (Game 56) - Paused
+15:40:52 (Game 56) - Paused
+15:40:55 (Game 56) - Paused
+15:40:58 (Game 56) - Paused
+15:41:01 (Game 56) - Paused
+15:41:04 (Game 56) - Paused
+15:41:07 (Game 56) - Paused
+15:41:10 (Game 56) - Paused
+15:41:13 (Game 56) - Paused
+15:41:16 (Game 56) - Paused
+15:41:19 (Game 56) - Paused
+15:41:22 (Game 56) - Paused
+15:41:25 (Game 56) - Paused
+15:41:28 (Game 56) - Paused
+15:41:31 (Game 56) - Paused
+15:41:34 (Game 56) - Paused
+15:41:37 (Game 56) - Paused
+15:41:40 (Game 56) - Paused
+15:41:43 (Game 56) - Paused
+15:41:46 (Game 56) - Paused
+15:41:49 (Game 56) - Paused
+15:41:52 (Game 56) - Paused
+15:41:55 (Game 56) - Paused
+15:41:58 (Game 56) - Paused
+15:42:01 (Game 56) - Paused
+15:42:04 (Game 56) - Paused
+15:42:07 (Game 56) - Paused
+15:42:10 (Game 56) - Paused
+15:42:13 (Game 56) - Paused
+15:42:16 (Game 56) - Paused
+15:42:19 (Game 56) - Paused
+15:42:22 (Game 56) - Paused
+15:42:25 (Game 56) - Paused
+15:42:28 (Game 56) - Paused
+15:42:31 (Game 56) - Paused
+15:42:34 (Game 56) - Paused
+15:42:37 (Game 56) - Paused
+15:42:40 (Game 56) - Paused
+15:42:43 (Game 56) - Paused
+15:42:46 (Game 56) - Paused
+15:42:49 (Game 56) - Paused
+15:42:52 (Game 56) - Paused
+15:42:55 (Game 56) - Paused
+15:42:58 (Game 56) - Paused
+15:43:01 (Game 56) - Paused
+15:43:04 (Game 56) - Paused
+15:43:07 (Game 56) - Paused
+15:43:10 (Game 56) - Paused
+15:43:13 (Game 56) - Paused
+15:43:16 (Game 56) - Paused
+15:43:19 (Game 56) - Paused
+15:43:22 (Game 56) - Paused
+15:43:25 (Game 56) - Paused
+15:43:28 (Game 56) - Paused
+15:43:31 (Game 56) - Paused
+15:43:34 (Game 56) - Paused
+15:43:37 (Game 56) - Paused
+15:43:40 (Game 56) - Paused
+15:43:43 (Game 56) - Paused
+15:43:46 (Game 56) - Paused
+15:43:49 (Game 56) - Paused
+15:43:52 (Game 56) - Paused
+15:43:55 (Game 56) - Paused
+15:43:58 (Game 56) - Paused
+15:44:01 (Game 56) - Paused
+15:44:04 (Game 56) - Paused
+15:44:07 (Game 56) - Paused
+15:44:10 (Game 56) - Paused
+15:44:13 (Game 56) - Paused
+15:44:16 (Game 56) - Paused
+15:44:19 (Game 56) - Paused
+15:44:22 (Game 56) - Paused
+15:44:25 (Game 56) - Paused
+15:44:28 (Game 56) - Paused
+15:44:31 (Game 56) - Paused
+15:44:34 (Game 56) - Paused
+15:44:37 (Game 56) - Paused
+15:44:40 (Game 56) - Paused
+15:44:43 (Game 56) - Paused
+15:44:46 (Game 56) - Paused
+15:44:49 (Game 56) - Paused
+15:44:52 (Game 56) - Paused
+15:44:55 (Game 56) - Paused
+15:44:58 (Game 56) - Paused
+15:45:01 (Game 56) - Paused
+15:45:04 (Game 56) - Paused
+15:45:07 (Game 56) - Paused
+15:45:10 (Game 56) - Paused
+15:45:13 (Game 56) - Paused
+15:45:16 (Game 56) - Paused
+15:45:19 (Game 56) - Paused
+15:45:22 (Game 56) - Paused
+15:45:25 (Game 56) - Paused
+15:45:28 (Game 56) - Paused
+15:45:31 (Game 56) - Paused
+15:45:34 (Game 56) - Paused
+15:45:37 (Game 56) - Paused
+15:45:40 (Game 56) - Paused
+15:45:43 (Game 56) - Paused
+15:45:46 (Game 56) - Paused
+15:45:49 (Game 56) - Paused
+15:45:52 (Game 56) - Paused
+15:45:55 (Game 56) - Paused
+15:45:58 (Game 56) - Paused
+15:46:01 (Game 56) - Paused
+15:46:04 (Game 56) - Paused
+15:46:07 (Game 56) - Paused
+15:46:10 (Game 56) - Paused
+15:46:13 (Game 56) - Paused
+15:46:16 (Game 56) - Paused
+15:46:19 (Game 56) - Paused
+15:46:22 (Game 56) - Paused
+15:46:25 (Game 56) - Paused
+15:46:28 (Game 56) - Paused
+15:46:31 (Game 56) - Paused
+15:46:34 (Game 56) - Paused
+15:46:37 (Game 56) - Paused
+15:46:40 (Game 56) - Paused
+15:46:43 (Game 56) - Paused
+15:46:46 (Game 56) - Paused
+15:46:49 (Game 56) - Paused
+15:46:52 (Game 56) - Paused
+15:46:55 (Game 56) - Paused
+15:46:58 (Game 56) - Paused
+15:47:01 (Game 56) - Paused
+15:47:04 (Game 56) - Paused
+15:47:07 (Game 56) - Paused
+15:47:10 (Game 56) - Paused
+15:47:13 (Game 56) - Paused
+15:47:16 (Game 56) - Paused
+15:47:19 (Game 56) - Paused
+15:47:22 (Game 56) - Paused
+15:47:25 (Game 56) - Paused
+15:47:28 (Game 56) - Paused
+15:47:31 (Game 56) - Paused
+15:47:34 (Game 56) - Paused
+15:47:37 (Game 56) - Paused
+15:47:40 (Game 56) - Paused
+15:47:43 (Game 56) - Paused
+15:47:46 (Game 56) - Paused
+15:47:49 (Game 56) - Paused
+15:47:52 (Game 56) - Paused
+15:47:55 (Game 56) - Paused
+15:47:58 (Game 56) - Paused
+15:48:01 (Game 56) - Paused
+15:48:04 (Game 56) - Paused
+15:48:07 (Game 56) - Paused
+15:48:10 (Game 56) - Paused
+15:48:13 (Game 56) - Paused
+15:48:16 (Game 56) - Paused
+15:48:19 (Game 56) - Paused
+15:48:22 (Game 56) - Paused
+15:48:25 (Game 56) - Paused
+15:48:28 (Game 56) - Paused
+15:48:31 (Game 56) - Paused
+15:48:34 (Game 56) - Paused
+15:48:37 (Game 56) - Paused
+15:48:40 (Game 56) - Paused
+15:48:43 (Game 56) - Paused
+15:48:46 (Game 56) - Paused
+15:48:49 (Game 56) - Paused
+15:48:52 (Game 56) - Paused
+15:48:55 (Game 56) - Paused
+15:48:58 (Game 56) - Paused
+15:49:01 (Game 56) - Paused
+15:49:04 (Game 56) - Paused
+15:49:07 (Game 56) - Paused
+15:49:10 (Game 56) - Paused
+15:49:13 (Game 56) - Paused
+15:49:16 (Game 56) - Paused
+15:49:19 (Game 56) - Paused
+15:49:22 (Game 56) - Paused
+15:49:25 (Game 56) - Paused
+15:49:28 (Game 56) - Paused
+15:49:31 (Game 56) - Paused
+15:49:34 (Game 56) - Paused
+15:49:37 (Game 56) - Paused
+15:49:40 (Game 56) - Paused
+15:49:43 (Game 56) - Paused
+15:49:46 (Game 56) - Paused
+15:49:49 (Game 56) - Paused
+15:49:52 (Game 56) - Paused
+15:49:55 (Game 56) - Paused
+15:49:58 (Game 56) - Paused
+15:50:01 (Game 56) - Paused
+15:50:04 (Game 56) - Paused
+15:50:07 (Game 56) - Paused
+15:50:10 (Game 56) - Paused
+15:50:13 (Game 56) - Paused
+15:50:16 (Game 56) - Paused
+15:50:19 (Game 56) - Paused
+15:50:22 (Game 56) - Paused
+15:50:25 (Game 56) - Paused
+15:50:28 (Game 56) - Paused
+15:50:31 (Game 56) - Paused
+15:50:34 (Game 56) - Paused
+15:50:37 (Game 56) - Paused
+15:50:40 (Game 56) - Paused
+15:50:43 (Game 56) - Paused
+15:50:46 (Game 56) - Paused
+15:50:49 (Game 56) - Paused
+15:50:52 (Game 56) - Paused
+15:50:55 (Game 56) - Paused
+15:50:58 (Game 56) - Paused
+15:51:01 (Game 56) - Paused
+15:51:04 (Game 56) - Paused
+15:51:07 (Game 56) - Paused
+15:51:10 (Game 56) - Paused
+15:51:13 (Game 56) - Paused
+15:51:16 (Game 56) - Paused
+15:51:19 (Game 56) - Paused
+15:51:22 (Game 56) - Paused
+15:51:25 (Game 56) - Paused
+15:51:28 (Game 56) - Paused
+15:51:31 (Game 56) - Paused
+15:51:34 (Game 56) - Paused
+15:51:37 (Game 56) - Paused
+15:51:40 (Game 56) - Paused
+15:51:43 (Game 56) - Paused
+15:51:46 (Game 56) - Paused
+15:51:49 (Game 56) - Paused
+15:51:52 (Game 56) - Paused
+15:51:55 (Game 56) - Paused
+15:51:58 (Game 56) - Paused
+15:52:01 (Game 56) - Paused
+15:52:04 (Game 56) - Paused
+15:52:07 (Game 56) - Paused
+15:52:10 (Game 56) - Paused
+15:52:13 (Game 56) - Paused
+15:52:16 (Game 56) - Paused
+15:52:19 (Game 56) - Paused
+15:52:22 (Game 56) - Paused
+15:52:25 (Game 56) - Paused
+15:52:28 (Game 56) - Paused
+15:52:31 (Game 56) - Paused
+15:52:34 (Game 56) - Paused
+15:52:37 (Game 56) - Paused
+15:52:40 (Game 56) - Paused
+15:52:43 (Game 56) - Paused
+15:52:46 (Game 56) - Paused
+15:52:49 (Game 56) - Paused
+15:52:52 (Game 56) - Paused
+15:52:55 (Game 56) - Paused
+15:52:58 (Game 56) - Paused
+15:53:01 (Game 56) - Paused
+15:53:04 (Game 56) - Paused
+15:53:07 (Game 56) - Paused
+15:53:10 (Game 56) - Paused
+15:53:13 (Game 56) - Paused
+15:53:16 (Game 56) - Paused
+15:53:19 (Game 56) - Paused
+15:53:22 (Game 56) - Paused
+15:53:25 (Game 56) - Paused
+15:53:28 (Game 56) - Paused
+15:53:31 (Game 56) - Paused
+15:53:34 (Game 56) - Paused
+15:53:37 (Game 56) - Paused
+15:53:40 (Game 56) - Paused
+15:53:43 (Game 56) - Paused
+15:53:46 (Game 56) - Paused
+15:53:49 (Game 56) - Paused
+15:53:52 (Game 56) - Paused
+15:53:55 (Game 56) - Paused
+15:53:58 (Game 56) - Paused
+15:54:01 (Game 56) - Paused
+15:54:04 (Game 56) - Paused
+15:54:07 (Game 56) - Paused
+15:54:10 (Game 56) - Paused
+15:54:13 (Game 56) - Paused
+15:54:16 (Game 56) - Paused
+15:54:19 (Game 56) - Paused
+15:54:22 (Game 56) - Paused
+15:54:25 (Game 56) - Paused
+15:54:28 (Game 56) - Paused
+15:54:31 (Game 56) - Paused
+15:54:34 (Game 56) - Paused
+15:54:37 (Game 56) - Paused
+15:54:40 (Game 56) - Paused
+15:54:43 (Game 56) - Paused
+15:54:46 (Game 56) - Paused
+15:54:49 (Game 56) - Paused
+15:54:52 (Game 56) - Paused
+15:54:55 (Game 56) - Paused
+15:54:58 (Game 56) - Paused
+15:55:01 (Game 56) - Paused
+15:55:04 (Game 56) - Paused
+15:55:07 (Game 56) - Paused
+15:55:10 (Game 56) - Paused
+15:55:13 (Game 56) - Paused
+15:55:16 (Game 56) - Paused
+15:55:19 (Game 56) - Paused
+15:55:22 (Game 56) - Paused
+15:55:25 (Game 56) - Paused
+15:55:28 (Game 56) - Paused
+15:55:31 (Game 56) - Paused
+15:55:34 (Game 56) - Paused
+15:55:37 (Game 56) - Paused
+15:55:40 (Game 56) - Paused
+15:55:43 (Game 56) - Paused
+15:55:46 (Game 56) - Paused
+15:55:49 (Game 56) - Paused
+15:55:52 (Game 56) - Paused
+15:55:55 (Game 56) - Paused
+15:55:58 (Game 56) - Paused
+15:56:01 (Game 56) - Paused
+15:56:04 (Game 56) - Paused
+15:56:07 (Game 56) - Paused
+15:56:10 (Game 56) - Paused
+15:56:13 (Game 56) - Paused
+15:56:16 (Game 56) - Paused
+15:56:19 (Game 56) - Paused
+15:56:22 (Game 56) - Paused
+15:56:25 (Game 56) - Paused
+15:56:28 (Game 56) - Paused
+15:56:31 (Game 56) - Paused
+15:56:34 (Game 56) - Paused
+15:56:37 (Game 56) - Paused
+15:56:40 (Game 56) - Paused
+15:56:43 (Game 56) - Paused
+15:56:46 (Game 56) - Paused
+15:56:49 (Game 56) - Paused
+15:56:52 (Game 56) - Paused
+15:56:55 (Game 56) - Paused
+15:56:58 (Game 56) - Paused
+15:57:01 (Game 56) - Paused
+15:57:04 (Game 56) - Paused
+15:57:07 (Game 56) - Paused
+15:57:11 (Game 56) - Paused
+15:57:14 (Game 56) - Paused
+15:57:17 (Game 56) - Paused
+15:57:20 (Game 56) - Paused
+15:57:23 (Game 56) - Paused
+15:57:26 (Game 56) - Paused
+15:57:29 (Game 56) - Paused
+15:57:32 (Game 56) - Paused
+15:57:35 (Game 56) - Paused
+15:57:38 (Game 56) - Paused
+15:57:41 (Game 56) - Paused
+15:57:44 (Game 56) - Paused
+15:57:47 (Game 56) - Paused
+15:57:50 (Game 56) - Paused
+15:57:53 (Game 56) - Paused
+15:57:56 (Game 56) - Paused
+15:57:59 (Game 56) - Paused
+15:58:02 (Game 56) - Paused
+15:58:05 (Game 56) - Paused
+15:58:08 (Game 56) - Paused
+15:58:11 (Game 56) - Paused
+15:58:14 (Game 56) - Paused
+15:58:17 (Game 56) - Paused
+15:58:20 (Game 56) - Paused
+15:58:23 (Game 56) - Paused
+15:58:26 (Game 56) - Paused
+15:58:29 (Game 56) - Paused
+15:58:32 (Game 56) - Paused
+15:58:35 (Game 56) - Paused
+15:58:38 (Game 56) - Paused
+15:58:41 (Game 56) - Paused
+15:58:44 (Game 56) - Paused
+15:58:47 (Game 56) - Paused
+15:58:50 (Game 56) - Paused
+15:58:53 (Game 56) - Paused
+15:58:56 (Game 56) - Paused
+15:58:59 (Game 56) - Paused
+15:59:02 (Game 56) - Paused
+15:59:05 (Game 56) - Paused
+15:59:08 (Game 56) - Paused
+15:59:11 (Game 56) - Paused
+15:59:14 (Game 56) - Paused
+15:59:17 (Game 56) - Paused
+15:59:20 (Game 56) - Paused
+15:59:23 (Game 56) - Paused
+15:59:26 (Game 56) - Paused
+15:59:29 (Game 56) - Paused
+15:59:32 (Game 56) - Paused
+15:59:35 (Game 56) - Paused
+15:59:38 (Game 56) - Paused
+15:59:41 (Game 56) - Paused
+15:59:44 (Game 56) - Paused
+15:59:47 (Game 56) - Paused
+15:59:50 (Game 56) - Paused
+15:59:53 (Game 56) - Paused
+15:59:56 (Game 56) - Paused
+15:59:59 (Game 56) - Paused
+16:00:02 (Game 56) - Paused
+16:00:05 (Game 56) - Paused
+16:00:08 (Game 56) - Paused
+16:00:11 (Game 56) - Paused
+16:00:14 (Game 56) - Paused
+16:00:17 (Game 56) - Paused
+16:00:20 (Game 56) - Paused
+16:00:23 (Game 56) - Paused
+16:00:26 (Game 56) - Paused
+16:00:29 (Game 56) - Paused
+16:00:32 (Game 56) - Paused
+16:00:35 (Game 56) - Paused
+16:00:38 (Game 56) - Paused
+16:00:41 (Game 56) - Paused
+16:00:44 (Game 56) - Paused
+16:00:47 (Game 56) - Paused
+16:00:50 (Game 56) - Paused
+16:00:53 (Game 56) - Paused
+16:00:56 (Game 56) - Paused
+16:00:59 (Game 56) - Paused
+16:01:02 (Game 56) - Paused
+16:01:05 (Game 56) - Paused
+16:01:08 (Game 56) - Paused
+16:01:11 (Game 56) - Paused
+16:01:14 (Game 56) - Paused
+16:01:17 (Game 56) - Paused
+16:01:20 (Game 56) - Paused
+16:01:23 (Game 56) - Paused
+16:01:26 (Game 56) - Paused
+16:01:29 (Game 56) - Paused
+16:01:32 (Game 56) - Paused
+16:01:35 (Game 56) - Paused
+16:01:38 (Game 56) - Paused
+16:01:41 (Game 56) - Paused
+16:01:44 (Game 56) - Paused
+16:01:47 (Game 56) - Paused
+16:01:50 (Game 56) - Paused
+16:01:53 (Game 56) - Paused
+16:01:56 (Game 56) - Paused
+16:01:59 (Game 56) - Paused
+16:02:02 (Game 56) - Paused
+16:02:05 (Game 56) - Paused
+16:02:08 (Game 56) - Paused
+16:02:11 (Game 56) - Paused
+16:02:14 (Game 56) - Paused
+16:02:17 (Game 56) - Paused
+16:02:20 (Game 56) - Paused
+16:02:23 (Game 56) - Paused
+16:02:26 (Game 56) - Paused
+16:02:29 (Game 56) - Paused
+16:02:32 (Game 56) - Paused
+16:02:35 (Game 56) - Paused
+16:02:38 (Game 56) - Paused
+16:02:41 (Game 56) - Paused
+16:02:44 (Game 56) - Paused
+16:02:47 (Game 56) - Paused
+16:02:50 (Game 56) - Paused
+16:02:53 (Game 56) - Paused
+16:02:56 (Game 56) - Paused
+16:02:59 (Game 56) - Paused
+16:03:02 (Game 56) - Paused
+16:03:05 (Game 56) - Paused
+16:03:08 (Game 56) - Paused
+16:03:11 (Game 56) - Paused
+16:03:14 (Game 56) - Paused
+16:03:17 (Game 56) - Paused
+16:03:20 (Game 56) - Paused
+16:03:23 (Game 56) - Paused
+16:03:26 (Game 56) - Paused
+16:03:29 (Game 56) - Paused
+16:03:32 (Game 56) - Paused
+16:03:35 (Game 56) - Paused
+16:03:38 (Game 56) - Paused
+16:03:41 (Game 56) - Paused
+16:03:44 (Game 56) - Paused
+16:03:47 (Game 56) - Paused
+16:03:50 (Game 56) - Paused
+16:03:53 (Game 56) - Paused
+16:03:56 (Game 56) - Paused
+16:03:59 (Game 56) - Paused
+16:04:02 (Game 56) - Paused
+16:04:05 (Game 56) - Paused
+16:04:08 (Game 56) - Paused
+16:04:11 (Game 56) - Paused
+16:04:14 (Game 56) - Paused
+16:04:17 (Game 56) - Paused
+16:04:20 (Game 56) - Paused
+16:04:23 (Game 56) - Paused
+16:04:26 (Game 56) - Paused
+16:04:29 (Game 56) - Paused
+16:04:32 (Game 56) - Paused
+16:04:35 (Game 56) - Paused
+16:04:38 (Game 56) - Paused
+16:04:41 (Game 56) - Paused
+16:04:44 (Game 56) - Paused
+16:04:47 (Game 56) - Paused
+16:04:50 (Game 56) - Paused
+16:04:53 (Game 56) - Paused
+16:04:56 (Game 56) - Paused
+16:04:59 (Game 56) - Paused
+16:05:02 (Game 56) - Paused
+16:05:05 (Game 56) - Paused
+16:05:08 (Game 56) - Paused
+16:05:11 (Game 56) - Paused
+16:05:14 (Game 56) - Paused
+16:05:17 (Game 56) - Paused
+16:05:20 (Game 56) - Paused
+16:05:23 (Game 56) - Paused
+16:05:26 (Game 56) - Paused
+16:05:29 (Game 56) - Paused
+16:05:32 (Game 56) - Paused
+16:05:35 (Game 56) - Paused
+16:05:38 (Game 56) - Paused
+16:05:41 (Game 56) - Paused
+16:05:44 (Game 56) - Paused
+16:05:47 (Game 56) - Paused
+16:05:50 (Game 56) - Paused
+16:05:53 (Game 56) - Paused
+16:05:56 (Game 56) - Paused
+16:05:59 (Game 56) - Paused
+16:06:02 (Game 56) - Paused
+16:06:05 (Game 56) - Paused
+16:06:08 (Game 56) - Paused
+16:06:11 (Game 56) - Paused
+16:06:14 (Game 56) - Paused
+16:06:17 (Game 56) - Paused
+16:06:20 (Game 56) - Paused
+16:06:23 (Game 56) - Paused
+16:06:26 (Game 56) - Paused
+16:06:29 (Game 56) - Paused
+16:06:32 (Game 56) - Paused
+16:06:35 (Game 56) - Paused
+16:06:38 (Game 56) - Paused
+16:06:41 (Game 56) - Paused
+16:06:44 (Game 56) - Paused
+16:06:47 (Game 56) - Paused
+16:06:50 (Game 56) - Paused
+16:06:53 (Game 56) - Paused
+16:06:56 (Game 56) - Paused
+16:06:59 (Game 56) - Paused
+16:07:02 (Game 56) - Paused
+16:07:05 (Game 56) - Paused
+16:07:08 (Game 56) - Paused
+16:07:11 (Game 56) - Paused
+16:07:14 (Game 56) - Paused
+16:07:17 (Game 56) - Paused
+16:07:20 (Game 56) - Paused
+16:07:23 (Game 56) - Paused
+16:07:26 (Game 56) - Paused
+16:07:29 (Game 56) - Paused
+16:07:32 (Game 56) - Paused
+16:07:35 (Game 56) - Paused
+16:07:38 (Game 56) - Paused
+16:07:41 (Game 56) - Paused
+16:07:44 (Game 56) - Paused
+16:07:47 (Game 56) - Paused
+16:07:50 (Game 56) - Paused
+16:07:53 (Game 56) - Paused
+16:07:56 (Game 56) - Paused
+16:07:59 (Game 56) - Paused
+16:08:02 (Game 56) - Paused
+16:08:05 (Game 56) - Paused
+16:08:08 (Game 56) - Paused
+16:08:11 (Game 56) - Paused
+16:08:14 (Game 56) - Paused
+16:08:17 (Game 56) - Paused
+16:08:20 (Game 56) - Paused
+16:08:23 (Game 56) - Paused
+16:08:26 (Game 56) - Paused
+16:08:29 (Game 56) - Paused
+16:08:32 (Game 56) - Paused
+16:08:35 (Game 56) - Paused
+16:08:38 (Game 56) - Paused
+16:08:41 (Game 56) - Paused
+16:08:44 (Game 56) - Paused
+16:08:47 (Game 56) - Paused
+16:08:50 (Game 56) - Paused
+16:08:53 (Game 56) - Paused
+16:08:56 (Game 56) - Paused
+16:08:59 (Game 56) - Paused
+16:09:02 (Game 56) - Paused
+16:09:05 (Game 56) - Paused
+16:09:08 (Game 56) - Paused
+16:09:11 (Game 56) - Paused
+16:09:14 (Game 56) - Paused
+16:09:17 (Game 56) - Paused
+16:09:20 (Game 56) - Paused
+16:09:23 (Game 56) - Paused
+16:09:26 (Game 56) - Paused
+16:09:29 (Game 56) - Paused
+16:09:32 (Game 56) - Paused
+16:09:35 (Game 56) - Paused
+16:09:38 (Game 56) - Paused
+16:09:41 (Game 56) - Paused
+16:09:44 (Game 56) - Paused
+16:09:47 (Game 56) - Paused
+16:09:50 (Game 56) - Paused
+16:09:53 (Game 56) - Paused
+16:09:56 (Game 56) - Paused
+16:09:59 (Game 56) - Paused
+16:10:02 (Game 56) - Paused
+16:10:05 (Game 56) - Paused
+16:10:08 (Game 56) - Paused
+16:10:11 (Game 56) - Paused
+16:10:14 (Game 56) - Paused
+16:10:17 (Game 56) - Paused
+16:10:20 (Game 56) - Paused
+16:10:23 (Game 56) - Paused
+16:10:26 (Game 56) - Paused
+16:10:29 (Game 56) - Paused
+16:10:32 (Game 56) - Paused
+16:10:35 (Game 56) - Paused
+16:10:38 (Game 56) - Paused
+16:10:41 (Game 56) - Paused
+16:10:44 (Game 56) - Paused
+16:10:47 (Game 56) - Paused
+16:10:50 (Game 56) - Paused
+16:10:53 (Game 56) - Paused
+16:10:56 (Game 56) - Paused
+16:10:59 (Game 56) - Paused
+16:11:02 (Game 56) - Paused
+16:11:05 (Game 56) - Paused
+16:11:08 (Game 56) - Paused
+16:11:11 (Game 56) - Paused
+16:11:14 (Game 56) - Paused
+16:11:17 (Game 56) - Paused
+16:11:20 (Game 56) - Paused
+16:11:23 (Game 56) - Paused
+16:11:26 (Game 56) - Paused
+16:11:29 (Game 56) - Paused
+16:11:32 (Game 56) - Paused
+16:11:35 (Game 56) - Paused
+16:11:38 (Game 56) - Paused
+16:11:41 (Game 56) - Paused
+16:11:44 (Game 56) - Paused
+16:11:47 (Game 56) - Paused
+16:11:50 (Game 56) - Paused
+16:11:53 (Game 56) - Paused
+16:11:56 (Game 56) - Paused
+16:11:59 (Game 56) - Paused
+16:12:02 (Game 56) - Paused
+16:12:05 (Game 56) - Paused
+16:12:08 (Game 56) - Paused
+16:12:11 (Game 56) - Paused
+16:12:14 (Game 56) - Paused
+16:12:17 (Game 56) - Paused
+16:12:20 (Game 56) - Paused
+16:12:23 (Game 56) - Paused
+16:12:26 (Game 56) - Paused
+16:12:29 (Game 56) - Paused
+16:12:32 (Game 56) - Paused
+16:12:35 (Game 56) - Paused
+16:12:38 (Game 56) - Paused
+16:12:41 (Game 56) - Paused
+16:12:44 (Game 56) - Paused
+16:12:47 (Game 56) - Paused
+16:12:50 (Game 56) - Paused
+16:12:53 (Game 56) - Paused
+16:12:56 (Game 56) - Paused
+16:12:59 (Game 56) - Paused
+16:13:02 (Game 56) - Paused
+16:13:05 (Game 56) - Paused
+16:13:08 (Game 56) - Paused
+16:13:11 (Game 56) - Paused
+16:13:14 (Game 56) - Paused
+16:13:17 (Game 56) - Paused
+16:13:20 (Game 56) - Paused
+16:13:23 (Game 56) - Paused
+16:13:26 (Game 56) - Paused
+16:13:29 (Game 56) - Paused
+16:13:32 (Game 56) - Paused
+16:13:35 (Game 56) - Paused
+16:13:38 (Game 56) - Paused
+16:13:41 (Game 56) - Paused
+16:13:44 (Game 56) - Paused
+16:13:47 (Game 56) - Paused
+16:13:50 (Game 56) - Paused
+16:13:53 (Game 56) - Paused
+16:13:56 (Game 56) - Paused
+16:13:59 (Game 56) - Paused
+16:14:02 (Game 56) - Paused
+16:14:05 (Game 56) - Paused
+16:14:08 (Game 56) - Paused
+16:14:11 (Game 56) - Paused
+16:14:14 (Game 56) - Paused
+16:14:17 (Game 56) - Paused
+16:14:20 (Game 56) - Paused
+16:14:23 (Game 56) - Paused
+16:14:26 (Game 56) - Paused
+16:14:29 (Game 56) - Paused
+16:14:32 (Game 56) - Paused
+16:14:35 (Game 56) - Paused
+16:14:38 (Game 56) - Paused
+16:14:41 (Game 56) - Paused
+16:14:44 (Game 56) - Paused
+16:14:48 (Game 56) - Paused
+16:14:51 (Game 56) - Paused
+16:14:54 (Game 56) - Paused
+16:14:57 (Game 56) - Paused
+16:15:00 (Game 56) - Paused
+16:15:03 (Game 56) - Paused
+16:15:06 (Game 56) - Paused
+16:15:09 (Game 56) - Paused
+16:15:12 (Game 56) - Paused
+16:15:15 (Game 56) - Paused
+16:15:18 (Game 56) - Paused
+16:15:21 (Game 56) - Paused
+16:15:24 (Game 56) - Paused
+16:15:27 (Game 56) - Paused
+16:15:30 (Game 56) - Paused
+16:15:33 (Game 56) - Paused
+16:15:36 (Game 56) - Paused
+16:15:39 (Game 56) - Paused
+16:15:42 (Game 56) - Paused
+16:15:45 (Game 56) - Paused
+16:15:48 (Game 56) - Paused
+16:15:51 (Game 56) - Paused
+16:15:54 (Game 56) - Paused
+16:15:57 (Game 56) - Paused
+16:16:00 (Game 56) - Paused
+16:16:03 (Game 56) - Paused
+16:16:06 (Game 56) - Paused
+16:16:09 (Game 56) - Paused
+16:16:12 (Game 56) - Paused
+16:16:15 (Game 56) - Paused
+16:16:18 (Game 56) - Paused
+16:16:21 (Game 56) - Paused
+16:16:24 (Game 56) - Paused
+16:16:27 (Game 56) - Paused
+16:16:30 (Game 56) - Paused
+16:16:33 (Game 56) - Paused
+16:16:36 (Game 56) - Paused
+16:16:39 (Game 56) - Paused
+16:16:42 (Game 56) - Paused
+16:16:45 (Game 56) - Paused
+16:16:48 (Game 56) - Paused
+16:16:51 (Game 56) - Paused
+16:16:54 (Game 56) - Paused
+16:16:57 (Game 56) - Paused
+16:17:00 (Game 56) - Paused
+16:17:03 (Game 56) - Paused
+16:17:06 (Game 56) - Paused
+16:17:09 (Game 56) - Paused
+16:17:12 (Game 56) - Paused
+16:17:15 (Game 56) - Paused
+16:17:18 (Game 56) - Paused
+16:17:21 (Game 56) - Paused
+16:17:24 (Game 56) - Paused
+16:17:27 (Game 56) - Paused
+16:17:30 (Game 56) - Paused
+16:17:33 (Game 56) - Paused
+16:17:36 (Game 56) - Paused
+16:17:39 (Game 56) - Paused
+16:17:42 (Game 56) - Paused
+16:17:45 (Game 56) - Paused
+16:17:48 (Game 56) - Paused
+16:17:51 (Game 56) - Paused
+16:17:54 (Game 56) - Paused
+16:17:57 (Game 56) - Paused
+16:18:00 (Game 56) - Paused
+16:18:03 (Game 56) - Paused
+16:18:06 (Game 56) - Paused
+16:18:09 (Game 56) - Paused
+16:18:12 (Game 56) - Paused
+16:18:15 (Game 56) - Paused
+16:18:18 (Game 56) - Paused
+16:18:21 (Game 56) - Paused
+16:18:24 (Game 56) - Paused
+16:18:27 (Game 56) - Paused
+16:18:30 (Game 56) - Paused
+16:18:33 (Game 56) - Paused
+16:18:36 (Game 56) - Paused
+16:18:39 (Game 56) - Paused
+16:18:42 (Game 56) - Paused
+16:18:45 (Game 56) - Paused
+16:18:48 (Game 56) - Paused
+16:18:51 (Game 56) - Paused
+16:18:54 (Game 56) - Paused
+16:18:57 (Game 56) - Paused
+16:19:00 (Game 56) - Paused
+16:19:03 (Game 56) - Paused
+16:19:06 (Game 56) - Paused
+16:19:09 (Game 56) - Paused
+16:19:12 (Game 56) - Paused
+16:19:15 (Game 56) - Paused
+16:19:18 (Game 56) - Paused
+16:19:21 (Game 56) - Paused
+16:19:24 (Game 56) - Paused
+16:19:27 (Game 56) - Paused
+16:19:30 (Game 56) - Paused
+16:19:33 (Game 56) - Paused
+16:19:36 (Game 56) - Paused
+16:19:39 (Game 56) - Paused
+16:19:42 (Game 56) - Paused
+16:19:45 (Game 56) - Paused
+16:19:48 (Game 56) - Paused
+16:19:51 (Game 56) - Paused
+16:19:54 (Game 56) - Paused
+16:19:57 (Game 56) - Paused
+16:20:00 (Game 56) - Paused
+16:20:03 (Game 56) - Paused
+16:20:06 (Game 56) - Paused
+16:20:09 (Game 56) - Paused
+16:20:12 (Game 56) - Paused
+16:20:15 (Game 56) - Paused
+16:20:18 (Game 56) - Paused
+16:20:21 (Game 56) - Paused
+16:20:24 (Game 56) - Paused
+16:20:27 (Game 56) - Paused
+16:20:30 (Game 56) - Paused
+16:20:33 (Game 56) - Paused
+16:20:36 (Game 56) - Paused
+16:20:39 (Game 56) - Paused
+16:20:42 (Game 56) - Paused
+16:20:45 (Game 56) - Paused
+16:20:48 (Game 56) - Paused
+16:20:51 (Game 56) - Paused
+16:20:54 (Game 56) - Paused
+16:20:57 (Game 56) - Paused
+16:21:00 (Game 56) - Paused
+16:21:03 (Game 56) - Paused
+16:21:06 (Game 56) - Paused
+16:21:09 (Game 56) - Paused
+16:21:12 (Game 56) - Paused
+16:21:15 (Game 56) - Paused
+16:21:18 (Game 56) - Paused
+16:21:21 (Game 56) - Paused
+16:21:24 (Game 56) - Paused
+16:21:27 (Game 56) - Paused
+16:21:30 (Game 56) - Paused
+16:21:33 (Game 56) - Paused
+16:21:36 (Game 56) - Paused
+16:21:39 (Game 56) - Paused
+16:21:42 (Game 56) - Paused
+16:21:45 (Game 56) - Paused
+16:21:48 (Game 56) - Paused
+16:21:51 (Game 56) - Paused
+16:21:54 (Game 56) - Paused
+16:21:57 (Game 56) - Paused
+16:22:00 (Game 56) - Paused
+16:22:03 (Game 56) - Paused
+16:22:06 (Game 56) - Paused
+16:22:09 (Game 56) - Paused
+16:22:12 (Game 56) - Paused
+16:22:15 (Game 56) - Paused
+16:22:18 (Game 56) - Paused
+16:22:21 (Game 56) - Paused
+16:22:24 (Game 56) - Paused
+16:22:27 (Game 56) - Paused
+16:22:30 (Game 56) - Paused
+16:22:33 (Game 56) - Paused
+16:22:36 (Game 56) - Paused
+16:22:39 (Game 56) - Paused
+16:22:42 (Game 56) - Paused
+16:22:45 (Game 56) - Paused
+16:22:48 (Game 56) - Paused
+16:22:51 (Game 56) - Paused
+16:22:54 (Game 56) - Paused
+16:22:57 (Game 56) - Paused
+16:23:00 (Game 56) - Paused
+16:23:03 (Game 56) - Paused
+16:23:06 (Game 56) - Paused
+16:23:09 (Game 56) - Paused
+16:23:12 (Game 56) - Paused
+16:23:15 (Game 56) - Paused
+16:23:18 (Game 56) - Paused
+16:23:21 (Game 56) - Paused
+16:23:24 (Game 56) - Paused
+16:23:27 (Game 56) - Paused
+16:23:30 (Game 56) - Paused
+16:23:33 (Game 56) - Paused
+16:23:36 (Game 56) - Paused
+16:23:39 (Game 56) - Paused
+16:23:42 (Game 56) - Paused
+16:23:45 (Game 56) - Paused
+16:23:48 (Game 56) - Paused
+16:23:51 (Game 56) - Paused
+16:23:54 (Game 56) - Paused
+16:23:57 (Game 56) - Paused
+16:24:00 (Game 56) - Paused
+16:24:03 (Game 56) - Paused
+16:24:06 (Game 56) - Paused
+16:24:09 (Game 56) - Paused
+16:24:12 (Game 56) - Paused
+16:24:15 (Game 56) - Paused
+16:24:18 (Game 56) - Paused
+16:24:21 (Game 56) - Paused
+16:24:24 (Game 56) - Paused
+16:24:27 (Game 56) - Paused
+16:24:30 (Game 56) - Paused
+16:24:33 (Game 56) - Paused
+16:24:36 (Game 56) - Paused
+16:24:39 (Game 56) - Paused
+16:24:42 (Game 56) - Paused
+16:24:45 (Game 56) - Paused
+16:24:48 (Game 56) - Paused
+16:24:51 (Game 56) - Paused
+16:24:54 (Game 56) - Paused
+16:24:57 (Game 56) - Paused
+16:25:00 (Game 56) - Paused
+16:25:03 (Game 56) - Paused
+16:25:06 (Game 56) - Paused
+16:25:09 (Game 56) - Paused
+16:25:12 (Game 56) - Paused
+16:25:15 (Game 56) - Paused
+16:25:18 (Game 56) - Paused
+16:25:21 (Game 56) - Paused
+16:25:24 (Game 56) - Paused
+16:25:27 (Game 56) - Paused
+16:25:30 (Game 56) - Paused
+16:25:33 (Game 56) - Paused
+16:25:36 (Game 56) - Paused
+16:25:39 (Game 56) - Paused
+16:25:42 (Game 56) - Paused
+16:25:45 (Game 56) - Paused
+16:25:48 (Game 56) - Paused
+16:25:51 (Game 56) - Paused
+16:25:54 (Game 56) - Paused
+16:25:57 (Game 56) - Paused
+16:26:00 (Game 56) - Paused
+16:26:03 (Game 56) - Paused
+16:26:06 (Game 56) - Paused
+16:26:09 (Game 56) - Paused
+16:26:12 (Game 56) - Paused
+16:26:16 (Game 56) - Paused
+16:26:19 (Game 56) - Paused
+16:26:22 (Game 56) - Paused
+16:26:25 (Game 56) - Paused
+16:26:28 (Game 56) - Paused
+16:26:31 (Game 56) - Paused
+16:26:34 (Game 56) - Paused
+16:26:37 (Game 56) - Paused
+16:26:40 (Game 56) - Paused
+16:26:43 (Game 56) - Paused
+16:26:46 (Game 56) - Paused
+16:26:49 (Game 56) - Paused
+16:26:52 (Game 56) - Paused
+16:26:55 (Game 56) - Paused
+16:26:58 (Game 56) - Paused
+16:27:01 (Game 56) - Paused
+16:27:04 (Game 56) - Paused
+16:27:07 (Game 56) - Paused
+16:27:10 (Game 56) - Paused
+16:27:13 (Game 56) - Paused
+16:27:16 (Game 56) - Paused
+16:27:19 (Game 56) - Paused
+16:27:22 (Game 56) - Paused
+16:27:25 (Game 56) - Paused
+16:46:00 (Game 56) - Paused
+16:46:03 (Game 56) - Paused
+16:46:06 (Game 56) - Paused
+16:46:09 (Game 56) - Paused
+16:46:12 (Game 56) - Paused
+16:46:15 (Game 56) - Paused
+16:46:18 (Game 56) - Paused
+16:46:21 (Game 56) - Paused
+16:46:24 (Game 56) - Paused
+16:46:27 (Game 56) - Paused
+16:46:30 (Game 56) - Paused
+16:53:03 (Game 56) - Paused
+16:53:06 (Game 56) - Paused
+16:53:09 (Game 56) - Paused
+16:53:12 (Game 56) - Paused
+16:53:15 (Game 56) - Paused
+16:53:18 (Game 56) - Paused
+16:53:21 (Game 56) - Paused
+16:53:24 (Game 56) - Paused
+16:53:27 (Game 56) - Paused
+16:53:30 (Game 56) - Paused
+16:53:33 (Game 56) - Paused
+16:53:36 (Game 56) - Paused
+16:53:39 (Game 56) - Paused
+16:53:42 (Game 56) - Paused
+16:53:45 (Game 56) - Paused
+16:53:48 (Game 56) - Paused
+16:53:51 (Game 56) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+16:53:51 (Game 56) - Playing game...
+17:09:26 (Game 56) - Completed game with scores [100, 0]
+17:09:26 (Game 56) - Cumulative scores: MiniMaxRandomPlayer=1350 MultithreadedUCTPlayer=4250 
+17:09:26 (Game 56) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game56.json
+17:09:26 - Finished 56 of 100 games in 894.81 minutes. Estimated 703.06 minutes remaining.
+17:09:29 (Game 57) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+17:09:29 (Game 57) - Playing game...
+17:25:19 (Game 57) - Completed game with scores [0, 100]
+17:25:19 (Game 57) - Cumulative scores: MiniMaxRandomPlayer=1350 MultithreadedUCTPlayer=4350 
+17:25:19 (Game 57) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game57.json
+17:25:19 - Finished 57 of 100 games in 910.69 minutes. Estimated 687.01 minutes remaining.
+17:25:22 (Game 58) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+17:25:22 (Game 58) - Playing game...
+17:41:04 (Game 58) - Completed game with scores [0, 100]
+17:41:04 (Game 58) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=4350 
+17:41:04 (Game 58) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game58.json
+17:41:04 - Finished 58 of 100 games in 926.44 minutes. Estimated 670.87 minutes remaining.
+17:41:07 (Game 59) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+17:41:07 (Game 59) - Playing game...
+17:56:55 (Game 59) - Completed game with scores [0, 100]
+17:56:55 (Game 59) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=4450 
+17:56:55 (Game 59) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game59.json
+17:56:55 - Finished 59 of 100 games in 942.29 minutes. Estimated 654.81 minutes remaining.
+17:56:58 (Game 60) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+17:56:58 (Game 60) - Playing game...
+18:12:44 (Game 60) - Completed game with scores [100, 0]
+18:12:44 (Game 60) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=4550 
+18:12:44 (Game 60) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game60.json
+18:12:44 - Finished 60 of 100 games in 958.12 minutes. Estimated 638.74 minutes remaining.
+18:12:47 (Game 61) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+18:12:47 (Game 61) - Playing game...
+18:28:22 (Game 61) - Completed game with scores [0, 100]
+18:28:22 (Game 61) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=4650 
+18:28:22 (Game 61) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game61.json
+18:28:22 - Finished 61 of 100 games in 973.74 minutes. Estimated 622.56 minutes remaining.
+18:28:25 (Game 62) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+18:28:25 (Game 62) - Playing game...
+18:41:53 (Game 62) - Completed game with scores [100, 0]
+18:41:53 (Game 62) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=4750 
+18:41:53 (Game 62) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game62.json
+18:41:53 - Finished 62 of 100 games in 987.27 minutes. Estimated 605.10 minutes remaining.
+18:41:56 (Game 63) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+18:41:56 (Game 63) - Playing game...
+18:57:31 (Game 63) - Completed game with scores [0, 100]
+18:57:31 (Game 63) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=4850 
+18:57:31 (Game 63) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game63.json
+18:57:31 - Finished 63 of 100 games in 1002.90 minutes. Estimated 589.00 minutes remaining.
+18:57:34 (Game 64) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+18:57:34 (Game 64) - Playing game...
+19:13:09 (Game 64) - Completed game with scores [100, 0]
+19:13:09 (Game 64) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=4950 
+19:13:09 (Game 64) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game64.json
+19:13:09 - Finished 64 of 100 games in 1018.52 minutes. Estimated 572.92 minutes remaining.
+19:13:12 (Game 65) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+19:13:12 (Game 65) - Playing game...
+19:29:00 (Game 65) - Completed game with scores [0, 100]
+19:29:00 (Game 65) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5050 
+19:29:00 (Game 65) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game65.json
+19:29:00 - Finished 65 of 100 games in 1034.37 minutes. Estimated 556.97 minutes remaining.
+19:29:03 (Game 66) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+19:29:03 (Game 66) - Playing game...
+19:44:49 (Game 66) - Completed game with scores [100, 0]
+19:44:49 (Game 66) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5150 
+19:44:49 (Game 66) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game66.json
+19:44:49 - Finished 66 of 100 games in 1050.20 minutes. Estimated 541.01 minutes remaining.
+19:44:52 (Game 67) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+19:44:52 (Game 67) - Playing game...
+20:00:39 (Game 67) - Completed game with scores [0, 100]
+20:00:39 (Game 67) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5250 
+20:00:39 (Game 67) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game67.json
+20:00:39 - Finished 67 of 100 games in 1066.02 minutes. Estimated 525.06 minutes remaining.
+20:00:42 (Game 68) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+20:00:42 (Game 68) - Playing game...
+20:16:31 (Game 68) - Completed game with scores [100, 0]
+20:16:31 (Game 68) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5350 
+20:16:31 (Game 68) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game68.json
+20:16:31 - Finished 68 of 100 games in 1081.89 minutes. Estimated 509.12 minutes remaining.
+20:16:34 (Game 69) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+20:16:34 (Game 69) - Playing game...
+20:32:08 (Game 69) - Completed game with scores [0, 100]
+20:32:08 (Game 69) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5450 
+20:32:08 (Game 69) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game69.json
+20:32:08 - Finished 69 of 100 games in 1097.51 minutes. Estimated 493.08 minutes remaining.
+20:32:11 (Game 70) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+20:32:11 (Game 70) - Playing game...
+20:47:45 (Game 70) - Completed game with scores [100, 0]
+20:47:45 (Game 70) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5550 
+20:47:45 (Game 70) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game70.json
+20:47:45 - Finished 70 of 100 games in 1113.13 minutes. Estimated 477.06 minutes remaining.
+20:47:48 (Game 71) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+20:47:48 (Game 71) - Playing game...
+21:03:23 (Game 71) - Completed game with scores [0, 100]
+21:03:23 (Game 71) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5650 
+21:03:23 (Game 71) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game71.json
+21:03:23 - Finished 71 of 100 games in 1128.75 minutes. Estimated 461.04 minutes remaining.
+21:03:26 (Game 72) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+21:03:26 (Game 72) - Playing game...
+21:18:59 (Game 72) - Completed game with scores [100, 0]
+21:18:59 (Game 72) - Cumulative scores: MiniMaxRandomPlayer=1450 MultithreadedUCTPlayer=5750 
+21:18:59 (Game 72) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game72.json
+21:18:59 - Finished 72 of 100 games in 1144.36 minutes. Estimated 445.03 minutes remaining.
+21:19:02 (Game 73) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+21:19:02 (Game 73) - Playing game...
+21:32:13 (Game 73) - Completed game with scores [50, 50]
+21:32:13 (Game 73) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=5800 
+21:32:13 (Game 73) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game73.json
+21:32:13 - Finished 73 of 100 games in 1157.59 minutes. Estimated 428.15 minutes remaining.
+21:32:16 (Game 74) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+21:32:16 (Game 74) - Playing game...
+21:47:50 (Game 74) - Completed game with scores [100, 0]
+21:47:50 (Game 74) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=5900 
+21:47:50 (Game 74) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game74.json
+21:47:50 - Finished 74 of 100 games in 1173.22 minutes. Estimated 412.21 minutes remaining.
+21:47:53 (Game 75) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+21:47:53 (Game 75) - Playing game...
+21:55:23 (Game 75) - Completed game with scores [0, 100]
+21:55:23 (Game 75) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=6000 
+21:55:23 (Game 75) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game75.json
+21:55:23 - Finished 75 of 100 games in 1180.76 minutes. Estimated 393.59 minutes remaining.
+21:55:26 (Game 76) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+21:55:26 (Game 76) - Playing game...
+22:11:02 (Game 76) - Completed game with scores [100, 0]
+22:11:02 (Game 76) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=6100 
+22:11:02 (Game 76) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game76.json
+22:11:02 - Finished 76 of 100 games in 1196.41 minutes. Estimated 377.81 minutes remaining.
+22:11:05 (Game 77) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+22:11:05 (Game 77) - Playing game...
+22:26:39 (Game 77) - Completed game with scores [0, 100]
+22:26:39 (Game 77) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=6200 
+22:26:39 (Game 77) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game77.json
+22:26:39 - Finished 77 of 100 games in 1212.03 minutes. Estimated 362.04 minutes remaining.
+22:26:42 (Game 78) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+22:26:42 (Game 78) - Playing game...
+22:42:17 (Game 78) - Completed game with scores [100, 0]
+22:42:17 (Game 78) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=6300 
+22:42:17 (Game 78) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game78.json
+22:42:17 - Finished 78 of 100 games in 1227.66 minutes. Estimated 346.26 minutes remaining.
+22:42:20 (Game 79) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+22:42:20 (Game 79) - Playing game...
+22:55:03 (Game 79) - Completed game with scores [0, 100]
+22:55:03 (Game 79) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=6400 
+22:55:03 (Game 79) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game79.json
+22:55:03 - Finished 79 of 100 games in 1240.43 minutes. Estimated 329.73 minutes remaining.
+22:55:06 (Game 80) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+22:55:06 (Game 80) - Playing game...
+23:10:41 (Game 80) - Completed game with scores [100, 0]
+23:10:41 (Game 80) - Cumulative scores: MiniMaxRandomPlayer=1500 MultithreadedUCTPlayer=6500 
+23:10:41 (Game 80) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game80.json
+23:10:41 - Finished 80 of 100 games in 1256.06 minutes. Estimated 314.02 minutes remaining.
+23:10:44 (Game 81) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:10:44 (Game 81) - Playing game...
+23:20:32 (Game 81) - Completed game with scores [100, 0]
+23:20:32 (Game 81) - Cumulative scores: MiniMaxRandomPlayer=1600 MultithreadedUCTPlayer=6500 
+23:20:32 (Game 81) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game81.json
+23:20:32 - Finished 81 of 100 games in 1265.91 minutes. Estimated 296.94 minutes remaining.
+23:20:35 (Game 82) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:20:35 (Game 82) - Playing game...
+23:27:55 (Game 82) - Completed game with scores [100, 0]
+23:27:55 (Game 82) - Cumulative scores: MiniMaxRandomPlayer=1600 MultithreadedUCTPlayer=6600 
+23:27:55 (Game 82) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game82.json
+23:27:55 - Finished 82 of 100 games in 1273.29 minutes. Estimated 279.50 minutes remaining.
+23:27:58 (Game 83) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:27:58 (Game 83) - Playing game...
+23:42:04 (Game 83) - Completed game with scores [100, 0]
+23:42:04 (Game 83) - Cumulative scores: MiniMaxRandomPlayer=1700 MultithreadedUCTPlayer=6600 
+23:42:04 (Game 83) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game83.json
+23:42:04 - Finished 83 of 100 games in 1287.45 minutes. Estimated 263.69 minutes remaining.
+23:42:07 (Game 84) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+23:42:07 (Game 84) - Playing game...
+23:57:41 (Game 84) - Completed game with scores [100, 0]
+23:57:41 (Game 84) - Cumulative scores: MiniMaxRandomPlayer=1700 MultithreadedUCTPlayer=6700 
+23:57:41 (Game 84) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game84.json
+23:57:41 - Finished 84 of 100 games in 1303.06 minutes. Estimated 248.20 minutes remaining.
+23:57:44 (Game 85) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+23:57:44 (Game 85) - Playing game...
+00:13:22 (Game 85) - Completed game with scores [100, 0]
+00:13:22 (Game 85) - Cumulative scores: MiniMaxRandomPlayer=1800 MultithreadedUCTPlayer=6700 
+00:13:22 (Game 85) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game85.json
+00:13:22 - Finished 85 of 100 games in 1318.74 minutes. Estimated 232.72 minutes remaining.
+00:13:25 (Game 86) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:13:25 (Game 86) - Playing game...
+00:27:35 (Game 86) - Completed game with scores [0, 100]
+00:27:35 (Game 86) - Cumulative scores: MiniMaxRandomPlayer=1900 MultithreadedUCTPlayer=6700 
+00:27:35 (Game 86) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game86.json
+00:27:35 - Finished 86 of 100 games in 1332.97 minutes. Estimated 216.99 minutes remaining.
+00:27:38 (Game 87) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:27:38 (Game 87) - Playing game...
+00:43:24 (Game 87) - Completed game with scores [0, 100]
+00:43:24 (Game 87) - Cumulative scores: MiniMaxRandomPlayer=1900 MultithreadedUCTPlayer=6800 
+00:43:24 (Game 87) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game87.json
+00:43:24 - Finished 87 of 100 games in 1348.78 minutes. Estimated 201.54 minutes remaining.
+00:43:27 (Game 88) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+00:43:27 (Game 88) - Playing game...
+00:59:18 (Game 88) - WARNING: This match contains errors from the following players: [MultithreadedUCTPlayer]
+00:59:18 (Game 88) - Completed game with scores [100, 0]
+00:59:18 (Game 88) - Cumulative scores: MiniMaxRandomPlayer=1900 MultithreadedUCTPlayer=6900 
+00:59:18 (Game 88) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game88.json
+00:59:18 - Finished 88 of 100 games in 1364.68 minutes. Estimated 186.09 minutes remaining.
+00:59:21 (Game 89) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+00:59:21 (Game 89) - Playing game...
+01:15:09 (Game 89) - Completed game with scores [0, 100]
+01:15:09 (Game 89) - Cumulative scores: MiniMaxRandomPlayer=1900 MultithreadedUCTPlayer=7000 
+01:15:09 (Game 89) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game89.json
+01:15:09 - Finished 89 of 100 games in 1380.53 minutes. Estimated 170.63 minutes remaining.
+01:15:12 (Game 90) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:15:12 (Game 90) - Playing game...
+01:30:58 (Game 90) - Completed game with scores [50, 50]
+01:30:58 (Game 90) - Cumulative scores: MiniMaxRandomPlayer=1950 MultithreadedUCTPlayer=7050 
+01:30:58 (Game 90) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game90.json
+01:30:58 - Finished 90 of 100 games in 1396.35 minutes. Estimated 155.15 minutes remaining.
+01:31:01 (Game 91) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+01:31:01 (Game 91) - Playing game...
+01:46:52 (Game 91) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+01:46:52 (Game 91) - Completed game with scores [0, 100]
+01:46:52 (Game 91) - Cumulative scores: MiniMaxRandomPlayer=1950 MultithreadedUCTPlayer=7150 
+01:46:52 (Game 91) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game91.json
+01:46:52 - Finished 91 of 100 games in 1412.25 minutes. Estimated 139.67 minutes remaining.
+01:46:55 (Game 92) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+01:46:55 (Game 92) - Playing game...
+02:02:43 (Game 92) - Completed game with scores [100, 0]
+02:02:43 (Game 92) - Cumulative scores: MiniMaxRandomPlayer=1950 MultithreadedUCTPlayer=7250 
+02:02:43 (Game 92) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game92.json
+02:02:43 - Finished 92 of 100 games in 1428.09 minutes. Estimated 124.18 minutes remaining.
+02:02:46 (Game 93) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:02:46 (Game 93) - Playing game...
+02:18:36 (Game 93) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+02:18:36 (Game 93) - Completed game with scores [0, 100]
+02:18:36 (Game 93) - Cumulative scores: MiniMaxRandomPlayer=1950 MultithreadedUCTPlayer=7350 
+02:18:36 (Game 93) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game93.json
+02:18:36 - Finished 93 of 100 games in 1443.98 minutes. Estimated 108.69 minutes remaining.
+02:18:39 (Game 94) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:18:39 (Game 94) - Playing game...
+02:32:28 (Game 94) - Completed game with scores [0, 100]
+02:32:28 (Game 94) - Cumulative scores: MiniMaxRandomPlayer=2050 MultithreadedUCTPlayer=7350 
+02:32:28 (Game 94) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game94.json
+02:32:28 - Finished 94 of 100 games in 1457.85 minutes. Estimated 93.05 minutes remaining.
+02:32:31 (Game 95) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+02:32:31 (Game 95) - Playing game...
+02:48:20 (Game 95) - Completed game with scores [0, 100]
+02:48:20 (Game 95) - Cumulative scores: MiniMaxRandomPlayer=2050 MultithreadedUCTPlayer=7450 
+02:48:20 (Game 95) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game95.json
+02:48:20 - Finished 95 of 100 games in 1473.70 minutes. Estimated 77.56 minutes remaining.
+02:48:23 (Game 96) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+02:48:23 (Game 96) - Playing game...
+03:04:14 (Game 96) - WARNING: This match contains errors from the following players: [MiniMaxRandomPlayer]
+03:04:14 (Game 96) - Completed game with scores [0, 100]
+03:04:14 (Game 96) - Cumulative scores: MiniMaxRandomPlayer=2150 MultithreadedUCTPlayer=7450 
+03:04:14 (Game 96) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game96.json
+03:04:14 - Finished 96 of 100 games in 1489.60 minutes. Estimated 62.07 minutes remaining.
+03:04:17 (Game 97) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:04:17 (Game 97) - Playing game...
+03:20:04 (Game 97) - Completed game with scores [0, 100]
+03:20:04 (Game 97) - Cumulative scores: MiniMaxRandomPlayer=2150 MultithreadedUCTPlayer=7550 
+03:20:04 (Game 97) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game97.json
+03:20:04 - Finished 97 of 100 games in 1505.43 minutes. Estimated 46.56 minutes remaining.
+03:20:07 (Game 98) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:20:07 (Game 98) - Playing game...
+03:35:55 (Game 98) - Completed game with scores [100, 0]
+03:35:55 (Game 98) - Cumulative scores: MiniMaxRandomPlayer=2150 MultithreadedUCTPlayer=7650 
+03:35:55 (Game 98) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game98.json
+03:35:55 - Finished 98 of 100 games in 1521.30 minutes. Estimated 31.05 minutes remaining.
+03:35:58 (Game 99) - Initializing game with players: [MiniMaxRandomPlayer, MultithreadedUCTPlayer]
+03:35:58 (Game 99) - Playing game...
+03:51:46 (Game 99) - Completed game with scores [0, 100]
+03:51:46 (Game 99) - Cumulative scores: MiniMaxRandomPlayer=2150 MultithreadedUCTPlayer=7750 
+03:51:46 (Game 99) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game99.json
+03:51:46 - Finished 99 of 100 games in 1537.15 minutes. Estimated 15.53 minutes remaining.
+03:51:49 (Game 100) - Initializing game with players: [MultithreadedUCTPlayer, MiniMaxRandomPlayer]
+03:51:49 (Game 100) - Playing game...
+04:07:37 (Game 100) - Completed game with scores [100, 0]
+04:07:37 (Game 100) - Cumulative scores: MiniMaxRandomPlayer=2150 MultithreadedUCTPlayer=7850 
+04:07:37 (Game 100) - Saving match to file checkers-MiniMaxRandomPlayer-vs-MultithreadedUCTPlayer-20160508_233357/game100.json
+04:07:37 - Finished 100 of 100 games in 1552.99 minutes. Estimated 0.00 minutes remaining.
+04:07:37 - Successfully finished tournament. 9 matches contained errors.
+04:07:37 - Average player scores: MiniMaxRandomPlayer=21.5000 MultithreadedUCTPlayer=78.5000 
