@@ -1,0 +1,635 @@
+Checking if pause file exists
+Updating the game cache...
+05:34:25 (Game 1) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+05:34:25 (Game 1) - Playing game...
+Updating the game cache took: 10254ms.
+05:50:01 (Game 1) - Completed game with scores [0, 100]
+05:50:01 (Game 1) - Cumulative scores: LearningPlayer=0 MultithreadedUCTPlayer=100 
+05:50:01 (Game 1) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game1.json
+05:50:01 - Finished 1 of 100 games in 15.65 minutes. Estimated 1548.88 minutes remaining.
+05:50:04 (Game 2) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+05:50:04 (Game 2) - Playing game...
+06:05:39 (Game 2) - Completed game with scores [100, 0]
+06:05:39 (Game 2) - Cumulative scores: LearningPlayer=0 MultithreadedUCTPlayer=200 
+06:05:39 (Game 2) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game2.json
+06:05:39 - Finished 2 of 100 games in 31.28 minutes. Estimated 1532.89 minutes remaining.
+06:05:42 (Game 3) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+06:05:42 (Game 3) - Playing game...
+06:21:17 (Game 3) - Completed game with scores [0, 100]
+06:21:17 (Game 3) - Cumulative scores: LearningPlayer=0 MultithreadedUCTPlayer=300 
+06:21:17 (Game 3) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game3.json
+06:21:17 - Finished 3 of 100 games in 46.91 minutes. Estimated 1516.60 minutes remaining.
+06:21:20 (Game 4) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+06:21:20 (Game 4) - Playing game...
+06:36:54 (Game 4) - Completed game with scores [100, 0]
+06:36:54 (Game 4) - Cumulative scores: LearningPlayer=0 MultithreadedUCTPlayer=400 
+06:36:54 (Game 4) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game4.json
+06:36:54 - Finished 4 of 100 games in 62.52 minutes. Estimated 1500.47 minutes remaining.
+06:36:57 (Game 5) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+06:36:57 (Game 5) - Playing game...
+06:52:30 (Game 5) - Completed game with scores [50, 50]
+06:52:30 (Game 5) - Cumulative scores: LearningPlayer=50 MultithreadedUCTPlayer=450 
+06:52:30 (Game 5) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game5.json
+06:52:30 - Finished 5 of 100 games in 78.13 minutes. Estimated 1484.46 minutes remaining.
+06:52:33 (Game 6) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+06:52:33 (Game 6) - Playing game...
+07:07:05 (Game 6) - Completed game with scores [0, 100]
+07:07:05 (Game 6) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=450 
+07:07:05 (Game 6) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game6.json
+07:07:05 - Finished 6 of 100 games in 92.71 minutes. Estimated 1452.38 minutes remaining.
+07:07:08 (Game 7) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+07:07:08 (Game 7) - Playing game...
+07:22:43 (Game 7) - Completed game with scores [0, 100]
+07:22:43 (Game 7) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=550 
+07:22:43 (Game 7) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game7.json
+07:22:43 - Finished 7 of 100 games in 108.34 minutes. Estimated 1439.44 minutes remaining.
+07:22:46 (Game 8) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+07:22:46 (Game 8) - Playing game...
+07:38:20 (Game 8) - Completed game with scores [100, 0]
+07:38:20 (Game 8) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=650 
+07:38:20 (Game 8) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game8.json
+07:38:20 - Finished 8 of 100 games in 123.96 minutes. Estimated 1425.59 minutes remaining.
+07:38:23 (Game 9) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+07:38:23 (Game 9) - Playing game...
+07:53:58 (Game 9) - Completed game with scores [0, 100]
+07:53:58 (Game 9) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=750 
+07:53:58 (Game 9) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game9.json
+07:53:58 - Finished 9 of 100 games in 139.60 minutes. Estimated 1411.47 minutes remaining.
+07:54:01 (Game 10) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+07:54:01 (Game 10) - Playing game...
+08:09:34 (Game 10) - Completed game with scores [100, 0]
+08:09:34 (Game 10) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=850 
+08:09:34 (Game 10) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game10.json
+08:09:34 - Finished 10 of 100 games in 155.20 minutes. Estimated 1396.77 minutes remaining.
+08:09:37 (Game 11) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+08:09:37 (Game 11) - Playing game...
+08:25:11 (Game 11) - Completed game with scores [0, 100]
+08:25:11 (Game 11) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=950 
+08:25:11 (Game 11) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game11.json
+08:25:11 - Finished 11 of 100 games in 170.81 minutes. Estimated 1382.01 minutes remaining.
+08:25:14 (Game 12) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+08:25:14 (Game 12) - Playing game...
+08:40:49 (Game 12) - Completed game with scores [100, 0]
+08:40:49 (Game 12) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=1050 
+08:40:49 (Game 12) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game12.json
+08:40:49 - Finished 12 of 100 games in 186.45 minutes. Estimated 1367.27 minutes remaining.
+08:40:52 (Game 13) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+08:40:52 (Game 13) - Playing game...
+08:56:27 (Game 13) - Completed game with scores [0, 100]
+08:56:27 (Game 13) - Cumulative scores: LearningPlayer=150 MultithreadedUCTPlayer=1150 
+08:56:27 (Game 13) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game13.json
+08:56:27 - Finished 13 of 100 games in 202.07 minutes. Estimated 1352.34 minutes remaining.
+08:56:30 (Game 14) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+08:56:30 (Game 14) - Playing game...
+09:12:05 (Game 14) - Completed game with scores [0, 100]
+09:12:05 (Game 14) - Cumulative scores: LearningPlayer=250 MultithreadedUCTPlayer=1150 
+09:12:05 (Game 14) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game14.json
+09:12:05 - Finished 14 of 100 games in 217.70 minutes. Estimated 1337.33 minutes remaining.
+09:12:08 (Game 15) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+09:12:08 (Game 15) - Playing game...
+09:27:43 (Game 15) - Completed game with scores [0, 100]
+09:27:43 (Game 15) - Cumulative scores: LearningPlayer=250 MultithreadedUCTPlayer=1250 
+09:27:43 (Game 15) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game15.json
+09:27:43 - Finished 15 of 100 games in 233.34 minutes. Estimated 1322.24 minutes remaining.
+09:27:46 (Game 16) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+09:27:46 (Game 16) - Playing game...
+09:43:21 (Game 16) - Completed game with scores [100, 0]
+09:43:21 (Game 16) - Cumulative scores: LearningPlayer=250 MultithreadedUCTPlayer=1350 
+09:43:21 (Game 16) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game16.json
+09:43:21 - Finished 16 of 100 games in 248.98 minutes. Estimated 1307.12 minutes remaining.
+09:43:24 (Game 17) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+09:43:24 (Game 17) - Playing game...
+09:47:57 (Game 17) - Completed game with scores [100, 0]
+09:47:57 (Game 17) - Cumulative scores: LearningPlayer=350 MultithreadedUCTPlayer=1350 
+09:47:57 (Game 17) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game17.json
+09:47:57 - Finished 17 of 100 games in 253.57 minutes. Estimated 1238.04 minutes remaining.
+09:48:00 (Game 18) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+09:48:00 (Game 18) - Playing game...
+10:03:34 (Game 18) - Completed game with scores [0, 100]
+10:03:34 (Game 18) - Cumulative scores: LearningPlayer=450 MultithreadedUCTPlayer=1350 
+10:03:34 (Game 18) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game18.json
+10:03:34 - Finished 18 of 100 games in 269.20 minutes. Estimated 1226.36 minutes remaining.
+10:03:37 (Game 19) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+10:03:37 (Game 19) - Playing game...
+10:19:12 (Game 19) - Completed game with scores [0, 100]
+10:19:12 (Game 19) - Cumulative scores: LearningPlayer=450 MultithreadedUCTPlayer=1450 
+10:19:12 (Game 19) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game19.json
+10:19:12 - Finished 19 of 100 games in 284.82 minutes. Estimated 1214.23 minutes remaining.
+10:19:15 (Game 20) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+10:19:15 (Game 20) - Playing game...
+10:34:48 (Game 20) - Completed game with scores [100, 0]
+10:34:48 (Game 20) - Cumulative scores: LearningPlayer=450 MultithreadedUCTPlayer=1550 
+10:34:48 (Game 20) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game20.json
+10:34:48 - Finished 20 of 100 games in 300.43 minutes. Estimated 1201.74 minutes remaining.
+10:34:51 (Game 21) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+10:34:51 (Game 21) - Playing game...
+10:50:28 (Game 21) - Completed game with scores [0, 100]
+10:50:28 (Game 21) - Cumulative scores: LearningPlayer=450 MultithreadedUCTPlayer=1650 
+10:50:28 (Game 21) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game21.json
+10:50:28 - Finished 21 of 100 games in 316.09 minutes. Estimated 1189.09 minutes remaining.
+10:50:31 (Game 22) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+10:50:31 (Game 22) - Playing game...
+11:06:05 (Game 22) - Completed game with scores [100, 0]
+11:06:05 (Game 22) - Cumulative scores: LearningPlayer=450 MultithreadedUCTPlayer=1750 
+11:06:05 (Game 22) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game22.json
+11:06:05 - Finished 22 of 100 games in 331.71 minutes. Estimated 1176.06 minutes remaining.
+11:06:08 (Game 23) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+11:06:08 (Game 23) - Playing game...
+11:21:43 (Game 23) - Completed game with scores [0, 100]
+11:21:43 (Game 23) - Cumulative scores: LearningPlayer=450 MultithreadedUCTPlayer=1850 
+11:21:43 (Game 23) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game23.json
+11:21:43 - Finished 23 of 100 games in 347.34 minutes. Estimated 1162.84 minutes remaining.
+11:21:46 (Game 24) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+11:21:46 (Game 24) - Playing game...
+11:35:59 (Game 24) - Completed game with scores [0, 100]
+11:35:59 (Game 24) - Cumulative scores: LearningPlayer=550 MultithreadedUCTPlayer=1850 
+11:35:59 (Game 24) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game24.json
+11:35:59 - Finished 24 of 100 games in 361.61 minutes. Estimated 1145.09 minutes remaining.
+11:36:02 (Game 25) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+11:36:02 (Game 25) - Playing game...
+11:49:11 (Game 25) - Completed game with scores [0, 100]
+11:49:11 (Game 25) - Cumulative scores: LearningPlayer=550 MultithreadedUCTPlayer=1950 
+11:49:11 (Game 25) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game25.json
+11:49:11 - Finished 25 of 100 games in 374.81 minutes. Estimated 1124.44 minutes remaining.
+11:49:14 (Game 26) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+11:49:14 (Game 26) - Playing game...
+12:04:50 (Game 26) - Completed game with scores [100, 0]
+12:04:50 (Game 26) - Cumulative scores: LearningPlayer=550 MultithreadedUCTPlayer=2050 
+12:04:50 (Game 26) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game26.json
+12:04:50 - Finished 26 of 100 games in 390.46 minutes. Estimated 1111.30 minutes remaining.
+12:04:53 (Game 27) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+12:04:53 (Game 27) - Playing game...
+12:20:27 (Game 27) - Completed game with scores [0, 100]
+12:20:27 (Game 27) - Cumulative scores: LearningPlayer=550 MultithreadedUCTPlayer=2150 
+12:20:27 (Game 27) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game27.json
+12:20:27 - Finished 27 of 100 games in 406.07 minutes. Estimated 1097.90 minutes remaining.
+12:20:30 (Game 28) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+12:20:30 (Game 28) - Playing game...
+12:36:04 (Game 28) - Completed game with scores [50, 50]
+12:36:04 (Game 28) - Cumulative scores: LearningPlayer=600 MultithreadedUCTPlayer=2200 
+12:36:04 (Game 28) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game28.json
+12:36:04 - Finished 28 of 100 games in 421.69 minutes. Estimated 1084.34 minutes remaining.
+12:36:07 (Game 29) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+12:36:07 (Game 29) - Playing game...
+12:51:42 (Game 29) - Completed game with scores [0, 100]
+12:51:42 (Game 29) - Cumulative scores: LearningPlayer=600 MultithreadedUCTPlayer=2300 
+12:51:42 (Game 29) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game29.json
+12:51:42 - Finished 29 of 100 games in 437.32 minutes. Estimated 1070.68 minutes remaining.
+12:51:45 (Game 30) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+12:51:45 (Game 30) - Playing game...
+13:07:19 (Game 30) - Completed game with scores [0, 100]
+13:07:19 (Game 30) - Cumulative scores: LearningPlayer=700 MultithreadedUCTPlayer=2300 
+13:07:19 (Game 30) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game30.json
+13:07:19 - Finished 30 of 100 games in 452.95 minutes. Estimated 1056.88 minutes remaining.
+13:07:22 (Game 31) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+13:07:22 (Game 31) - Playing game...
+13:12:13 (Game 31) - Completed game with scores [100, 0]
+13:12:13 (Game 31) - Cumulative scores: LearningPlayer=800 MultithreadedUCTPlayer=2300 
+13:12:13 (Game 31) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game31.json
+13:12:13 - Finished 31 of 100 games in 457.84 minutes. Estimated 1019.06 minutes remaining.
+13:12:16 (Game 32) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+13:12:16 (Game 32) - Playing game...
+13:27:50 (Game 32) - Completed game with scores [100, 0]
+13:27:50 (Game 32) - Cumulative scores: LearningPlayer=800 MultithreadedUCTPlayer=2400 
+13:27:50 (Game 32) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game32.json
+13:27:50 - Finished 32 of 100 games in 473.46 minutes. Estimated 1006.11 minutes remaining.
+13:27:53 (Game 33) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+13:27:53 (Game 33) - Playing game...
+13:43:27 (Game 33) - Completed game with scores [0, 100]
+13:43:27 (Game 33) - Cumulative scores: LearningPlayer=800 MultithreadedUCTPlayer=2500 
+13:43:27 (Game 33) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game33.json
+13:43:27 - Finished 33 of 100 games in 489.08 minutes. Estimated 992.98 minutes remaining.
+13:43:30 (Game 34) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+13:43:30 (Game 34) - Playing game...
+13:59:07 (Game 34) - Completed game with scores [100, 0]
+13:59:07 (Game 34) - Cumulative scores: LearningPlayer=800 MultithreadedUCTPlayer=2600 
+13:59:07 (Game 34) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game34.json
+13:59:07 - Finished 34 of 100 games in 504.74 minutes. Estimated 979.78 minutes remaining.
+13:59:10 (Game 35) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+13:59:10 (Game 35) - Playing game...
+14:14:45 (Game 35) - Completed game with scores [0, 100]
+14:14:45 (Game 35) - Cumulative scores: LearningPlayer=800 MultithreadedUCTPlayer=2700 
+14:14:45 (Game 35) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game35.json
+14:14:45 - Finished 35 of 100 games in 520.37 minutes. Estimated 966.41 minutes remaining.
+14:14:48 (Game 36) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+14:14:48 (Game 36) - Playing game...
+14:30:22 (Game 36) - Completed game with scores [0, 100]
+14:30:22 (Game 36) - Cumulative scores: LearningPlayer=900 MultithreadedUCTPlayer=2700 
+14:30:22 (Game 36) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game36.json
+14:30:22 - Finished 36 of 100 games in 535.99 minutes. Estimated 952.88 minutes remaining.
+14:30:25 (Game 37) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+14:30:25 (Game 37) - Playing game...
+14:43:21 (Game 37) - WARNING: This match contains errors from the following players: [MultithreadedUCTPlayer]
+14:43:21 (Game 37) - Completed game with scores [50, 50]
+14:43:21 (Game 37) - Cumulative scores: LearningPlayer=950 MultithreadedUCTPlayer=2750 
+14:43:21 (Game 37) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game37.json
+14:43:21 - Finished 37 of 100 games in 548.98 minutes. Estimated 934.74 minutes remaining.
+14:43:24 (Game 38) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+14:43:24 (Game 38) - Playing game...
+14:58:57 (Game 38) - Completed game with scores [100, 0]
+14:58:57 (Game 38) - Cumulative scores: LearningPlayer=950 MultithreadedUCTPlayer=2850 
+14:58:57 (Game 38) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game38.json
+14:58:57 - Finished 38 of 100 games in 564.57 minutes. Estimated 921.14 minutes remaining.
+14:59:00 (Game 39) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+14:59:00 (Game 39) - Playing game...
+15:03:04 (Game 39) - Completed game with scores [50, 50]
+15:03:04 (Game 39) - Cumulative scores: LearningPlayer=1000 MultithreadedUCTPlayer=2900 
+15:03:04 (Game 39) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game39.json
+15:03:04 - Finished 39 of 100 games in 568.69 minutes. Estimated 889.49 minutes remaining.
+15:03:07 (Game 40) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+15:03:07 (Game 40) - Playing game...
+15:18:42 (Game 40) - Completed game with scores [100, 0]
+15:18:42 (Game 40) - Cumulative scores: LearningPlayer=1000 MultithreadedUCTPlayer=3000 
+15:18:42 (Game 40) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game40.json
+15:18:42 - Finished 40 of 100 games in 584.32 minutes. Estimated 876.49 minutes remaining.
+15:18:45 (Game 41) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+15:18:45 (Game 41) - Playing game...
+15:34:20 (Game 41) - Completed game with scores [0, 100]
+15:34:20 (Game 41) - Cumulative scores: LearningPlayer=1000 MultithreadedUCTPlayer=3100 
+15:34:20 (Game 41) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game41.json
+15:34:20 - Finished 41 of 100 games in 599.96 minutes. Estimated 863.36 minutes remaining.
+15:34:23 (Game 42) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+15:34:23 (Game 42) - Playing game...
+15:40:10 (Game 42) - Completed game with scores [100, 0]
+15:40:10 (Game 42) - Cumulative scores: LearningPlayer=1000 MultithreadedUCTPlayer=3200 
+15:40:10 (Game 42) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game42.json
+15:40:10 - Finished 42 of 100 games in 605.80 minutes. Estimated 836.58 minutes remaining.
+15:40:13 (Game 43) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+15:40:13 (Game 43) - Playing game...
+15:55:48 (Game 43) - Completed game with scores [0, 100]
+15:55:48 (Game 43) - Cumulative scores: LearningPlayer=1000 MultithreadedUCTPlayer=3300 
+15:55:48 (Game 43) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game43.json
+15:55:48 - Finished 43 of 100 games in 621.43 minutes. Estimated 823.75 minutes remaining.
+15:55:51 (Game 44) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+15:55:51 (Game 44) - Playing game...
+16:07:20 (Game 44) - Completed game with scores [0, 100]
+16:07:20 (Game 44) - Cumulative scores: LearningPlayer=1100 MultithreadedUCTPlayer=3300 
+16:07:20 (Game 44) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game44.json
+16:07:20 - Finished 44 of 100 games in 632.95 minutes. Estimated 805.58 minutes remaining.
+16:07:23 (Game 45) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+16:07:23 (Game 45) - Playing game...
+16:22:58 (Game 45) - Completed game with scores [50, 50]
+16:22:58 (Game 45) - Cumulative scores: LearningPlayer=1150 MultithreadedUCTPlayer=3350 
+16:22:58 (Game 45) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game45.json
+16:22:58 - Finished 45 of 100 games in 648.59 minutes. Estimated 792.72 minutes remaining.
+16:23:01 (Game 46) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+16:23:01 (Game 46) - Playing game...
+16:28:39 (Game 46) - Completed game with scores [0, 100]
+16:28:39 (Game 46) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=3350 
+16:28:39 (Game 46) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game46.json
+16:28:39 - Finished 46 of 100 games in 654.28 minutes. Estimated 768.07 minutes remaining.
+16:28:42 (Game 47) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+16:28:42 (Game 47) - Playing game...
+16:34:20 (Game 47) - Completed game with scores [0, 100]
+16:34:20 (Game 47) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=3450 
+16:34:20 (Game 47) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game47.json
+16:34:20 - Finished 47 of 100 games in 659.95 minutes. Estimated 744.20 minutes remaining.
+16:34:23 (Game 48) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+16:34:23 (Game 48) - Playing game...
+16:49:57 (Game 48) - Completed game with scores [100, 0]
+16:49:57 (Game 48) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=3550 
+16:49:57 (Game 48) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game48.json
+16:49:57 - Finished 48 of 100 games in 675.58 minutes. Estimated 731.88 minutes remaining.
+16:50:00 (Game 49) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+16:50:00 (Game 49) - Playing game...
+17:05:34 (Game 49) - Completed game with scores [0, 100]
+17:05:34 (Game 49) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=3650 
+17:05:34 (Game 49) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game49.json
+17:05:34 - Finished 49 of 100 games in 691.19 minutes. Estimated 719.40 minutes remaining.
+17:05:37 (Game 50) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+17:05:37 (Game 50) - Playing game...
+17:21:12 (Game 50) - Completed game with scores [100, 0]
+17:21:12 (Game 50) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=3750 
+17:21:12 (Game 50) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game50.json
+17:21:12 - Finished 50 of 100 games in 706.82 minutes. Estimated 706.82 minutes remaining.
+17:21:15 (Game 51) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+17:21:15 (Game 51) - Playing game...
+17:36:49 (Game 51) - Completed game with scores [0, 100]
+17:36:49 (Game 51) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=3850 
+17:36:49 (Game 51) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game51.json
+17:36:49 - Finished 51 of 100 games in 722.44 minutes. Estimated 694.11 minutes remaining.
+17:36:52 (Game 52) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+17:36:52 (Game 52) - Playing game...
+17:52:27 (Game 52) - Completed game with scores [100, 0]
+17:52:27 (Game 52) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=3950 
+17:52:27 (Game 52) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game52.json
+17:52:27 - Finished 52 of 100 games in 738.07 minutes. Estimated 681.30 minutes remaining.
+17:52:30 (Game 53) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+17:52:30 (Game 53) - Playing game...
+17:58:07 (Game 53) - Completed game with scores [0, 100]
+17:58:07 (Game 53) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=4050 
+17:58:07 (Game 53) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game53.json
+17:58:07 - Finished 53 of 100 games in 743.75 minutes. Estimated 659.55 minutes remaining.
+17:58:10 (Game 54) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+17:58:10 (Game 54) - Playing game...
+18:13:45 (Game 54) - Completed game with scores [100, 0]
+18:13:45 (Game 54) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=4150 
+18:13:45 (Game 54) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game54.json
+18:13:45 - Finished 54 of 100 games in 759.37 minutes. Estimated 646.87 minutes remaining.
+18:13:48 (Game 55) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+18:13:48 (Game 55) - Playing game...
+18:29:23 (Game 55) - Completed game with scores [0, 100]
+18:29:23 (Game 55) - Cumulative scores: LearningPlayer=1250 MultithreadedUCTPlayer=4250 
+18:29:23 (Game 55) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game55.json
+18:29:23 - Finished 55 of 100 games in 775.01 minutes. Estimated 634.10 minutes remaining.
+18:29:26 (Game 56) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+18:29:26 (Game 56) - Playing game...
+18:45:04 (Game 56) - Completed game with scores [50, 50]
+18:45:04 (Game 56) - Cumulative scores: LearningPlayer=1300 MultithreadedUCTPlayer=4300 
+18:45:04 (Game 56) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game56.json
+18:45:04 - Finished 56 of 100 games in 790.69 minutes. Estimated 621.26 minutes remaining.
+18:45:07 (Game 57) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+18:45:07 (Game 57) - Playing game...
+19:00:43 (Game 57) - Completed game with scores [50, 50]
+19:00:43 (Game 57) - Cumulative scores: LearningPlayer=1350 MultithreadedUCTPlayer=4350 
+19:00:43 (Game 57) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game57.json
+19:00:43 - Finished 57 of 100 games in 806.34 minutes. Estimated 608.29 minutes remaining.
+19:00:46 (Game 58) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+19:00:46 (Game 58) - Playing game...
+19:16:26 (Game 58) - Completed game with scores [100, 0]
+19:16:26 (Game 58) - Cumulative scores: LearningPlayer=1350 MultithreadedUCTPlayer=4450 
+19:16:26 (Game 58) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game58.json
+19:16:26 - Finished 58 of 100 games in 822.07 minutes. Estimated 595.29 minutes remaining.
+19:16:29 (Game 59) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+19:16:29 (Game 59) - Playing game...
+19:20:35 (Game 59) - Completed game with scores [0, 100]
+19:20:35 (Game 59) - Cumulative scores: LearningPlayer=1350 MultithreadedUCTPlayer=4550 
+19:20:35 (Game 59) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game59.json
+19:20:35 - Finished 59 of 100 games in 826.21 minutes. Estimated 574.14 minutes remaining.
+19:20:38 (Game 60) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+19:20:38 (Game 60) - Playing game...
+19:36:18 (Game 60) - Completed game with scores [100, 0]
+19:36:18 (Game 60) - Cumulative scores: LearningPlayer=1350 MultithreadedUCTPlayer=4650 
+19:36:18 (Game 60) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game60.json
+19:36:18 - Finished 60 of 100 games in 841.92 minutes. Estimated 561.28 minutes remaining.
+19:36:21 (Game 61) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+19:36:21 (Game 61) - Playing game...
+19:51:56 (Game 61) - Completed game with scores [0, 100]
+19:51:56 (Game 61) - Cumulative scores: LearningPlayer=1350 MultithreadedUCTPlayer=4750 
+19:51:56 (Game 61) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game61.json
+19:51:56 - Finished 61 of 100 games in 857.57 minutes. Estimated 548.28 minutes remaining.
+19:51:59 (Game 62) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+19:51:59 (Game 62) - Playing game...
+19:57:55 (Game 62) - Completed game with scores [50, 50]
+19:57:55 (Game 62) - Cumulative scores: LearningPlayer=1400 MultithreadedUCTPlayer=4800 
+19:57:55 (Game 62) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game62.json
+19:57:55 - Finished 62 of 100 games in 863.54 minutes. Estimated 529.27 minutes remaining.
+19:57:58 (Game 63) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+19:57:58 (Game 63) - Playing game...
+20:04:23 (Game 63) - Completed game with scores [50, 50]
+20:04:23 (Game 63) - Cumulative scores: LearningPlayer=1450 MultithreadedUCTPlayer=4850 
+20:04:23 (Game 63) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game63.json
+20:04:23 - Finished 63 of 100 games in 870.01 minutes. Estimated 510.96 minutes remaining.
+20:04:26 (Game 64) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+20:04:26 (Game 64) - Playing game...
+20:20:01 (Game 64) - Completed game with scores [0, 100]
+20:20:01 (Game 64) - Cumulative scores: LearningPlayer=1550 MultithreadedUCTPlayer=4850 
+20:20:01 (Game 64) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game64.json
+20:20:01 - Finished 64 of 100 games in 885.65 minutes. Estimated 498.18 minutes remaining.
+20:20:04 (Game 65) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+20:20:04 (Game 65) - Playing game...
+20:35:40 (Game 65) - Completed game with scores [0, 100]
+20:35:40 (Game 65) - Cumulative scores: LearningPlayer=1550 MultithreadedUCTPlayer=4950 
+20:35:40 (Game 65) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game65.json
+20:35:40 - Finished 65 of 100 games in 901.29 minutes. Estimated 485.31 minutes remaining.
+20:35:43 (Game 66) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+20:35:43 (Game 66) - Playing game...
+20:51:23 (Game 66) - Completed game with scores [100, 0]
+20:51:23 (Game 66) - Cumulative scores: LearningPlayer=1550 MultithreadedUCTPlayer=5050 
+20:51:23 (Game 66) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game66.json
+20:51:23 - Finished 66 of 100 games in 917.02 minutes. Estimated 472.40 minutes remaining.
+20:51:26 (Game 67) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+20:51:26 (Game 67) - Playing game...
+21:02:40 (Game 67) - Completed game with scores [0, 100]
+21:02:40 (Game 67) - Cumulative scores: LearningPlayer=1550 MultithreadedUCTPlayer=5150 
+21:02:40 (Game 67) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game67.json
+21:02:40 - Finished 67 of 100 games in 928.29 minutes. Estimated 457.22 minutes remaining.
+21:02:43 (Game 68) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+21:02:43 (Game 68) - Playing game...
+21:18:21 (Game 68) - Completed game with scores [50, 50]
+21:18:21 (Game 68) - Cumulative scores: LearningPlayer=1600 MultithreadedUCTPlayer=5200 
+21:18:21 (Game 68) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game68.json
+21:18:21 - Finished 68 of 100 games in 943.98 minutes. Estimated 444.23 minutes remaining.
+21:18:24 (Game 69) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+21:18:24 (Game 69) - Playing game...
+21:22:30 (Game 69) - Completed game with scores [50, 50]
+21:22:30 (Game 69) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5250 
+21:22:30 (Game 69) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game69.json
+21:22:30 - Finished 69 of 100 games in 948.12 minutes. Estimated 425.97 minutes remaining.
+21:22:33 (Game 70) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+21:22:33 (Game 70) - Playing game...
+21:28:40 (Game 70) - Completed game with scores [100, 0]
+21:28:40 (Game 70) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5350 
+21:28:40 (Game 70) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game70.json
+21:28:40 - Finished 70 of 100 games in 954.30 minutes. Estimated 408.99 minutes remaining.
+21:28:43 (Game 71) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+21:28:43 (Game 71) - Playing game...
+21:44:27 (Game 71) - Completed game with scores [0, 100]
+21:44:27 (Game 71) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5450 
+21:44:27 (Game 71) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game71.json
+21:44:27 - Finished 71 of 100 games in 970.07 minutes. Estimated 396.23 minutes remaining.
+21:44:30 (Game 72) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+21:44:30 (Game 72) - Playing game...
+22:00:12 (Game 72) - WARNING: This match contains errors from the following players: [LearningPlayer]
+22:00:12 (Game 72) - Completed game with scores [100, 0]
+22:00:12 (Game 72) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5550 
+22:00:12 (Game 72) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game72.json
+22:00:12 - Finished 72 of 100 games in 985.82 minutes. Estimated 383.38 minutes remaining.
+22:00:15 (Game 73) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+22:00:15 (Game 73) - Playing game...
+22:13:35 (Game 73) - WARNING: This match contains errors from the following players: [LearningPlayer]
+22:13:35 (Game 73) - Completed game with scores [0, 100]
+22:13:35 (Game 73) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5650 
+22:13:35 (Game 73) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game73.json
+22:13:35 - Finished 73 of 100 games in 999.21 minutes. Estimated 369.57 minutes remaining.
+22:13:38 (Game 74) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+22:13:38 (Game 74) - Playing game...
+22:24:43 (Game 74) - WARNING: This match contains errors from the following players: [LearningPlayer]
+22:24:43 (Game 74) - Completed game with scores [100, 0]
+22:24:43 (Game 74) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5750 
+22:24:43 (Game 74) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game74.json
+22:24:43 - Finished 74 of 100 games in 1010.34 minutes. Estimated 354.98 minutes remaining.
+22:24:46 (Game 75) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+22:24:46 (Game 75) - Playing game...
+22:38:28 (Game 75) - WARNING: This match contains errors from the following players: [LearningPlayer]
+22:38:28 (Game 75) - Completed game with scores [0, 100]
+22:38:28 (Game 75) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5850 
+22:38:28 (Game 75) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game75.json
+22:38:28 - Finished 75 of 100 games in 1024.09 minutes. Estimated 341.36 minutes remaining.
+22:38:31 (Game 76) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+22:38:31 (Game 76) - Playing game...
+22:53:33 (Game 76) - WARNING: This match contains errors from the following players: [LearningPlayer]
+22:53:33 (Game 76) - Completed game with scores [100, 0]
+22:53:33 (Game 76) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=5950 
+22:53:33 (Game 76) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game76.json
+22:53:33 - Finished 76 of 100 games in 1039.18 minutes. Estimated 328.16 minutes remaining.
+22:53:36 (Game 77) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+22:53:36 (Game 77) - Playing game...
+23:09:15 (Game 77) - WARNING: This match contains errors from the following players: [LearningPlayer]
+23:09:15 (Game 77) - Completed game with scores [0, 100]
+23:09:15 (Game 77) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6050 
+23:09:15 (Game 77) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game77.json
+23:09:15 - Finished 77 of 100 games in 1054.88 minutes. Estimated 315.09 minutes remaining.
+23:09:18 (Game 78) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+23:09:18 (Game 78) - Playing game...
+23:24:55 (Game 78) - WARNING: This match contains errors from the following players: [LearningPlayer]
+23:24:55 (Game 78) - Completed game with scores [100, 0]
+23:24:55 (Game 78) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6150 
+23:24:55 (Game 78) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game78.json
+23:24:55 - Finished 78 of 100 games in 1070.55 minutes. Estimated 301.95 minutes remaining.
+23:24:58 (Game 79) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+23:24:58 (Game 79) - Playing game...
+23:40:36 (Game 79) - WARNING: This match contains errors from the following players: [LearningPlayer]
+23:40:36 (Game 79) - Completed game with scores [0, 100]
+23:40:36 (Game 79) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6250 
+23:40:36 (Game 79) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game79.json
+23:40:36 - Finished 79 of 100 games in 1086.23 minutes. Estimated 288.74 minutes remaining.
+23:40:39 (Game 80) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+23:40:39 (Game 80) - Playing game...
+23:54:10 (Game 80) - WARNING: This match contains errors from the following players: [LearningPlayer]
+23:54:10 (Game 80) - Completed game with scores [100, 0]
+23:54:10 (Game 80) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6350 
+23:54:10 (Game 80) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game80.json
+23:54:10 - Finished 80 of 100 games in 1099.80 minutes. Estimated 274.95 minutes remaining.
+23:54:13 (Game 81) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+23:54:13 (Game 81) - Playing game...
+00:09:52 (Game 81) - WARNING: This match contains errors from the following players: [LearningPlayer]
+00:09:52 (Game 81) - Completed game with scores [0, 100]
+00:09:52 (Game 81) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6450 
+00:09:52 (Game 81) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game81.json
+00:09:52 - Finished 81 of 100 games in 1115.49 minutes. Estimated 261.66 minutes remaining.
+00:09:55 (Game 82) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+00:09:55 (Game 82) - Playing game...
+00:25:33 (Game 82) - WARNING: This match contains errors from the following players: [LearningPlayer]
+00:25:33 (Game 82) - Completed game with scores [100, 0]
+00:25:33 (Game 82) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6550 
+00:25:33 (Game 82) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game82.json
+00:25:33 - Finished 82 of 100 games in 1131.18 minutes. Estimated 248.31 minutes remaining.
+00:25:36 (Game 83) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+00:25:36 (Game 83) - Playing game...
+00:40:25 (Game 83) - WARNING: This match contains errors from the following players: [LearningPlayer]
+00:40:25 (Game 83) - Completed game with scores [0, 100]
+00:40:25 (Game 83) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6650 
+00:40:25 (Game 83) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game83.json
+00:40:25 - Finished 83 of 100 games in 1146.05 minutes. Estimated 234.73 minutes remaining.
+00:40:28 (Game 84) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+00:40:28 (Game 84) - Playing game...
+00:52:24 (Game 84) - WARNING: This match contains errors from the following players: [LearningPlayer]
+00:52:24 (Game 84) - Completed game with scores [100, 0]
+00:52:24 (Game 84) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6750 
+00:52:24 (Game 84) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game84.json
+00:52:24 - Finished 84 of 100 games in 1158.03 minutes. Estimated 220.58 minutes remaining.
+00:52:27 (Game 85) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+00:52:27 (Game 85) - Playing game...
+01:08:02 (Game 85) - WARNING: This match contains errors from the following players: [LearningPlayer]
+01:08:02 (Game 85) - Completed game with scores [0, 100]
+01:08:02 (Game 85) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6850 
+01:08:02 (Game 85) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game85.json
+01:08:02 - Finished 85 of 100 games in 1173.66 minutes. Estimated 207.12 minutes remaining.
+01:08:05 (Game 86) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+01:08:05 (Game 86) - Playing game...
+01:23:39 (Game 86) - WARNING: This match contains errors from the following players: [LearningPlayer]
+01:23:39 (Game 86) - Completed game with scores [100, 0]
+01:23:39 (Game 86) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=6950 
+01:23:39 (Game 86) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game86.json
+01:23:39 - Finished 86 of 100 games in 1189.28 minutes. Estimated 193.60 minutes remaining.
+01:23:42 (Game 87) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+01:23:42 (Game 87) - Playing game...
+01:39:17 (Game 87) - WARNING: This match contains errors from the following players: [LearningPlayer]
+01:39:17 (Game 87) - Completed game with scores [0, 100]
+01:39:17 (Game 87) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7050 
+01:39:17 (Game 87) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game87.json
+01:39:17 - Finished 87 of 100 games in 1204.91 minutes. Estimated 180.04 minutes remaining.
+01:39:20 (Game 88) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+01:39:20 (Game 88) - Playing game...
+01:53:24 (Game 88) - WARNING: This match contains errors from the following players: [LearningPlayer]
+01:53:24 (Game 88) - Completed game with scores [100, 0]
+01:53:24 (Game 88) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7150 
+01:53:24 (Game 88) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game88.json
+01:53:24 - Finished 88 of 100 games in 1219.03 minutes. Estimated 166.23 minutes remaining.
+01:53:27 (Game 89) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+01:53:27 (Game 89) - Playing game...
+02:09:01 (Game 89) - WARNING: This match contains errors from the following players: [LearningPlayer]
+02:09:01 (Game 89) - Completed game with scores [0, 100]
+02:09:01 (Game 89) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7250 
+02:09:01 (Game 89) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game89.json
+02:09:01 - Finished 89 of 100 games in 1234.65 minutes. Estimated 152.60 minutes remaining.
+02:09:04 (Game 90) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+02:09:04 (Game 90) - Playing game...
+02:22:51 (Game 90) - WARNING: This match contains errors from the following players: [LearningPlayer]
+02:22:51 (Game 90) - Completed game with scores [100, 0]
+02:22:51 (Game 90) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7350 
+02:22:51 (Game 90) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game90.json
+02:22:51 - Finished 90 of 100 games in 1248.48 minutes. Estimated 138.72 minutes remaining.
+02:22:54 (Game 91) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+02:22:54 (Game 91) - Playing game...
+02:38:28 (Game 91) - WARNING: This match contains errors from the following players: [LearningPlayer]
+02:38:28 (Game 91) - Completed game with scores [0, 100]
+02:38:28 (Game 91) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7450 
+02:38:28 (Game 91) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game91.json
+02:38:28 - Finished 91 of 100 games in 1264.10 minutes. Estimated 125.02 minutes remaining.
+02:38:31 (Game 92) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+02:38:31 (Game 92) - Playing game...
+02:54:07 (Game 92) - WARNING: This match contains errors from the following players: [LearningPlayer]
+02:54:07 (Game 92) - Completed game with scores [100, 0]
+02:54:07 (Game 92) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7550 
+02:54:07 (Game 92) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game92.json
+02:54:07 - Finished 92 of 100 games in 1279.75 minutes. Estimated 111.28 minutes remaining.
+02:54:10 (Game 93) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+02:54:10 (Game 93) - Playing game...
+03:09:45 (Game 93) - WARNING: This match contains errors from the following players: [LearningPlayer]
+03:09:45 (Game 93) - Completed game with scores [0, 100]
+03:09:45 (Game 93) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7650 
+03:09:45 (Game 93) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game93.json
+03:09:45 - Finished 93 of 100 games in 1295.37 minutes. Estimated 97.50 minutes remaining.
+03:09:48 (Game 94) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+03:09:48 (Game 94) - Playing game...
+03:25:24 (Game 94) - WARNING: This match contains errors from the following players: [LearningPlayer]
+03:25:24 (Game 94) - Completed game with scores [100, 0]
+03:25:24 (Game 94) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7750 
+03:25:24 (Game 94) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game94.json
+03:25:24 - Finished 94 of 100 games in 1311.03 minutes. Estimated 83.68 minutes remaining.
+03:25:27 (Game 95) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+03:25:27 (Game 95) - Playing game...
+03:41:01 (Game 95) - WARNING: This match contains errors from the following players: [LearningPlayer]
+03:41:01 (Game 95) - Completed game with scores [0, 100]
+03:41:01 (Game 95) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7850 
+03:41:01 (Game 95) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game95.json
+03:41:02 - Finished 95 of 100 games in 1326.65 minutes. Estimated 69.82 minutes remaining.
+03:41:05 (Game 96) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+03:41:05 (Game 96) - Playing game...
+03:56:40 (Game 96) - WARNING: This match contains errors from the following players: [LearningPlayer]
+03:56:40 (Game 96) - Completed game with scores [100, 0]
+03:56:40 (Game 96) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=7950 
+03:56:40 (Game 96) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game96.json
+03:56:40 - Finished 96 of 100 games in 1342.30 minutes. Estimated 55.93 minutes remaining.
+03:56:43 (Game 97) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+03:56:43 (Game 97) - Playing game...
+04:12:19 (Game 97) - WARNING: This match contains errors from the following players: [LearningPlayer]
+04:12:19 (Game 97) - Completed game with scores [0, 100]
+04:12:19 (Game 97) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=8050 
+04:12:19 (Game 97) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game97.json
+04:12:19 - Finished 97 of 100 games in 1357.94 minutes. Estimated 42.00 minutes remaining.
+04:12:22 (Game 98) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+04:12:22 (Game 98) - Playing game...
+04:27:58 (Game 98) - WARNING: This match contains errors from the following players: [LearningPlayer]
+04:27:58 (Game 98) - Completed game with scores [100, 0]
+04:27:58 (Game 98) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=8150 
+04:27:58 (Game 98) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game98.json
+04:27:58 - Finished 98 of 100 games in 1373.59 minutes. Estimated 28.03 minutes remaining.
+04:28:01 (Game 99) - Initializing game with players: [LearningPlayer, MultithreadedUCTPlayer]
+04:28:01 (Game 99) - Playing game...
+04:43:36 (Game 99) - WARNING: This match contains errors from the following players: [LearningPlayer]
+04:43:36 (Game 99) - Completed game with scores [0, 100]
+04:43:36 (Game 99) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=8250 
+04:43:36 (Game 99) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game99.json
+04:43:36 - Finished 99 of 100 games in 1389.22 minutes. Estimated 14.03 minutes remaining.
+04:43:39 (Game 100) - Initializing game with players: [MultithreadedUCTPlayer, LearningPlayer]
+04:43:39 (Game 100) - Playing game...
+04:55:56 (Game 100) - WARNING: This match contains errors from the following players: [LearningPlayer]
+04:55:56 (Game 100) - Completed game with scores [100, 0]
+04:55:56 (Game 100) - Cumulative scores: LearningPlayer=1650 MultithreadedUCTPlayer=8350 
+04:55:56 (Game 100) - Saving match to file checkers-LearningPlayer-vs-MultithreadedUCTPlayer-20160508_053407/game100.json
+04:55:56 - Finished 100 of 100 games in 1401.56 minutes. Estimated 0.00 minutes remaining.
+04:55:56 - Successfully finished tournament. 30 matches contained errors.
+04:55:56 - Average player scores: LearningPlayer=16.5000 MultithreadedUCTPlayer=83.5000 
